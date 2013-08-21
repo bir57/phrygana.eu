@@ -1,2 +1,2 @@
 safe: true
-exclude: [.gitattributes, .gitignore, README.md]
+exclude: [.gitattributes, .gitignore, README.md, server.cmd]
