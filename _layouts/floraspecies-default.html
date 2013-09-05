@@ -2,6 +2,7 @@
 layout: default
 title: " "
 ---
+
 <p class="style8"></p>
 
 <table align="center" style="width: 600px">
@@ -26,7 +27,7 @@ title: " "
 <table align="center" style="width: 900px">
 	<tr>
         <td class="style9">
-		<img height="760" src="{{ page.floreimg }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="659"> </td>
+		<img height= "{{ page.img-height }}" src="{{ page.floreimg }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width }}"> </td>
     </tr>
     <tr>
         <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date }}</span></td>
@@ -37,7 +38,7 @@ title: " "
 
 <table align="center" class="style17" style="width: 800px">
 	<tr>
-		<td class="style12"> </td>
+		<td class="style12"> syn.:<em><strong> {{ page.nom-synonyme }} </strong></em> {{ page.nom-synauteur}} </td>
 	</tr>
 	<tr>
 		<td class="style12" > {{ page.nom-commun }} </td>
@@ -58,6 +59,11 @@ title: " "
 	<tr>
 		<td class="style12"><div><strong>Fleurs:</strong>  {{ page.descr-fleurs }} </div></td>
 	</tr>
+
+    <tr>
+		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
+	</tr>
+
 
 	<tr>
 		<td class="style12" ><strong>Type biologique:</strong> {{ page.descr-type }} </td></td>
@@ -83,6 +89,10 @@ title: " "
 	<tr>
 		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
 	</tr>
+    <tr>
+		<td class="style12"> Note: {{ page.descr-note }}</td>
+	</tr>
+
 	<tr>
 		<td class="style12"></td>
 	</tr>
@@ -90,46 +100,45 @@ title: " "
 
 
 
-<table align="center" style="width: 900px">
+	<table align="center" style="width: 900px">
 	<tr>
-		<td class="style9">
-		<img height="490" src="{{ page.floreimg1 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="760"></td>
-	</tr>
-    
+        <td class="style9">
+		<img height= img height= "{{ page.img-height1 }}" src="{{ page.floreimg1 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width1 }}"> </td>
+    </tr>
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9">{{ page.lieu-date }}</span></td>
-	</tr>
-	
-    <tr>
-		<td class="style9">
-		<img height="430" src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="760"> </td>
-    </tr> 
-     <tr>
-        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9">{{ page.lieu-date }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date }}</span></td>
 	</tr>
 
-	<tr>
-		<td class="style9">
-		<img height="475" src="{{ page.floreimg3 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}"  width="723" class="style18"></td>
+    <tr>
+        <td class="style9">
+		<img height= img height= "{{ page.img-height2 }}" src="{{ page.floreimg }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width2 }}"> </td>
     </tr>
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9">{{ page.lieu-date1 }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date }}</span></td>
 	</tr>
-	<tr>
-		<td class="style9">
-		<img height="452" src="{{ page.floreimg4 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="650" class="style18"></td>
+    <tr>
+        <td class="style9">
+		<img height= img height= "{{ page.img-height3 }}" src="{{ page.floreimg3 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width3 }}"> </td>
     </tr>
     <tr>
-       <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9">{{ page.lieu-date1 }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date }}</span></td>
 	</tr>
-	<tr>
-		<td class="style9">
-		<img alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" height="492" src="{{ page.floreimg5 }}" width="735" class="style18"></td>
+        
+    <tr>
+        <td class="style9">
+		<img height= img height= "{{ page.img-height4 }}" src="{{ page.floreimg4 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width4 }}"> </td>
     </tr>
     <tr>
-      <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9">{{ page.lieu-date2 }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date1 }}</span></td>
 	</tr>
-	</table>
+    <tr>
+        <td class="style9">
+		<img height= img height= "{{ page.img-height5 }}" src="{{ page.floreimg5 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width5 }}"> </td>
+    </tr>
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date2 }}</span></td>
+	</tr>
+</table>
 
 
 
