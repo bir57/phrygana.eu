@@ -20,7 +20,7 @@ title: " "
 		<td class="style12" style="width: 80px">Flora </td>
 		<td class="style12" style="width: 120px">
 		<a class="style30" href="{{ page.HREFfamille }}"><strong>{{ page.florefamilia }}</strong></a></td>
-		<td class="style12"><em>{{ page.floregenre }}</em></td>
+		<td class="style12"><em>{{ page.floregenre }}</em>{{ page.floregenreAUTEUR }}</td>
 	</tr>
 </table>
 
@@ -91,6 +91,9 @@ title: " "
 		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
 	</tr>
     <tr>
+		<td class="style12"> Note: {{ page.descr-origine }}</td>
+	</tr>
+    <tr>
 		<td class="style12"> Note: {{ page.descr-note }}</td>
 	</tr>
       
@@ -115,7 +118,7 @@ title: " "
 		<img height= "{{ page.img-height2 }}" src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" width="{{ page.img-width2 }}"> </td>
     </tr>
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.floreespece2 }}</span></em><span class="style9"> {{ page.lieu-date2 }}</span></td>
 	</tr>
     <tr>
         <td class="style9">
