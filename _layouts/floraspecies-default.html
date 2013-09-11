@@ -115,7 +115,7 @@ title: " "
 
     {% if page.descr-origine %}
     <tr>
-		<td class="style12"> Note: {{ page.descr-origine }}</td>
+		<td class="style12"> {{ page.descr-origine }}</td>
 	</tr>{% endif %}
 
     <tr>
@@ -129,18 +129,18 @@ title: " "
               
     {% if page.descr-note1 %}
     <tr>
-		<td class="style12">--- {{ page.descr-note1 }}</td>
+		<td class="style12">{{ page.descr-note1 }}</td>
 	</tr>{% endif %}
 
               
     {% if page.descr-note2 %}
     <tr>
-		<td class="style12"><div>--- {{ page.descr-note2 }} </div></td>
+		<td class="style12"><div>{{ page.descr-note2 }} </div></td>
 	</tr>{% endif %}
               
     {% if page.descr-note3 %}
     <tr>
-		<td class="style12"><div>--- {{ page.descr-note3 }} </div></td>
+		<td class="style12"><div>{{ page.descr-note3 }} </div></td>
 	</tr>{% endif %}
     
     <tr>
@@ -149,7 +149,17 @@ title: " "
     
     {% if page.descr-OBS %}
     <tr>
-		<td class="style12" ><div>OBS. --- {{ page.descr-OBS }}  </div> </td>    
+		<td class="style12" ><div>{{ page.descr-OBS }}  </div> </td>    
+    </tr>{% endif %}
+
+    {% if page.descr-OBS1 %}
+    <tr>
+		<td class="style12" ><div>{{ page.descr-OBS1 }}  </div> </td>    
+    </tr>{% endif %}
+
+    {% if page.descr-OBS2 %}
+    <tr>
+		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
     </tr>{% endif %}
 
 	<tr>
