@@ -49,18 +49,18 @@ title: " "
 	<tr>
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece1 }} ">
-		<img height= "{{ page.img-height1 }}" src="{{ page.floreimg1 }}" alt="{{ page.FLOREspecies1 }}" title="{{ page.FLOREspecies1 }}" width="{{ page.img-width1 }}"></a> </td>
+		<img src="{{ page.floreimg1 }}" alt="{{ page.FLOREspecies1 }}" title="{{ page.FLOREspecies1 }}" ></a> </td>
 		
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece2 }}">
-		<img height= "{{ page.img-height2 }}" src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies2 }}" title="{{ page.FLOREspecies2 }}" width="{{ page.img-width2 }}"></a> </td>
+		<img src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies2 }}" title="{{ page.FLOREspecies2 }}" ></a> </td>
 
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece3 }} ">
-		<img height= "{{ page.img-height3 }}" src="{{ page.floreimg3 }}" alt="{{ page.FLOREspecies3 }}" title="{{ page.FLOREspecies3 }}" width="{{ page.img-width3 }}"></a> </td>
+		<img  src="{{ page.floreimg3 }}" alt="{{ page.FLOREspecies3 }}" title="{{ page.FLOREspecies3 }}" ></a> </td>
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece4 }}">
-		<img height= "{{ page.img-height4 }}" src="{{ page.floreimg4 }}" alt="{{ page.FLOREspecies4 }}" title="{{ page.FLOREspecies4 }}" width="{{ page.img-width4 }}"></a> </td>
+		<img  src="{{ page.floreimg4 }}" alt="{{ page.FLOREspecies4 }}" title="{{ page.FLOREspecies4 }}" ></a> </td>
 
         
 	</tr>
@@ -82,17 +82,20 @@ title: " "
             <em> {{ page.floreespece4 }} </em></a></td>
 	</tr>
     
+    {% if page.floreimg5 and page.HREF-espece5 and page.FLOREspecies5 and page.FLOREspecies5 }} %}
     <tr>
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece5 }} ">
-		<img height= "{{ page.img-height5 }}" src="{{ page.floreimg5 }}" alt="{{ page.FLOREspecies5 }}" title="{{ page.FLOREspecies5 }}" width="{{ page.img-width5 }}"></a> </td>
-	</tr>
-	
+		<img src="{{ page.floreimg5 }}" alt="{{ page.FLOREspecies5 }}" title="{{ page.FLOREspecies5 }}" ></a> </td>
+	</tr>{% endif %}
+
+
+	{% if page.floreespece }} %}
     <tr>
 		<td class="auto-style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece5 }}" style="text-decoration:none"> 
 		<em> {{ page.floreespece5 }} </em></a></td>
-	</tr>
+	</tr>{% endif %}
 
 </table>
 
