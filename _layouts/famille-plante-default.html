@@ -11,39 +11,88 @@ title: " "
 </table>
 
 <table align="center" class="style17" style="width: 800px">
-	<tr>
+	
+    {% if page.fami-plante %}
+    <tr>
+		<td class="style13"><div><em> {{ page.fami-plante }} </em></div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-feuille %}
+    <tr>
 		<td class="style13"><div><em> {{ page.fami-feuille }} </em></div></td>
-	</tr>
+	</tr>{% endif %}
     
+    {% if page.fami-fleur %}
 	<tr>
 		<td class="style13"><div><em> {{ page.fami-fleur }}  </em></div></td>
-	</tr>
+	</tr>{% endif %}
+	
+    {% if page.fami-fleur1 %}
 	<tr>
-		<td class="style13"><em> {{ page.fami-fruit}} </em></td>
-	</tr>
+		<td class="style13"><div><em> {{ page.fami-fleur1 }}  </em></div></td>
+	</tr>{% endif %}
+    
+    {% if page.fami-fruit %}
+    <tr>
+		<td class="style13"><div><em> {{ page.fami-fruit}} </em></div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-fruit1 %}
+    <tr>
+		<td class="style13"><div><em> {{ page.fami-fruit1}} </em></div></td>
+	</tr>{% endif %}
+
 	<tr>
 		<td class="style12"></td>
 	</tr>
+
+    {% if page.fami-nbrespece %}
 	<tr>
-		<td class="style12"> {{page.fami-nbrespece }} </td>
-	</tr>
+		<td class="style12"><div> {{page.fami-nbrespece }}</div> </td>
+	</tr>{% endif %}
+
+    {% if page.fami-Crete %}
 	<tr>
 		<td class="style12"> {{ page.fami-Crete }} </td>
-	</tr>
+	</tr>{% endif %}
+
+    {% if page.fami-Belgique %}
     <tr>
 		<td class="style12"> {{ page.fami-Belgique }} </td>
-	</tr>
+	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
-    <tr>
-		<td class="style12"> {{ page.fami-note }} </td>
-	</tr><tr>
-		<td class="style12"></td>
     
+    {% if page.fami-note %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note }} <div></td>
+	</tr>{% endif %}
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+		<td class="style12"><div> {{ page.fami-note1 }} </div></td>
+	</tr>
+    
+   
+    {% if page.fami-note2 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note2 }} </div></td>
+	</tr>{% endif %}
+
+   {% if page.fami-REF %}
+    <tr>
+		<td class="style12"> {{ page.fami-REF }} </td>
+	</tr>{% endif %}
+
 </table>
 
 {{ content }}
+
 <p class="style8">&nbsp;</p>
 <table align="center"  style="width: 960px">
 	<tr>
@@ -82,7 +131,7 @@ title: " "
             <em> {{ page.floreespece4 }} </em></a></td>
 	</tr>
     
-    {% if page.floreimg5 and page.HREF-espece5 and page.FLOREspecies5 and page.FLOREspecies5 }} %}
+    {% if page.floreimg5 and page.HREF-espece5 and page.FLOREspecies5 and page.FLOREspecies5 %}
     <tr>
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece5 }} ">
@@ -90,7 +139,7 @@ title: " "
 	</tr>{% endif %}
 
 
-	{% if page.floreespece }} %}
+	{% if page.floreespece %}
     <tr>
 		<td class="auto-style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece5 }}" style="text-decoration:none"> 
