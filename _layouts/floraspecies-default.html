@@ -208,39 +208,52 @@ title: " "
         <td class="style9">
        
          <table>
-            <tr> 
+
+      {% if page.floreimgA and page.FLOREspecies and page.FLOREspecies and page.floreimgB and page.FLOREspecies and page.FLOREspecies %}
+        <tr> 
           <td>
            <img class="center" src="{{ page.floreimgA }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" />
          </td>
          <td><img class="center" src="{{ page.floreimgB }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" /></td>
-        </tr>
+        </tr>{% endif %}
+
+      {% if page.floreespece and page.lieu-dateA and page.lieu-dateB  %} 
         <tr>
         <td>
          
             <em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
            <td><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateB }}</span></td> 
-        </tr>
+        </tr>{% endif %}
+
         </table>
     </td>
     </tr>
 
- <tr>
+       
+         
+        <tr>
         
         <td class="style9">
        
          <table>
+
+       {% if page.floreimgC and page.FLOREspecies and page.FLOREspecies and page.floreimgD and page.FLOREspecies and page.FLOREspecies %}
             <tr> 
           <td>
            <img class="center" src="{{ page.floreimgC }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" />
          </td>
          <td><img class="center" src="{{ page.floreimgD }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" /></td>
-        </tr>
+        </tr>{% endif %}
+
+       {% if page.floreespece and page.lieu-dateC and page.lieu-dateD  %} 
         <tr>
         <td>
          
             <em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateC }}</span></td>
            <td><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateD }}</span></td> 
-        </tr>
+        </tr>{% endif %}
+
+
         </table>
     </td>
     </tr>
@@ -252,7 +265,7 @@ title: " "
 
     {% if page.floreimg2 and page.FLOREspecies and page.FLOREspecies %}
     <tr>
-        <td class="style9" colspan="2">
+        <td class="style9" >
 		<img class="center" src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}"> </td>
     </tr>{% endif %}
     
