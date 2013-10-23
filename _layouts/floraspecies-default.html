@@ -125,6 +125,11 @@ title: " "
 		<td class="style12" ><strong>Biotopes en Crète:</strong> {{ page.descr-biotopes }} </td>
 	</tr>{% endif %}
 
+     {% if page.descr-biotopes1 %}
+	<tr>
+		<td class="style12" ><strong>Biotopes:</strong> {{ page.descr-biotopes1 }} </td>
+	</tr>{% endif %}
+
     {% if page.descr-distribution %}
 	<tr>
 		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
@@ -132,7 +137,7 @@ title: " "
 
     {% if page.descr-origine %}
     <tr>
-		<td class="style12"> {{ page.descr-origine }}</td>
+		<td class="style12"><strong>Origine:</strong>  {{ page.descr-origine }}</td>
 	</tr>{% endif %}
 
     <tr>
