@@ -318,6 +318,17 @@ title: " "
         <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
 
+ {% if page.floreimg7 and page.FLOREspecies and page.FLOREspecies %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.floreimg7 }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.floreespece and page.lieu-date7 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date7 }}</span></td>
+	</tr>{% endif %}
+
 
 </table>
 
