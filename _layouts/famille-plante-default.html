@@ -92,12 +92,52 @@ title: " "
 
 </table>
 
+<p class="style8"></p>
+
+<table align="center" class="style17" style="width: 800px">
+	
+    
+    <tr>
+     {% if page.fami-genre %}
+	<td class="style12"><div>{{ page.fami-genre }}</div></td>
+
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+	<tr>
+     {% if page.fami-genre1 %}
+		<td class="style12"><div>{{ page.fami-genre1 }}</div></td>
+	</tr>{% endif %}
+
+	<tr>
+		{% if page.fami-genre2 %}
+		<td class="style12"><div>{{ page.fami-genre2 }}</div></td>
+	</tr>{% endif %}
+
+
+</table>
+
+
+
 {{ content }}
 
 <p class="style8">&nbsp;</p>
 
 <table align="center"  style="width: 960px">
-	<tr>
+	
+      <tr>
+     {% if page.fami-tribe1  %}
+		<td class="style11"> {{ page.fami-tribe1 }} </td>
+        {% endif %}
+    </tr>
+
+</table>
+
+<table align="center"  style="width: 960px">  
+    <tr>
          {% if page.HREF-espece1 and page.FLOREspecies1 and page.FLOREspecies1 and page.floreimg1 %}
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece1 }} ">
@@ -142,7 +182,21 @@ title: " "
 		<a class="style7" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
             <em> {{ page.floreespece4 }} </em></a></td>
 	</tr>
+  </table>
+
+<p class="style8"></p>
+
+    <table align="center"  style="width: 960px">
+	
+      <tr>
+     {% if page.fami-tribe2  %}
+		<td class="style11"> {{ page.fami-tribe2 }} </td>
+        {% endif %}
+    </tr>
+
+</table>
     
+  <table align="center"  style="width: 960px">     
     <tr>
          {% if page.HREF-espece5 and page.FLOREspecies5 and page.FLOREspecies5 and page.floreimg5 %}
 		<td class="style7" style="width: 240px">
@@ -188,8 +242,11 @@ title: " "
 		<a class="style7" href="{{ page.HREF-espece8 }}" style="text-decoration:none">
             <em> {{ page.floreespece8 }} </em></a></td>
 	</tr>
+  </table>  
     
-    <tr>
+<table align="center" style="width: 960px">
+
+<tr>
          {% if page.HREF-espece9 and page.FLOREspecies9 and page.FLOREspecies9 and page.floreimg9 %}
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece9 }} ">
