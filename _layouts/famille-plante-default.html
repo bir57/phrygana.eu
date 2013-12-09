@@ -117,6 +117,10 @@ title: " "
 		<td class="style12"><div>{{ page.fami-genre2 }}</div></td>
 	</tr>{% endif %}
 
+    <tr>
+		{% if page.fami-genre3 %}
+		<td class="style12"><div>{{ page.fami-genre3 }}</div></td>
+	</tr>{% endif %}
 
 </table>
 
@@ -303,6 +307,69 @@ title: " "
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece12 }}" style="text-decoration:none">
             <em> {{ page.floreespece12 }} </em></a></td>
+	</tr>
+
+    </table>
+
+<p class="style8"></p>
+
+    <table align="center"  style="width: 960px">
+	
+      <tr>
+     {% if page.fami-tribe4  %}
+		<td class="style11"> {{ page.fami-tribe4 }} </td>
+        {% endif %}
+    </tr>
+
+</table>
+
+
+<table align="center" style="width: 960px">
+
+<tr>
+         {% if page.HREF-espece13 and page.FLOREspecies13 and page.FLOREspecies13 and page.floreimg13 %}
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece13 }} ">
+		<img src="{{ page.floreimg13 }}" alt="{{ page.FLOREspecies13 }}" title="{{ page.FLOREspecies13 }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.HREF-espece14 and page.floreimg14 and page.FLOREspecies14 and page.FLOREspecies14 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece14 }}">
+		<img src="{{ page.floreimg14 }}" alt="{{ page.FLOREspecies14 }}" title="{{ page.FLOREspecies14 }}" ></a>
+        </td> {% endif %}
+        
+        {% if page.HREF-espece15 and page.floreimg15 and page.FLOREspecies15 and page.FLOREspecies15 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece15 }} ">
+		<img  src="{{ page.floreimg15 }}" alt="{{ page.FLOREspecies15 }}" title="{{ page.FLOREspecies15 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.HREF-espece16 and page.floreimg16 and page.FLOREspecies16 and page.FLOREspecies16 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece16 }}">
+		<img  src="{{ page.floreimg16 }}" alt="{{ page.FLOREspecies16 }}" title="{{ page.FLOREspecies16 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece13 }}" style="text-decoration:none"> 
+		<em> {{ page.floreespece13 }} </em></a></td>
+
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece14 }}" style="text-decoration:none">
+             <em> {{ page.floreespece14 }} </em></a></td>
+        
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece15 }}" style="text-decoration:none">
+            <em> {{ page.floreespece15 }} </em></a></td>
+        
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece16 }}" style="text-decoration:none">
+            <em> {{ page.floreespece16 }} </em></a></td>
 	</tr>
 
     </table>
