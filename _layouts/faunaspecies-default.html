@@ -178,25 +178,25 @@ title: " "
 
 <table align="center" style="width: 900px">
 	
-   
-
-    
+       {% if page.fauneimg1 and page.FAUNEspecies and page.FAUNEspecies %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEpecies }}"> </td>
+		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEpecies }}"> 
+        </td>{% endif %}
     </tr>
 
 
-    
+    {% if page.fauneespece and page.lieu-date3 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date1 }}</span></td>
+        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date1 }}</span>
+        </td>{% endif %}
 	</tr>
 
-  <tr>
+      <tr>
         
-        <td class="style9">
+        
        
-         <table>
+    <table>
 
       {% if page.fauneimgA and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgB and page.FAUNEspecies and page.FAUNEspecies %}
         <tr> 
