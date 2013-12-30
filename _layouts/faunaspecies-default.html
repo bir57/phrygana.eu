@@ -218,9 +218,30 @@ title: " "
     </td>
     </tr>
 
-       
-         
-        <tr>
+
+    {% if page.fauneimg2 and page.FAUNEspecies and page.FAUNEspecies %}
+    <tr>
+        <td class="style9" >
+		<img class="center" src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}"> </td>
+    </tr>{% endif %}
+    
+    {% if page.fauneespece and page.lieu-date2 %}   
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date2 }}</span></td>
+	</tr>{% endif %}
+    
+    {% if page.fauneimg3 and page.FAUNEspecies and page.FAUNEspecies %}     
+    <tr>
+        <td class="style9">
+		<img class="center" src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.fauneespece and page.lieu-date3 %}   
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date3 }}</span></td>
+	</tr>{% endif %}
+    
+       <tr>
         
         <td class="style9">
        
@@ -247,28 +268,8 @@ title: " "
     </td>
     </tr>
 
-    {% if page.fauneimg2 and page.FAUNEspecies and page.FAUNEspecies %}
-    <tr>
-        <td class="style9" >
-		<img class="center" src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}"> </td>
-    </tr>{% endif %}
-    
-    {% if page.fauneespece and page.lieu-date2 %}   
-    <tr>
-        <td class="style9"><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-date2 }}</span></td>
-	</tr>{% endif %}
-    
-    {% if page.fauneimg3 and page.FAUNEspecies and page.FAUNEspecies %}     
-    <tr>
-        <td class="style9">
-		<img class="center" src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" > </td>
-    </tr>{% endif %}
-    
-    {% if page.fauneespece and page.lieu-date3 %}   
-    <tr>
-        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date3 }}</span></td>
-	</tr>{% endif %}
-    
+
+
     {% if page.fauneimg4 and page.FAUNEspecies and page.FAUNEspecies %}  
     <tr>
         <td class="style9">
