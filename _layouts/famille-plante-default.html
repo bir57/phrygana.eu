@@ -142,7 +142,7 @@ title: " "
 
 {{ content }}
 
-<p class="style8">&nbsp;</p>
+
 
 <table align="center"  style="width: 960px">
 	
@@ -202,13 +202,14 @@ title: " "
 	</tr>
   </table>
 
-<p class="style8"></p>
+
 
     <table align="center"  style="width: 960px">
 	
       <tr>
      {% if page.fami-tribe2  %}
-		<td class="style11"> {{ page.fami-tribe2 }} </td>
+		  
+          <td class="style11"> {{ page.fami-tribe2 }} </td>
         {% endif %}
     </tr>
 
@@ -262,13 +263,14 @@ title: " "
 	</tr>
   </table>  
     
-<p class="style8"></p>
+
 
     <table align="center"  style="width: 960px">
 	
       <tr>
      {% if page.fami-tribe3  %}
-		<td class="style11"> {{ page.fami-tribe3 }} </td>
+		
+          <td class="style11"> {{ page.fami-tribe3 }} </td>
         {% endif %}
     </tr>
 
@@ -329,13 +331,14 @@ title: " "
 
     </table>
 
-<p class="style8"></p>
+
 
     <table align="center"  style="width: 960px">
 	
       <tr>
      {% if page.fami-tribe4  %}
-		<td class="style11"> {{ page.fami-tribe4 }} </td>
+		  
+          <td class="style11"> {{ page.fami-tribe4 }} </td>
         {% endif %}
     </tr>
 
@@ -442,10 +445,58 @@ title: " "
 		<a class="style7" href="{{ page.HREF-espece16a }}" style="text-decoration:none">
             <em> {{ page.floreespece16a }} </em></a></td>{% endif %}
 	</tr>
+    <tr>
+         {% if page.HREF-espece13b and page.FLOREspecies13b and page.FLOREspecies13b and page.floreimg13b %}
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece13b }} ">
+		<img src="{{ page.floreimg13b }}" alt="{{ page.FLOREspecies13b }}" title="{{ page.FLOREspecies13b }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.HREF-espece14b and page.floreimg14b and page.FLOREspecies14b and page.FLOREspecies14b %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece14b }}">
+		<img src="{{ page.floreimg14b }}" alt="{{ page.FLOREspecies14b }}" title="{{ page.FLOREspecies14b }}" ></a>
+        </td> {% endif %}
+        
+        {% if page.HREF-espece15b and page.floreimg15b and page.FLOREspecies15b and page.FLOREspecies15b %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece15b }} ">
+		<img  src="{{ page.floreimg15b }}" alt="{{ page.FLOREspecies15b }}" title="{{ page.FLOREspecies15b }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.HREF-espece16b and page.floreimg16b and page.FLOREspecies16b and page.FLOREspecies16b %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece16b }}">
+		<img  src="{{ page.floreimg16b }}" alt="{{ page.FLOREspecies16b }}" title="{{ page.FLOREspecies16b }}" ></a>
+        </td>{% endif %}
 
+       </tr>
+
+
+	<tr>
+		
+        {% if page.HREF-espece13b and page.floreespece13b %}<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece13b }}" style="text-decoration:none"> 
+		<em> {{ page.floreespece13b }} </em></a></td>{% endif %}
+
+        {% if page.HREF-espece14b and page.floreespece14b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece14b }}" style="text-decoration:none">
+             <em> {{ page.floreespece14b }} </em></a></td>{% endif %}
+        
+        {% if page.HREF-espece15b and page.floreespece15b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece15b }}" style="text-decoration:none">
+            <em> {{ page.floreespece15b }} </em></a></td>{% endif %}
+        
+        {% if page.HREF-espece16b and page.floreespece16b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece16b }}" style="text-decoration:none">
+            <em> {{ page.floreespece16b }} </em></a></td>{% endif %}
+	</tr>
     </table>
 
-<p class="style8"></p>
+
 
     <table align="center"  style="width: 960px">
 	
@@ -506,7 +557,7 @@ title: " "
 	</tr>
 
     </table>
-<p class="style8"></p>
+
 
     <table align="center"  style="width: 960px">
 	
@@ -566,7 +617,7 @@ title: " "
 	</tr>
 
     </table>
-<p class="style8"></p>
+
   <table align="center"  style="width: 960px">
 	
       <tr>
@@ -719,7 +770,7 @@ title: " "
 
 
   </table>  
-<p class="style8"></p>
+
   <table align="center"  style="width: 960px">
 	
       <tr>
@@ -729,7 +780,7 @@ title: " "
     </tr>
 
 </table>
-<table align="center"  style="width: 960px">   
+  <table align="center"  style="width: 960px">   
        
     <tr>
          {% if page.HREF-espece29 and page.FLOREspecies29 and page.FLOREspecies29 and page.floreimg29 %}
