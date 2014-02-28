@@ -61,6 +61,22 @@ title:
 		<td class="style12"><div> {{ page.fami-note2 }} </div></td>
 	</tr>{% endif %}
 
+
+   {% if page.fami-note3 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-note4 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note4 }} </div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-obs %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-obs }} </div></td>
+	</tr>{% endif %}
+
    {% if page.fami-REF %}
     <tr>
 		<td class="style12"><div> {{ page.fami-REF }} </div></td>
@@ -70,7 +86,7 @@ title:
 
 <p class="style8"></p>
 
-
+{% if page.fami.genre %}
 <table align="center" class="style17" style="width: 800px">
 	
     
@@ -113,7 +129,7 @@ title:
 		{% if page.fami-genre6 %}
 		<td class="style12"><div>{{ page.fami-genre4 }}</div></td>
 	</tr>{% endif %}
-</table>
+</table>{% endif %}
 
 
 
@@ -130,6 +146,8 @@ title:
     </tr>
 
 </table>
+
+
 
 <table align="center"  style="width: 960px">  
     <tr>
@@ -182,7 +200,8 @@ title:
 <p class="style8"></p>
 
 
-    <table align="center"  style="width: 960px">
+{% if page.fami-tribe2  %}    
+<table align="center"  style="width: 960px">
 	{% if page.fami-tribe2  %}
       <tr>
       
@@ -190,8 +209,10 @@ title:
         
     </tr>{% endif %}
 
-</table>
-    
+</table>{% endif %}
+   
+
+{% if page.page.HREF-espece5  %} 
   <table align="center"  style="width: 960px">     
     <tr>
          
@@ -238,11 +259,12 @@ title:
 		<a class="style9" href="{{ page.HREF-espece8 }}" style="text-decoration:none">
             {{ page.fauneespece8 }} </a></td>
 	</tr>
-  </table>  
+  </table>  {% endif %}
     
 <p class="style8"></p>
 
-    <table align="center"  style="width: 960px">
+{% if page.fami-tribe3  %}    
+ <table align="center"  style="width: 960px">
 	
       <tr>
      
@@ -250,9 +272,10 @@ title:
         
     </tr>
 
-</table>
+</table>{% endif %}
 
 
+{% if page.HREF-espece9  %} 
 <table align="center" style="width: 960px">
 
        <tr>
@@ -303,11 +326,13 @@ title:
 
 
 
-    </table>
+    </table>{% endif %}
 
 <p class="style8"></p>
 
-    <table align="center"  style="width: 960px">
+    
+{% if page.fami-tribe4  %}
+<table align="center"  style="width: 960px">
 	
       <tr>
      {% if page.fami-tribe4  %}
@@ -315,9 +340,10 @@ title:
         {% endif %}
     </tr>
 
-</table>
+</table>{% endif %}
 
 
+{% if page.HREF-espece13  %}
 <table align="center" style="width: 960px">
 
       <tr>
@@ -365,10 +391,11 @@ title:
 		<a class="style9" href="{{ page.HREF-espece16 }}" style="text-decoration:none">
              {{ page.fauneespece16 }} </a></td>
 	</tr>
-    </table>
+    </table>{% endif %}
     
      
-     <table align="center" style="width: 960px">
+{% if page.HREF-espece17  %}    
+ <table align="center" style="width: 960px">
 
       <tr>
          
@@ -415,11 +442,10 @@ title:
 		<a class="style9" href="{{ page.HREF-espece20 }}" style="text-decoration:none">
              {{ page.fauneespece20 }} </a></td>
 	</tr>
+    </table>{% endif %}
 
 
-
-    </table>
-
+{% if page.HREF-espece21  %}
 <table align="center" style="width: 960px">
 
       <tr>
@@ -468,11 +494,12 @@ title:
              {{ page.fauneespece24 }} </a></td>
 	</tr>
 
+    </table>{% endif %}
 
 
-    </table>
 
-     <table align="center" style="width: 960px">
+{% if page.HREF-espece25 %}    
+ <table align="center" style="width: 960px">
 
       <tr>
          
@@ -520,12 +547,11 @@ title:
              {{ page.fauneespece28 }} </a></td>
 	</tr>
 
+    </table>{% endif %}
 
 
-    </table>
-
-
-     <table align="center" style="width: 960px">
+{% if page.HREF-espece29  %}     
+<table align="center" style="width: 960px">
 
       <tr>
          
@@ -572,10 +598,7 @@ title:
 		<a class="style9" href="{{ page.HREF-espece32 }}" style="text-decoration:none">
              {{ page.fauneespece32 }} </a></td>
 	</tr>
-
-
-
-    </table>
+    </table>{% endif %}
 
 
 <p class="style8"></p>
