@@ -12,6 +12,11 @@ title: " "
 
 <table align="center" class="style17" style="width: 800px">
 	
+    {% if page.fami-intro %}
+    <tr>
+		<td class="style13"><div><em> {{ page.fami-intro }} </em></div></td>
+	</tr>{% endif %}
+
     {% if page.fami-plante %}
     <tr>
 		<td class="style13"><div><em> {{ page.fami-plante }} </em></div></td>

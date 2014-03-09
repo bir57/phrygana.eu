@@ -82,6 +82,10 @@ title: " "
 		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
 	</tr>{% endif %}
 
+
+
+
+
     {% if page.descr-type %}
 	<tr>
 		<td class="style12" ><strong>Type biologique:</strong> {{ page.descr-type }} </td>
@@ -178,10 +182,18 @@ title: " "
     <tr>
 		<td class="style12" ><div>{{ page.descr-OBS1 }}  </div> </td>    
     </tr>{% endif %}
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
     {% if page.descr-OBS2 %}
     <tr>
 		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
+    </tr>{% endif %}
+
+    {% if page.descr-dispersion %}
+    <tr>
+		<td class="style12" ><div>{{ page.descr-dispersion }}  </div> </td>    
     </tr>{% endif %}
 
 	<tr>
@@ -189,7 +201,66 @@ title: " "
 	</tr>
 	</table>
 
+<p class="style8"></p>
+
+
+{% if page.descr-plantehote %}
+	<table align="center" class="style17" style="width: 800px">
+    
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style12" ><div>{{ page.descr-plantehote }}  </div> </td> 
+	</tr>
+    
+    <tr>
+        
+        <td class="style9">
+      
+         <table>
+
+      
+        <tr> 
+          <td>
+        <a href=" {{ page.phytophage1 }} ">
+           <img class="center" src="{{ page.phytophage1A }}" alt="{{ page.HOTE01 }}" title="{{ page.HOTE01 }}" />
+         </td>
+         
+            <td>
+                <a href=" {{ page.phytophage2 }} ">
+                <img class="center" src="{{ page.phytophage2A }}" alt="{{ page.HOTE02 }}" title="{{ page.HOTE02 }}" /></td>
+        </tr>
+
+     
+        <tr>
+        <td>
+         <a  href=" {{ page.phytophage1 }} " style="text-decoration:none">
+            <em><span class="style7"> {{ page.HOTE0A }} </span></em></td>
+
+           <td>
+                <a  href=" {{ page.phytophage2 }} " style="text-decoration:none">
+               <em><span class="style7">{{ page.HOTE0B }}</span></em></td> 
+        </tr>
+
+        </table>
+    </td>
+    </tr>
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+	</table>{% endif %}
+
+
+
 {{ content }}
+
+
 
 
 	<table align="center" style="width: 900px">
