@@ -11,7 +11,7 @@ title: " "
 	</tr>
 </table>
 
-<p class="style8"></p><!DOCTYPE html>
+<p class="style8"></p>
 
 <table align="center" class="style17" style="width: 800px">
 	<tr>
@@ -173,6 +173,62 @@ title: " "
 		<td class="style12"></td>
 	</tr>
 	</table>
+
+<p class="style8"></p>
+
+{% if page.planteNOURRITURE %}
+	<table align="center" class="style17" style="width: 800px">
+    
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style12" ><div>{{ page.planteNOURRITURE }}  </div> </td> 
+	</tr>
+    
+    <tr>
+        
+        <td class="style9">
+      
+         <table>
+
+      
+        <tr> 
+          <td>
+        <a href=" {{ page.plante1 }} ">
+           <img class="center" src="{{ page.plante1A }}" alt="{{ page.PLANTE01 }}" title="{{ page.PLANTE01 }}" />
+         </td>
+         
+            <td>
+                <a href=" {{ page.plante2 }} ">
+                <img class="center" src="{{ page.plante2A }}" alt="{{ page.PLANTE02 }}" title="{{ page.PLANTE02 }}" /></td>
+        </tr>
+
+     
+        <tr>
+        <td>
+         <a  href=" {{ page.plante1 }} " style="text-decoration:none">
+            <em><span class="style7"> {{ page.PLANTE0A }} </span></em></td>
+
+           <td>
+                <a  href=" {{ page.plante2 }} " style="text-decoration:none">
+               <em><span class="style7">{{ page.PLANTE0B }}</span></em></td> 
+        </tr>
+
+        </table>
+    </td>
+    </tr>
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+	</table>{% endif %}
+
+
 
 {{ content }}
 
