@@ -18,13 +18,13 @@ title: " "
 	<tr>
 		<td class="style12" style="width: 40px"> {{ page.phrygananbr }} </td>
 		<td class="style12" style="width: 80px">Flora </td>
-		<td class="style12" style="width: 180px">
+		<td class="style12" style="width: 220px">
 		<a class="style30" href="{{ page.HREFfamille }}"><strong>{{ page.florefamilia }}</strong></a></td>
         
         {% if page.floretribe %}
         <td class="style12" style="width: 160px">{{ page.floretribe }}</td>{% endif %}
 
-		<td class="style12"><em>{{ page.floregenre }}</em>{{ page.floregenreAUTEUR }}</td>
+		<td class="style12" style="width: 300px"><em>{{ page.floregenre }}</em>{{ page.floregenreAUTEUR }}</td>
 	</tr>
 </table>
 
@@ -230,6 +230,12 @@ title: " "
             <td>
                 <a href=" {{ page.phytophage2 }} ">
                 <img class="center" src="{{ page.phytophage2A }}" alt="{{ page.HOTE02 }}" title="{{ page.HOTE02 }}" /></td>
+
+            <td>
+        <a href=" {{ page.phytophage3 }} ">
+           <img class="center" src="{{ page.phytophage3A }}" alt="{{ page.HOTE03 }}" title="{{ page.HOTE03 }}" />
+         </td>
+
         </tr>
 
      
@@ -241,6 +247,11 @@ title: " "
            <td>
                 <a  href=" {{ page.phytophage2 }} " style="text-decoration:none">
                <em><span class="style7">{{ page.HOTE0B }}</span></em></td> 
+
+    <td>
+         <a  href=" {{ page.phytophage3 }} " style="text-decoration:none">
+            <em><span class="style7"> {{ page.HOTE0C }} </span></em></td>
+
         </tr>
 
         </table>
