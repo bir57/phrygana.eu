@@ -359,6 +359,36 @@ title: " "
         <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
 
+    <tr>
+        
+        <td class="style9">
+       
+         <table>
+
+       {% if page.fauneimgE and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgD and page.FAUNEspecies and page.FAUNEspecies %}
+            <tr> 
+          <td>
+           <img class="center" src="{{ page.fauneimgE }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" />
+         </td>
+         <td><img class="center" src="{{ page.fauneimgF }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" /></td>
+        </tr>{% endif %}
+
+       {% if page.fauneespece and page.lieu-dateE and page.lieu-dateF  %} 
+        <tr>
+        <td>
+         
+            <em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateE }}</span></td>
+           <td><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateF }}</span></td> 
+        </tr>{% endif %}
+
+
+        </table>
+    </td>
+    </tr>
+
+
+
+
      {% if page.fauneimg7 and page.FAUNEspecies and page.FAUNEspecies %}
     <tr>
         <td class="style9">
