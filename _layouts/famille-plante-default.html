@@ -192,6 +192,8 @@ title: " "
 
 
 	<tr>
+
+
 		<td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece1 }}" style="text-decoration:none"> 
 		<em> {{ page.floreespece1 }} </em></a></td>
@@ -835,21 +837,30 @@ title: " "
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		{% if page.HREF-espece29 and page.floreespece29 %}
+        <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece29 }}" style="text-decoration:none"> 
 		<em> {{ page.floreespece29}} </em></a></td>
+        {% endif %}
 
+        {% if page.HREF-espece30 and page.floreespece30 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece30 }}" style="text-decoration:none">
              <em> {{ page.floreespece30 }} </em></a></td>
-        
+        {% endif %}
+
+        {% if page.HREF-espece31 and page.floreespece31 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece31 }}" style="text-decoration:none">
             <em> {{ page.floreespece31 }} </em></a></td>
-        
+        {% endif %}
+
+        {% if page.HREF-espece32 and page.floreespece32 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece32 }}" style="text-decoration:none">
             <em> {{ page.floreespece32 }} </em></a></td>
+        {% endif %}
+
 	</tr>
     </table>{% endif %}
 
