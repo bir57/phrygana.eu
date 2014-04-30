@@ -10,6 +10,7 @@ title: "  "
 	</tr>
 </table>
 
+{% if page.fami-faune %}
 <table align="center" class="style17" style="width: 800px">
 	
     {% if page.fami-faune %}
@@ -61,12 +62,17 @@ title: "  "
 		<td class="style12"><div> {{ page.fami-note2 }} </div></td>
 	</tr>{% endif %}
 
+    {% if page.fami-note3 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
+	</tr>{% endif %}
+
    {% if page.fami-REF %}
     <tr>
 		<td class="style12"><div> {{ page.fami-REF }} </div></td>
 	</tr>{% endif %}
 
-</table>
+</table>{% endif %}
 
 <p class="style8"></p>
 
