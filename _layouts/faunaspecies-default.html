@@ -163,7 +163,9 @@ title: " "
     <tr>
 		<td class="style12" ><div>{{ page.descr-OBS1 }}  </div> </td>    
     </tr>{% endif %}
-
+    <tr>
+		<td class="style12"></td>
+	</tr>
     {% if page.descr-OBS2 %}
     <tr>
 		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
@@ -237,7 +239,7 @@ title: " "
        {% if page.fauneimg1 and page.FAUNEspecies and page.FAUNEspecies %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEpecies }}"> 
+		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}"> 
         </td>{% endif %}
     </tr>
 
@@ -410,6 +412,17 @@ title: " "
     <tr>
         <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date8 }}</span></td>
 	</tr>{% endif %}
+    {% if page.fauneimg9 and page.FAUNEspecies and page.FAUNEspecies %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg9 }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.fauneespece and page.lieu-date9 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date9 }}</span></td>
+	</tr>{% endif %}
+
 
 
 </table>
