@@ -75,6 +75,10 @@ title: " "
 	<tr>
 		<td class="style12"><div><strong>Plantes-hôtes:</strong>  {{ page.descr-nourriture }} </div></td>
 	</tr>{% endif %}
+   
+	<tr>
+		<td class="style12"><div><strong> </div></td>
+	</tr>
 
     {% if page.descr-periodevol %}
     <tr>
@@ -184,11 +188,29 @@ title: " "
 	<tr>
 		<td class="style12" > </td>
 	</tr>
+    
+
     <tr>
 		<td class="style12" ><div>{{ page.planteNOURRITURE }}  </div> </td> 
 	</tr>
-    
+
     <tr>
+		<td class="style12" > </td>
+	</tr> 
+
+    {% if page.descr-MINE %}
+	<tr>
+		<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE }} </div></td>
+	</tr>{% endif %}
+    {% if page.descr-MINE1 %}
+	<tr>
+		<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE1 }} </div></td>
+	</tr>{% endif %}
+    <tr>
+		<td class="style12" > </td>
+	</tr> 
+
+        <tr>
         
         <td class="style9">
       

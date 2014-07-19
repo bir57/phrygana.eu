@@ -6,15 +6,15 @@ title:
 
 <table align="center" style="width: 600px">
 	<tr>
-		<td class="style14">{{ page.GALLES }}</td>
+		<td class="style14">{{ page.MINES }}</td>
 	</tr>
 </table>
 
 <table align="center" class="style17" style="width: 800px">
 	
-    {% if page.fami-galles %}
+    {% if page.fami-mines %}
     <tr>
-		<td class="style13"><div><em> {{ page.fami-galles }} </em></div></td>
+		<td class="style13"><div><em> {{ page.fami-mines }} </em></div></td>
 	</tr>{% endif %}
 
        
@@ -22,27 +22,27 @@ title:
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.galles-nbrespece %}
+    {% if page.mines-nbrespece %}
 	<tr>
-		<td class="style12"><div> {{page.galles-nbrespece }}</div> </td>
+		<td class="style12"><div> {{page.mines-nbrespece }}</div> </td>
 	</tr>{% endif %}
 
-    {% if page.galles-Crete %}
+    {% if page.mines-Crete %}
 	<tr>
-		<td class="style12"><div> {{ page.galles-Crete }} </div> </td>
+		<td class="style12"><div> {{ page.mines-Crete }} </div> </td>
 	</tr>{% endif %}
 
-    {% if page.galles-Belgique %}
+    {% if page.mines-Belgique %}
     <tr>
-		<td class="style12"><div> {{ page.galles-Belgique }} </div></td>
+		<td class="style12"><div> {{ page.mines-Belgique }} </div></td>
 	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
     
-    {% if page.galles-note %}
+    {% if page.mines-note %}
     <tr>
-		<td class="style12"><div> {{ page.galles-note }} </div></td>
+		<td class="style12"><div> {{ page.mines-note }} </div></td>
 	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
@@ -50,49 +50,55 @@ title:
     <tr>
 		<td class="style12"></td>
     </tr>
-    {% if page.galles-note1 %}
+    {% if page.mines-note1 %}
     <tr>
-		<td class="style12"><div> {{ page.galles-note1 }} </div></td>
+		<td class="style12"><div> {{ page.mines-note1 }} </div></td>
 	</tr>{% endif %}
     
    
-    {% if page.galles-note2 %}
+    {% if page.mines-note2 %}
     <tr>
-		<td class="style12"><div> {{ page.galles-note2 }} </div></td>
+		<td class="style12"><div> {{ page.mines-note2 }} </div></td>
 	</tr>{% endif %}
 
 
-   {% if page.galles-note3 %}
+   {% if page.mines-note3 %}
     <tr>
-		<td class="style12"><div> {{ page.galles-note3 }} </div></td>
+		<td class="style12"><div> {{ page.mines-note3 }} </div></td>
 	</tr>{% endif %}
 
-    {% if page.galles-note4 %}
+    {% if page.mines-note4 %}
     <tr>
-		<td class="style12"><div> {{ page.galles-note4 }} </div></td>
+		<td class="style12"><div> {{ page.mines-note4 }} </div></td>
 	</tr>{% endif %}
 
-    {% if page.galles-obs %}
+    <p class="style8"></p>
+    
+    {% if page.mines-obs1 %}
     <tr>
-		<td class="style12"><div> {{ page.galles-obs }} </div></td>
+		<td class="style12"><div> {{ page.mines-obs1 }} </div></td>
+	</tr>{% endif %}
+    {% if page.mines-obs1 %}
+    <tr>
+		<td class="style12"><div> {{ page.mines-obs }} </div></td>
 	</tr>{% endif %}
 
-   {% if page.galles-REF %}
+   {% if page.mines-REF %}
     <tr>
-		<td class="style12"><div> {{ page.galles-REF }} </div></td>
+		<td class="style12"><div> {{ page.mines-REF }} </div></td>
 	</tr>{% endif %}
 
 </table>
 
 <p class="style8"></p>
 
-{% if page.galles.genre %}
+{% if page.mines.genre %}
 <table align="center" class="style17" style="width: 800px">
 	
     
     <tr>
-     {% if page.galles-genre %}
-	<td class="style12"><div>{{ page.galles-genre }}</div></td>
+     {% if page.mines-genre %}
+	<td class="style12"><div>{{ page.mines-genre }}</div></td>
 
 	</tr>{% endif %}
 
@@ -101,33 +107,33 @@ title:
     </tr>
 
 	<tr>
-     {% if page.galles-genre1 %}
-		<td class="style12"><div>{{ page.galles-genre1 }}</div></td>
+     {% if page.mines-genre1 %}
+		<td class="style12"><div>{{ page.mines-genre1 }}</div></td>
 	</tr>{% endif %}
 
 	<tr>
-		{% if page.galles-genre2 %}
-		<td class="style12"><div>{{ page.galles-genre2 }}</div></td>
+		{% if page.mines-genre2 %}
+		<td class="style12"><div>{{ page.mines-genre2 }}</div></td>
 	</tr>{% endif %}
 
     <tr>
-		{% if page.galles-genre3 %}
-		<td class="style12"><div>{{ page.galles-genre3 }}</div></td>
+		{% if page.mines-genre3 %}
+		<td class="style12"><div>{{ page.mines-genre3 }}</div></td>
 	</tr>{% endif %}
 
     <tr>
-		{% if page.galles-genre4 %}
-		<td class="style12"><div>{{ page.galles-genre4 }}</div></td>
+		{% if page.mines-genre4 %}
+		<td class="style12"><div>{{ page.mines-genre4 }}</div></td>
 	</tr>{% endif %}
     
     <tr>
-		{% if page.galles-genre5 %}
-		<td class="style12"><div>{{ page.galles-genre3 }}</div></td>
+		{% if page.mines-genre5 %}
+		<td class="style12"><div>{{ page.mines-genre3 }}</div></td>
 	</tr>{% endif %}
 
     <tr>
-		{% if page.galles-genre6 %}
-		<td class="style12"><div>{{ page.galles-genre4 }}</div></td>
+		{% if page.mines-genre6 %}
+		<td class="style12"><div>{{ page.mines-genre4 }}</div></td>
 	</tr>{% endif %}
 </table>{% endif %}
 
@@ -140,8 +146,8 @@ title:
 <table align="center"  style="width: 960px">
 	
       <tr>
-    {% if page.galles-tribe1  %}
-		<td class="style11"> {{ page.galles-tribe1 }} </td>
+    {% if page.mines-tribe1  %}
+		<td class="style11"> {{ page.mines-tribe1 }} </td>
        {% endif %}
     
       </tr>
@@ -149,10 +155,10 @@ title:
 		<td class="style12"></td>
 	</tr>
     <tr>
-		<td class="style12" ><div> {{ page.descr1-galles-tribe1 }}</div> </td>
+		<td class="style12" ><div> {{ page.descr1-mines-tribe1 }}</div> </td>
 	</tr>
     <tr>
-		<td class="style12" ><div>{{ page.descr2-galles-tribe1 }}</div> </td>
+		<td class="style12" ><div>{{ page.descr2-mines-tribe1 }}</div> </td>
 	</tr>
 
 </table>
@@ -161,28 +167,28 @@ title:
 
 <table align="center"  style="width: 960px">  
     <tr>
-         {% if page.HREF-espece1 and page.GALLEspecies1 and page.GALLEspecies1 and page.gallesimg1 %}
+         {% if page.HREF-espece1 and page.MINEspecies1 and page.MINEspecies1 and page.minesimg1 %}
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece1 }} ">
-		<img src="{{ page.gallesimg1 }}" alt="{{ page.GALLEspecies1 }}" title="{{ page.GALLEspecies1 }}" ></a> 
+		<img src="{{ page.minesimg1 }}" alt="{{ page.MINEspecies1 }}" title="{{ page.MINEspecies1 }}" ></a> 
         </td>{% endif %}
 		
-        {% if page.HREF-espece2 and page.gallesimg2 and page.GALLEspecies2 and page.GALLEspecies2 %}
+        {% if page.HREF-espece2 and page.minesimg2 and page.MINEspecies2 and page.MINEspecies2 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece2 }}">
-		<img src="{{ page.gallesimg2 }}" alt="{{ page.GALLEspecies2 }}" title="{{ page.GALLEspecies2 }}" ></a>
+		<img src="{{ page.minesimg2 }}" alt="{{ page.MINEspecies2 }}" title="{{ page.MINEspecies2 }}" ></a>
         </td> {% endif %}
         
         
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece3 }} ">
-		<img  src="{{ page.gallesimg3 }}" alt="{{ page.GALLEspecies3 }}" title="{{ page.GALLEspecies3 }}" ></a> 
+		<img  src="{{ page.minesimg3 }}" alt="{{ page.MINEspecies3 }}" title="{{ page.MINEspecies3 }}" ></a> 
         </td>
         
-        {% if page.HREF-espece4 and page.gallesimg4 and page.GALLEspecies4 and page.GALLEspecies4 %}
+        {% if page.HREF-espece4 and page.minesimg4 and page.MINEspecies4 and page.MINEspecies4 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece4 }}">
-		<img  src="{{ page.gallesimg4 }}" alt="{{ page.GALLEspecies4 }}" title="{{ page.GALLEspecies4 }}" ></a>
+		<img  src="{{ page.minesimg4 }}" alt="{{ page.MINEspecies4 }}" title="{{ page.MINEspecies4 }}" ></a>
         </td>{% endif %}
 
        </tr>
@@ -191,42 +197,42 @@ title:
 	<tr>
 		<td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece1 }}" style="text-decoration:none"> 
-		<em> {{ page.gallesespece1 }} </em></a></td>
+		<em> {{ page.minesespece1 }} </em></a></td>
 
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece2 }}" style="text-decoration:none">
-         <em>     {{ page.gallesespece2 }} </em></a></td>
+         <em>     {{ page.minesespece2 }} </em></a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece3 }}" style="text-decoration:none">
-         <em>    {{ page.gallesespece3 }} </em></a></td>
+         <em>    {{ page.minesespece3 }} </em></a></td>
         
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
-        <em>   {{ page.gallesespece4 }} </em></a></td>
+        <em>   {{ page.minesespece4 }} </em></a></td>
 	</tr>
   </table>
 
 <p class="style8"></p>
 
 
-{% if page.galles-tribe2  %}    
+{% if page.mines-tribe2  %}    
 <table align="center"  style="width: 960px">
-	{% if page.galles-tribe2  %}
+	{% if page.mines-tribe2  %}
       <tr>
       
-		<td class="style11"> {{ page.galles-tribe2 }} </td>
+		<td class="style11"> {{ page.mines-tribe2 }} </td>
         
     </tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
     <tr>
-		<td class="style12" ><div>{{ page.descr1-galles-tribe2 }}</div> </td>
+		<td class="style12" ><div>{{ page.descr1-mines-tribe2 }}</div> </td>
 	</tr>
     <tr>
-		<td class="style12" ><div>{{ page.descr2-galles-tribe2 }}</div> </td>
+		<td class="style12" ><div>{{ page.descr2-mines-tribe2 }}</div> </td>
 	</tr>
 </table>{% endif %}
    
@@ -237,25 +243,25 @@ title:
          
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece5 }} ">
-		<img src="{{ page.gallesimg5 }}" alt="{{ page.GALLEspecies5 }}" title="{{ page.GALLEspecies5 }}" ></a> 
+		<img src="{{ page.minesimg5 }}" alt="{{ page.MINEspecies5 }}" title="{{ page.MINEspecies5 }}" ></a> 
         </td>
 		
        
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece6 }}">
-		<img src="{{ page.gallesimg6 }}" alt="{{ page.GALLEspecies6 }}" title="{{ page.GALLEspecies6 }}" ></a>
+		<img src="{{ page.minesimg6 }}" alt="{{ page.MINEspecies6 }}" title="{{ page.MINEspecies6 }}" ></a>
         </td>
         
         
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece7 }} ">
-		<img  src="{{ page.gallesimg7 }}" alt="{{ page.GALLEspecies7 }}" title="{{ page.GALLEspecies7 }}" ></a> 
+		<img  src="{{ page.minesimg7 }}" alt="{{ page.MINEspecies7 }}" title="{{ page.MINEspecies7 }}" ></a> 
         </td>
         
         
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece8 }}">
-		<img  src="{{ page.gallesimg8 }}" alt="{{ page.GALLEspecies8 }}" title="{{ page.GALLEpecies8 }}" ></a>
+		<img  src="{{ page.minesimg8 }}" alt="{{ page.MINEspecies8 }}" title="{{ page.MINEpecies8 }}" ></a>
         </td>
 
        </tr>
@@ -264,30 +270,30 @@ title:
 	<tr>
 		<td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece5 }}" style="text-decoration:none"> 
-		<em> {{ page.gallesespece5 }} </em></a></td>
+		<em> {{ page.minesespece5 }} </em></a></td>
 
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece6 }}" style="text-decoration:none">
-         <em>    {{ page.gallesespece6 }} </em></a></td>
+         <em>    {{ page.minesespece6 }} </em></a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece7 }}" style="text-decoration:none">
-         <em>   {{ page.gallesespece7 }} </em></a></td>
+         <em>   {{ page.minesespece7 }} </em></a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece8 }}" style="text-decoration:none">
-         <em>   {{ page.gallesespece8 }} </em></a></td>
+         <em>   {{ page.minesespece8 }} </em></a></td>
 	</tr>
   </table>  {% endif %}
     
 <p class="style8"></p>
 
-{% if page.galles-tribe3  %}    
+{% if page.mines-tribe3  %}    
  <table align="center"  style="width: 960px">
 	
       <tr>
      
-		<td class="style11"> {{ page.galles-tribe3 }} </td>
+		<td class="style11"> {{ page.mines-tribe3 }} </td>
         
     </tr>
 
@@ -301,25 +307,25 @@ title:
         
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece9 }} ">
-		<img src="{{ page.gallesimg9 }}" alt="{{ page.GALLEspecies9 }}" title="{{ page.GALLEspecies9 }}" ></a> 
+		<img src="{{ page.minesimg9 }}" alt="{{ page.MINEspecies9 }}" title="{{ page.MINEspecies9 }}" ></a> 
         </td>
 		
         
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece10 }}">
-		<img src="{{ page.gallesimg10 }}" alt="{{ page.GALLEspecies10 }}" title="{{ page.GALLEspecies10 }}" ></a>
+		<img src="{{ page.minesimg10 }}" alt="{{ page.MINEspecies10 }}" title="{{ page.MINEspecies10 }}" ></a>
         </td> 
         
-        {% if page.HREF-espece11 and page.gallesimg11 and page.GALLEspecies11 and page.GALLEspecies11 %}
+        {% if page.HREF-espece11 and page.minesimg11 and page.MINEspecies11 and page.MINEspecies11 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece11 }} ">
-		<img  src="{{ page.gallesimg11 }}" alt="{{ page.GALLEspecies11 }}" title="{{ page.GALLEspecies11 }}" ></a> 
+		<img  src="{{ page.minesimg11 }}" alt="{{ page.MINEspecies11 }}" title="{{ page.MINEspecies11 }}" ></a> 
         </td>{% endif %}
         
-        {% if page.HREF-espece12 and page.gallesimg12 and page.GALLEspecies12 and page.GALLEspecies12 %}
+        {% if page.HREF-espece12 and page.minesimg12 and page.MINEspecies12 and page.MINEspecies12 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece12 }}">
-		<img  src="{{ page.gallesimg12 }}" alt="{{ page.GALLEspecies12 }}" title="{{ page.GALLEspecies12 }}" ></a>
+		<img  src="{{ page.minesimg12 }}" alt="{{ page.MINEspecies12 }}" title="{{ page.MINEspecies12 }}" ></a>
         </td>{% endif %}
 
        </tr>
@@ -328,19 +334,19 @@ title:
 	<tr>
 		<td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece9 }}" style="text-decoration:none"> 
-		<em> {{ page.gallesespece9 }} </em></a></td>
+		<em> {{ page.minesespece9 }} </em></a></td>
 
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece10 }}" style="text-decoration:none">
-         <em>     {{ page.gallesespece10 }} </em></a></td>
+         <em>     {{ page.minesespece10 }} </em></a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece11 }}" style="text-decoration:none">
-         <em>    {{ page.gallesespece11 }} </em></a></td>
+         <em>    {{ page.minesespece11 }} </em></a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece12 }}" style="text-decoration:none">
-        <em>     {{ page.gallesespece12 }} </em></a></td>
+        <em>     {{ page.minesespece12 }} </em></a></td>
 	</tr>
 
 
@@ -350,12 +356,12 @@ title:
 <p class="style8"></p>
 
     
-{% if page.galles-tribe4  %}
+{% if page.mines-tribe4  %}
 <table align="center"  style="width: 960px">
 	
       <tr>
-     {% if page.galles-tribe4  %}
-		<td class="style11"> {{ page.galles-tribe4 }} </td>
+     {% if page.mines-tribe4  %}
+		<td class="style11"> {{ page.mines-tribe4 }} </td>
         {% endif %}
     </tr>
 
@@ -366,28 +372,28 @@ title:
 <table align="center" style="width: 960px">
 
       <tr>
-         {% if page.HREF-espece13 and page.GALLEspecies13 and page.GALLEspecies13 and page.gallesimg13 %}
+         {% if page.HREF-espece13 and page.MINEspecies13 and page.MINEspecies13 and page.minesimg13 %}
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece13 }} ">
-		<img src="{{ page.gallesimg13 }}" alt="{{ page.GALLEspecies13 }}" title="{{ page.GALLEspecies13 }}" ></a> 
+		<img src="{{ page.minesimg13 }}" alt="{{ page.MINEspecies13 }}" title="{{ page.MINEspecies13 }}" ></a> 
         </td>{% endif %}
 		
-        {% if page.HREF-espece14 and page.gallesimg14 and page.GALLEspecies14 and page.GALLEspecies14 %}
+        {% if page.HREF-espece14 and page.minesimg14 and page.MINEspecies14 and page.MINEspecies14 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece14 }}">
-		<img src="{{ page.gallesimg14 }}" alt="{{ page.GALLEspecies14 }}" title="{{ page.GALLEspecies14 }}" ></a>
+		<img src="{{ page.minesimg14 }}" alt="{{ page.MINEspecies14 }}" title="{{ page.MINEspecies14 }}" ></a>
         </td> {% endif %}
         
-        {% if page.HREF-espece15 and page.gallesimg15 and page.GALLEspecies15 and page.GALLEspecies15 %}
+        {% if page.HREF-espece15 and page.minesimg15 and page.MINEspecies15 and page.MINEspecies15 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece15 }} ">
-		<img  src="{{ page.gallesimg15 }}" alt="{{ page.GALLEspecies15 }}" title="{{ page.GALLEspecies15 }}" ></a> 
+		<img  src="{{ page.minesimg15 }}" alt="{{ page.MINEspecies15 }}" title="{{ page.MINEspecies15 }}" ></a> 
         </td>{% endif %}
         
-        {% if page.HREF-espece16 and page.gallesimg16 and page.GALLEspecies16 and page.GALLEspecies16 %}
+        {% if page.HREF-espece16 and page.minesimg16 and page.MINEspecies16 and page.MINEspecies16 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece16 }}">
-		<img  src="{{ page.gallesimg16 }}" alt="{{ page.GALLEspecies16 }}" title="{{ page.GALLEspecies16 }}" ></a>
+		<img  src="{{ page.minesimg16 }}" alt="{{ page.MINEspecies16 }}" title="{{ page.MINEspecies16 }}" ></a>
         </td>{% endif %}
 
        </tr>
@@ -396,19 +402,19 @@ title:
 	<tr>
 		<td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece13 }}" style="text-decoration:none"> 
-		 {{ page.gallesespece13 }} </a></td>
+		 {{ page.minesespece13 }} </a></td>
 
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece14 }}" style="text-decoration:none">
-             {{ page.gallesespece14 }} </a></td>
+             {{ page.minesespece14 }} </a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece15 }}" style="text-decoration:none">
-             {{ page.gallesespece15 }} </a></td>
+             {{ page.minesespece15 }} </a></td>
         
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece16 }}" style="text-decoration:none">
-             {{ page.gallesespece16 }} </a></td>
+             {{ page.minesespece16 }} </a></td>
 	</tr>
     </table>{% endif %}
     

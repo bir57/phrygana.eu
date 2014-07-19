@@ -67,7 +67,38 @@ title: "  "
 		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
 	</tr>{% endif %}
 
-   {% if page.fami-REF %}
+    {% if page.fami-note4 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note4 }} </div></td>
+	</tr>{% endif %}
+    
+   
+    <tr>
+		<td class="style12"><div> {{ page.fami-noteA }} </div></td>
+	</tr>
+
+   {% if page.fami-note5 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note5 }} </div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-note6 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note6 }} </div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-note7 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note7 }} </div></td>
+	</tr>{% endif %}
+
+    {% if page.fami-note8 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note8 }} </div></td>
+	</tr>{% endif %}
+
+
+    {% if page.fami-REF %}
     <tr>
 		<td class="style12"><div> {{ page.fami-REF }} </div></td>
 	</tr>{% endif %}
@@ -75,12 +106,16 @@ title: "  "
 </table>{% endif %}
 
 <p class="style8"></p>
-
+<p class="style8"></p>
 
 
 {% if page.fami-genre %}
 <table align="center" class="style17" style="width: 800px">
 	
+    <tr>
+     <td class="style12"><div></div></td>
+     </tr>
+
     {% if page.fami-genre %}
     <tr>
      <td class="style12"><div>{{ page.fami-genre }}</div></td>
@@ -134,7 +169,7 @@ title: "  "
 
 {{ content }}
 
-
+<p class="style8"></p>
 
 <table align="center"  style="width: 960px">
 	
@@ -145,6 +180,7 @@ title: "  "
     </tr>
 
 </table>
+
 
 {% if page.HREF-espece1  %}  
 <table align="center"  style="width: 960px">     
