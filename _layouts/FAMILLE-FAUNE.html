@@ -150,6 +150,7 @@ title:
 
 
 <table align="center"  style="width: 960px">  
+    
     <tr>
          {% if page.HREF-espece1 and page.FAUNEspecies1 and page.FAUNEspecies1 and page.fauneimg1 %}
 		<td class="style7" style="width: 240px">
@@ -163,11 +164,11 @@ title:
 		<img src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEspecies2 }}" title="{{ page.FAUNEspecies2 }}" ></a>
         </td> {% endif %}
         
-        
+        {% if page.HREF-espece3 and page.fauneimg3 and page.FAUNEspecies3 and page.FAUNEspecies3 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece3 }} ">
 		<img  src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEspecies3 }}" title="{{ page.FAUNEspecies3 }}" ></a> 
-        </td>
+        </td>{% endif %}
         
         {% if page.HREF-espece4 and page.fauneimg4 and page.FAUNEspecies4 and page.FAUNEspecies4 %}
         <td class="style7" style="width: 240px">
@@ -179,24 +180,80 @@ title:
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		{% if page.HREF-espece1 and page.fauneespece1 %}
+        <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece1 }}" style="text-decoration:none"> 
-		 {{ page.fauneespece1 }} </a></td>
+		 {{ page.fauneespece1 }} </a></td>{% endif %}
 
+        {% if page.HREF-espece2 and page.fauneespece2 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece2 }}" style="text-decoration:none">
-              {{ page.fauneespece2 }} </a></td>
+              {{ page.fauneespece2 }} </a></td>{% endif %}
         
+        {% if page.HREF-espece3 and page.fauneespece3 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece3 }}" style="text-decoration:none">
-             {{ page.fauneespece3 }} </a></td>
+             {{ page.fauneespece3 }} </a></td>{% endif %}
         
-        
+        {% if page.HREF-espece4 and page.fauneespece4 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
-           {{ page.fauneespece4 }} </a></td>
+           {{ page.fauneespece4 }} </a></td>{% endif %}
 	</tr>
   </table>
+
+<table align="center"  style="width: 960px"> 
+<tr>
+         {% if page.HREF-espece1A and page.FAUNEspecies1A and page.FAUNEspecies1A and page.fauneimg1A %}
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece1A }} ">
+		<img src="{{ page.fauneimg1A }}" alt="{{ page.FAUNEspecies1A }}" title="{{ page.FAUNEspecies1A }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.HREF-espece2A and page.fauneimg2A and page.FAUNEspecies2A and page.FAUNEspecies2A %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece2A }}">
+		<img src="{{ page.fauneimg2A }}" alt="{{ page.FAUNEspecies2A }}" title="{{ page.FAUNEspecies2A }}" ></a>
+        </td> {% endif %}
+        
+        {% if page.HREF-espece3A and page.fauneimg3A and page.FAUNEspecies3A and page.FAUNEspecies3A %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece3A }} ">
+		<img  src="{{ page.fauneimg3A }}" alt="{{ page.FAUNEspecies3A }}" title="{{ page.FAUNEspecies3A }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.HREF-espece4A and page.fauneimg4A and page.FAUNEspecies4A and page.FAUNEspecies4A %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece4A }}">
+		<img  src="{{ page.fauneimg4A }}" alt="{{ page.FAUNEspecies4A }}" title="{{ page.FAUNEspecies4A }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		{% if page.HREF-espece1A and page.fauneespece1A %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.HREF-espece1A }}" style="text-decoration:none"> 
+		 {{ page.fauneespece1A }} </a></td>{% endif %}
+
+        {% if page.HREF-espece2A and page.fauneespece2A %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.HREF-espece2A }}" style="text-decoration:none">
+              {{ page.fauneespece2A }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece3A and page.fauneespece3A %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.HREF-espece3A }}" style="text-decoration:none">
+             {{ page.fauneespece3A }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece4A and page.fauneespece4A %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.HREF-espece4A }}" style="text-decoration:none">
+           {{ page.fauneespece4A }} </a></td>{% endif %}
+	</tr>
+  </table>
+
 
 <p class="style8"></p>
 

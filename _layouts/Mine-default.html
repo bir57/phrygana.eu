@@ -179,11 +179,11 @@ title:
 		<img src="{{ page.minesimg2 }}" alt="{{ page.MINEspecies2 }}" title="{{ page.MINEspecies2 }}" ></a>
         </td> {% endif %}
         
-        
+        {% if page.HREF-espece3 and page.minesimg3 and page.MINEspecies3 and page.MINEspecies3 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece3 }} ">
 		<img  src="{{ page.minesimg3 }}" alt="{{ page.MINEspecies3 }}" title="{{ page.MINEspecies3 }}" ></a> 
-        </td>
+        </td>{% endif %}
         
         {% if page.HREF-espece4 and page.minesimg4 and page.MINEspecies4 and page.MINEspecies4 %}
         <td class="style7" style="width: 240px">
@@ -195,22 +195,26 @@ title:
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		
+        {% if page.HREF-espece1 and page.minesespece1 %}
+        <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece1 }}" style="text-decoration:none"> 
-		<em> {{ page.minesespece1 }} </em></a></td>
+		<em> {{ page.minesespece1 }} </em></a></td>{% endif %}
 
+        {% if page.HREF-espece2 and page.minesespece2 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece2 }}" style="text-decoration:none">
-         <em>     {{ page.minesespece2 }} </em></a></td>
+         <em>     {{ page.minesespece2 }} </em></a></td>{% endif %}
         
+        {% if page.HREF-espece3 and page.minesespece3 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece3 }}" style="text-decoration:none">
-         <em>    {{ page.minesespece3 }} </em></a></td>
+         <em>    {{ page.minesespece3 }} </em></a></td>{% endif %}
         
-        
+        {% if page.HREF-espece4 and page.minesespece4 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
-        <em>   {{ page.minesespece4 }} </em></a></td>
+        <em>   {{ page.minesespece4 }} </em></a></td>{% endif %}
 	</tr>
   </table>
 
@@ -240,49 +244,55 @@ title:
 {% if page.HREF-espece5  %} 
   <table align="center"  style="width: 960px">     
     <tr>
-         
+        
+        {% if page.HREF-espece5 and page.minesespece5 %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece5 }} ">
 		<img src="{{ page.minesimg5 }}" alt="{{ page.MINEspecies5 }}" title="{{ page.MINEspecies5 }}" ></a> 
-        </td>
+        </td>{% endif %}
 		
-       
+       {% if page.HREF-espece6 and page.minesespece6 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece6 }}">
 		<img src="{{ page.minesimg6 }}" alt="{{ page.MINEspecies6 }}" title="{{ page.MINEspecies6 }}" ></a>
-        </td>
+        </td>{% endif %}
         
-        
+        {% if page.HREF-espece7 and page.minesespece7 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece7 }} ">
 		<img  src="{{ page.minesimg7 }}" alt="{{ page.MINEspecies7 }}" title="{{ page.MINEspecies7 }}" ></a> 
-        </td>
+        </td>{% endif %}
         
-        
+        {% if page.HREF-espece8 and page.minesespece8 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece8 }}">
 		<img  src="{{ page.minesimg8 }}" alt="{{ page.MINEspecies8 }}" title="{{ page.MINEpecies8 }}" ></a>
-        </td>
+        </td>{% endif %}
 
        </tr>
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		
+        {% if page.HREF-espece5 and page.minesespece5 %}
+        <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece5 }}" style="text-decoration:none"> 
-		<em> {{ page.minesespece5 }} </em></a></td>
+		<em> {{ page.minesespece5 }} </em></a></td>{% endif %}
 
+        {% if page.HREF-espece6 and page.minesespece6 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece6 }}" style="text-decoration:none">
-         <em>    {{ page.minesespece6 }} </em></a></td>
+         <em>    {{ page.minesespece6 }} </em></a></td>{% endif %}
         
+        {% if page.HREF-espece7 and page.minesespece7%}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece7 }}" style="text-decoration:none">
-         <em>   {{ page.minesespece7 }} </em></a></td>
+         <em>   {{ page.minesespece7 }} </em></a></td>{% endif %}
         
+        {% if page.HREF-espece8 and page.minesespece8 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece8 }}" style="text-decoration:none">
-         <em>   {{ page.minesespece8 }} </em></a></td>
+         <em>   {{ page.minesespece8 }} </em></a></td>{% endif %}
 	</tr>
   </table>  {% endif %}
     
@@ -300,21 +310,22 @@ title:
 </table>{% endif %}
 
 
-{% if page.HREF-espece9  %} 
+ 
 <table align="center" style="width: 960px">
 
        <tr>
         
+        {% if page.HREF-espece9 and page.minesespece9 %}
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece9 }} ">
 		<img src="{{ page.minesimg9 }}" alt="{{ page.MINEspecies9 }}" title="{{ page.MINEspecies9 }}" ></a> 
-        </td>
+        </td>{% endif %}
 		
-        
+        {% if page.HREF-espece10 and page.minesimg10 and page.MINEspecies10 and page.MINEspecies10 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece10 }}">
 		<img src="{{ page.minesimg10 }}" alt="{{ page.MINEspecies10 }}" title="{{ page.MINEspecies10 }}" ></a>
-        </td> 
+        </td>{% endif %} 
         
         {% if page.HREF-espece11 and page.minesimg11 and page.MINEspecies11 and page.MINEspecies11 %}
         <td class="style7" style="width: 240px">
@@ -332,26 +343,31 @@ title:
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		
+        {% if page.HREF-espece9 and page.minesespece9 %}
+        <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece9 }}" style="text-decoration:none"> 
-		<em> {{ page.minesespece9 }} </em></a></td>
+		<em> {{ page.minesespece9 }} </em></a></td>{% endif %}
 
+        {% if page.HREF-espece10 and page.minesespece10 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece10 }}" style="text-decoration:none">
-         <em>     {{ page.minesespece10 }} </em></a></td>
+         <em>     {{ page.minesespece10 }} </em></a></td>{% endif %}
         
+        {% if page.HREF-espece11 and page.minesespece11 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece11 }}" style="text-decoration:none">
-         <em>    {{ page.minesespece11 }} </em></a></td>
+         <em>    {{ page.minesespece11 }} </em></a></td>{% endif %}
         
+        {% if page.HREF-espece12 and page.minesespece12 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece12 }}" style="text-decoration:none">
-        <em>     {{ page.minesespece12 }} </em></a></td>
+        <em>     {{ page.minesespece12 }} </em></a></td>{% endif %}
 	</tr>
 
 
 
-    </table>{% endif %}
+    </table>
 
 <p class="style8"></p>
 
