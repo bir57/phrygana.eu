@@ -91,6 +91,11 @@ title: " "
 		<td class="style12"><div> {{ page.fami-note2 }} </div></td>
 	</tr>{% endif %}
 
+    {% if page.fami-note3 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
+	</tr>{% endif %}
+
    {% if page.fami-REF %}
     <tr>
 		<td class="style12"><div> {{ page.fami-REF }} </div></td>
@@ -312,7 +317,9 @@ title: " "
 		<a class="style7" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
             <em> {{ page.floreespece4 }} </em></a></td>{% endif %}
 	</tr>
+</table>
 
+<table align="center"  style="width: 960px">
     <tr>
          {% if page.HREF-espece1a and page.FLOREspecies1a and page.FLOREspecies1a and page.floreimg1a %}
 		<td class="style7" style="width: 240px">

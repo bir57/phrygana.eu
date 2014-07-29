@@ -73,7 +73,7 @@ title: " "
     
     {% if page.descr-nourriture %}
 	<tr>
-		<td class="style12"><div><strong>Plantes-hôtes:</strong>  {{ page.descr-nourriture }} </div></td>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.descr-nourriture }} </div></td>
 	</tr>{% endif %}
    
 	<tr>
@@ -282,7 +282,8 @@ title: " "
 
     {% if page.fauneespece and page.lieu-date1 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date1 }}</span>
+        <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9">
+             {{ page.lieu-date1 }}</span>
         </td>{% endif %}
 	</tr>
 
@@ -304,8 +305,10 @@ title: " "
         <tr>
         <td>
          
-            <em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
-           <td><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateB }}</span></td> 
+            <em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> 
+            {{ page.lieu-dateA }}</span></td>
+           <td><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> 
+               {{ page.lieu-dateB }}</span></td> 
         </tr>{% endif %}
 
         </table>
