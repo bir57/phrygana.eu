@@ -258,7 +258,7 @@ title:
 <p class="style8"></p>
 
 
-{% if page.fami-tribe2  %}    
+
 <table align="center"  style="width: 960px">
 	{% if page.fami-tribe2  %}
       <tr>
@@ -301,23 +301,27 @@ title:
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		{% if page.HREF-espece5 and page.fauneespece5 %}
+        <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece5 }}" style="text-decoration:none"> 
-		 {{ page.fauneespece5 }} </a></td>
+		 {{ page.fauneespece5 }} </a></td>{% endif %}
 
+        {% if page.HREF-espece6 and page.fauneespece6 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece6 }}" style="text-decoration:none">
-             {{ page.fauneespece6 }} </a></td>
+             {{ page.fauneespece6 }} </a></td>{% endif %}
         
+        {% if page.HREF-espece7 and page.fauneespece7 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece7 }}" style="text-decoration:none">
-            {{ page.fauneespece7 }} </a></td>
+            {{ page.fauneespece7 }} </a></td>{% endif %}
         
+        {% if page.HREF-espece8 and page.fauneespece8 %}
         <td class="style7" style="width: 240px">
 		<a class="style9" href="{{ page.HREF-espece8 }}" style="text-decoration:none">
-            {{ page.fauneespece8 }} </a></td>
+            {{ page.fauneespece8 }} </a></td>{% endif %}
 	</tr>
-  </table>  {% endif %}
+  </table>  
     
 <p class="style8"></p>
 
