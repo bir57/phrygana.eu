@@ -10,7 +10,7 @@ title: " "
 		<td class="style14">{{ page.FAUNEspecies }}</td>
 	</tr>
 </table>
-
+ 
 <p class="style8"></p>
 
 <table align="center" class="style17" style="width: 800px">
@@ -85,6 +85,10 @@ title: " "
 		<td class="style12"><div><strong>Période de vol:</strong>  {{ page.descr-periodevol }} </div> </td>
 	</tr>{% endif %}
 
+    {% if page.descr-periodevol1 %}
+    <tr>
+		<td class="style12"><div>  {{ page.descr-periodevol1 }} </div> </td>
+	</tr>{% endif %}
 
     {% if page.descr-altitudes %}
 	<tr>
@@ -302,30 +306,28 @@ title: " "
              {{ page.lieu-date1 }}</span>
         </td>{% endif %}
 	</tr>
-
-      <tr>
-        <td>
+<tr>
         
+        <td class="style9">
        
-    <table>
+         <table>
 
-      {% if page.fauneimgA and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgB and page.FAUNEspecies and page.FAUNEspecies %}
-        <tr> 
+       {% if page.fauneimgA and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgB and page.FAUNEspecies and page.FAUNEspecies %}
+            <tr> 
           <td>
            <img class="center" src="{{ page.fauneimgA }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" />
          </td>
          <td><img class="center" src="{{ page.fauneimgB }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" /></td>
         </tr>{% endif %}
 
-      {% if page.fauneespece and page.lieu-dateA and page.lieu-dateB  %} 
+       {% if page.fauneespece and page.lieu-dateA and page.lieu-dateB  %} 
         <tr>
         <td>
          
-            <em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> 
-            {{ page.lieu-dateA }}</span></td>
-           <td><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> 
-               {{ page.lieu-dateB }}</span></td> 
+            <em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
+           <td><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-dateB }}</span></td> 
         </tr>{% endif %}
+
 
         </table>
     </td>
@@ -353,6 +355,7 @@ title: " "
     <tr>
         <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date3 }}</span></td>
 	</tr>{% endif %}
+
     
        <tr>
         
@@ -415,14 +418,14 @@ title: " "
     <tr>
         <td class="style9"><em><span class="style9">{{ page.fauneespece }}</span></em><span class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
-
-    <tr>
+  
+       <tr>
         
         <td class="style9">
        
          <table>
 
-       {% if page.fauneimgE and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgD and page.FAUNEspecies and page.FAUNEspecies %}
+       {% if page.fauneimgE and page.FAUNEspecies and page.FAUNEspecies and page.fauneimgF and page.FAUNEspecies and page.FAUNEspecies %}
             <tr> 
           <td>
            <img class="center" src="{{ page.fauneimgE }}" alt="{{ page.FAUNEspecies }}" title="{{ page.FAUNEspecies }}" />
@@ -442,8 +445,6 @@ title: " "
         </table>
     </td>
     </tr>
-
-
 
 
      {% if page.fauneimg7 and page.FAUNEspecies and page.FAUNEspecies %}
