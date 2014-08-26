@@ -1250,7 +1250,7 @@ title: " "
     </table>{% endif %}
 
 
- {% if page.fami-tribe5  %}
+ 
     <table align="center"  style="width: 960px">
 	
       <tr>
@@ -1259,9 +1259,9 @@ title: " "
         {% endif %}
     </tr>
 
-</table>{% endif %}
+</table>
 
-       {% if page.HREF-espece17  %}
+       
        <table align="center" style="width: 960px">
 
         <tr>
@@ -1293,23 +1293,30 @@ title: " "
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		{% if page.HREF-espece17 and page.floreespece17 %}
+        <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece17 }}" style="text-decoration:none"> 
-		 {{ page.floreespece17 }} </a></td>
+		 {{ page.floreespece17 }} </a></td>{% endif %}
 
+        {% if page.HREF-espece18 and page.floreespece18 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece18 }}" style="text-decoration:none">
-              {{ page.floreespece18 }} </a></td>
-        
+              {{ page.floreespece18 }} </a></td>{% endif %}
+
+        {% if page.HREF-espece19 and page.floreespece19 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece19 }}" style="text-decoration:none">
-             {{ page.floreespece19 }} </a></td>
-        
+             {{ page.floreespece19 }} </a></td>{% endif %}
+
+        {% if page.HREF-espece20 and page.floreespece20 %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece20 }}" style="text-decoration:none">
-             {{ page.floreespece20 }} </a></td>
+             {{ page.floreespece20 }} </a></td>{% endif %}
 	</tr>
+           </table>
 
+
+           <table align="center" style="width: 960px">
            <tr>
          {% if page.HREF-espece17a and page.FLOREspecies17a and page.FLOREspecies17a and page.floreimg17a %}
 		<td class="style7" style="width: 240px">
@@ -1355,8 +1362,9 @@ title: " "
 		<a class="style7" href="{{ page.HREF-espece20a }}" style="text-decoration:none">
              {{ page.floreespece20a }} </a></td>
 	</tr>
+          </table>
 
-           
+         <table align="center" style="width: 960px">  
            <tr>
          {% if page.HREF-espece17b and page.FLOREspecies17b and page.FLOREspecies17b and page.floreimg17b %}
 		<td class="style7" style="width: 240px">
@@ -1386,26 +1394,30 @@ title: " "
 
 
 	<tr>
-		<td class="style7" style="width: 240px">
+		{% if page.HREF-espece17b and page.floreespece17b %}
+        <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece17b }}" style="text-decoration:none"> 
-		 {{ page.floreespece17b }} </a></td>
+		 {{ page.floreespece17b }} </a></td>{% endif %}
 
+        {% if page.HREF-espece17b and page.floreespece17b %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece18b }}" style="text-decoration:none">
-              {{ page.floreespece18b }} </a></td>
-        
+              {{ page.floreespece18b }} </a></td>{% endif %}
+
+        {% if page.HREF-espece17b and page.floreespece17b %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece19b }}" style="text-decoration:none">
-             {{ page.floreespece19b }} </a></td>
-        
+             {{ page.floreespece19b }} </a></td>{% endif %}
+
+        {% if page.HREF-espece17b and page.floreespece17b %}
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece20b }}" style="text-decoration:none">
-             {{ page.floreespece20b }} </a></td>
+             {{ page.floreespece20b }} </a></td>{% endif %}
 	</tr>
 
 
 
-    </table>{% endif %}
+    </table>
 
 {% if page.fami-tribe6  %}
     <table align="center"  style="width: 960px">
