@@ -202,17 +202,17 @@ title: " "
 
 <p class="style8"></p>
 
-{% if page.planteNOURRITURE %}
+
 	<table align="center" class="style17" style="width: 800px">
     
 	<tr>
 		<td class="style12" > </td>
 	</tr>
     
-
+    {% if page.planteNOURRITURE %}
     <tr>
 		<td class="style12" ><div>Régime alimentaire: {{ page.planteNOURRITURE }}  </div> </td> 
-	</tr>
+	</tr>{% endif %}
 
     <tr>
 		<td class="style12" > </td>
@@ -222,22 +222,56 @@ title: " "
 	<tr>
 		<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE }} </div></td>
 	</tr>{% endif %}
+
+
     {% if page.descr-MINE1 %}
-	<tr>
+    <tr>
 
 	<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE1 }} </div></td>
 	</tr>{% endif %}
 
+
+
+     {% if page.Galle %}
+    <tr>
+		<td class="style7" >{{ page.Galle }}   </td> 
+	</tr>{% endif %}
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+
     {% if page.descr-GALLE %}
 	<tr>
-		<td class="style12"><div><strong>Galle:</strong>  {{ page.descr-GALLE }} </div></td>
+		<td class="style12"><div><strong>--- </strong>  {{ page.descr-GALLE }} </div></td>
 	</tr>{% endif %}
+
     {% if page.descr-GALLE1 %}
 	<tr>
-		<td class="style12"><div><strong>Galle:</strong>  {{ page.descr-GALLE1 }} </div></td>
+		<td class="style12"><div>--- {{ page.descr-GALLE1 }} </div></td>
+	</tr>{% endif %}
+    
+                
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+        <tr>
+		<td class="style12" > </td>
+	</tr>
+
+    {% if page.descr-ORGANES %}
+    <tr>
+		<td class="style12" ><div>{{ page.descr-ORGANES }}  </div> </td> 
 	</tr>{% endif %}
 
 
+    {% if page.plante-galle %}
+   <tr>
+		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
+	</tr>{% endif %}
 
 
     <tr>
@@ -284,7 +318,7 @@ title: " "
 		<td class="style12" > </td>
 	</tr>
 
-	</table>{% endif %}
+	</table>
 
 
 

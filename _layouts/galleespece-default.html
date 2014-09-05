@@ -16,7 +16,7 @@ title: " "
 <table align="center" class="style17" style="width: 800px">
 	<tr>
 		<td class="style12" style="width: 40px"> {{ page.phrygananbr }} </td>
-		<td class="style12" style="width: 80px">Fauna </td>
+		<td class="style12" style="width: 80px">{{ page.fauna-bacteria }} </td>
 		<td class="style12" style="width: 140px"> {{ page.fauneorder }} </td>
 		<td class="style12" style="width: 140px" > {{ page.faunefamilia }}</td>
         
@@ -73,7 +73,7 @@ title: " "
     
     {% if page.descr-nourriture %}
 	<tr>
-		<td class="style12"><div><strong>Plantes-hôtes:</strong>  {{ page.descr-nourriture }} </div></td>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.descr-nourriture }} </div></td>
 	</tr>{% endif %}
 
     {% if page.descr-periodevol %}
@@ -179,6 +179,12 @@ title: " "
 {% if page.Galle %}
 	<table align="center" class="style17" style="width: 800px">
     
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+   
+
 	<tr>
 		<td class="style12" > </td>
 	</tr>
@@ -204,7 +210,12 @@ title: " "
 	</tr>
          
         <tr>
-		<td class="style12" ><div>{{ page.galleOBS2 }}  </div> </td> 
+		<td class="style12" ><div>{{ page.galleOBS2 }}  </div> </td>
+            
+             
+	</tr>
+    <tr>
+		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
 	</tr>
 
 

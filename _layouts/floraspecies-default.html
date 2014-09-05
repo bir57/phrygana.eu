@@ -206,73 +206,94 @@ title: " "
 	</tr>
 	</table>
 
+
 <p class="style8"></p>
 
+<table align="center"  style="width: 960px">
+	
+      <tr>{% if page.descr-plantehote %}
+		<td class="style11">{{ page.descr-plantehote }}   </td>
+       {% endif %}
+    </tr>
 
-{% if page.descr-plantehote %}
-	<table align="center" class="style17" style="width: 800px">
-    
-	<tr>
-		<td class="style12" > </td>
-	</tr>
-    <tr>
-		<td class="style12" ><div>{{ page.descr-plantehote }}  </div> </td> 
-	</tr>
-    
-    <tr>
-        
-        <td class="style9">
-      
-         <table>
+</table>
 
-      
-        <tr> 
-          <td>
+	<table align="center" style="width: 870px">
+    
+	 <tr> 
+
+        {% if page.phytophage1 and page.phytophage1A and page.HOTE01 and page.HOTE01 %}
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.phytophage1 }} ">
-           <img class="center" src="{{ page.phytophage1A }}" alt="{{ page.HOTE01 }}" title="{{ page.HOTE01 }}" />
-         </td>
+           <img src=" {{ page.phytophage1A }}" alt="{{ page.HOTE01 }}" title="{{ page.HOTE01 }}" />
+         </a></td>{% endif %}
          
-            <td>
+         {% if page.phytophage2 and page.phytophage2A and page.HOTE02 and page.HOTE02 %}
+         <td class="style7" style="width: 240px">
                 <a href=" {{ page.phytophage2 }} ">
-                <img class="center" src="{{ page.phytophage2A }}" alt="{{ page.HOTE02 }}" title="{{ page.HOTE02 }}" /></td>
+                <img src=" {{ page.phytophage2A }}" alt="{{ page.HOTE02 }}" title="{{ page.HOTE02 }}" />
+            </a></td>{% endif %}
 
-            <td>
+         {% if page.phytophage3 and page.phytophage3A and page.HOTE03 and page.HOTE03 %}
+         <td class="style7" style="width: 240px">
         <a href=" {{ page.phytophage3 }} ">
-           <img class="center" src="{{ page.phytophage3A }}" alt="{{ page.HOTE03 }}" title="{{ page.HOTE03 }}" />
-         </td>
+         <img src=" {{ page.phytophage3A }}" alt="{{ page.HOTE03 }}" title="{{ page.HOTE03 }}" />
+         </a></td>{% endif %}
 
+          
         </tr>
 
      
         <tr>
-        <td>
-         <a  href=" {{ page.phytophage1 }} " style="text-decoration:none">
-            <em><span class="style7"> {{ page.HOTE0A }} </span></em></td>
 
-           <td>
-                <a  href=" {{ page.phytophage2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.HOTE0B }}</span></em></td> 
+        {% if page.phytophage1 and page.HOTE0A %}
+        <td class="style7" style="width: 240px">
+        <a class="style7" href=" {{ page.phytophage1 }} " style="text-decoration:none">
+            <em> {{ page.HOTE0A }} </em></a></td>{% endif %}
+          
+         {% if page.phytophage2 and page.HOTE0B %}
+         <td class="style7" style="width: 240px">
+         <a class="style7" href=" {{ page.phytophage2 }} " style="text-decoration:none">
+               <em> {{ page.HOTE0B }} </em></a></td>{% endif %}
 
-    <td>
-         <a  href=" {{ page.phytophage3 }} " style="text-decoration:none">
-            <em><span class="style7"> {{ page.HOTE0C }} </span></em></td>
+         {% if page.phytophage3 and page.HOTE0C %}
+         <td class="style7" style="width: 240px">
+         <a class="style7" href=" {{ page.phytophage3 }} " style="text-decoration:none">
+            <em> {{ page.HOTE0C }} </em></a></td>{% endif %}
+        
+         
+         </tr>
+
+        </table> 
+
+	<table align="center" style="width: 870px">
+    
+        
+         <tr>
+        {% if page.phytophage4 and page.phytophage4A and page.HOTE04 and page.HOTE04 %}
+         <td class="style7" style="width: 240px">
+          <a href=" {{ page.phytophage4 }} ">
+           <img src="{{ page.phytophage4A }}" alt="{{ page.HOTE04 }}" title="{{ page.HOTE04 }}" />
+         </a></td>{% endif %}
 
         </tr>
 
-        </table>
-    </td>
-    </tr>
-    <tr>
-		<td class="style12"></td>
-	</tr>
+	     <tr> 
+         {% if page.phytophage4 and page.HOTE0D %}
+         <td class="style7" style="width: 240px">
+         <a class="style7" href=" {{ page.phytophage4 }} " style="text-decoration:none">
+            <em>{{ page.HOTE0D }} </em></a></td>{% endif %} 
 
-    <tr>
-		<td class="style12" > </td>
-	</tr>
+         </tr>
+         </table>
+        
+ 
+   <p class="style8"></p>     
+<p class="style8"></p>
+   
+  <p class="style8"></p>  
 
-	</table>{% endif %}
-
-
+<p class="style8"></p>
 
 {{ content }}
 
