@@ -55,7 +55,7 @@ title: " "
 
     {% if page.nom-commun %}
     <tr>
-		<td class="style12" ><div> {{ page.nom-commun }}</div> </td>
+		<td class="style12" ><div>Nom commun: {{ page.nom-commun }}</div> </td>
 	</tr>{% endif %}
     
     {% if page.descr-plante %}
@@ -108,9 +108,13 @@ title: " "
 
     {% if page.descr-altitudes %}
 	<tr>
-		<td class="style12" ><strong>Altitudes: </strong> {{ page.descr-altitudes }} </td>
+		<td class="style12" ><strong>Altitudes en Crète: </strong> {{ page.descr-altitudes }} </td>
 	</tr>{% endif %}
 
+     {% if page.descr-altitudes1 %}
+	<tr>
+		<td class="style12" ><strong>Altitudes: </strong> {{ page.descr-altitudes1 }} </td>
+	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>

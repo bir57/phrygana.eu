@@ -54,7 +54,7 @@ title: " "
 
     {% if page.descr-nom-commun %}
     <tr>
-		<td class="style12" > {{ page.descr-nom-commun }} </td>
+		<td class="style12" ><strong>Nom commun</strong>: {{ page.descr-nom-commun }} </td>
 	</tr>{% endif %}
     
     {% if page.descr-faune %}
@@ -273,7 +273,7 @@ title: " "
 		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
 	</tr>{% endif %}
 
-
+    {% if page.plante1 %}
     <tr>
 		<td class="style12" > </td>
 	</tr> 
@@ -309,14 +309,10 @@ title: " "
 
         </table>
     </td>
-    </tr>
-    <tr>
-		<td class="style12"></td>
-	</tr>
+    </tr>{% endif %}
+   
 
-    <tr>
-		<td class="style12" > </td>
-	</tr>
+   
 
 	</table>
 
