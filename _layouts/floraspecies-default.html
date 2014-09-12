@@ -280,6 +280,13 @@ title: " "
            <img src="{{ page.phytophage4A }}" alt="{{ page.HOTE04 }}" title="{{ page.HOTE04 }}" />
          </a></td>{% endif %}
 
+         {% if page.phytophage5 and page.phytophage5A and page.HOTE05 and page.HOTE05 %}
+         <td class="style7" style="width: 240px">
+          <a href=" {{ page.phytophage5 }} ">
+           <img src="{{ page.phytophage5A }}" alt="{{ page.HOTE05 }}" title="{{ page.HOTE05 }}" />
+         </a></td>{% endif %}
+
+
         </tr>
 
 	     <tr> 
@@ -287,7 +294,11 @@ title: " "
          <td class="style7" style="width: 240px">
          <a class="style7" href=" {{ page.phytophage4 }} " style="text-decoration:none">
             <em>{{ page.HOTE0D }} </em></a></td>{% endif %} 
-
+         
+         {% if page.phytophage5 and page.HOTE0E %}
+         <td class="style7" style="width: 240px">
+         <a class="style7" href=" {{ page.phytophage5 }} " style="text-decoration:none">
+            <em>{{ page.HOTE0E }} </em></a></td>{% endif %}
          </tr>
          </table>
         
