@@ -199,6 +199,10 @@ title: " "
     <tr>
 		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
     </tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
     {% if page.descr-dispersion %}
     <tr>
@@ -206,6 +210,14 @@ title: " "
     </tr>{% endif %}
 
 	<tr>
+		<td class="style12"></td>
+	</tr>
+
+    {% if page.plante-hote %}
+    <tr>
+		<td class="style12" ><div><strong>Plante-hôte pour:</strong>{{ page.plante-hote }}  </div> </td>    
+    </tr>{% endif %}
+    <tr>
 		<td class="style12"></td>
 	</tr>
 	</table>
@@ -221,6 +233,7 @@ title: " "
     </tr>
 
 </table>
+
 
 	<table align="center" style="width: 870px">
     
@@ -268,7 +281,8 @@ title: " "
          
          </tr>
 
-        </table> 
+        </table>
+
 
 	<table align="center" style="width: 870px">
     
