@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "  "
+
 ---
 
 <p class="style8"></p>
@@ -156,6 +156,14 @@ title: "  "
 		<td class="style12" ><strong>Biotopes:</strong> {{ page.descr-biotopesgeneral }} </td>
 	</tr>{% endif %}
 
+     <tr>
+		<td class="style12"></td>
+	</tr>
+         
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
     {% if page.descr-distribution %}
 	<tr>
 		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
@@ -184,12 +192,12 @@ title: "  "
               
     {% if page.descr-note2 %}
     <tr>
-		<td class="style12"><div>{{ page.descr-note2 }} </div></td>
+		<td class="style12"><div>--- {{ page.descr-note2 }} </div></td>
 	</tr>{% endif %}
               
     {% if page.descr-note3 %}
     <tr>
-		<td class="style12"><div>{{ page.descr-note3 }} </div></td>
+		<td class="style12"><div>--- {{ page.descr-note3 }} </div></td>
 	</tr>{% endif %}
   
     <tr>
@@ -255,7 +263,7 @@ title: "  "
     
     {% if page.planteNOURRITURE %}
     <tr>
-		<td class="style12" ><div>Régime alimentaire: {{ page.planteNOURRITURE }}  </div> </td> 
+		<td class="style12" ><div><strong>Régime alimentaire</strong>: {{ page.planteNOURRITURE }}  </div> </td> 
 	</tr>{% endif %}
 
     <tr>
