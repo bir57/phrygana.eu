@@ -32,6 +32,60 @@ title: " "
 <table align="center"  style="width: 960px">
 
   <tr>
+    {% if page.HREF-espece12f and page.species-img12g and page.species12g and page.species12g %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece12g}}">
+		<img  src="{{ page.species-img12g }}" alt="{{ page.species12g }}" title="{{ page.species12g }}" ></a>
+        </td>{% endif %}
+		
+        {% if page.HREF-espece11g and page.species-img11g and page.species11f and page.species11g %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece11g}}">
+		<img  src="{{ page.species-img11g }}" alt="{{ page.species11g }}" title="{{ page.species11g }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.HREF-espece10g and page.species-img10g and page.species10g and page.species10g %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece10g }}">
+		<img  src="{{ page.species-img10g}}" alt="{{ page.species10g }}" title="{{ page.species10g}}" ></a>
+        </td>{% endif %}
+        
+        {% if page.HREF-espece9g and page.species-img9g and page.species9g and page.species9g %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece9g}}">
+		<img  src="{{ page.species-img9g }}" alt="{{ page.species9g }}" title="{{ page.species9g }}" ></a>
+        </td>{% endif %}
+
+    </tr>
+     
+    <tr>
+
+        {% if page.HREF-espece12g and page.espece12g %}
+		<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece12g }}" style="text-decoration:none"> 
+		{{ page.espece12g }} </a></td>{% endif %}
+
+        {% if page.HREF-espece11g and page.espece11g %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece11g }}" style="text-decoration:none">
+        {{ page.espece11g }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece10g and page.espece10g %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece10g }}" style="text-decoration:none">
+        {{ page.espece10g }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece9g and page.espece9g %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece9g }}" style="text-decoration:none">
+        {{ page.espece9g }} </a></td>{% endif %}
+	   
+    </tr>
+ </table>
+ 
+<table align="center"  style="width: 960px">
+
+  <tr>
     {% if page.HREF-espece12f and page.species-img12f and page.species12f and page.species12f %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.HREF-espece12f}}">
@@ -82,6 +136,7 @@ title: " "
 	   
     </tr>
  </table>
+ 
 <table align="center"  style="width: 960px">
 
   <tr>
