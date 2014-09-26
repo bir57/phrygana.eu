@@ -226,9 +226,9 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.plante-hote %}
+    {% if page.Ravageur %}
     <tr>
-		<td class="style12" ><div><strong>Plante-hôte pour:</strong>{{ page.plante-hote }}  </div> </td>    
+		<td class="style12" ><div><strong>Plante-hôte pour:</strong>{{ page.Ravageur }}  </div> </td>    
     </tr>{% endif %}
     <tr>
 		<td class="style12"></td>
@@ -240,8 +240,8 @@ layout: default
 
 <table align="center"  style="width: 960px">
 	
-      <tr>{% if page.descr-plantehote %}
-		<td class="style11">{{ page.descr-plantehote }}   </td>
+      <tr>{% if page.descr-Ravageur %}
+		<td class="style11">{{ page.descr-Ravageur }}   </td>
        {% endif %}
     </tr>
 
@@ -368,20 +368,23 @@ layout: default
 
          <table>
 
-      {% if page.floreimgA and page.FLOREspecies and page.FLOREspecies and page.floreimgB and page.FLOREspecies and page.FLOREspecies %}
+      {% if page.floreimgA and page.FLOREespece and page.Auteurespece and page.FLOREespece and page.Auteurespece and page.floreimgB and page.FLOREespece and page.Auteurespece and page.FLOREespece and page.Auteurespece %}
         <tr> 
           <td>
-           <img class="center" src="{{ page.floreimgA }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" />
+           <img class="center" src="{{ page.floreimgA }}" 
+              alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" title="{{ page.FLOREespece }} {{ page.Auteurespece }}" />
          </td>
-         <td><img class="center" src="{{ page.floreimgB }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" /></td>
+         <td><img class="center" src="{{ page.floreimgB }}"
+             alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" title="{{ page.FLOREespece }} {{ page.Auteurespece }}" 
+             /></td>
         </tr>{% endif %}
 
-      {% if page.floreespece and page.lieu-dateA and page.lieu-dateB  %} 
+      {% if page.FLOREespece and page.lieu-dateA and page.lieu-dateB  %} 
         <tr>
         <td>
          
-            <em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
-           <td><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateB }}</span></td> 
+            <em><span class="style9">{{ page.FLOREespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
+           <td><em><span class="style9">{{ page.FLOREespece }}</span></em><span class="style9"> {{ page.lieu-dateB }}</span></td> 
         </tr>{% endif %}
 
         </table>
@@ -396,20 +399,23 @@ layout: default
        
          <table>
 
-       {% if page.floreimgC and page.FLOREspecies and page.FLOREspecies and page.floreimgD and page.FLOREspecies and page.FLOREspecies %}
+       {% if page.floreimgC and page.FLOREespece and page.Auteurespece and page.FLOREespece and page.Auteurespece and page.floreimgD and page.FLOREespece and page.Auteurespece and page.FLOREespece and page.Auteurespece %}
             <tr> 
           <td>
-           <img class="center" src="{{ page.floreimgC }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" />
+           <img class="center" src="{{ page.floreimgC }}" 
+              alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" title="{{ page.FLOREespece }} {{ page.Auteurespece }}" />
          </td>
-         <td><img class="center" src="{{ page.floreimgD }}" alt="{{ page.FLOREspecies }}" title="{{ page.FLOREspecies }}" /></td>
+         <td><img class="center" src="{{ page.floreimgD }}" 
+             alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" title="{{ page.FLOREespece }} {{ page.Auteurespece }}" 
+             /></td>
         </tr>{% endif %}
 
-       {% if page.floreespece and page.lieu-dateC and page.lieu-dateD  %} 
+       {% if page.FLOREespece and page.lieu-dateC and page.lieu-dateD  %} 
         <tr>
         <td>
          
-            <em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateC }}</span></td>
-           <td><em><span class="style9">{{ page.floreespece }}</span></em><span class="style9"> {{ page.lieu-dateD }}</span></td> 
+            <em><span class="style9">{{ page.FLOREespece }}</span></em><span class="style9"> {{ page.lieu-dateC }}</span></td>
+           <td><em><span class="style9">{{ page.FLOREespece }}</span></em><span class="style9"> {{ page.lieu-dateD }}</span></td> 
         </tr>{% endif %}
 
 
