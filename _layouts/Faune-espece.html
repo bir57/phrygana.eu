@@ -132,7 +132,7 @@ layout: default
      
     {% if page.description-adulte %}
 	<tr>
-		<td class="style12" ><div> {{ page.description-adulte }} </div></td>
+		<td class="style12" ><div><strong>Description de l'adulte</strong>:  {{ page.description-adulte }} </div></td>
 	</tr>{% endif %}
 
     
@@ -328,7 +328,7 @@ layout: default
 
     {% if page.Listerouge %}
     <tr>
-		<td class="style12" ><div>Menace: {{ page.Listerouge }}  </div> </td>    
+		<td class="style12" ><div><strong>Liste rouge</strong>: {{ page.Listerouge }}  </div> </td>    
     </tr>{% endif %}
          
     <tr>
@@ -337,7 +337,7 @@ layout: default
 	</tr>
     {% if page.Utilite %}
     <tr>
-		<td class="style12" ><div>Utilité: {{ page.Utilite }}  </div> </td>    
+		<td class="style12" ><div><strong>Utilité</strong>: {{ page.Utilite }}  </div> </td>    
     </tr>{% endif %}
      <tr>
 		<td class="style12"></td>
@@ -345,7 +345,7 @@ layout: default
 
     {% if page.Nuisance %}
     <tr>
-		<td class="style12" ><div>Nuisance: {{ page.Nuisance }}  </div> </td>    
+		<td class="style12" ><div><strong>Nuisance</strong>: {{ page.Nuisance }}  </div> </td>    
     </tr>{% endif %}
      <tr>
 		<td class="style12"></td>
@@ -410,11 +410,11 @@ layout: default
 
         <td>
         <a  href=" {{ page.plante1 }} " style="text-decoration:none">
-            <em><span class="style7"> {{ page.PLANTEnom1 }} </span></em></td>
+            <em><span class="style9"> {{ page.PLANTEnom1 }} </span></em></td>
 
         <td>
         <a  href=" {{ page.plante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.PLANTEnom2 }}</span></em></td> 
+               <em><span class="style9">{{ page.PLANTEnom2 }}</span></em></td> 
         </tr>
 
         </table>
@@ -447,36 +447,44 @@ layout: default
 	<tr>
 		<td class="style12" > </td>
 	</tr>
+
+   
     <tr>
-		<td class="style7" >{{ page.Mine }}   </td> 
+		<td class="style7" ><strong>{{ page.Mine }}</strong>   </td> 
 	</tr>
+
     <tr>
 		<td class="style12" > </td>
 	</tr>
 
-     
+     {% if page.descr-Mine %}
      <tr>
-		<td class="style12" ><div>--- Mine {{ page.descr-Mine }}  </div> </td> 
-	 </tr>
+		<td class="style12" ><div><strong>Description de la mine</strong>: {{ page.descr-Mine }}  </div> </td> 
+	 </tr>{% endif %}
     
      <tr>
 		<td class="style12" > </td>
 	 </tr>
 
-     
+     {% if page.descr-Mine %}
      <tr>
-		<td class="style12" ><div>--- Organes attaqués: {{ page.Organesattaques }}  </div> </td> 
+		<td class="style12" ><div><strong>Organes attaqués</strong>: {{ page.Organesattaques }}  </div> </td> 
+	 </tr>{% endif %}
+
+     <tr>
+		<td class="style12" > </td>
 	 </tr>
         
-     
+          
+     {% if page.mineOBS1 %}
      <tr>
 		<td class="style12" ><div>--- OBS. {{ page.mineOBS1 }}  </div> </td> 
-	 </tr>
+	 </tr>{% endif %}
      
-        
+      {% if page.mineOBS2 %}  
      <tr>
         <td class="style12" ><div>--- OBS. {{ page.mineOBS2 }}  </div> </td>
-     </tr>
+     </tr>{% endif %}
     
      <tr>
 		<td class="style12" > </td>
@@ -484,7 +492,7 @@ layout: default
 
      
      <tr>
-		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-mine }}  </div> </td> 
+		<td class="style12" ><div><strong>Plantes attaquées</strong>: {{ page.plante-mine }}  </div> </td> 
 	 </tr>
 
 
@@ -497,17 +505,17 @@ layout: default
       
          
       <td>
-      <a href=" {{ page.mineplante1 }} ">
-      <img class="center" src="{{ mineimgplante1 }}" 
-      alt="{{ page.minePLANTE-espece1 }}" title="{{ page.minePLANTE-espece1 }}" />
-      </td>
+        <a href=" {{ page.mineplante1 }} ">
+        <img class="center" src="{{ page.mineimgplante1 }}" 
+        alt="{{ page.minePLANTE-espece1 }}" title="{{ page.minePLANTE-espece1 }}" />
+        </td>
        
       
       <td>
-      <a href=" {{ page.galleplante2 }} ">
-      <img class="center" src="{{ galleimgplante2 }}" 
-      alt="{{ page.gallePLANTE-espece2 }}" title="{{ page.gallePLANTE-espece2 }}" />
-      </td>
+        <a href=" {{ page.mineplante2 }} ">
+        <img class="center" src="{{ page.mineimgplante2 }}" 
+        alt="{{ page.minePLANTE-espece2 }}" title="{{ page.minePLANTE-espece2 }}" />
+        </td>
       
       </tr>
 
@@ -517,13 +525,13 @@ layout: default
       
       <td>
          <a  href=" {{ page.ineplante1 }} " style="text-decoration:none">
-            <em><span class="style7"><em> {{ page.minePLANTEnom1 }} </em></span></em>
+            <em><span class="style9"><em> {{ page.minePLANTEnom1 }} </em></span></em>
       </td>
 
        
       <td>
          <a  href=" {{ page.mineplante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.minePLANTEnom2 }}</span></em>
+               <em><span class="style9">{{ page.minePLANTEnom2 }}</span></em>
       </td> 
         </tr>
 
