@@ -1,9 +1,34 @@
 ---
 layout: default
-
 ---
 
+<!-- titre Espèce -- lignes 33 - 37 -->
+<!-- Taxonomie et numéro Phrygana -- lignes 49 - 66 -->
+<!-- Image img0 -- lignes 77 - 87 -->
+<!-- Synonyme(s) et nom(s) commun(s) -- lignes 102 - 116 -->
+
+<!-- Description et cycle de vie  -- lignes 133 - 181 -->
+<!-- Indigénat Crète et Belgique -- lignes 197 - 205 -->
+<!-- Altitudes et Biotopes -- lignes 219 - 232 -->
+<!-- Origine et Distribution -- lignes 249 - 257 -->
+
+<!-- Notes et Observations -- lignes 275 - 314 -->
+<!-- Liste rouge, Utilité et Nuisance -- lignes 328 - 352 -->
+
+<!-- Table Régime alimentaire phytophage -- lignes 365 - 426 -->
+<!-- Table Mines -- lignes 437 - 537 -->
+<!-- Table Galles -- lignes 547 - 651 -->
+
+<!-- images 1 - A-B - 2 - 3 -- lignes 666 - 741 -->
+<!-- images C-D - 4 - 5 - 6 - 7 -- lignes 753 - 825 -->
+<!-- images E-F - 7 - 8 - 9 -- lignes 836 - 906 -->
+<!-- date mise à jour  -- lignes 918 - 921 -->
 <p class="style8"></p>
+
+
+<!-- DÉBUT titre Espèce
+    
+     DÉBUT -->
 
 <table align="center" style="width: 600px">
 	<tr>
@@ -11,7 +36,15 @@ layout: default
 	</tr>
 </table>
  
+<!-- FIN titre Espèce
+    
+     FIN -->
+
 <p class="style8"></p>
+
+<!-- DÉBUT Taxonomie et numéro Phrygana
+    
+     DÉBUT -->
 
 <table align="center" class="style17" style="width: 800px">
 	<tr>
@@ -20,7 +53,7 @@ layout: default
 		<td class="style12" style="width: 80px">Fauna </td>
 
 		<td class="style12" style="width: 140px"> 
-        <a href='/Fauna/{{page.FauneOrder}}/{{page.FauneOrder}}.html'<strong>{{page.FauneOrder}}</strong></a></td>
+        <a href='/Fauna/{{page.FauneOrder}}/{{page.FauneOrder}}.html'<strong>{{page.FAUNEorder}}</strong></a></td>
 
 		<td class="style12" style="width: 140px" >
             <a href='../{{page.FAUNEfamille}}.html' <strong>{{page.FAUNEfamille}}</strong></a> </td>
@@ -28,10 +61,18 @@ layout: default
         {% if page.faunesousfamille %}
         <td class="style12" style="width: 160px">{{ page.faunesousfamille }}</td>{% endif %}
 
-		<td class="style12"style="width: 240px"><em>{{ page.faunegenre }}</em> {{ page.faunegenreAUTEUR }}</td>
+		<td class="style12"style="width: 240px"><em>{{ page.FAUNEgenre }}</em> {{ page.AUTEURgenre }}</td>
 	</tr>
 </table>
 
+<!-- FIN Taxonomie et numéro Phrygana
+    
+     FIN -->
+
+
+<!-- DÉBUT Image img0
+    
+     DÉBUT -->
 
 <table align="center" style="width: 880px">
 	<tr>
@@ -45,13 +86,22 @@ layout: default
 	</tr>
 </table>
 
+<!-- FIN Image img0
+    
+     FIN -->
+
 
 
 <table align="center" class="style17" style="width: 800px">
 	
-    {% if page.nom-synonyme %}
+
+    <!-- DÉBUT Synonyme(s) et nom(s) commun(s)
+    
+     DÉBUT -->
+
+    {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.:<em><strong> {{ page.nom-synonyme }} </strong></em> {{ page.nom-synauteur}} </td>
+		<td class="style12"> syn.:<em><strong> {{ page.Synonyme }} </strong></em> {{ page.Syn-auteur}} </td>
 	</tr>{% endif %}
 	<tr>
 		<td class="style12"> </td>
@@ -60,10 +110,14 @@ layout: default
 		<td class="style12"> </td>
 	</tr>
     
-    {% if page.descr-nom-commun %}
+    {% if page.nom-commun %}
     <tr>
-		<td class="style12" ><strong>Nom commun</strong>: {{ page.descr-nom-commun }} </td>
+		<td class="style12" ><strong>Nom commun</strong>: {{ page.nom-commun }} </td>
 	</tr>{% endif %}
+
+    <!-- FIN Synonyme(s) et nom(s) commun(s)
+    
+     FIN -->
 
        <tr>
 		<td class="style12"></td>
@@ -72,10 +126,13 @@ layout: default
 		<td class="style12"></td>
 	</tr>
     
+    <!-- DÉBUT Description et cycle de vie
+    
+     DÉBUT -->
      
-    {% if page.descr-faune %}
+    {% if page.description-adulte %}
 	<tr>
-		<td class="style12" ><div> {{ page.descr-faune }} </div></td>
+		<td class="style12" ><div> {{ page.description-adulte }} </div></td>
 	</tr>{% endif %}
 
     
@@ -86,9 +143,10 @@ layout: default
 		<td class="style12"></td>
 	</tr>
     
-    {% if page.descr-biologie %}
+
+    {% if page.Biologie %}
     <tr>
-		<td class="style12" ><div><strong>Biologie:</strong> {{ page.descr-biologie }} </div> </td>
+		<td class="style12" ><div><strong>Biologie:</strong> {{ page.Biologie }} </div> </td>
 	</tr>{% endif %}
 
 
@@ -96,16 +154,12 @@ layout: default
 		<td class="style12"> </td>
 	</tr>
     
-    {% if page.descr-nourriture %}
+    {% if page.Regime-alimentaire %}
 	<tr>
-		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.descr-nourriture }} </div></td>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
 	</tr>{% endif %}
    
-	<tr>
-		<td class="style12"><div> </div></td>
-	</tr>
-
-      
+	      
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -113,25 +167,22 @@ layout: default
 		<td class="style12"></td>
 	</tr>
     
-    {% if page.descr-periodevol %}
+    {% if page.PeriodevolCrete %}
     <tr>
-		<td class="style12"><div><strong>Période de vol:</strong>  {{ page.descr-periodevol }} </div> </td>
+		<td class="style12"><div><strong>Période de vol en Crète:</strong>  {{ page.PeriodevolCrete }} </div> </td>
 	</tr>{% endif %}
 
-    {% if page.descr-periodevol1 %}
+    {% if page.Periodevol %}
     <tr>
-		<td class="style12"><div>  {{ page.descr-periodevol1 }} </div> </td>
+		<td class="style12"><div><strong>Période de vol:</strong>  {{ page.Periodevol }} </div> </td>
 	</tr>{% endif %}
 
-    {% if page.descr-altitudes %}
-	<tr>
-		<td class="style12" ><strong>Altitudes: </strong> {{ page.descr-altitudes }} </td>
-	</tr>{% endif %}
+    <!-- FIN Description et cycle de vie
+    
+     FIN -->
 
-    <tr>
-		<td class="style12"></td>
-	</tr>
-         
+    
+             
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -140,30 +191,50 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-indigenatCrete %}
+     <!-- DÉBUT Indigénat Crète et Belgique
+    
+     DÉBUT -->
+
+    {% if page.IndigenatCrete %}
 	<tr>
-		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.descr-indigenatCrete }} </td>
+		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.IndigenatCrete }} </td>
 	</tr>{% endif %}
 
-    {% if page.descr-indigenatBelgium %}
+    {% if page.IndigenatBelgium %}
 	<tr>
-		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.descr-indigenatBelgium }} </td>
+		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.IndigenatBelgium }} </td>
 	</tr>{% endif %}
+
+    <!-- FIN Indigénat Crète et Belgique
+    
+     FIN -->
 
     <tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-biotopesCrete %}
+    <!-- DÉBUT Altitudes et Biotopes
+    
+     DÉBUT -->
+
+    {% if page.Altitudes %}
 	<tr>
-		<td class="style12" ><div><strong>Biotopes en Crète:</strong> {{ page.descr-biotopesCrete }} </div></td>
+		<td class="style12" ><strong>Altitudes: </strong> {{ page.Altitudes }} </td>
 	</tr>{% endif %}
 
-     {% if page.descr-biotopesgeneral %}
+    {% if page.BiotopesCrete %}
 	<tr>
-		<td class="style12" ><strong>Biotopes:</strong> {{ page.descr-biotopesgeneral }} </td>
+		<td class="style12" ><div><strong>Biotopes en Crète:</strong> {{ page.BiotopesCrete }} </div></td>
 	</tr>{% endif %}
 
+     {% if page.Biotopesgeneral %}
+	<tr>
+		<td class="style12" ><strong>Biotopes:</strong> {{ page.Biotopesgeneral }} </td>
+	</tr>{% endif %}
+
+    <!-- FIN Altitudes et Biotopes
+    
+     FIN -->       
      <tr>
 		<td class="style12"></td>
 	</tr>
@@ -172,15 +243,23 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-distribution %}
-	<tr>
-		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
+    <!-- DÉBUT Origine et Distribution
+    
+     DÉBUT -->
+
+    {% if page.Origine %}
+    <tr>
+		<td class="style12"><strong>Origine:</strong>  {{ page.Origine }}</td>
 	</tr>{% endif %}
 
-    {% if page.descr-origine %}
-    <tr>
-		<td class="style12"><strong>Origine:</strong>  {{ page.descr-origine }}</td>
+    {% if page.Distribution %}
+	<tr>
+		<td class="style12" ><strong>Distribution:</strong> {{ page.Distribution }}</td>
 	</tr>{% endif %}
+
+    <!-- FIN Origine et Distribution
+    
+     FIN -->
 
     <tr>
 		<td class="style12"></td>
@@ -190,22 +269,24 @@ layout: default
 		<td class="style12"></td>
 	</tr>
      
+    <!-- DÉBUT Notes et Observations
     
+     DÉBUT -->
                 
-    {% if page.descr-note1 %}
+    {% if page.Note1 %}
     <tr>
-		<td class="style12">--- {{ page.descr-note1 }}</td>
+		<td class="style12">--- {{ page.Note1 }}</td>
 	</tr>{% endif %}
 
               
-    {% if page.descr-note2 %}
+    {% if page.Note2 %}
     <tr>
-		<td class="style12"><div>--- {{ page.descr-note2 }} </div></td>
+		<td class="style12"><div>--- {{ page.Note2 }} </div></td>
 	</tr>{% endif %}
               
-    {% if page.descr-note3 %}
+    {% if page.Note3 %}
     <tr>
-		<td class="style12"><div>--- {{ page.descr-note3 }} </div></td>
+		<td class="style12"><div>--- {{ page.Note3 }} </div></td>
 	</tr>{% endif %}
   
     <tr>
@@ -218,9 +299,9 @@ layout: default
     </tr>{% endif %}
     
 
-    {% if page.descr-OBS1 %}
+    {% if page.OBS1 %}
     <tr>
-		<td class="style12" ><div>{{ page.descr-OBS1 }}  </div> </td>    
+		<td class="style12" ><div>{{ page.OBS1 }}  </div> </td>    
     </tr>{% endif %}
 
 
@@ -228,40 +309,59 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-OBS2 %}
+    {% if page.OBS2 %}
     <tr>
-		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
+		<td class="style12" ><div>{{ page.OBS2 }}  </div> </td>    
     </tr>{% endif %}
 
+    <!-- FIN Notes et Observations
     
+     FIN -->
     
 	<tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-Menace %}
+    <!-- DÉBUT Liste rouge Utilité et Nuisance
+    
+     DÉBUT -->
+
+    {% if page.Listerouge %}
     <tr>
-		<td class="style12" ><div>Menace: {{ page.descr-Menace }}  </div> </td>    
+		<td class="style12" ><div>Menace: {{ page.Listerouge }}  </div> </td>    
     </tr>{% endif %}
          
     <tr>
 		<td class="style12"></td>
 
 	</tr>
-    {% if page.descr-utilite %}
+    {% if page.Utilite %}
     <tr>
-		<td class="style12" ><div>Utilité: {{ page.descr-utilite }}  </div> </td>    
+		<td class="style12" ><div>Utilité: {{ page.Utilite }}  </div> </td>    
     </tr>{% endif %}
      <tr>
 		<td class="style12"></td>
 	</tr>
 
+    {% if page.Nuisance %}
+    <tr>
+		<td class="style12" ><div>Nuisance: {{ page.Nuisance }}  </div> </td>    
+    </tr>{% endif %}
+     <tr>
+		<td class="style12"></td>
+	</tr>
 	</table>
+
+<!-- FIN Liste rouge Utilité et Nuisance
+    
+     FIN -->
 
 <p class="style8"></p>
 
 
-
+<!-- DÉBUT table Régime alimentaire: phytophage
+    
+     DÉBUT -->
 
 {% if page.planteNOURRITURE %}
 	<table align="center" class="style17" style="width: 800px">
@@ -272,114 +372,297 @@ layout: default
     
     {% if page.planteNOURRITURE %}
     <tr>
-		<td class="style12" ><div><strong>Régime alimentaire</strong>: {{ page.planteNOURRITURE }}  </div> </td> 
+		<td class="style12" ><div><strong>Régime alimentaire</strong>: espèce {{ page.planteNOURRITURE }}  </div> </td> 
 	</tr>{% endif %}
 
     <tr>
 		<td class="style12" > </td>
 	</tr> 
 
-    {% if page.descr-MINE %}
-	<tr>
-		<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE }} </div></td>
-	</tr>{% endif %}
-
-
-    {% if page.descr-MINE1 %}
-    <tr>
-
-	<td class="style12"><div><strong>Mine:</strong>  {{ page.descr-MINE1 }} </div></td>
-	</tr>{% endif %}
-
-
-
-     {% if page.Galle %}
-    <tr>
-		<td class="style7" >{{ page.Galle }}   </td> 
-	</tr>{% endif %}
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-
-
-    {% if page.descr-GALLE %}
-	<tr>
-		<td class="style12"><div><strong>--- </strong>  {{ page.descr-GALLE }} </div></td>
-	</tr>{% endif %}
-
-    {% if page.descr-GALLE1 %}
-	<tr>
-		<td class="style12"><div>--- {{ page.descr-GALLE1 }} </div></td>
-	</tr>{% endif %}
-    
-                
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-    <tr>
-		<td class="style12" > </td>
-	</tr>
+        {% if page.plante1 %}
         <tr>
 		<td class="style12" > </td>
-	</tr>
-
-    {% if page.descr-ORGANES %}
-    <tr>
-		<td class="style12" ><div>{{ page.descr-ORGANES }}  </div> </td> 
-	</tr>{% endif %}
-
-
-    {% if page.plante-galle %}
-   <tr>
-		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
-	</tr>{% endif %}
-
-    {% if page.plante1 %}
-    <tr>
-		<td class="style12" > </td>
-	</tr> 
+	    </tr> 
 
         <tr>
         
         <td class="style9">
       
-         <table>
-
-      
+        <table>
+              
         <tr> 
-          <td>
+
+        <td>
         <a href=" {{ page.plante1 }} ">
-           <img class="center" src="{{ page.plante1A }}" alt="{{ page.PLANTE01 }}" title="{{ page.PLANTE01 }}" />
-         </td>
+        <img class="center" src="{{ page.imgplante1 }}" 
+        alt="{{ page.PLANTE-espece1 }}" title="{{ page.PLANTE-espece1 }}" />
+        </td>
          
-            <td>
-                <a href=" {{ page.plante2 }} ">
-                <img class="center" src="{{ page.plante2A }}" alt="{{ page.PLANTE02 }}" title="{{ page.PLANTE02 }}" /></td>
+        <td>
+        <a href=" {{ page.plante2 }} ">
+        <img class="center" src="{{ page.imgplante2 }}" 
+        alt="{{ page.PLANTE-espece2 }}" title="{{ page.PLANTE-espece2 }}" />
+        </td>
+        
         </tr>
 
-     
         <tr>
-        <td>
-         <a  href=" {{ page.plante1 }} " style="text-decoration:none">
-            <em><span class="style7"> {{ page.PLANTE0A }} </span></em></td>
 
-           <td>
-                <a  href=" {{ page.plante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.PLANTE0B }}</span></em></td> 
+        <td>
+        <a  href=" {{ page.plante1 }} " style="text-decoration:none">
+            <em><span class="style7"> {{ page.PLANTEnom1 }} </span></em></td>
+
+        <td>
+        <a  href=" {{ page.plante2 }} " style="text-decoration:none">
+               <em><span class="style7">{{ page.PLANTEnom2 }}</span></em></td> 
+        </tr>
+
+        </table>
+    
+        </td>
+
+        </tr>{% endif %}
+
+   
+	</table>{% endif %}
+
+<!-- FIN table Régime alimentaire phytophage
+    
+     FIN -->
+
+
+<!-- DÉBUT table Mines
+    
+     DÉBUT --> 
+
+     {% if page.Mine %}
+	<table align="center" class="style17" style="width: 800px">
+    
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+   
+
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style7" >{{ page.Mine }}   </td> 
+	</tr>
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Mine {{ page.descr-Mine }}  </div> </td> 
+	 </tr>
+    
+     <tr>
+		<td class="style12" > </td>
+	 </tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Organes attaqués: {{ page.Organesattaques }}  </div> </td> 
+	 </tr>
+        
+     
+     <tr>
+		<td class="style12" ><div>--- OBS. {{ page.mineOBS1 }}  </div> </td> 
+	 </tr>
+     
+        
+     <tr>
+        <td class="style12" ><div>--- OBS. {{ page.mineOBS2 }}  </div> </td>
+     </tr>
+    
+     <tr>
+		<td class="style12" > </td>
+	 </tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-mine }}  </div> </td> 
+	 </tr>
+
+
+     <tr>
+     <td class="style9">
+      
+     <table>
+
+      <tr>
+      
+         
+      <td>
+      <a href=" {{ page.mineplante1 }} ">
+      <img class="center" src="{{ mineimgplante1 }}" 
+      alt="{{ page.minePLANTE-espece1 }}" title="{{ page.minePLANTE-espece1 }}" />
+      </td>
+       
+      
+      <td>
+      <a href=" {{ page.galleplante2 }} ">
+      <img class="center" src="{{ galleimgplante2 }}" 
+      alt="{{ page.gallePLANTE-espece2 }}" title="{{ page.gallePLANTE-espece2 }}" />
+      </td>
+      
+      </tr>
+
+     
+      <tr>
+
+      
+      <td>
+         <a  href=" {{ page.ineplante1 }} " style="text-decoration:none">
+            <em><span class="style7"><em> {{ page.minePLANTEnom1 }} </em></span></em>
+      </td>
+
+       
+      <td>
+         <a  href=" {{ page.mineplante2 }} " style="text-decoration:none">
+               <em><span class="style7">{{ page.minePLANTEnom2 }}</span></em>
+      </td> 
         </tr>
 
         </table>
     </td>
-    </tr>{% endif %}
-   
+    </tr>}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+	</table>{% endif %}
+
+<!-- FIN table Mines
+    
+     FIN -->
+
+<!-- DÉBUT table Galles
+    
+     DÉBUT --> 
+
+    {% if page.Galle %} 
+	<table align="center" class="style17" style="width: 800px">
+    
+    <tr>
+		<td class="style12" > </td>
+	</tr>
 
    
+
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style7" >{{ page.Galle }}   </td> 
+	</tr>
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Galle {{ page.descr-Galle }}  </div> </td> 
+	 </tr>
+    
+     <tr>
+		<td class="style12" > </td>
+	 </tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Organes attaqués: {{ page.Organesattaques }}  </div> </td> 
+	 </tr>
+        
+     
+     <tr>
+		<td class="style12" ><div>--- OBS. {{ page.galleOBS1 }}  </div> </td> 
+	 </tr>
+
+        
+     <tr>
+        <td class="style12" ><div>--- OBS. {{ page.galleOBS2 }}  </div> </td>
+     </tr>
+    
+     <tr>
+		<td class="style12" > </td>
+	 </tr>
+
+     
+     <tr>
+		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
+	 </tr>
+
+
+     
+     <tr>
+     <td class="style9">
+
+      
+     <table>
+
+      
+      <tr>
+      
+      
+      <td>
+      <a href=" {{ page.galleplante1 }} ">
+      <img class="center" src="{{ galleimgplante1 }}" 
+      alt="{{ page.gallePLANTE-espece1 }}" title="{{ page.gallePLANTE-espece1 }}" />
+      </td>
+       
+           
+      <td>
+      <a href=" {{ page.galleplante2 }} ">
+      <img class="center" src="{{ galleimgplante2 }}" 
+      alt="{{ page.gallePLANTE-espece2 }}" title="{{ page.gallePLANTE-espece2 }}" />
+      </td>
+      
+      </tr>
+
+     
+      <tr>
+
+        
+      <td>
+         <a  href=" {{ page.galleplante1 }} " style="text-decoration:none">
+            <em><span class="style7"><em> {{ page.gallePLANTEnom1 }} </em></span></em>
+      </td>
+
+      
+      <td>
+         <a  href=" {{ page.galleplante2 }} " style="text-decoration:none">
+               <em><span class="style7">{{ page.gallePLANTEnom2 }}</span></em>
+      </td>
+      </tr> 
+
+        </table>
+    </td>
+    </tr>
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
 
 	</table>{% endif %}
 
 
 
+<!-- FIN table Galles
+    
+     FIN -->
+
+
 {{ content }}
+
+<!-- DÉBUT  images 1 - A-B - 2 - C-D - 3
+    
+     DÉBUT -->
 
 <table align="center" style="width: 900px">
 	
@@ -400,7 +683,7 @@ layout: default
         </td>
 	</tr>{% endif %}
 
-        {% if page.fauneimgA %}
+   {% if page.fauneimgA %}
         <tr>
         
         <td class="style9">
@@ -457,6 +740,16 @@ layout: default
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
              {{ page.lieu-date3 }}</span></td>
 	</tr>{% endif %}
+
+<!-- FIN  images 1 - A-B - 2 - 3
+    
+     FIN -->
+
+
+
+<!-- DÉBUT  images C-D - 4 - 5 - 6 - 7 
+    
+     DÉBUT -->
 
     {% if page.fauneimgC %}
        <tr>
@@ -531,6 +824,15 @@ layout: default
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
              {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
+
+<!-- FIN  images C-D - 4 - 5 - 6 
+    
+     FIN -->
+
+
+<!-- DÉBUT  images E-F - 7 - 8 - 9 
+    
+     DÉBUT -->
   
     {% if page.fauneimgE  %}
        <tr>
@@ -604,11 +906,15 @@ layout: default
             {{ page.lieu-date9 }}</span></td>
 	</tr>{% endif %}
 
-
-
 </table>
+<!-- FIN  images E-F - 7 - 8 - 9 
+    
+     FIN -->
 
 
+<!-- DÉBUT date mise à jour 
+    
+     DÉBUT -->
 
 <table align="center" style="width: 800px">
 	<tr>
@@ -616,3 +922,6 @@ layout: default
 	</tr>
 </table>
 
+<!-- FIN date mise à jour 
+    
+     FIN -->

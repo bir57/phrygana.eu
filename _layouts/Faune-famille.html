@@ -3,15 +3,48 @@ layout: default
 
 ---
 
+<!-- TITRE ORDRE -- lignes 31 - 36 -->
+<!-- TITRE FAMILLE -- lignes 46 - 51 -->
+
+<!-- FAUNAEUR - Crète-Belgique  -- lignes 68 - 99 -->
+<!-- Notes 1 - 4  -- lignes 114 - 147 -->
+
+<!-- Ordre liste des familles 1 - 4  -- lignes 167 - 220 -->
+<!-- Ordre liste des familles 5 - 8  -- lignes 230 - 286 -->
+<!-- Ordre liste des familles 9 - 12  -- lignes 298 - 352 -->
+<!-- Ordre liste des familles 13 - 16  -- lignes 363 - 416 -->
+
+<!-- Famille tribu 1  -- lignes 428 - 436 -->
+<!-- Famille liste des espèces 1 - 4  -- lignes 448 - 501 -->
+<!-- Famille liste des espèces 5 - 8  -- lignes 513 - 567 -->
+
+
+
+
+<!-- date mise à jour  -- lignes 2213 - 2217 -->
+
 <p class="style8"></p>
 
-<table align="center" style="width: 600px">
+
+<!-- DÉBUT TITRE
+    xxx Famille xxx  
+     DÉBUT -->
+
+{% if page.Faunetitre %}
+    <table align="center" style="width: 600px">
 	<tr>
-		<td class="style14">{{ page.FAUNEfamille }} de Crète (principalement), mais aussi d'ailleurs.</td>
+		<td class="style14"> les {{ page.Faunetitre }} de Crète (principalement), mais aussi d'ailleurs.</td>
 	</tr>
-</table>
+    </table>{% endif %}
 
+<!-- FIN TITRE
+    xxx Famille xxx  
+     FIN -->
 
+    
+<!-- DÉBUT 
+    xxx FAUNA EUROPAEA valable pour Ordre, Famille xxx  
+     DÉBUT -->
 <table align="center" class="style17" style="width: 800px">
 	
       
@@ -19,12 +52,14 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.FAUNEfamille %}
+
+
+    {% if page.faunefamille:  %}
 	<tr>
 
 		<td class="style12"><div>(Selon <a href='http://www.faunaeur.org' target="_blank" <strong>Fauna Europaea</strong> </a> 
-        2014), le nombre d'espèces et sous-espèces de {{ page.FAUNEfamille }} 
-            (<a href='/Fauna/{{page.FauneOrder}}/{{page.FauneOrder}}.html'<strong>{{page.FauneOrder}}</strong></a>) 
+        2014), le nombre d'espèces et sous-espèces de {{ page.faunefamille }} 
+            (<a href='/Fauna/{{page.FAUNEorder}}/{{page.FAUNEorder}}.html'<strong>{{page.FAUNEorder}}</strong></a>) 
             répertoriées est pour:</div> </td>
 
 	</tr>{% endif %}
@@ -43,10 +78,19 @@ layout: default
 		<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }}. </div></td>
 	</tr>{% endif %}
 
+<!-- FIN 
+    xxx FAUNA EUROPAEA valable pour Ordre, Famille xxx  
+     FIN -->
+
+
     <tr>
 		<td class="style12"></td>
 	</tr>
     
+<!-- DÉBUT Notes
+    xxx Ordre, Famille xxx  
+     DÉBUT -->
+
     {% if page.fami-note %}
     <tr>
 		<td class="style12"><div> {{ page.fami-note }} </div></td>
@@ -81,104 +125,284 @@ layout: default
     <tr>
 		<td class="style12"><div> {{ page.fami-note4 }} </div></td>
 	</tr>{% endif %}
-    
+ 
+    <!-- FIN Notes
+    xxx Ordre, Famille xxx  
+     FIN -->   
    
-    <tr>
-		<td class="style12"><div> {{ page.fami-noteA }} </div></td>
-	</tr>
-
-   {% if page.fami-note5 %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-note5 }} </div></td>
-	</tr>{% endif %}
-
-    {% if page.fami-note6 %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-note6 }} </div></td>
-	</tr>{% endif %}
-
-    {% if page.fami-note7 %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-note7 }} </div></td>
-	</tr>{% endif %}
-
-    {% if page.fami-note8 %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-note8 }} </div></td>
-	</tr>{% endif %}
-
-
-    {% if page.fami-REF %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-REF }} </div></td>
-	</tr>{% endif %}
 
 </table>
 
 <p class="style8"></p>
 
 
-{% if page.fami-genre %}
-<table align="center" class="style17" style="width: 800px">
-	
-    <tr>
-     <td class="style12"><div></div></td>
-     </tr>
-
-    {% if page.fami-genre %}
-    <tr>
-     <td class="style12"><div>{{ page.fami-genre }}</div></td>
-     </tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-    </tr>
-     
-    {% if page.fami-genre1 %}
-	<tr>
-    
-		<td class="style12"><div>{{ page.fami-genre1 }}</div></td>
-	</tr>{% endif %}
-     
-    
-    {% if page.fami-genre2 %}
-	<tr>
-		
-		<td class="style12"><div>{{ page.fami-genre2 }}</div></td>
-	</tr>{% endif %}
-     
-    {% if page.fami-genre3 %}
-    <tr>
-		
-		<td class="style12"><div>{{ page.fami-genre3 }}</div></td>
-	</tr>{% endif %}
-     
-    {% if page.fami-genre4 %}
-    <tr>
-		
-		<td class="style12"><div>{{ page.fami-genre4 }}</div></td>
-	</tr>{% endif %}
-    
-     {% if page.fami-genre5 %}
-    <tr>
-		
-		<td class="style12"><div>{{ page.fami-genre5 }}</div></td>
-	</tr>{% endif %}
-
-
-     {% if page.fami-genre6 %}
-    <tr>
-		
-		<td class="style12"><div>{{ page.fami-genre6 }}</div></td>
-	</tr>{% endif %}
-
-</table> {% endif %}
-
-
-
 {{ content }}
 
 <p class="style8"></p>
+
+<!-- DÉBUT Ordre
+    xxx liste des Famille 1-4 xxx  
+     DÉBUT -->
+
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille1 and page.FAUNEespece1 and page.FAUNEespece1 and page.fauneimg1 %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille1 }} ">
+		<img src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEespece1 }}" title="{{ page.FAUNEespece1 }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille2 and page.FAUNEespece2 and page.FAUNEespece2 and page.fauneimg2 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille2 }}">
+		<img src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEespece2 }}" title="{{ page.FAUNEespece2 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille3 and page.FAUNEespece3 and page.FAUNEespece3 and page.fauneimg3 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille3 }} ">
+		<img  src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEespece3 }}" title="{{ page.FAUNEespece3 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille4 and page.FAUNEespece4 and page.FAUNEespece4 and page.fauneimg4 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille4 }}">
+		<img  src="{{ page.fauneimg4 }}" alt="{{ page.FAUNEespece4 }}" title="{{ page.FAUNEespece4 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille1 and page.faunefamille1 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille1 }}" style="text-decoration:none"> 
+		 {{ page.faunefamille1 }} </a></td>{% endif %}
+
+        {% if page.Famille2 and page.faunefamille2 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille2 }}" style="text-decoration:none">
+              {{ page.faunefamille2 }} </a></td>{% endif %}
+        
+        {% if page.Famille3 and page.faunefamille3 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille3 }}" style="text-decoration:none">
+             {{ page.faunefamille3}} </a></td>{% endif %}
+        
+        {% if page.Famille4 and page.faunefamille4 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille4 }}" style="text-decoration:none">
+             {{ page.faunefamille4 }} </a></td>{% endif %}
+	</tr>
+   
+ </table>
+<!-- FIN Ordre
+    xxx liste des Famille 1-4 xxx  
+     FIN -->
+
+
+<!-- DÉBUT Ordre
+    xxx liste des Famille 5-8 xxx  
+     DÉBUT -->
+ 
+{% if page.Famille5  %} 
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille5 and page.FAUNEespece5 and page.FAUNEespece5 and page.fauneimg5 %}
+         
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille5 }} ">
+		<img src="{{ page.fauneimg5 }}" alt="{{ page.FAUNEespece5 }}" title="{{ page.FAUNEespece5 }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille6 and page.FAUNEespece6 and page.FAUNEespece6 and page.fauneimg6 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille6 }}">
+        <img src="{{ page.fauneimg6 }}" alt="{{ page.FAUNEespece6 }}" title="{{ page.FAUNEespece6 }}" ></a>
+		
+        </td>{% endif %}
+        
+        {% if page.Famille7 and page.FAUNEespece7 and page.FAUNEespece7 and page.fauneimg7 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille7 }} ">
+		<img  src="{{ page.fauneimg7 }}" alt="{{ page.FAUNEespece7 }}" title="{{ page.FAUNEespece7 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille8 and page.FAUNEespece8 and page.FAUNEespece8 and page.fauneimg8 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille8 }}">
+		<img  src="{{ page.fauneimg8 }}" alt="{{ page.FAUNEespece8 }}" title="{{ page.FAUNEespece8 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille5 and page.faunefamille5 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille5 }}" style="text-decoration:none"> 
+		 {{ page.faunefamille5 }} </a></td>{% endif %}
+
+        {% if page.Famille6 and page.faunefamille6 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille6 }}" style="text-decoration:none">
+              {{ page.faunefamille6 }} </a></td>{% endif %}
+        
+        {% if page.Famille7 and page.faunefamille7 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille7 }}" style="text-decoration:none">
+             {{ page.faunefamille7}} </a></td>{% endif %}
+        
+        {% if page.Famille8 and page.faunefamille8 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille8 }}" style="text-decoration:none">
+            {{ page.faunefamille8 }} </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+ <!-- FIN Ordre
+    xxx liste des Famille 5-8 xxx  
+     FIN -->
+
+
+
+
+<!-- DÉBUT Ordre
+    xxx liste des Famille 9-12 xxx  
+     DÉBUT -->
+ 
+{% if page.Famille9  %} 
+<table align="center"  style="width: 960px">     
+    <tr>
+         
+        {% if page.Famille9 and page.FAUNEespece9 and page.FAUNEespece9 and page.fauneimg9 %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille9 }} ">
+		<img src="{{ page.fauneimg9 }}" alt="{{ page.FAUNEespece9 }}" title="{{ page.FAUNEespece9 }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille10 and page.FAUNEespece10 and page.FAUNEespece10 and page.fauneimg10 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille10 }}">
+		<img src="{{ page.fauneimg10 }}" alt="{{ page.FAUNEespece10 }}" title="{{ page.FAUNEespece10 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille11 and page.FAUNEespece11 and page.FAUNEespece11 and page.fauneimg11 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille11 }} ">
+		<img  src="{{ page.fauneimg11 }}" alt="{{ page.FAUNEespece11 }}" title="{{ page.FAUNEespece11 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille12 and page.FAUNEespece12 and page.FAUNEespece12 and page.fauneimg12 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille12 }}">
+		<img  src="{{ page.fauneimg12 }}" alt="{{ page.FAUNEespece12 }}" title="{{page.FAUNEespece12 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille9 and page.faunefamille9 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille9 }}" style="text-decoration:none"> 
+		 {{ page.faunefamille9 }} </a></td>{% endif %}
+
+        {% if page.Famille10 and page.faunefamille10 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille10 }}" style="text-decoration:none">
+             {{ page.faunefamille10 }} </a></td>{% endif %}
+        
+        {% if page.Famille11 and page.faunefamille11 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille11 }}" style="text-decoration:none">
+             {{ page.faunefamille11}} </a></td>{% endif %}
+        
+        {% if page.Famille12 and page.fauneespece12 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille12 }}" style="text-decoration:none">
+           {{ page.faunefamille12 }} </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
+<!-- FIN Ordre
+    xxx liste des Famille 9-12 xxx  
+     FIN -->
+ 
+
+<!-- DÉBUT Ordre
+    xxx liste des Famille 13-16 xxx  
+     DÉBUT -->
+
+{% if page.Famille13  %}  
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille13 and page.FAUNEespece13 and page.FAUNEespece13 and page.fauneimg13 %}  
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille13 }} ">
+		<img src="{{ page.fauneimg13 }}" alt="{{ page.FAUNEespece13 }}" title="{{ page.FAUNEespece13 }}" ></a> 
+        </td>{% endif %}
+		
+       {% if page.Famille14 and page.FAUNEespece14 and page.FAUNEespece14 and page.fauneimg14 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille14 }}">
+		<img src="{{ page.fauneimg14 }}" alt="{{ page.FAUNEespece14 }}" title="{{ page.FAUNEespece14 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille15 and page.FAUNEespece15 and page.FAUNEespece15 and page.fauneimg15 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille15 }} ">
+		<img  src="{{ page.fauneimg15 }}" alt="{{ page.FAUNEespece15 }}" title="{{ page.FAUNEespece15 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille16 and page.FAUNEespece16 and page.FAUNEespece16 and page.fauneimg16 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille16 }}">
+		<img  src="{{ page.fauneimg16 }}" alt="{{ page.FAUNEespece16 }}" title="{{ page.FAUNEespece16 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		{% if page.Famille13 and page.faunefamille13 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille13 }}" style="text-decoration:none"> 
+		 {{ page.faunefamille13 }} </a></td>{% endif %}
+
+        {% if page.Famille14 and page.faunefamille14 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille14 }}" style="text-decoration:none">
+             {{ page.faunefamille14 }} </a></td>{% endif %}
+        
+        {% if page.Famille15 and page.faunefamille15 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille15 }}" style="text-decoration:none">
+             {{ page.faunefamille15}} </a></td>{% endif %}
+        
+        {% if page.Famille16 and page.faunefamille16 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille16 }}" style="text-decoration:none">
+            {{ page.faunefamille16 }} </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
+<!-- FIN Ordre
+    xxx liste des Famille 13-16 xxx  
+     FIN -->
+
+
+<!-- DÉBUT Famille tribu 1
+      
+     DÉBUT -->
 
 <table align="center"  style="width: 960px">
 	
@@ -190,33 +414,41 @@ layout: default
 
 </table>
 
+<!-- FIN Famille tribu 1
+        
+     FIN -->
 
- 
+
+
+ <!-- DÉBUT Famille
+    xxx liste des Espèces 1-4 xxx  
+     DÉBUT -->
+
 <table align="center"  style="width: 960px">     
     <tr>
         
-        {% if page.HREF-espece1 and page.FAUNEspecies1 and page.FAUNEspecies1 and page.fauneimg1 %} 
+        {% if page.Espece1 and page.FAUNEespece1 and page.FAUNEespece1 and page.fauneimg1 %} 
 		<td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece1 }} ">
-		<img src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEspecies1 }}" title="{{ page.FAUNEspecies1 }}" ></a> 
+		<a href=" {{ page.Espece1 }} ">
+		<img src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEespece1 }}" title="{{ page.FAUNEespece1 }}" ></a> 
         </td>{% endif %}
 		
-       {% if page.HREF-espece2 and page.FAUNEspecies2 and page.FAUNEspecies2 and page.fauneimg2 %}
+       {% if page.Espece2 and page.FAUNEespece2 and page.FAUNEespece2 and page.fauneimg2 %}
 		<td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece2 }}">
-		<img src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEspecies2 }}" title="{{ page.FAUNEspecies2 }}" ></a>
+		<a href="{{ page.Espece2 }}">
+		<img src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEespece2 }}" title="{{ page.FAUNEespece2 }}" ></a>
         </td>{% endif %}
         
-        {% if page.HREF-espece3 and page.FAUNEspecies3 and page.FAUNEspecies3 and page.fauneimg3 %}
+        {% if page.Espece3 and page.FAUNEespece3 and page.FAUNEespece3 and page.fauneimg3 %}
         <td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece3 }} ">
-		<img  src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEspecies3 }}" title="{{ page.FAUNEspecies3 }}" ></a> 
+		<a href=" {{ page.Espece3 }} ">
+		<img  src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEespece3 }}" title="{{ page.FAUNEespece3 }}" ></a> 
         </td>{% endif %}
         
-        {% if page.HREF-espece4 and page.FAUNEspecies4 and page.FAUNEspecies4 and page.fauneimg4 %}
+        {% if page.Espece4 and page.FAUNEespece4 and page.FAUNEespece4 and page.fauneimg4 %}
         <td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece4 }}">
-		<img  src="{{ page.fauneimg4 }}" alt="{{ page.FAUNEspecies4 }}" title="{{ page.FAUNEspecies4 }}" ></a>
+		<a href="{{ page.Espece4 }}">
+		<img  src="{{ page.fauneimg4 }}" alt="{{ page.FAUNEespece4 }}" title="{{ page.FAUNEespece4 }}" ></a>
         </td>{% endif %}
 
        </tr>
@@ -224,58 +456,65 @@ layout: default
 
 	<tr>
 		
-        {% if page.HREF-espece1 and page.fauneespece1 %}
+        {% if page.Espece1 and page.fauneespece1 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece1 }}" style="text-decoration:none"> 
+		<a class="style9" href="{{ page.Espece1 }}" style="text-decoration:none"> 
 		<em> {{ page.fauneespece1 }} </em></a></td>{% endif %}
 
-        {% if page.HREF-espece2 and page.fauneespece2 %}
+        {% if page.Espece2 and page.fauneespece2 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece2 }}" style="text-decoration:none">
+		<a class="style9" href="{{ page.Espece2 }}" style="text-decoration:none">
              <em> {{ page.fauneespece2 }} </em></a></td>{% endif %}
         
-        {% if page.HREF-espece3 and page.fauneespece3 %}
+        {% if page.Espece3 and page.fauneespece3 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece3 }}" style="text-decoration:none">
+		<a class="style9" href="{{ page.Espece3 }}" style="text-decoration:none">
             <em> {{ page.fauneespece3}} </em></a></td>{% endif %}
         
-        {% if page.HREF-espece4 and page.fauneespece4 %}
+        {% if page.Espece4 and page.fauneespece4 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece4 }}" style="text-decoration:none">
+		<a class="style9" href="{{ page.Espece4 }}" style="text-decoration:none">
             <em> {{ page.fauneespece4 }} </em></a></td>{% endif %}
 	</tr>
    
  </table>
 
+<!-- FIN Famille
+    xxx liste des Espèces 1-4 xxx  
+     FIN -->
 
 
 
-  
+<!-- DÉBUT Famille
+    xxx liste des Espèces 5-8 xxx  
+     DÉBUT -->
+ 
+{% if page.Espece5  %} 
 <table align="center"  style="width: 960px">     
     <tr>
         
-        {% if page.HREF-espece1a and page.FAUNEspecies1a and page.FAUNEspecies1a and page.fauneimg1a %} 
+        {% if page.Espece5 and page.FAUNEespece5 and page.FAUNEespece5 and page.fauneimg5 %} 
 		<td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece1a }} ">
-		<img src="{{ page.fauneimg1a }}" alt="{{ page.FAUNEspecies1a }}" title="{{ page.FAUNEspecies1a }}" ></a> 
+		<a href=" {{ page.Espece5 }} ">
+		<img src="{{ page.fauneimg5 }}" alt="{{ page.FAUNEespece5 }}" title="{{ page.FAUNEespece5 }}" ></a> 
         </td>{% endif %}
 		
-        {% if page.HREF-espece2a and page.FAUNEspecies2a and page.FAUNEspecies2a and page.fauneimg2a %}
+        {% if page.Espece6 and page.FAUNEespece6 and page.FAUNEespece6 and page.fauneimg6 %}
 		<td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece2a }}">
-		<img src="{{ page.fauneimg2a }}" alt="{{ page.FAUNEspecies2a }}" title="{{ page.FAUNEspecies2a }}" ></a>
+		<a href="{{ page.Espece6 }}">
+		<img src="{{ page.fauneimg6 }}" alt="{{ page.FAUNEespece6 }}" title="{{ page.FAUNEespece6 }}" ></a>
         </td>{% endif %}
         
-        {% if page.HREF-espece3a and page.FAUNEspecies3a and page.FAUNEspecies3a and page.fauneimg3a %}
+        {% if page.Espece7 and page.FAUNEespece7 and page.FAUNEespece7 and page.fauneimg7 %}
         <td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece3a }} ">
-		<img  src="{{ page.fauneimg3a }}" alt="{{ page.FAUNEspecies3a }}" title="{{ page.FAUNEspecies3a }}" ></a> 
+		<a href=" {{ page.Espece7 }} ">
+		<img  src="{{ page.fauneimg7 }}" alt="{{ page.FAUNEespece7 }}" title="{{ page.FAUNEespece7 }}" ></a> 
         </td>{% endif %}
         
-        {% if page.HREF-espece4a and page.FAUNEspecies4a and page.FAUNEspecies4a and page.fauneimg4a %}
+        {% if page.Espece8 and page.FAUNEespece8 and page.FAUNEespece8 and page.fauneimg8 %}
         <td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece4a }}">
-		<img  src="{{ page.fauneimg4a }}" alt="{{ page.FAUNEspecies4a }}" title="{{ page.FAUNEspecies4a }}" ></a>
+		<a href="{{ page.Espece8 }}">
+		<img  src="{{ page.fauneimg8 }}" alt="{{ page.FAUNEespece8 }}" title="{{ page.FAUNEespece8 }}" ></a>
         </td>{% endif %}
 
        </tr>
@@ -283,30 +522,32 @@ layout: default
 
 	<tr>
 		
-        {% if page.HREF-espece1a and page.fauneespece1a %}
+        {% if page.Espece5 and page.fauneespece5 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece1a }}" style="text-decoration:none"> 
-		<em> {{ page.fauneespece1a }} </em></a></td>{% endif %}
+		<a class="style7" href="{{ page.Espece5 }}" style="text-decoration:none"> 
+		<em> {{ page.fauneespece5 }} </em></a></td>{% endif %}
 
-        {% if page.HREF-espece2a and page.fauneespece2a %}
+        {% if page.Espece6 and page.fauneespece6 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece2a }}" style="text-decoration:none">
-             <em> {{ page.fauneespece2a }} </em></a></td>{% endif %}
+		<a class="style7" href="{{ page.Espece6 }}" style="text-decoration:none">
+             <em> {{ page.fauneespece6 }} </em></a></td>{% endif %}
         
-        {% if page.HREF-espece3a and page.fauneespece3a %}
+        {% if page.Espece7 and page.fauneespece7 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece3a }}" style="text-decoration:none">
-            <em> {{ page.fauneespece3a}} </em></a></td>{% endif %}
+		<a class="style7" href="{{ page.Espece7 }}" style="text-decoration:none">
+            <em> {{ page.fauneespece7}} </em></a></td>{% endif %}
         
-        {% if page.HREF-espece4a and page.fauneespece4a %}
+        {% if page.Espece8 and page.fauneespece8 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece4a }}" style="text-decoration:none">
-            <em> {{ page.fauneespece4a }} </em></a></td>{% endif %}
+		<a class="style7" href="{{ page.Espece8 }}" style="text-decoration:none">
+            <em> {{ page.fauneespece8 }} </em></a></td>{% endif %}
 	</tr>
    
- </table>
+ </table>{% endif %}
  
-
+<!-- FIN Famille
+    xxx liste des Espèces 5-8 xxx  
+     FIN -->
 
 
 
@@ -1944,7 +2185,9 @@ layout: default
  
  
  
-
+<!-- DÉBUT date mis à jour
+    
+     DÉBUT -->
 
 <table align="center" style="width: 960px">
 	<tr>
@@ -1952,3 +2195,6 @@ layout: default
 	</tr>
 </table>
 
+<!-- FIN date mis à jour
+    
+     FIN -->
