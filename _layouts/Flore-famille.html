@@ -4,16 +4,22 @@ layout: default
 ---
 <p class="style8"></p>
 <!-- Titre: famille  -->
+
+{% if page.Floretitre %}
     <table align="center" style="width: 600px">
 	   <tr>
-		   <td class="style14">{{ page.FLOREfamille }} de Crète (principalement), mais aussi d'ailleurs.</td>
+		   <td class="style14">Les {{ page.Floretitre }} de Crète (principalement), mais aussi d'ailleurs.</td>
 	   </tr>
-    </table>
+    </table>{% endif %}
 
 
 <!-- Description et caractéristiques de la famille  -->
 <table align="center" class="style17" style="width: 800px">
 	
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
     {% if page.fami-intro %}
     <tr>
 		<td class="style12"><div> {{ page.fami-intro }} </div></td>
@@ -62,30 +68,27 @@ layout: default
 
     <!-- Aire de répartition et nombre d'espèces  -->
 
-    {% if page.fami-nbrespece %}
+    {% if page.florefamille %}
 	<tr>
-		<td class="style12"><div> {{page.fami-nbrespece }}</div> </td>
+		<td class="style12"><div>La famille des {{page.florefamille }} dans le monde: 
+            {{ page.nbrespeces }}.</div> </td>
 	</tr>{% endif %}
-    <tr>
-		<td class="style12"></td>
-	</tr>
 
-    <tr>
-		<td class="style12"></td>
-	</tr>
     
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
-
+    
     {% if page.fami-Crete %}
 	<tr>
-		<td class="style12"><div>--- Nombre d'(sous)espèces répertoriées en Crète: {{ page.fami-Crete }}. </div> </td>
+		<td class="style12"><div>--- Pour la Crète, le nombre d'espèces répertoriées est: {{ page.fami-Crete }}. </div> </td>
 	</tr>{% endif %}
 
     {% if page.fami-Belgique %}
     <tr>
-		<td class="style12"><div>--- Nombre d'(sous)espèces répertoriées en Belgique: {{ page.fami-Belgique }}. </div></td>
+		<td class="style12"><div>--- Pour la Belgique, le nombre d'espèces répertoriées est: {{ page.fami-Belgique }}. </div></td>
 	</tr>{% endif %}
-
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -118,59 +121,9 @@ layout: default
 		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
 	</tr>{% endif %}
 
-   {% if page.fami-REF %}
-    <tr>
-		<td class="style12"><div> {{ page.fami-REF }} </div></td>
-	</tr>{% endif %}
 
 </table>
 
-
-
-{% if page.fami-genre %}
-<table align="center" class="style17" style="width: 800px">
-	
-    
-    <tr>
-     {% if page.fami-genre %}
-	<td class="style12"><div>{{ page.fami-genre }}</div></td>
-
-	</tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-    </tr>
-
-	<tr>
-     {% if page.fami-genre1 %}
-		<td class="style12"><div>{{ page.fami-genre1 }}</div></td>
-	</tr>{% endif %}
-
-	<tr>
-		{% if page.fami-genre2 %}
-		<td class="style12"><div>{{ page.fami-genre2 }}</div></td>
-	</tr>{% endif %}
-
-    <tr>
-		{% if page.fami-genre3 %}
-		<td class="style12"><div>{{ page.fami-genre3 }}</div></td>
-	</tr>{% endif %}
-
-    <tr>
-		{% if page.fami-genre4 %}
-		<td class="style12"><div>{{ page.fami-genre4 }}</div></td>
-	</tr>{% endif %}
-    
-    <tr>
-		{% if page.fami-genre5 %}
-		<td class="style12"><div>{{ page.fami-genre5 }}</div></td>
-	</tr>{% endif %}
-
-    <tr>
-		{% if page.fami-genre6 %}
-		<td class="style12"><div>{{ page.fami-genre6 }}</div></td>
-	</tr>{% endif %}
-</table>{% endif %}
 
 <p class="style8"></p>
 
@@ -237,26 +190,26 @@ layout: default
 <table align="center"  style="width: 960px">
 	
       <tr>
-     {% if page.fami-tribe1  %}
-		<td class="style11"> {{ page.fami-tribe1 }} </td>
+     {% if page.fami-tribu1  %}
+		<td class="style11"> {{ page.fami-tribu1 }} </td>
         {% endif %}
     </tr>
 
 </table>
 
 
-{% if page.descr-tribe10 %}
+{% if page.descr-tribu1 %}
 <table align="center"  style="width: 800px">
 	
     <tr>
-     {% if page.descr-tribe10  %}
-		<td class="style11"> {{ page.descr-tribe10 }} </td>
+     {% if page.descr-tribu1  %}
+		<td class="style11"> --- {{ page.descr-tribu1 }} </td>
         {% endif %}
     </tr>
     
     <tr>
-     {% if page.descr-tribe1 %}
-	<td class="style12"><div><em>{{ page.descr-tribe1 }}</em></div></td>
+     {% if page.descr-tribu2 %}
+	<td class="style12"><div> --- {{ page.descr-tribu2 }}</div></td>
 
 	</tr>{% endif %}
 
@@ -264,58 +217,62 @@ layout: default
 		<td class="style12"></td>
     </tr>
 
-	<tr>
-     {% if page.descr-tribe1A %}
-		<td class="style12"><div><em>{{ page.descr-tribe1A }}</em></div></td>
-	</tr>{% endif %}
-
-	<tr>
-		{% if page.descr-tribe1B %}
-		<td class="style12"><div><em>{{ page.descr-tribe1B }}</em></div></td>
-	</tr>{% endif %}
-
-    <tr>
-		{% if page.descr-tribe1C %}
-		<td class="style12"><div><em>{{ page.descr-tribe1C }}</em></div></td>
-	</tr>{% endif %}
-
-    <tr>
-		{% if page.descr-tribe1D %}
-		<td class="style12"><div>{{ page.descr-tribe1D }}</div></td>
-	</tr>{% endif %}
-    
-    
 </table>{% endif %}
 
-<table align="center"  style="width: 960px">  
-    
+<table align="center"  style="width: 960px">     
     <tr>
-         {% if page.HREF-espece1 and page.FLOREspecies1 and page.FLOREspecies1 and page.floreimg1 %}
+        
+        {% if page.Espece1 and page.FLOREespece1 and page.FLOREespece1 and page.floreimg1 %} 
 		<td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece1 }} ">
-		<img src="{{ page.floreimg1 }}" alt="{{ page.FLOREspecies1 }}" title="{{ page.FLOREspecies1 }}" ></a> 
+		<a href=" {{ page.Espece1 }} ">
+		<img src="{{ page.floreimg1 }}" alt="{{ page.FLOREespece1 }}" title="{{ page.FLOREespece1 }}" ></a> 
         </td>{% endif %}
 		
-        {% if page.HREF-espece2 and page.floreimg2 and page.FLOREspecies2 and page.FLOREspecies2 %}
+       {% if page.Espece2 and page.FLOREespece2 and page.FLOREespece2 and page.floreimg2 %}
 		<td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece2 }}">
-		<img src="{{ page.floreimg2 }}" alt="{{ page.FLOREspecies2 }}" title="{{ page.FLOREspecies2 }}" ></a>
-        </td> {% endif %}
-        
-        {% if page.HREF-espece3 and page.floreimg3 and page.FLOREspecies3 and page.FLOREspecies3 %}
-        <td class="style7" style="width: 240px">
-		<a href=" {{ page.HREF-espece3 }} ">
-		<img  src="{{ page.floreimg3 }}" alt="{{ page.FLOREspecies3 }}" title="{{ page.FLOREspecies3 }}" ></a> 
+		<a href="{{ page.Espece2 }}">
+		<img src="{{ page.floreimg2 }}" alt="{{ page.FLOREespece2 }}" title="{{ page.FLOREespece2 }}" ></a>
         </td>{% endif %}
         
-        {% if page.HREF-espece4 and page.floreimg4 and page.FLOREspecies4 and page.FLOREspecies4 %}
+        {% if page.Espece3 and page.FLOREespece3 and page.FLOREespece3 and page.floreimg3 %}
         <td class="style7" style="width: 240px">
-		<a href="{{ page.HREF-espece4 }}">
-		<img  src="{{ page.floreimg4 }}" alt="{{ page.FLOREspecies4 }}" title="{{ page.FLOREspecies4 }}" ></a>
+		<a href=" {{ page.Espece3 }} ">
+		<img  src="{{ page.floreimg3 }}" alt="{{ page.FLOREespece3 }}" title="{{ page.FLOREespece3 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Espece4 and page.FLOREespece4 and page.FLOREespece4 and page.floreimg4 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Espece4 }}">
+		<img  src="{{ page.floreimg4 }}" alt="{{ page.FLOREespece4 }}" title="{{ page.FLOREespece4 }}" ></a>
         </td>{% endif %}
 
        </tr>
-    </table>
+
+
+	<tr>
+		
+        {% if page.Espece1 and page.floreespece1 %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece1 }}" style="text-decoration:none"> 
+		<em> {{ page.floreespece1 }} </em></a></td>{% endif %}
+
+        {% if page.Espece2 and page.floreespece2 %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece2 }}" style="text-decoration:none">
+             <em> {{ page.floreespece2 }} </em></a></td>{% endif %}
+        
+        {% if page.Espece3 and page.floreespece3 %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece3 }}" style="text-decoration:none">
+            <em> {{ page.floreespece3}} </em></a></td>{% endif %}
+        
+        {% if page.Espece4 and page.floreespece4 %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece4 }}" style="text-decoration:none">
+            <em> {{ page.floreespece4 }} </em></a></td>{% endif %}
+	</tr>
+   
+ </table>
 
 <table align="center"  style="width: 960px">
 	<tr>

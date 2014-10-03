@@ -27,7 +27,7 @@ layout: default
         {% if page.floretribe %}
         <td class="style12" style="width: 160px">{{ page.floretribe }}</td>{% endif %}
 
-		<td class="style12" style="width: 300px"><em>{{ page.floregenre }}</em>{{ page.floregenreAUTEUR }}</td>
+		<td class="style12" style="width: 300px"><em><em>{{ page.FLOREgenre }}</em> {{ page.AUTEURgenre }}</td>
 	</tr>
 </table>
 
@@ -47,26 +47,34 @@ layout: default
 
 <table align="center" class="style17" style="width: 800px">
 	
-    {% if page.nom-synonyme %}
+    {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.:<strong><em>{{ page.nom-synonyme }}</em></strong> {{ page.nom-synauteur}} </td>
+		<td class="style12"> syn.:<em><strong> {{ page.Synonyme }} </strong></em> {{ page.Syn-auteur}} </td>
 	</tr>{% endif %}
 	<tr>
 		<td class="style12"> </td>
 	</tr>
 	<tr>
+		<td class="style12"> </td>
+	</tr>
+    
+    {% if page.nom-commun %}
+    <tr>
+		<td class="style12" ><strong>Nom commun</strong>: {{ page.nom-commun }} </td>
+	</tr>{% endif %}
+
+    <tr>
 		<td class="style12"> </td>
 	</tr>
 
-    {% if page.nom-commun %}
-    <tr>
-		<td class="style12" ><div><strong>Nom commun</strong>: {{ page.nom-commun }}</div> </td>
-	</tr>{% endif %}
-    
     {% if page.descr-plante %}
 	<tr>
 		<td class="style12" > {{ page.descr-plante }} </td>
 	</tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
     {% if page.descr-feuilles %}
     <tr>
@@ -81,12 +89,22 @@ layout: default
 	<tr>
 		<td class="style12"><div><strong>Fleurs:</strong>  {{ page.descr-fleurs }} </div></td>
 	</tr>{% endif %}
+     {% if page.pollinisation %}
+	<tr>
+		<td class="style12"><div><strong>Pollinisation:</strong>  {{ page.pollinisation }} </div></td>
+	</tr>{% endif %}
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
     {% if page.descr-fruit %}
     <tr>
 		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
 	</tr>{% endif %}
-
+    {% if page.descr-dispersion %}
+    <tr>
+		<td class="style12" ><div>{{ page.descr-dispersion }}  </div> </td>    
+    </tr>{% endif %}
 
 
 
@@ -101,69 +119,18 @@ layout: default
 		<td class="style12"><strong>Hauteur:</strong> {{ page.descr-hauteur }} </td>
 	</tr>{% endif %}
 
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+    {% if page.descr-floraisonCrète %}
+    <tr>
+		<td class="style12" ><strong>Floraison en Crète:</strong> {{ page.descr-floraisonCrète }} </td>
+	</tr>{% endif %}
+
     {% if page.descr-floraison %}
     <tr>
-		<td class="style12" ><strong>Floraison en Crète:</strong> {{ page.descr-floraison }} </td>
-	</tr>{% endif %}
-
-    {% if page.descr-floraison1 %}
-    <tr>
-		<td class="style12" ><strong>Floraison:</strong> {{ page.descr-floraison1 }} </td>
-	</tr>{% endif %}
-
-    {% if page.descr-altitudes %}
-	<tr>
-		<td class="style12" ><strong>Altitudes en Crète: </strong> {{ page.descr-altitudes }} </td>
-	</tr>{% endif %}
-
-     {% if page.descr-altitudes1 %}
-	<tr>
-		<td class="style12" ><strong>Altitudes: </strong> {{ page.descr-altitudes1 }} </td>
-	</tr>{% endif %}
-    <tr>
-		<td class="style12"></td>
-	</tr>
-         
-    <tr>
-		<td class="style12"></td>
-	</tr>
-
-{% if page.descr-indigenatCrete %}
-	<tr>
-		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.descr-indigenatCrete }} </td>
-	</tr>{% endif %}
-
-    {% if page.descr-indigenatBelgium %}
-	<tr>
-		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.descr-indigenatBelgium }} </td>
-	</tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
-
-       {% if page.descr-biotopesCrete %}
-	<tr>
-		<td class="style12" ><div><strong>Biotopes en Crète:</strong> {{ page.descr-biotopesCrete }} </div></td>
-	</tr>{% endif %}
-
-     {% if page.descr-biotopesgeneral %}
-	<tr>
-		<td class="style12" ><strong>Biotopes:</strong> {{ page.descr-biotopesgeneral }} </td>
-	</tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
-
-    {% if page.descr-distribution %}
-	<tr>
-		<td class="style12" ><strong>Distribution:</strong> {{ page.descr-distribution }}</td>
-	</tr>{% endif %}
-
-    {% if page.descr-origine %}
-    <tr>
-		<td class="style12"><strong>Origine:</strong>  {{ page.descr-origine }}</td>
+		<td class="style12" ><strong>Floraison:</strong> {{ page.descr-floraison }} </td>
 	</tr>{% endif %}
 
     <tr>
@@ -173,101 +140,179 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>
-     
-              
-    {% if page.descr-note1 %}
-    <tr>
-		<td class="style12">{{ page.descr-note1 }}</td>
+
+    {% if page.IndigenatCrete %}
+	<tr>
+		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.IndigenatCrete }} </td>
 	</tr>{% endif %}
 
-              
-    {% if page.descr-note2 %}
-    <tr>
-		<td class="style12"><div>{{ page.descr-note2 }} </div></td>
+    {% if page.IndigenatBelgium %}
+	<tr>
+		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.IndigenatBelgium }} </td>
 	</tr>{% endif %}
-              
-    {% if page.descr-note3 %}
-    <tr>
-		<td class="style12"><div>{{ page.descr-note3 }} </div></td>
-	</tr>{% endif %}
-    
-    <tr>
-		<td class="style12"></td>
-	</tr>
-    
-    {% if page.descr-OBS %}
-    <tr>
-		<td class="style12" ><div>{{ page.descr-OBS }}  </div> </td>    
-    </tr>{% endif %}
 
-    {% if page.descr-OBS1 %}
-    <tr>
-		<td class="style12" ><div>{{ page.descr-OBS1 }}  </div> </td>    
-    </tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-OBS2 %}
-    <tr>
-		<td class="style12" ><div>{{ page.descr-OBS2 }}  </div> </td>    
-    </tr>{% endif %}
-    
+    {% if page.Altitudes %}
+	<tr>
+		<td class="style12" ><strong>Altitudes: </strong> {{ page.Altitudes }} </td>
+	</tr>{% endif %}
+
+    {% if page.BiotopesCrete %}
+	<tr>
+		<td class="style12" ><div><strong>Biotopes en Crète:</strong> {{ page.BiotopesCrete }} </div></td>
+	</tr>{% endif %}
+
+     {% if page.Biotopesgeneral %}
+	<tr>
+		<td class="style12" ><strong>Biotopes:</strong> {{ page.Biotopesgeneral }} </td>
+	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.descr-dispersion %}
     <tr>
-		<td class="style12" ><div>{{ page.descr-dispersion }}  </div> </td>    
+		<td class="style12"></td>
+	</tr>
+  
+    {% if page.Origine %}
+    <tr>
+		<td class="style12"><strong>Origine:</strong>  {{ page.Origine }}</td>
+	</tr>{% endif %}
+
+    {% if page.Distribution %}
+	<tr>
+		<td class="style12" ><strong>Distribution:</strong> {{ page.Distribution }}</td>
+	</tr>{% endif %}
+
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+         
+                  
+    {% if page.Note1 %}
+    <tr>
+		<td class="style12">--- {{ page.Note1 }}</td>
+	</tr>{% endif %}
+
+              
+    {% if page.Note2 %}
+    <tr>
+		<td class="style12"><div>--- {{ page.Note2 }} </div></td>
+	</tr>{% endif %}
+              
+    {% if page.Note3 %}
+    <tr>
+		<td class="style12"><div>--- {{ page.Note3 }} </div></td>
+	</tr>{% endif %}
+  
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+    {% if page.OBSERVATION %}
+    <tr>
+		<td class="style12" ><div>OBS. --- <em>{{ page.FAUNEespece }}</em> {{ page.OBSERVATION }}  </div> </td>    
+    </tr>{% endif %}
+    
+
+    {% if page.OBS1 %}
+    <tr>
+		<td class="style12" ><div>{{ page.OBS1 }}  </div> </td>    
     </tr>{% endif %}
 
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+    {% if page.OBS2 %}
+    <tr>
+		<td class="style12" ><div>{{ page.OBS2 }}  </div> </td>    
+    </tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+  
+    <!-- FIN Notes et Observations
+    
+     FIN -->
+    
 	<tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.Ravageur %}
+    <!-- DÉBUT Liste rouge Utilité et Nuisance
+    
+     DÉBUT -->
+
+    {% if page.Listerouge %}
     <tr>
-		<td class="style12" ><div><strong>Plante-hôte pour:</strong>{{ page.Ravageur }}  </div> </td>    
+		<td class="style12" ><div><strong>Liste rouge</strong>: {{ page.Listerouge }}  </div> </td>    
     </tr>{% endif %}
+         
     <tr>
 		<td class="style12"></td>
+
 	</tr>
+    {% if page.Utilite %}
+    <tr>
+		<td class="style12" ><div><strong>Utilité</strong>: {{ page.Utilite }}  </div> </td>    
+    </tr>{% endif %}
+     <tr>
+		<td class="style12"></td>
+	</tr>
+
+    {% if page.Nuisance %}
+    <tr>
+		<td class="style12" ><div><strong>Nuisance</strong>: {{ page.Nuisance }}  </div> </td>    
+    </tr>{% endif %}
+     <tr>
+		<td class="style12"></td>
+	</tr>
+
+
+
 	</table>
 
 
 <p class="style8"></p>
 
-<table align="center"  style="width: 960px">
-	
-      <tr>{% if page.descr-Ravageur %}
-		<td class="style11">{{ page.descr-Ravageur }}   </td>
-       {% endif %}
-    </tr>
-
-</table>
 
 
-	<table align="center" style="width: 870px">
+{% if page.Ravageur %}
+	<table align="center" class="style17" style="width: 800px">
+    <tr>
+		<td class="style12" > </td>
+	</tr>
     
+    {% if page.Ravageur %}
+    <tr>
+		<td class="style12" ><div><strong>Ravageur</strong>: {{ page.Ravageur }}  </div> </td> 
+	</tr>{% endif %}
 	 <tr> 
 
-        {% if page.phytophage1 and page.phytophage1A and page.HOTE01 and page.HOTE01 %}
+        {% if page.ravageur1 and page.imgravageur1 and page.RAVAGEUR-espece1 and page.RAVAGEUR-espece1 %}
         <td class="style7" style="width: 240px">
-        <a href=" {{ page.phytophage1 }} ">
-           <img src=" {{ page.phytophage1A }}" alt="{{ page.HOTE01 }}" title="{{ page.HOTE01 }}" />
+        <a href=" {{ page.ravageur1 }} ">
+           <img src=" {{ page.imgravageur1 }}" alt="{{ page.RAVAGEUR-espece1 }}" title="{{ page.RAVAGEUR-espece1 }}" />
          </a></td>{% endif %}
          
-         {% if page.phytophage2 and page.phytophage2A and page.HOTE02 and page.HOTE02 %}
+         {% if page.ravageur2 and page.imgravageur2 and page.RAVAGEUR-espece2 and page.RAVAGEUR-espece2 %}
          <td class="style7" style="width: 240px">
-                <a href=" {{ page.phytophage2 }} ">
-                <img src=" {{ page.phytophage2A }}" alt="{{ page.HOTE02 }}" title="{{ page.HOTE02 }}" />
+                <a href=" {{ page.ravageur2 }} ">
+                <img src=" {{ page.imgravageur2 }}" alt="{{ page.RAVAGEUR-espece2 }}" title="{{ page.RAVAGEUR-espece2 }}" />
             </a></td>{% endif %}
 
-         {% if page.phytophage3 and page.phytophage3A and page.HOTE03 and page.HOTE03 %}
+         {% if page.ravageur3 and page.imgravageur3 and page.RAVAGEUR-espece3 and page.RAVAGEUR-espece3 %}
          <td class="style7" style="width: 240px">
-        <a href=" {{ page.phytophage3 }} ">
-         <img src=" {{ page.phytophage3A }}" alt="{{ page.HOTE03 }}" title="{{ page.HOTE03 }}" />
+        <a href=" {{ page.ravageur3 }} ">
+         <img src=" {{ page.imgravageur3 }}" alt="{{ page.RAVAGEUR-espece3 }}" title="{{ page.RAVAGEUR-espece3 }}" />
          </a></td>{% endif %}
 
           
@@ -276,71 +321,35 @@ layout: default
      
         <tr>
 
-        {% if page.phytophage1 and page.HOTE0A %}
+        {% if page.ravageur1 and page.RAVAGEURnom1 %}
         <td class="style7" style="width: 240px">
-        <a class="style7" href=" {{ page.phytophage1 }} " style="text-decoration:none">
-            <em> {{ page.HOTE0A }} </em></a></td>{% endif %}
+        <a class="style7" href=" {{ page.ravageur1 }} " style="text-decoration:none">
+            <em> {{ page.RAVAGEURnom1 }} </em></a></td>{% endif %}
           
-         {% if page.phytophage2 and page.HOTE0B %}
+         {% if page.ravageur2 and page.RAVAGEURnom2 %}
          <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.phytophage2 }} " style="text-decoration:none">
-               <em> {{ page.HOTE0B }} </em></a></td>{% endif %}
+         <a class="style7" href=" {{ page.ravageur2 }} " style="text-decoration:none">
+               <em> {{ page.RAVAGEURnom1 }} </em></a></td>{% endif %}
 
-         {% if page.phytophage3 and page.HOTE0C %}
+         {% if page.ravageur3 and page.RAVAGEURnom3 %}
          <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.phytophage3 }} " style="text-decoration:none">
-            <em> {{ page.HOTE0C }} </em></a></td>{% endif %}
+         <a class="style7" href=" {{ page.ravageur3 }} " style="text-decoration:none">
+            <em> {{ page.RAVAGEURnom1 }} </em></a></td>{% endif %}
         
          
          </tr>
 
-        </table>
+        </table>{% endif %}
 
 
-	<table align="center" style="width: 870px">
-    
-        
-         <tr>
-        {% if page.phytophage4 and page.phytophage4A and page.HOTE04 and page.HOTE04 %}
-         <td class="style7" style="width: 240px">
-          <a href=" {{ page.phytophage4 }} ">
-           <img src="{{ page.phytophage4A }}" alt="{{ page.HOTE04 }}" title="{{ page.HOTE04 }}" />
-         </a></td>{% endif %}
 
-         {% if page.phytophage5 and page.phytophage5A and page.HOTE05 and page.HOTE05 %}
-         <td class="style7" style="width: 240px">
-          <a href=" {{ page.phytophage5 }} ">
-           <img src="{{ page.phytophage5A }}" alt="{{ page.HOTE05 }}" title="{{ page.HOTE05 }}" />
-         </a></td>{% endif %}
-
-
-        </tr>
-
-	     <tr> 
-         {% if page.phytophage4 and page.HOTE0D %}
-         <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.phytophage4 }} " style="text-decoration:none">
-            <em>{{ page.HOTE0D }} </em></a></td>{% endif %} 
-         
-         {% if page.phytophage5 and page.HOTE0E %}
-         <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.phytophage5 }} " style="text-decoration:none">
-            <em>{{ page.HOTE0E }} </em></a></td>{% endif %}
-         </tr>
-         </table>
-        
- 
-   <p class="style8"></p>     
-<p class="style8"></p>
-   
-  <p class="style8"></p>  
 
 <p class="style8"></p>
 
 {{ content }}
 
 
-
+{% if page.floreimg1 %}
 
 	<table align="center" style="width: 900px">
 	
@@ -615,7 +624,7 @@ layout: default
 
 
 
-</table>
+</table>{% endif %}
 
 
 
