@@ -1,6 +1,6 @@
 ---
 layout: default
-title: " "
+title: 
 ---
 <p class="style8"></p>
 
@@ -443,6 +443,62 @@ title: " "
         <td class="style7" style="width: 240px">
 		<a class="style7" href="{{ page.HREF-espece8a }}" style="text-decoration:none">
              {{ page.floreespece8a }} </a></td>{% endif %}
+	</tr>
+
+
+  </table> 
+     
+
+<table align="center"  style="width: 960px">  
+    <tr>
+         {% if page.HREF-espece5b and page.FLOREspecies5b and page.FLOREspecies5b and page.floreimg5b %}
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece5b }} ">
+		<img src="{{ page.floreimg5b }}" alt="{{ page.FLOREspecies5b }}" title="{{ page.FLOREspecies5b }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.HREF-espece6b and page.floreimg6b and page.FLOREspecies6b and page.FLOREspecies6b %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece6b }}">
+		<img src="{{ page.floreimg6b }}" alt="{{ page.FLOREspecies6b }}" title="{{ page.FLOREspecies6b }}" ></a>
+        </td> {% endif %}
+        
+        {% if page.HREF-espece7b and page.floreimg7b and page.FLOREspecies7b and page.FLOREspecies7b %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.HREF-espece7b }} ">
+		<img  src="{{ page.floreimg7b }}" alt="{{ page.FLOREspecies7b }}" title="{{ page.FLOREspecies7b }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.HREF-espece8b and page.floreimg8b and page.FLOREspecies8b and page.FLOREspecies8b %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece8b }}">
+		<img  src="{{ page.floreimg8b }}" alt="{{ page.FLOREspecies8b }}" title="{{ page.FLOREspecies8b }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.HREF-espece5b and page.floreespece5b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece5b }}" style="text-decoration:none"> 
+		 {{ page.floreespece5b }} </a></td>{% endif %}
+
+        {% if page.HREF-espece6b and page.floreespece6b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece6b }}" style="text-decoration:none">
+              {{ page.floreespece6b }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece7b and page.floreespece7b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece7b }}" style="text-decoration:none">
+             {{ page.floreespece7b }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece8b and page.floreespece8b %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece8b }}" style="text-decoration:none">
+             {{ page.floreespece8b }} </a></td>{% endif %}
 	</tr>
 
 
