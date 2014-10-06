@@ -33,7 +33,7 @@ layout: default
 {% if page.Faunetitre %}
     <table align="center" style="width: 600px">
 	<tr>
-		<td class="style14"> Les {{ page.Faunetitre }} de Crète (principalement), mais aussi d'ailleurs.</td>
+		<td class="style14"> Faune de Crète (principalement), mais quelquefois aussi d'ailleurs: les {{ page.Faunetitre }}.</td>
 	</tr>
     </table>{% endif %}
 
@@ -126,6 +126,23 @@ layout: default
 		<td class="style12"><div> {{ page.fami-note4 }} </div></td>
 	</tr>{% endif %}
  
+       <tr>
+		<td class="style12"></td>
+    </tr>
+
+    {% if page.fami-note5 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note5 }} </div></td>
+	</tr>{% endif %}
+
+      <tr>
+		<td class="style12"></td>
+    </tr>
+
+    {% if page.fami-note6 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note6 }} </div></td>
+	</tr>{% endif %}
     <!-- FIN Notes
     xxx Ordre, Famille xxx  
      FIN -->   
