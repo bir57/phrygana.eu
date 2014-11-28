@@ -287,63 +287,102 @@ layout: default
 
 <p class="style8"></p>
 
-
-
 {% if page.Ravageur %}
 	<table align="center" class="style17" style="width: 800px">
-    <tr>
+    
+	<tr>
 		<td class="style12" > </td>
 	</tr>
     
+    <tr>
+		<td class="style11" ><strong>Plante nourricière pour: </strong>  </td>
+	</tr>
+
     {% if page.Ravageur %}
     <tr>
-		<td class="style12" ><div><strong>Ravageur(s)</strong>: {{ page.Ravageur }}  </div> </td> 
+		<td class="style12" ><div>--- {{ page.Ravageur }}  </div> </td> 
 	</tr>{% endif %}
-	 <tr> 
 
-        {% if page.ravageur1 and page.imgravageur1 and page.RAVAGEUR-espece1 and page.RAVAGEUR-espece1 %}
-        <td class="style7" style="width: 240px">
+    <tr>
+		<td class="style12" > </td>
+	</tr> 
+
+
+{% if page.Ravageura %}
+    <tr>
+		<td class="style12" ><div>--- {{ page.Ravageura }}  </div> </td> 
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12" > </td>
+	</tr> 
+
+
+
+        {% if page.ravageur1 %}
+        <tr>
+		<td class="style12" > </td>
+	    </tr> 
+
+        <tr>
+        
+        <td class="style9">
+      
+        <table>
+              
+        <tr> 
+
+        <td>
         <a href=" {{ page.ravageur1 }} ">
-           <img src=" {{ page.imgravageur1 }}" alt="{{ page.RAVAGEUR-espece1 }}" title="{{ page.RAVAGEUR-espece1 }}" />
-         </a></td>{% endif %}
+        <img class="center" src="{{ page.imgravageur1 }}" 
+        alt="{{ page.RAVAGEUR-espece1 }}" title="{{ page.RAVAGEUR-espece1 }}" />
+        </td>
          
-         {% if page.ravageur2 and page.imgravageur2 and page.RAVAGEUR-espece2 and page.RAVAGEUR-espece2 %}
-         <td class="style7" style="width: 240px">
-                <a href=" {{ page.ravageur2 }} ">
-                <img src=" {{ page.imgravageur2 }}" alt="{{ page.RAVAGEUR-espece2 }}" title="{{ page.RAVAGEUR-espece2 }}" />
-            </a></td>{% endif %}
-
-         {% if page.ravageur3 and page.imgravageur3 and page.RAVAGEUR-espece3 and page.RAVAGEUR-espece3 %}
-         <td class="style7" style="width: 240px">
+        <td>
+        <a href=" {{ page.ravageur2 }} ">
+        <img class="center" src="{{ page.imgravageur2 }}" 
+        alt="{{ page.RAVAGEUR-espece2 }}" title="{{ page.RAVAGEUR-espece2 }}" />
+        </td>
+        
+        <td>
         <a href=" {{ page.ravageur3 }} ">
-         <img src=" {{ page.imgravageur3 }}" alt="{{ page.RAVAGEUR-espece3 }}" title="{{ page.RAVAGEUR-espece3 }}" />
-         </a></td>{% endif %}
+        <img class="center" src="{{ page.imgravageur3 }}" 
+        alt="{{ page.RAVAGEUR-espece3 }}" title="{{ page.RAVAGEUR-espece3 }}" />
+        </td>
 
-          
         </tr>
 
-     
         <tr>
 
-        {% if page.ravageur1 and page.RAVAGEURnom1 %}
-        <td class="style7" style="width: 240px">
-        <a class="style7" href=" {{ page.ravageur1 }} " style="text-decoration:none">
-            <em> {{ page.RAVAGEURnom1 }} </em></a></td>{% endif %}
-          
-         {% if page.ravageur2 and page.RAVAGEURnom2 %}
-         <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.ravageur2 }} " style="text-decoration:none">
-               <em> {{ page.RAVAGEURnom2 }} </em></a></td>{% endif %}
+        <td>
+        <a  href=" {{ page.ravageur1 }} " style="text-decoration:none">
+            <em><span class="style9"> {{ page.RAVAGEURnom1 }} </span></em></td>
 
-         {% if page.ravageur3 and page.RAVAGEURnom3 %}
-         <td class="style7" style="width: 240px">
-         <a class="style7" href=" {{ page.ravageur3 }} " style="text-decoration:none">
-            <em> {{ page.RAVAGEURnom1 }} </em></a></td>{% endif %}
-        
-         
-         </tr>
+        <td>
+        <a  href=" {{ page.ravageur2 }} " style="text-decoration:none">
+               <em><span class="style9">{{ page.RAVAGEURnom2 }}</span></em></td> 
 
-        </table>{% endif %}
+         <td>
+        <a  href=" {{ page.ravageur3 }} " style="text-decoration:none">
+               <em><span class="style9">{{ page.RAVAGEURnom3 }}</span></em></td>
+
+        </tr>
+
+        </table>
+    
+        </td>
+
+        </tr>{% endif %}
+
+   
+	</table>{% endif %}
+
+
+
+
+
+    
+
 
 
 
