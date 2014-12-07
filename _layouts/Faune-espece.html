@@ -102,7 +102,7 @@ layout: default
 
     {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.:<em><strong> {{ page.Synonyme }} </strong></em> {{ page.Syn-auteur}} </td>
+		<td class="style12"> syn.:<em><strong> {{ page.Synonyme }} </td>
 	</tr>{% endif %}
 	<tr>
 		<td class="style12"> </td>
@@ -477,7 +477,15 @@ layout: default
 		<td class="style12" > </td>
 	 </tr>
 
-     {% if page.descr-Mine %}
+{% if page.larve %}
+     <tr>
+		<td class="style12" ><div><strong>Larve</strong>: {{ page.larve }}  </div> </td> 
+	 </tr>{% endif %}
+    
+     <tr>
+		<td class="style12" > </td>
+	 </tr>
+     {% if page.Organesattaques %}
      <tr>
 		<td class="style12" ><div><strong>Organes attaqués</strong>: {{ page.Organesattaques }}  </div> </td> 
 	 </tr>{% endif %}
@@ -501,10 +509,10 @@ layout: default
 		<td class="style12" > </td>
 	 </tr>
 
-     
+     {% if page.plante-mine %}
      <tr>
 		<td class="style12" ><div><strong>Plantes attaquées</strong>: {{ page.plante-mine }}  </div> </td> 
-	 </tr>
+	 </tr>{% endif %}
 
 
      <tr>
