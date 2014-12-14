@@ -419,15 +419,13 @@ layout: default
         {% if page.Famille20 and page.FAUNEespece20 and page.FAUNEespece20 and page.fauneimg20 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille20 }}">
-		<img  src="{{ page.fauneimg20 }}" alt="{{ page.FAUNEespece20 }}" title="{{ page.FAUNEespece20 }}" ></a>
+		<img  src="{{ page.fauneimg20 }}" alt="{{ page.FAUNEespece20 }}" title="{{page.FAUNEespece20 }}" ></a>
         </td>{% endif %}
-
        </tr>
 
 
 	<tr>
-		
-        {% if page.Famille17 and page.faunefamille17 %}
+		{% if page.Famille17 and page.faunefamille17 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille17 }}" style="text-decoration:none"> 
 		 {{ page.faunefamille17 }} </a></td>{% endif %}
@@ -435,7 +433,7 @@ layout: default
         {% if page.Famille18 and page.faunefamille18 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille18 }}" style="text-decoration:none">
-              {{ page.faunefamille18 }} </a></td>{% endif %}
+             {{ page.faunefamille18 }} </a></td>{% endif %}
         
         {% if page.Famille19 and page.faunefamille19 %}
         <td class="style7" style="width: 240px">
@@ -444,10 +442,10 @@ layout: default
         
         {% if page.Famille20 and page.faunefamille20 %}
         <td class="style7" style="width: 240px">
-		<a class="Famille" href="{{ page.Famille20 }}" style="text-decoration:none">
-            {{ page.faunefamille20 }} </a></td>{% endif %}
+		<a class="Famille" href="{{ page.Famille20 }}" style="text-decoration:none"> 
+		 {{ page.faunefamille20 }} </a></td>{% endif %}
 	</tr>
-   
+
  </table>{% endif %}
 
 {% if page.Famille21  %} 
