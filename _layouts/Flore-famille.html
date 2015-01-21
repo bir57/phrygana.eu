@@ -139,8 +139,11 @@ layout: default
 <p class="style8"></p>
 
 {% if page.fami-key1a %}
-<table align="center"  class="style15" style="width: 800px">
+<table align="center"  class="style15" style="width: 700px">
 	
+    <tr>
+     <td class="style12"><div></div></td>
+	</tr> 
     <tr>
      <td class="style12"><div></div></td>
 	</tr> 
@@ -161,7 +164,7 @@ layout: default
     
     <tr>
      {% if page.fami-genre-1 %}
-	<td class="style12"><div style="text-align: right;"> {{ page.fami-genre-1 }}</div></td>
+	<td class="style12"><div style="text-align: right;">1.--- {{ page.fami-genre-1 }}</div></td>
 
 	</tr>{% endif %}
 
@@ -176,7 +179,7 @@ layout: default
     
     <tr>
      {% if page.fami-genre-2 %}
-	<td class="style12"><div style="text-align: right;"> {{ page.fami-genre-2 }}</div></td>
+	<td class="style12"><div style="text-align: right;">{{ page.fami-genre-2 }}</div></td>
 
 	</tr>{% endif %}
 
@@ -191,9 +194,10 @@ layout: default
 
     <tr>
      {% if page.fami-genre-3 %}
-	<td class="style12"><div style="text-align: right;"> {{ page.fami-genre-3 }}</div></td>
+	<td class="style12"><div style="text-align: right;">2.---  {{ page.fami-genre-3 }}</div></td>
 
 	</tr>{% endif %}
+
 
     <tr>
 		{% if page.fami-key2b %}
@@ -210,20 +214,38 @@ layout: default
      <td class="style12"><div></div></td>
 	</tr>
 
+
     <tr>
 		{% if page.fami-key3a %}
-		<td class="style12"><div>{{ page.fami-key3a }}</div></td>
+		<td class="style12"><div>3a. {{ page.fami-key3a }}</div></td>
 	</tr>{% endif %}
 
     <tr>
+     {% if page.fami-genre-5 %}
+	<td class="style12"><div style="text-align: right;">3.---   {{ page.fami-genre-5 }}</div></td>
+
+	</tr>{% endif %} 
+   
+
+    <tr>
 		{% if page.fami-key3b %}
-		<td class="style12"><div>{{ page.fami-key3b }}</div></td>
+		<td class="style12"><div>3b. {{ page.fami-key3b }}</div></td>
 	</tr>{% endif %}
+
+    <tr>
+     {% if page.fami-genre-6 %}
+	<td class="style12"><div style="text-align: right;">4.---   {{ page.fami-genre-6 }}</div></td>
+
+	</tr>{% endif %} 
 
     <tr>
      <td class="style12"><div></div></td>
 	</tr>
-    
+
+    </table>{% endif %}
+
+
+{% if page.fami-key4a %}
     <tr>
 		{% if page.fami-key4a %}
 		<td class="style12"><div>{{ page.fami-key4a }}</div></td>
