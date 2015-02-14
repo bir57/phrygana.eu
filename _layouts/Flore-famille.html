@@ -662,6 +662,62 @@ layout: default
  </table>{% endif %}
 
 
+{% if page.Espece13a %}
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Espece13a and page.FLOREespece13a and page.FLOREespece13a and page.floreimg13a %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Espece13a }} ">
+		<img src="{{ page.floreimg13a }}" alt="{{ page.FLOREespece13a }}" title="{{ page.FLOREespece13a }}" ></a> 
+        </td>{% endif %}
+		
+       {% if page.Espece14a and page.FLOREespece14a and page.FLOREespece14a and page.floreimg14a %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Espece14a }}">
+		<img src="{{ page.floreimg14a }}" alt="{{ page.FLOREespece14a }}" title="{{ page.FLOREespece14a }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Espece15a and page.FLOREespece15a and page.FLOREespece15a and page.floreimg15a %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Espece15a }} ">
+		<img  src="{{ page.floreimg15a }}" alt="{{ page.FLOREespece15a }}" title="{{ page.FLOREespece15a }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Espece16a and page.FLOREespece16a and page.FLOREespece16a and page.floreimg16a %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Espece16a }}">
+		<img  src="{{ page.floreimg16a }}" alt="{{ page.FLOREespece16a }}" title="{{ page.FLOREespece16a }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Espece13a and page.floreespece13a %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece13a }}" style="text-decoration:none"> 
+		<em> {{ page.floreespece13a }} </em></a></td>{% endif %}
+
+        {% if page.Espece14a and page.floreespece14a %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece14a }}" style="text-decoration:none">
+             <em> {{ page.floreespece14a }} </em></a></td>{% endif %}
+        
+        {% if page.Espece15a and page.floreespece15a %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece15a }}" style="text-decoration:none">
+            <em> {{ page.floreespece15a}} </em></a></td>{% endif %}
+        
+        {% if page.Espece16a and page.floreespece16a %}
+        <td class="style7" style="width: 240px">
+		<a class="style9" href="{{ page.Espece16a }}" style="text-decoration:none">
+            <em> {{ page.floreespece16a }} </em></a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
 
 <table align="center"  style="width: 960px">
 	
