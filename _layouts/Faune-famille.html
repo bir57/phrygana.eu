@@ -17,6 +17,12 @@ layout: default
 	</tr>
     </table>{% endif %}
 
+{% if page.Gallestitre %}
+    <table align="center" style="width: 600px">
+	<tr>
+		<td class="style14"> {{ page.Gallestitre }} de Crète (principalement), mais quelquefois aussi d'ailleurs.</td>
+	</tr>
+    </table>{% endif %}
 <!-- FIN TITRE
     xxx Famille xxx  
      FIN -->
@@ -691,12 +697,29 @@ layout: default
       
      DÉBUT -->
 
-<table align="center"  style="width: 960px">
+<table align="center"  style="width: 800px">
 	
       <tr>
     {% if page.fami-tribe1  %}
 		<td class="style11"> {{ page.fami-tribe1 }} </td>
        {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+       <tr>
+    {% if page.fami-tribe1note1  %}
+		<td class="style11"><div> {{ page.fami-tribe1note1 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe1note2  %}
+		<td class="style11"><div>{{ page.fami-tribe1note2 }}</div>  </td>
+       {% endif %}
+    </tr>
+      <tr>
+		<td class="style12"></td>
     </tr>
 
 </table>
@@ -943,19 +966,33 @@ layout: default
      DÉBUT -->
  
 
-   {% if page.fami-tribe2  %}
- <table align="center"  style="width: 960px">
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-      
-     <tr>
-      
+
+<table align="center"  style="width: 800px">
+	
+      <tr>
+    {% if page.fami-tribe2  %}
 		<td class="style11"> {{ page.fami-tribe2 }} </td>
-        
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+       <tr>
+    {% if page.fami-tribe2note1  %}
+		<td class="style11"><div> {{ page.fami-tribe2note1 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe2note2  %}
+		<td class="style11"><div>{{ page.fami-tribe2note2 }}</div>  </td>
+       {% endif %}
+    </tr>
+      <tr>
+		<td class="style12"></td>
     </tr>
 
-</table>{% endif %}
+</table>
 
 
 {% if page.Espece5  %} 
@@ -1351,21 +1388,32 @@ layout: default
 
 
 
-    
-{% if page.fami-tribe3  %}    
-<table align="center"  style="width: 960px">
+<table align="center"  style="width: 800px">
 	
-    <tr>
-		<td class="style12"> </td>
-	</tr>
-
       <tr>
-     
+    {% if page.fami-tribe3  %}
 		<td class="style11"> {{ page.fami-tribe3 }} </td>
-        
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+       <tr>
+    {% if page.fami-tribe3note1  %}
+		<td class="style11"><div> {{ page.fami-tribe3note1 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe3note2  %}
+		<td class="style11"><div>{{ page.fami-tribe3note2 }}</div>  </td>
+       {% endif %}
+    </tr>
+      <tr>
+		<td class="style12"></td>
     </tr>
 
-</table>{% endif %}
+</table>
 
 
 {% if page.Espece9  %}  
@@ -1653,19 +1701,44 @@ layout: default
  </table>{% endif %}
 
 
- {% if page.fami-tribe4  %}   <table align="center"  style="width: 960px">
+<table align="center"  style="width: 800px">
 	
-    <tr>
-		<td class="style12"> </td>
-	</tr>
-
       <tr>
-     
+    {% if page.fami-tribe4  %}
 		<td class="style11"> {{ page.fami-tribe4 }} </td>
-        
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+       <tr>
+    {% if page.fami-tribe4note1  %}
+		<td class="style11"><div> {{ page.fami-tribe4note1 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe4note2  %}
+		<td class="style11"><div>{{ page.fami-tribe4note2 }}</div>  </td>
+       {% endif %}
+    </tr>
+      <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+    {% if page.fami-tribe4note3  %}
+		<td class="style11"><div> {{ page.fami-tribe4note3 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe4note4  %}
+		<td class="style11"><div>{{ page.fami-tribe4note4 }}</div>  </td>
+       {% endif %}
     </tr>
 
-</table>{% endif %}
+</table>
+
+
 
     
 {% if page.Espece13  %}
@@ -1783,22 +1856,42 @@ layout: default
 
  
 
-    
-{% if page.fami-tribe5 %}  
-<table align="center"  style="width: 960px">
+<table align="center"  style="width: 800px">
 	
-    <tr>
-		<td class="style12"> </td>
-	</tr>
-
       <tr>
+    {% if page.fami-tribe5  %}
+		<td class="style11"> {{ page.fami-tribe5 }} </td>
+       {% endif %}
+    </tr>
     
-		<td class="style11"> {{page.fami-tribe5  }} </td>
-        
+      <tr>
+		<td class="style12"></td>
+    </tr>
+       <tr>
+    {% if page.fami-tribe5note1  %}
+		<td class="style11"><div> {{ page.fami-tribe5note1 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe5note2  %}
+		<td class="style11"><div>{{ page.fami-tribe5note2 }}</div>  </td>
+       {% endif %}
+    </tr>
+      <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+    {% if page.fami-tribe5note3  %}
+		<td class="style11"><div> {{ page.fami-tribe5note3 }}</div> </td>
+       {% endif %}
+    </tr>
+    <tr>
+    {% if page.fami-tribe5note4  %}
+		<td class="style11"><div>{{ page.fami-tribe5note4 }}</div>  </td>
+       {% endif %}
     </tr>
 
-</table>{% endif %}
-
+</table>
 
 {% if page.Espece17  %}
 <table align="center"  style="width: 960px">     
