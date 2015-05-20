@@ -64,9 +64,68 @@ title: " "
 		<td class="style12" ><strong>Nom commun</strong>: {{ page.nom-commun }} </td>
 	</tr>{% endif %}
     
-<tr>
+    <tr>
 		<td class="style12"></td>
 	</tr>
+
+     
+    {% if page.description-adulte %}
+	<tr>
+		<td class="style12" ><div><strong>Adulte</strong>:  {{ page.description-adulte }} </div></td>
+	</tr>{% endif %}
+
+    
+    <tr>
+		<td class="style12"></td>
+	</tr>
+        <tr>
+		<td class="style12"></td>
+	</tr>
+    
+
+    {% if page.Biologie %}
+    <tr>
+		<td class="style12" ><div><strong>Biologie:</strong> {{ page.Biologie }} </div> </td>
+	</tr>{% endif %}
+
+
+	<tr>
+		<td class="style12"> </td>
+	</tr>
+    
+    {% if page.Regime-alimentaire %}
+	<tr>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
+	</tr>{% endif %}
+   
+	      
+    <tr>
+		<td class="style12"></td>
+	</tr>
+        <tr>
+		<td class="style12"></td>
+	</tr>
+    
+    {% if page.PeriodevolCrete %}
+    <tr>
+		<td class="style12"><div><strong>Période de vol en Crète:</strong>  {{ page.PeriodevolCrete }} </div> </td>
+	</tr>{% endif %}
+
+    {% if page.Periodevol %}
+    <tr>
+		<td class="style12"><div><strong>Période de vol:</strong>  {{ page.Periodevol }} </div> </td>
+	</tr>{% endif %}
+
+    {% if page.PeriodeACTIVECrete %}
+    <tr>
+		<td class="style12"><div>--- {{ page.PeriodeACTIVECrete }} </div> </td>
+	</tr>{% endif %}
+
+    {% if page.PeriodeACTIVE %}
+    <tr>
+		<td class="style12"><div>--- {{ page.PeriodeACTIVE }} </div> </td>
+	</tr>{% endif %}
+
 
     {% if page.IndigenatCrete %}
 	<tr>
@@ -230,8 +289,9 @@ title: " "
     <tr>
 		<td class="style12" > </td>
 	</tr>
+
     <tr>
-		<td class="style12" ><div>{{ page.descr-ORGANES }}  </div> </td> 
+		<td class="style12" ><div>---Parties de la plante attaquées: {{ page.descr-ORGANES }}  </div> </td> 
 	</tr>
         
         <tr>
@@ -243,12 +303,14 @@ title: " "
             
              
 	</tr>
+
     <tr>
-		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
+		<td class="style12" ><div>--- Plantes-hôtes: {{ page.plante-galle }}  </div> </td> 
 	</tr>
 
 
-        {% if page.plante1 %}<tr>
+        {% if page.plante1 %}
+        <tr>
         
         <td class="style9">
       
@@ -258,23 +320,25 @@ title: " "
         <tr> 
           <td>
         <a href=" {{ page.plante1 }} ">
-           <img class="center" src="{{ page.plante1A }}" alt="{{ page.PLANTE01 }}" title="{{ page.PLANTE01 }}" />
+           <img class="center" src="{{ page.imgplante1 }}" alt="{{ page.PLANTE-espece1 }}" 
+            title="{{ page.PLANTE-espece1 }}" />
          </td>
          
             <td>
                 <a href=" {{ page.plante2 }} ">
-                <img class="center" src="{{ page.plante2A }}" alt="{{ page.PLANTE02 }}" title="{{ page.PLANTE02 }}" /></td>
+                <img class="center" src="{{ page.imgplante2 }}" alt="{{ page.PLANTE-espece2 }}" 
+                    title="{{ page.PLANTE-espece2 }}" /></td>
         </tr>
 
      
         <tr>
         <td>
          <a  href=" {{ page.plante1 }} " style="text-decoration:none">
-            <em><span class="style7"><em> {{ page.PLANTE0A }} </em></span></em></td>
+            <em><span class="style7"><em> {{ page.PLANTEnom1 }} </em></span></em></td>
 
            <td>
                 <a  href=" {{ page.plante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.PLANTE0B }}</span></em></td> 
+               <em><span class="style7">{{ page.PLANTEnom2 }}</span></em></td> 
         </tr>
 
         </table>

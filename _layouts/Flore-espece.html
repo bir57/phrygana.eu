@@ -89,6 +89,7 @@ layout: default
 	<tr>
 		<td class="style12"><div><strong>Fleurs:</strong>  {{ page.descr-fleurs }} </div></td>
 	</tr>{% endif %}
+
      {% if page.pollinisation %}
 	<tr>
 		<td class="style12"><div><strong>Pollinisation:</strong>  {{ page.pollinisation }} </div></td>
@@ -101,9 +102,10 @@ layout: default
     <tr>
 		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
 	</tr>{% endif %}
-    {% if page.descr-dispersion %}
+
+    {% if page.dispersion %}
     <tr>
-		<td class="style12" ><div>{{ page.descr-dispersion }}  </div> </td>    
+		<td class="style12" ><div><strong>Dispersion:</strong> {{ page.dispersion }}  </div> </td>    
     </tr>{% endif %}
 
     <tr>
@@ -136,6 +138,10 @@ layout: default
 		<td class="style12"><div><strong>Floraison:</strong>  {{ page.descr-floraison1 }} </div> </td>
 	</tr>{% endif %}
 
+    {% if page.descr-pollinisation %}
+    <tr>
+		<td class="style12"><div><strong>Floraison:</strong>  {{ page.descr-pollinisation }} </div> </td>
+	</tr>{% endif %}
 
     <tr>
 		<td class="style12"></td>
@@ -198,6 +204,13 @@ layout: default
          
                   
     {% if page.Note1 %}
+    
+    
+    <tr>
+		<td class="style12"><strong>Note(s):</strong></td>
+	</tr>
+    
+    
     <tr>
 		<td class="style12">--- {{ page.Note1 }}</td>
 	</tr>{% endif %}
@@ -268,10 +281,10 @@ layout: default
     <tr>
 		<td class="style12" ><div><strong>Utilité</strong>: {{ page.Utilite }}  </div> </td>    
     </tr>{% endif %}
-    {% if page.Utilite1 %}
+    
     <tr>
-		<td class="style12" ><div><strong>Utilité</strong>: {{ page.Utilite1 }}  </div> </td>    
-    </tr>{% endif %} 
+		<td class="style12" ><div>         {{ page.Utilite1 }}  </div> </td>    
+    </tr> 
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -295,11 +308,11 @@ layout: default
 	<table align="center" class="style17" style="width: 800px">
     
 	<tr>
-		<td class="style12" > </td>
+		<td class="style11" > </td>
 	</tr>
     
     <tr>
-		<td class="style11" ><strong>Plante nourricière pour: </strong>  </td>
+		<td class="style11" ><div><strong>Plante nourricière pour: </strong> </div> </td>
 	</tr>
 
     {% if page.Ravageur %}
@@ -312,69 +325,57 @@ layout: default
 	</tr> 
 
 
-    {% if page.Ravageura %}
-    <tr>
-		<td class="style12" ><div>--- {{ page.Ravageura }}  </div> </td> 
-	</tr>{% endif %}
-
     <tr>
 		<td class="style12" > </td>
 	</tr> 
 
 
 
-        {% if page.ravageur1 %}
-        <tr>
-		<td class="style12" > </td>
-	    </tr> 
 
-        <tr>
+
+      {% if page.ravageur1 %}
         
-        <td class="style9">
-      
-        <table>
-              
+
+                      
         <tr> 
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur1 }} ">
         <img class="center" src="{{ page.imgravageur1 }}" 
         alt="{{ page.RAVAGEUR-espece1 }}" title="{{ page.RAVAGEUR-espece1 }}" />
         </td>
          
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur2 }} ">
         <img class="center" src="{{ page.imgravageur2 }}" 
         alt="{{ page.RAVAGEUR-espece2 }}" title="{{ page.RAVAGEUR-espece2 }}" />
         </td>
         
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur3 }} ">
         <img class="center" src="{{ page.imgravageur3 }}" 
         alt="{{ page.RAVAGEUR-espece3 }}" title="{{ page.RAVAGEUR-espece3 }}" />
         </td>
-
-        
         </tr>
 
         <tr>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur1 }} " style="text-decoration:none">
             <em><span class="style9"> {{ page.RAVAGEURnom1 }} </span></em></td>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur2 }} " style="text-decoration:none">
                <em><span class="style9">{{ page.RAVAGEURnom2 }}</span></em></td> 
 
-         <td>
+         <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur3 }} " style="text-decoration:none">
                <em><span class="style9">{{ page.RAVAGEURnom3 }}</span></em></td>
 
        
         </tr>
 
-        </table>
+        
     
         </td>
 
@@ -392,27 +393,23 @@ layout: default
 		<td class="style12" > </td>
 	    </tr> 
 
-        <tr>
         
-        <td class="style9">
-      
-        <table>
               
         <tr> 
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur4 }} ">
         <img class="center" src="{{ page.imgravageur4 }}" 
         alt="{{ page.RAVAGEUR-espece4 }}" title="{{ page.RAVAGEUR-espece4 }}" />
         </td>
          
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur5 }} ">
         <img class="center" src="{{ page.imgravageur5 }}" 
         alt="{{ page.RAVAGEUR-espece5 }}" title="{{ page.RAVAGEUR-espece5 }}" />
         </td>
         
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.ravageur6 }} ">
         <img class="center" src="{{ page.imgravageur6 }}" 
         alt="{{ page.RAVAGEUR-espece6 }}" title="{{ page.RAVAGEUR-espece6 }}" />
@@ -423,24 +420,22 @@ layout: default
 
         <tr>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur4 }} " style="text-decoration:none">
             <em><span class="style9"> {{ page.RAVAGEURnom4 }} </span></em></td>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur5 }} " style="text-decoration:none">
                <em><span class="style9">{{ page.RAVAGEURnom5 }}</span></em></td> 
 
-         <td>
+         <td class="style7" style="width: 240px">
         <a  href=" {{ page.ravageur6 }} " style="text-decoration:none">
                <em><span class="style9">{{ page.RAVAGEURnom6 }}</span></em></td>
 
        
         </tr>
 
-        </table>
-    
-        </td>
+        
 
         </tr>{% endif %}
 

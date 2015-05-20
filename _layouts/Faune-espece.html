@@ -102,7 +102,7 @@ layout: default
 
     {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.:<em><strong> {{ page.Synonyme }} </td>
+		<td class="style12"> syn.: <em>{{ page.Synonyme }}</em>  </td>
 	</tr>{% endif %}
 	<tr>
 		<td class="style12"> </td>
@@ -374,6 +374,8 @@ layout: default
     
      DÉBUT -->
 
+
+    
 {% if page.planteNOURRITURE %}
 	<table align="center" class="style17" style="width: 800px">
     
@@ -383,62 +385,65 @@ layout: default
     
     {% if page.planteNOURRITURE %}
     <tr>
-		<td class="style12" ><div><strong>Régime alimentaire</strong>: espèce {{ page.planteNOURRITURE }}  </div> </td> 
-	</tr>{% endif %}
-
-{% if page.planteNOURRITURE1 %}
-    <tr>
-		<td class="style12" ><div>{{ page.planteNOURRITURE1 }}  </div> </td> 
+		<td class="style12" ><div><strong>Régime alimentaire:</strong> {{ page.planteNOURRITURE }}  </div> </td> 
 	</tr>{% endif %}
 
     <tr>
 		<td class="style12" > </td>
 	</tr> 
 
-        {% if page.plante1 %}
-        <tr>
+      
+{% if page.plante1 %}
+    <tr>
 		<td class="style12" > </td>
-	    </tr> 
+	</tr> 
 
         <tr>
         
         <td class="style9">
       
-        <table>
-              
+         <table>
+
+                              
         <tr> 
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.plante1 }} ">
         <img class="center" src="{{ page.imgplante1 }}" 
         alt="{{ page.PLANTE-espece1 }}" title="{{ page.PLANTE-espece1 }}" />
         </td>
          
-        <td>
+        <td class="style7" style="width: 240px">
         <a href=" {{ page.plante2 }} ">
         <img class="center" src="{{ page.imgplante2 }}" 
         alt="{{ page.PLANTE-espece2 }}" title="{{ page.PLANTE-espece2 }}" />
         </td>
-        
+        <td class="style7" style="width: 240px">
+        <a href=" {{ page.plante3 }} ">
+        <img class="center" src="{{ page.imgplante3 }}" 
+        alt="{{ page.PLANTE-espece3 }}" title="{{ page.PLANTE-espece3 }}" />
+        </td>
         </tr>
 
-        <tr>
+         <tr>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.plante1 }} " style="text-decoration:none">
             <em><span class="style9"> {{ page.PLANTEnom1 }} </span></em></td>
 
-        <td>
+        <td class="style7" style="width: 240px">
         <a  href=" {{ page.plante2 }} " style="text-decoration:none">
                <em><span class="style9">{{ page.PLANTEnom2 }}</span></em></td> 
-        </tr>
+        
+             <td class="style7" style="width: 240px">
+        <a  href=" {{ page.plante3 }} " style="text-decoration:none">
+               <em><span class="style9">{{ page.PLANTEnom3 }}</span></em></td> 
+
+        
 
         </table>
-    
-        </td>
-
-        </tr>{% endif %}
-
+    </td>
+    </tr>{% endif %}
    
 	</table>{% endif %}
 
@@ -548,7 +553,7 @@ layout: default
 
       
       <td>
-         <a  href=" {{ page.ineplante1 }} " style="text-decoration:none">
+         <a  href=" {{ page.mineplante1 }} " style="text-decoration:none">
             <em><span class="style9"><em> {{ page.minePLANTEnom1 }} </em></span></em>
       </td>
 
@@ -573,121 +578,6 @@ layout: default
     
      FIN -->
 
-<!-- DÉBUT table Galles
-    
-     DÉBUT --> 
-
-    {% if page.Galle %} 
-	<table align="center" class="style17" style="width: 800px">
-    
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-
-   
-
-	<tr>
-		<td class="style12" > </td>
-	</tr>
-    <tr>
-		<td class="style7" >{{ page.Galle }}   </td> 
-	</tr>
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-
-     
-     <tr>
-		<td class="style12" ><div>--- Galle {{ page.descr-Galle }}  </div> </td> 
-	 </tr>
-    
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-
-     
-     <tr>
-		<td class="style12" ><div>--- Organes attaqués: {{ page.Organesattaques }}  </div> </td> 
-	 </tr>
-        
-     
-     <tr>
-		<td class="style12" ><div>--- OBS. {{ page.galleOBS1 }}  </div> </td> 
-	 </tr>
-
-        
-     <tr>
-        <td class="style12" ><div>--- OBS. {{ page.galleOBS2 }}  </div> </td>
-     </tr>
-    
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-
-     
-     <tr>
-		<td class="style12" ><div>--- Plantes attaquées: {{ page.plante-galle }}  </div> </td> 
-	 </tr>
-
-
-     
-     <tr>
-     <td class="style9">
-
-      
-     <table>
-
-      
-      <tr>
-      
-      
-      <td>
-      <a href=" {{ page.galleplante1 }} ">
-      <img class="center" src="{{ galleimgplante1 }}" 
-      alt="{{ page.gallePLANTE-espece1 }}" title="{{ page.gallePLANTE-espece1 }}" />
-      </td>
-       
-           
-      <td>
-      <a href=" {{ page.galleplante2 }} ">
-      <img class="center" src="{{ galleimgplante2 }}" 
-      alt="{{ page.gallePLANTE-espece2 }}" title="{{ page.gallePLANTE-espece2 }}" />
-      </td>
-      
-      </tr>
-
-     
-      <tr>
-
-        
-      <td>
-         <a  href=" {{ page.galleplante1 }} " style="text-decoration:none">
-            <em><span class="style7"><em> {{ page.gallePLANTEnom1 }} </em></span></em>
-      </td>
-
-      
-      <td>
-         <a  href=" {{ page.galleplante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.gallePLANTEnom2 }}</span></em>
-      </td>
-      </tr> 
-
-        </table>
-    </td>
-    </tr>
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
-
-
-	</table>{% endif %}
-
-
-
-<!-- FIN table Galles
-    
-     FIN -->
 
 
 {{ content }}
