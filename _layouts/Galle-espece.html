@@ -22,12 +22,20 @@ title: " "
 
 		<td class="style12" style="width: 80px">Galles </td>
 
-		<td class="style12" style="width: 220px">
-		<strong>{{ page.GALLEfamille }}</strong></a> 
-            {{ page.Auteurfamille }}</td>
+        {% if page.Gallesorder %}
+		<td class="style12" style="width: 140px"> 
+        <a href='/Galles/{{page.Gallesorder}}/{{page.Gallesorder}}.html'<strong>{{page.Gallesorder}}</strong></a></td>{% endif %}
         
-        {% if page.Galletribe %}
-        <td class="style12" style="width: 160px">{{ page.Galletribe }}</td>{% endif %}
+
+        {% if page.FAUNEorder %}
+		<td class="style12" style="width: 140px"> 
+        <a href='/Fauna/{{page.FAUNEorder}}/{{page.FAUNEorder}}.html'<strong>{{page.FAUNEorder}}</strong></a></td>{% endif %}
+
+        {% if page.FAUNEfamille %}
+        <td class="style12" style="width: 140px" >
+            <a href='../{{page.FAUNEfamille}}.html' <strong>{{page.FAUNEfamille}}</strong></a> </td>{% endif %}
+
+        <td class="style12" style="width: 160px">{{ page.faunesousfamille }}</td>
 
 		<td class="style12" style="width: 300px"><em>{{ page.Gallegenre }}</em> {{ page.AUTEURgenre }}</td>
 	</tr>
@@ -319,31 +327,89 @@ title: " "
       
         <tr> 
           <td>
-        <a href=" {{ page.plante1 }} ">
-           <img class="center" src="{{ page.imgplante1 }}" alt="{{ page.PLANTE-espece1 }}" 
-            title="{{ page.PLANTE-espece1 }}" />
-         </td>
+          <a href=" {{ page.plante1 }} ">
+          <img class="center" src="{{ page.imgplante1 }}" alt="{{ page.PLANTE-espece1 }}" 
+           title="{{ page.PLANTE-espece1 }}" />
+          </td>
          
-            <td>
-                <a href=" {{ page.plante2 }} ">
-                <img class="center" src="{{ page.imgplante2 }}" alt="{{ page.PLANTE-espece2 }}" 
-                    title="{{ page.PLANTE-espece2 }}" /></td>
+          <td>
+          <a href=" {{ page.plante2 }} ">
+          <img class="center" src="{{ page.imgplante2 }}" alt="{{ page.PLANTE-espece2 }}" 
+          title="{{ page.PLANTE-espece2 }}" />
+          </td>
+
+          <td>
+          <a href=" {{ page.plante3 }} ">
+          <img class="center" src="{{ page.imgplante3 }}" alt="{{ page.PLANTE-espece3 }}" 
+          title="{{ page.PLANTE-espece3 }}" />
+          </td>
+
         </tr>
 
-     
         <tr>
-        <td>
+         <td>
          <a  href=" {{ page.plante1 }} " style="text-decoration:none">
-            <em><span class="style7"><em> {{ page.PLANTEnom1 }} </em></span></em></td>
+         <em><span class="style7"><em> {{ page.PLANTEnom1 }} </em></span></em>
+         </td>
 
-           <td>
-                <a  href=" {{ page.plante2 }} " style="text-decoration:none">
-               <em><span class="style7">{{ page.PLANTEnom2 }}</span></em></td> 
+         <td>
+         <a  href=" {{ page.plante2 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom2 }} </em> </span></em>
+         </td> 
+        
+
+         <td>
+         <a  href=" {{ page.plante3 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom3 }} </em> </span></em>
+         </td> 
+
         </tr>
+
+        <tr> 
+          <td>
+          <a href=" {{ page.plante4 }} ">
+          <img class="center" src="{{ page.imgplante4 }}" alt="{{ page.PLANTE-espece4 }}" 
+           title="{{ page.PLANTE-espece4 }}" />
+          </td>
+         
+          <td>
+          <a href=" {{ page.plante5 }} ">
+          <img class="center" src="{{ page.imgplante5 }}" alt="{{ page.PLANTE-espece5 }}" 
+          title="{{ page.PLANTE-espece5 }}" />
+          </td>
+
+          <td>
+          <a href=" {{ page.plante6 }} ">
+          <img class="center" src="{{ page.imgplante6 }}" alt="{{ page.PLANTE-espece6 }}" 
+          title="{{ page.PLANTE-espece6 }}" />
+          </td>
+
+        </tr>
+
+        <tr>
+         <td>
+         <a  href=" {{ page.plante4 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom4 }} </em></span></em>
+         </td>
+
+         <td>
+         <a  href=" {{ page.plante5 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom5 }} </em> </span></em>
+         </td> 
+        
+
+         <td>
+         <a  href=" {{ page.plante6 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom6 }} </em> </span></em>
+         </td> 
+
+        </tr>
+
 
         </table>
     </td>
     </tr>{% endif %}
+
     <tr>
 		<td class="style12"></td>
 	</tr>

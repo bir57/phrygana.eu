@@ -37,12 +37,12 @@ layout: default
     {% if page.faunefamille:  %}
 	<tr>
 
-		<td class="style12"><div>(Selon <a href='http://www.faunaeur.org' target="_blank" 
-           <strong>Fauna Europaea</strong></a>), le nombre d'espèces et sous-espèces de {{ page.faunefamille }} 
+		<td class="style12"><div>Selon <a href='http://www.eu-nomen.eu/portal' <strong>PESI</strong></a>, le nombre d'espèces et sous-espèces de {{ page.faunefamille }} 
             (<a href='/Fauna/{{page.FAUNEorder}}/{{page.FAUNEorder}}.html'<strong>{{page.FAUNEorder}}</strong></a>) 
             répertoriées est pour:</div> </td>
 
 	</tr>{% endif %}
+
 
 	<tr>
 		<td class="style12"></td>
@@ -77,9 +77,65 @@ layout: default
 		<td class="style12"><div> {{ page.fami-note1 }} </div></td>
 	</tr>{% endif %}
     
-   
+    <tr>
 		<td class="style12"></td>
     </tr>
+
+    {% if page.fami-note2 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note2 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    
+    {% if page.fami-note3 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note3 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+    {% if page.fami-note4 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note4 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    
+    {% if page.fami-note5 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note5 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    
+    {% if page.fami-note6 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note6 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    
+    {% if page.fami-note7 %}
+    <tr>
+		<td class="style12"><div> {{ page.fami-note7 }} </div></td>
+	</tr>{% endif %}
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+
 </table>
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
@@ -390,6 +446,24 @@ layout: default
  </table>{% endif %}
 
 
+<p class="style8"></p>
+
+<table align="center"  style="width: 800px">
+	
+      <tr>
+    {% if page.fami-tribe5  %}
+		<td class="style11"> {{ page.fami-tribe5 }} </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+      
+
+</table>
+
+
 {% if page.Famille17  %} 
 <table align="center"  style="width: 960px">     
     <tr>
@@ -426,25 +500,43 @@ layout: default
 		{% if page.Famille17 and page.famixx-17 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille17 }}" style="text-decoration:none"> 
-		 {{ page.famixx-17 }} </a></td>{% endif %}
+		 <em>{{ page.famixx-17 }}</em> </a></td>{% endif %}
 
         {% if page.Famille18 and page.famixx-18 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille18 }}" style="text-decoration:none">
-             {{ page.famixx-18 }} </a></td>{% endif %}
+         <em>{{ page.famixx-18 }}</em>     </a></td>{% endif %}
         
         {% if page.Famille19 and page.famixx-19 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille19 }}" style="text-decoration:none">
-             {{ page.famixx-19}} </a></td>{% endif %}
+         <em>{{ page.famixx-19}}</em>     </a></td>{% endif %}
         
         {% if page.Famille20 and page.famixx-20 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille20 }}" style="text-decoration:none"> 
-		 {{ page.famixx-20 }} </a></td>{% endif %}
+		 <em>{{ page.famixx-20 }}</em> </a></td>{% endif %}
 	</tr>
 
  </table>{% endif %}
+
+
+<p class="style8"></p>
+
+<table align="center"  style="width: 800px">
+	
+      <tr>
+    {% if page.fami-tribe6  %}
+		<td class="style11"> {{ page.fami-tribe6 }} </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+      
+
+</table>
 
 
 
@@ -486,25 +578,47 @@ layout: default
         {% if page.Famille21 and page.famixx-21 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille21 }}" style="text-decoration:none"> 
-		 {{ page.famixx-21 }} </a></td>{% endif %}
+		 <em>{{ page.famixx-21 }}</em> </a></td>{% endif %}
 
         {% if page.Famille22 and page.famixx-22 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille22 }}" style="text-decoration:none">
-              {{ page.famixx-22 }} </a></td>{% endif %}
+         <em>{{ page.famixx-22 }}</em> </a></td>{% endif %}
         
         {% if page.Famille23 and page.famixx-23 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille23 }}" style="text-decoration:none">
-             {{ page.famixx-23}} </a></td>{% endif %}
+        <em>{{ page.famixx-23}}</em> </a></td>{% endif %}
         
         {% if page.Famille24 and page.famixx-24 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille24 }}" style="text-decoration:none">
-            {{ page.famixx-24 }} </a></td>{% endif %}
+         <em>{{ page.famixx-24 }}</em> </a></td>{% endif %}
 	</tr>
    
  </table>{% endif %}
+
+
+
+<p class="style8"></p>
+
+<table align="center"  style="width: 800px">
+	
+      <tr>
+    {% if page.fami-tribe7  %}
+		<td class="style11"> {{ page.fami-tribe7 }} </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+      
+
+</table>
+
+
+
 
 {% if page.Famille25  %} 
 <table align="center"  style="width: 960px">     
