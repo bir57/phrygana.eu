@@ -111,6 +111,10 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>
+    {% if page.descr-longevite %}
+	<tr>
+		<td class="style12" ><strong>Longévité:</strong> {{ page.descr-longevite }} </td>
+	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -331,6 +335,37 @@ layout: default
 	</tr>
     
 </table>
+
+
+{% if page.planteparasite %}
+	<table align="center"  style="width: 800px">     
+    
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+   
+
+	<<tr>
+		<td class="style12" > </td>
+	</tr>
+
+    
+    <tr>
+		<td class="style7" ><em>{{ page.FLOREespece }}</em> parasite {{ page.planteparasite }}  </td> 
+	</tr>
+    <tr>
+		<td class="style12" > </td>
+	</tr>{% endif %}
+
+    
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+    
+</table>
+
+
 
 <table align="center"  style="width: 860px">     
     

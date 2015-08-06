@@ -253,6 +253,61 @@ layout: default
    
  </table>
 
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille1A and page.FAMILLE-Espece1A and page.FAMILLE-Espece1A and page.familleimg1A %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille1A }} ">
+		<img src="{{ page.familleimg1A }}" alt="{{ page.FAMILLE-Espece1A }}" title="{{ page.FAMILLE-Espece1A }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille2A and page.FAMILLE-Espece2A and page.FAMILLE-Espece2A and page.familleimg2A %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille2A }}">
+		<img src="{{ page.familleimg2A }}" alt="{{ page.FAMILLE-Espece2A }}" title="{{ page.FAMILLE-Espece2A }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille3A and page.FAMILLE-Espece3A and page.FAMILLE-Espece3A and page.familleimg3A %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille3A }} ">
+		<img  src="{{ page.familleimg3A }}" alt="{{ page.FAMILLE-Espece3A }}" title="{{ page.FAMILLE-Espece3A }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille4A and page.FAMILLE-Espece4A and page.FAMILLE-Espece4A and page.familleimg4A %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille4A }}">
+		<img  src="{{ page.familleimg4A }}" alt="{{ page.FAMILLE-Espece4A }}" title="{{ page.FAMILLE-Espece4A }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille1A and page.famixx-1A %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille1A }}" style="text-decoration:none"> 
+		 <em>{{ page.famixx-1A }}</em> </a></td>{% endif %}
+
+        {% if page.Famille2A and page.famixx-2A %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille2A }}" style="text-decoration:none">
+            <em>{{ page.famixx-2A }}</em>  </a></td>{% endif %}
+        
+        {% if page.Famille3A and page.famixx-3A %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille3A }}" style="text-decoration:none">
+            <em>{{ page.famixx-3A }}</em>  </a></td>{% endif %}
+        
+        {% if page.Famille4A and page.famixx-4A %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille4A }}" style="text-decoration:none">
+             <em>{{ page.famixx-4A }}</em> </a></td>{% endif %}
+	</tr>
+   
+ </table>
+
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
