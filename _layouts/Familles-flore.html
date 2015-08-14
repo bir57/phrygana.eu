@@ -166,7 +166,7 @@ layout: default
     <tr>
 		<td class="style12"><div> -!!- La classification suivie est (dans la mesure du possible) en accordance 
             avec ==> 
-     <a href='http://www.eu-nomen.eu/portal' <strong> {{ page.fami-note7 }} (2015)</strong></a> (Pan-European Species directories Infrastructure) et <a href='http://www.theplantlist.org' <strong>The Plant List (2015)</strong></a> (The Plant List is a working list of all known plant species). </div></td>
+     <a href='http://www.eu-nomen.eu/portal' <strong> {{ page.fami-note7 }} (2015)</strong></a> (Pan-European Species directories Infrastructure) et avec <a href='http://www.theplantlist.org' <strong>The Plant List (2015)</strong></a> (The Plant List is a working list of all known plant species). </div></td>
 	</tr>{% endif %}
     
     <tr>
@@ -179,6 +179,7 @@ layout: default
 
 <p class="style8"></p>
 
+{% if page.fami-tribe1  %}
 <table align="center"  style="width: 800px">
 	
       <tr>
@@ -190,9 +191,44 @@ layout: default
       <tr>
 		<td class="style12"></td>
     </tr>
-      
 
-</table>
+      <tr>
+    {% if page.fami-tribe1A  %}
+		<td class="style13"><div> {{ page.fami-tribe1A }} </div></td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe1B  %}
+		<td class="style13"><div> {{ page.fami-tribe1B }} </div></td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+    {% if page.fami-tribe1C  %}
+		<td class="style13"><div> {{ page.fami-tribe1C }} </div></td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe1D  %}
+		<td class="style13"><div> {{ page.fami-tribe1D }} </div></td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+    {% if page.fami-tribe1E  %}
+		<td class="style12"><div> {{ page.fami-tribe1E }} </div></td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe1F  %}
+		<td class="style12"><div> {{ page.fami-tribe1F }} </div></td>
+       {% endif %}
+    </tr>
+
+     <tr>
+		<td class="style12"></td>
+    </tr>
+</table>{% endif %}
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 <!-- famille 1-4-->
@@ -314,6 +350,7 @@ layout: default
 
 <p class="style8"></p>
 
+{% if page.fami-tribe2  %}
 <table align="center"  style="width: 800px">
 	
       <tr>
@@ -326,6 +363,43 @@ layout: default
 		<td class="style12"></td>
     </tr>
       
+      <tr>
+    {% if page.fami-tribe2A  %}
+		<td class="style13"><div> {{ page.fami-tribe2A }} </div> </td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe2B  %}
+		<td class="style13"><div> {{ page.fami-tribe2B }} </div> </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+    {% if page.fami-tribe2C  %}
+		<td class="style13"><div> {{ page.fami-tribe2C }} </div> </td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe2D  %}
+		<td class="style13"><div> {{ page.fami-tribe2D }} </div> </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+    {% if page.fami-tribe2E  %}
+		<td class="style12"><div> {{ page.fami-tribe2E }} </div> </td>
+       {% endif %}
+    </tr> 
+     <tr>
+    {% if page.fami-tribe2F  %}
+		<td class="style12"><div> {{ page.fami-tribe2F }} </div> </td>
+       {% endif %}
+    </tr>
+
+     <tr>
+		<td class="style12"></td>
+    </tr>
+</table>{% endif %}
 
 </table>
 
