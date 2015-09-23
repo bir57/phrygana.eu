@@ -432,7 +432,8 @@ title: " "
        {% if page.galleimg1 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.galleimg1 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}"> 
+		<img  class="center" src="{{ page.galleimg1 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+             title="{{ page.GALLEespece }} {{ page.Auteurespece }}"> 
         </td>{% endif %}
     </tr>
 
@@ -452,9 +453,11 @@ title: " "
       {% if page.galleimgA and page.GALLEespece and page.GALLEespece and page.galleimgB and page.GALLEespece and page.GALLEespece %}
         <tr> 
           <td>
-           <img class="center" src="{{ page.galleimgA }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" />
+           <img class="center" src="{{ page.galleimgA }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+               title="{{ page.GALLEespece }} {{ page.Auteurespece }}" />
          </td>
-         <td><img class="center" src="{{ page.galleimgB }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" /></td>
+         <td><img class="center" src="{{ page.galleimgB }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+             title="{{ page.GALLEespece }} {{ page.Auteurespece }}" /></td>
         </tr>{% endif %}
 
       {% if page.GALLEespece and page.lieu-dateA and page.lieu-dateB  %} 
@@ -473,7 +476,8 @@ title: " "
     {% if page.galleimg2 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9" >
-		<img class="center" src="{{ page.galleimg2 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}"> </td>
+		<img class="center" src="{{ page.galleimg2 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+             title="{{ page.GALLEespece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date2 %}   
@@ -484,7 +488,8 @@ title: " "
     {% if page.galleimg3 and page.GALLEespece and page.GALLEespece %}     
     <tr>
         <td class="style9">
-		<img class="center" src="{{ page.galleimg3 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img class="center" src="{{ page.galleimg3 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date3 %}   
@@ -501,9 +506,11 @@ title: " "
        {% if page.galleimgC and page.GALLEespece and page.GALLEespece and page.galleimgD and page.GALLEespece and page.GALLEespece %}
             <tr> 
           <td>
-           <img class="center" src="{{ page.galleimgC }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" />
+           <img class="center" src="{{ page.galleimgC }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+               title="{{ page.GALLEespece }} {{ page.Auteurespece }}"/>
          </td>
-         <td><img class="center" src="{{ page.galleimgD }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" /></td>
+         <td><img class="center" src="{{ page.galleimgD }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+              title="{{ page.GALLEespece }} {{ page.Auteurespece }}" /></td>
         </tr>{% endif %}
 
        {% if page.GALLEespece and page.lieu-dateC and page.lieu-dateD  %} 
@@ -524,7 +531,8 @@ title: " "
     {% if page.galleimg4 and page.GALLEespece and page.GALLEespece %}  
     <tr>
         <td class="style9">
-		<img class="center" src="{{ page.galleimg4 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img class="center" src="{{ page.galleimg4 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date4 %}   
@@ -535,7 +543,8 @@ title: " "
     {% if page.galleimg5 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9">
-		<img src="{{ page.galleimg5 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img src="{{ page.galleimg5 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date5 %}
@@ -546,7 +555,8 @@ title: " "
     {% if page.galleimg6 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9">
-		<img src="{{ page.galleimg6 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img src="{{ page.galleimg6 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date6 %}
@@ -557,7 +567,8 @@ title: " "
      {% if page.galleimg7 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9">
-		<img src="{{ page.galleimg7 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img src="{{ page.galleimg7 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date7 %}
@@ -568,7 +579,8 @@ title: " "
      {% if page.galleimg8 and page.GALLEespece and page.GALLEespece %}
     <tr>
         <td class="style9">
-		<img src="{{ page.galleimg8 }}" alt="{{ page.GALLEespece }}" title="{{ page.GALLEespece }}" > </td>
+		<img src="{{ page.galleimg8 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.GALLEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
     {% if page.GALLEespece and page.lieu-date8 %}
