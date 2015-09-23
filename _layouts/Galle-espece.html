@@ -22,9 +22,10 @@ title: " "
 
 		<td class="style12" style="width: 80px">Galles </td>
 
-        {% if page.Gallesorder %}
+        {% if page.GALLEfamille %}
 		<td class="style12" style="width: 140px"> 
-        <a href='/Galles/{{page.Gallesorder}}/{{page.Gallesorder}}.html'<strong>{{page.Gallesorder}}</strong></a></td>{% endif %}
+        <a href='/Galles/{{page.GALLEfamille}}/{{page.GALLEfamille}}.html'<strong>{{page.GALLEfamille}}</strong></a>
+        </td>{% endif %}
         
 
         {% if page.FAUNEorder %}
@@ -37,11 +38,13 @@ title: " "
 
         <td class="style12" style="width: 160px">{{ page.faunesousfamille }}</td>
 
+        <td class="style12" style="width: 300px">{{ page.Galletribe }} </td>
+
 		<td class="style12" style="width: 300px"><em>{{ page.Gallegenre }}</em> {{ page.AUTEURgenre }}</td>
 	</tr>
-</table>
+     </table>
 
-<table align="center" style="width: 880px">
+   <table align="center" style="width: 880px">
 	<tr>
         <td class="style9">
 		<img src="{{ page.galleimg0 }}" alt="{{ page.GALLEespece }} {{ page.Auteurespece }}" 
