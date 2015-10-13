@@ -154,7 +154,15 @@ layout: default
 	<tr>
 		<td class="style12"> </td>
 	</tr>
-    
+    {% if page.Longevite %}
+    <tr>
+		<td class="style12" ><div><strong>Longévité:</strong> {{ page.Longevite }} </div> </td>
+	</tr>{% endif %}
+
+
+	<tr>
+		<td class="style12"> </td>
+	</tr>
     {% if page.Regime-alimentaire %}
 	<tr>
 		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
