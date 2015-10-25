@@ -102,7 +102,7 @@ layout: default
 
     {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.: <em>{{ page.Synonyme }}</em>  </td>
+		<td class="style12"> syn.: {{ page.Synonyme }}  </td>
 	</tr>{% endif %}
 	<tr>
 		<td class="style12"> </td>
@@ -511,132 +511,6 @@ layout: default
     
      FIN -->
 
-
-<!-- DÉBUT table Mines
-    
-     DÉBUT --> 
-
-     {% if page.Mine %}
-	<table align="center" class="style17" style="width: 800px">
-    
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-
-   
-
-	<tr>
-		<td class="style12" > </td>
-	</tr>
-
-   
-    <tr>
-		<td class="style7" ><strong>{{ page.Mine }}</strong>   </td> 
-	</tr>
-
-    <tr>
-		<td class="style12" > </td>
-	</tr>
-
-     {% if page.descr-Mine %}
-     <tr>
-		<td class="style12" ><div><strong>Description de la mine</strong>: {{ page.descr-Mine }}  </div> </td> 
-	 </tr>{% endif %}
-    
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-
-{% if page.larve %}
-     <tr>
-		<td class="style12" ><div><strong>Larve</strong>: {{ page.larve }}  </div> </td> 
-	 </tr>{% endif %}
-    
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-     {% if page.Organesattaques %}
-     <tr>
-		<td class="style12" ><div><strong>Organes attaqués</strong>: {{ page.Organesattaques }}  </div> </td> 
-	 </tr>{% endif %}
-
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-        
-          
-     {% if page.mineOBS1 %}
-     <tr>
-		<td class="style12" ><div>--- OBS. {{ page.mineOBS1 }}  </div> </td> 
-	 </tr>{% endif %}
-     
-      {% if page.mineOBS2 %}  
-     <tr>
-        <td class="style12" ><div>--- OBS. {{ page.mineOBS2 }}  </div> </td>
-     </tr>{% endif %}
-    
-     <tr>
-		<td class="style12" > </td>
-	 </tr>
-
-     {% if page.plante-mine %}
-     <tr>
-		<td class="style12" ><div><strong>Plantes attaquées</strong>: {{ page.plante-mine }}  </div> </td> 
-	 </tr>{% endif %}
-
-
-     <tr>
-     <td class="style9">
-      
-     <table>
-
-      <tr>
-      
-         
-      <td>
-        <a href=" {{ page.mineplante1 }} ">
-        <img class="center" src="{{ page.mineimgplante1 }}" 
-        alt="{{ page.minePLANTE-espece1 }}" title="{{ page.minePLANTE-espece1 }}" />
-        </td>
-       
-      
-      <td>
-        <a href=" {{ page.mineplante2 }} ">
-        <img class="center" src="{{ page.mineimgplante2 }}" 
-        alt="{{ page.minePLANTE-espece2 }}" title="{{ page.minePLANTE-espece2 }}" />
-        </td>
-      
-      </tr>
-
-     
-      <tr>
-
-      
-      <td>
-         <a  href=" {{ page.mineplante1 }} " style="text-decoration:none">
-            <em><span class="style9"><em> {{ page.minePLANTEnom1 }} </em></span></em>
-      </td>
-
-       
-      <td>
-         <a  href=" {{ page.mineplante2 }} " style="text-decoration:none">
-               <em><span class="style9">{{ page.minePLANTEnom2 }}</span></em>
-      </td> 
-        </tr>
-
-        </table>
-    </td>
-    </tr>}
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
-
-	</table>{% endif %}
-
-<!-- FIN table Mines
-    
-     FIN -->
 
 
 
