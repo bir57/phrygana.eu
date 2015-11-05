@@ -19,6 +19,62 @@ title: " "
 
 
 
+{% if page.HREF-espece9s %}
+<table align="center"  style="width: 960px">
+
+  <tr>
+    {% if page.HREF-espece12s %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece12s}}">
+		<img  src="{{ page.species-img12s }}" alt="{{ page.species12s }}" title="{{ page.species12s }}" ></a>
+        </td>{% endif %}
+		
+       {% if page.HREF-espece11s %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece11s }}">
+		<img  src="{{ page.species-img11s }}" alt="{{ page.species11s }}" title="{{ page.species11s }}" ></a>
+        </td>{% endif %}
+      
+      {% if page.HREF-espece10s %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece10s }}">
+		<img  src="{{ page.species-img10s}}" alt="{{ page.species10s }}" title="{{ page.species10s}}" ></a>
+        </td>{% endif %}
+        
+        {% if page.HREF-espece9s %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.HREF-espece9s}}">
+		<img  src="{{ page.species-img9s }}" alt="{{ page.species9s }}" title="{{ page.species9s }}" ></a>
+        </td>{% endif %}
+
+    </tr>
+     
+    <tr>
+
+        {% if page.HREF-espece12s %}
+		<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece12s }}" style="text-decoration:none"> 
+		{{ page.espece12s }} </a></td>{% endif %}
+
+        {% if page.HREF-espece11s %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece11s }}" style="text-decoration:none">
+        {{ page.espece11s}} </a></td>{% endif %}
+        
+        {% if page.HREF-espece10s %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece10s }}" style="text-decoration:none">
+        {{ page.espece10s }} </a></td>{% endif %}
+        
+        {% if page.HREF-espece9s %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.HREF-espece9s }}" style="text-decoration:none">
+        {{ page.espece9s }} </a></td>{% endif %}
+	   
+    </tr>
+ </table>{% endif %}
+
+
 {% if page.HREF-espece9r %}
 <table align="center"  style="width: 960px">
 
