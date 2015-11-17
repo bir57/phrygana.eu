@@ -1685,13 +1685,13 @@ layout: default
 		
         </td>{% endif %}
         
-        {% if page.Famille27 and page.FAMILLE-Espece27 and page.FAMILLE-Espece27 and page.familleimg27 %}
+        {% if page.Famille27 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.Famille27 }} ">
 		<img  src="{{ page.familleimg27 }}" alt="{{ page.FAMILLE-Espece27 }}" title="{{ page.FAMILLE-Espece27 }}" ></a> 
         </td>{% endif %}
         
-        {% if page.Famille28 and page.FAMILLE-Espece28 and page.FAMILLE-Espece28 and page.familleimg28 %}
+        {% if page.Famille28 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille28 }}">
 		<img  src="{{ page.familleimg28 }}" alt="{{ page.FAMILLE-Espece28 }}" title="{{ page.FAMILLE-Espece28 }}" ></a>
@@ -1715,7 +1715,7 @@ layout: default
         {% if page.Famille27 and page.famixx-27 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille27 }}" style="text-decoration:none">
-             {{ page.famixx-27}} </a></td>{% endif %}
+             {{ page.famixx-27 }} </a></td>{% endif %}
         
         {% if page.Famille28 and page.famixx-28 %}
         <td class="style7" style="width: 240px">
@@ -1724,6 +1724,66 @@ layout: default
 	</tr>
    
  </table>{% endif %}
+
+
+{% if page.Famille25a  %} 
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille25a %}
+         
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille25a }} ">
+		<img src="{{ page.familleimg25a }}" alt="{{ page.FAMILLE-Espece25a }}" title="{{ page.FAMILLE-Espece25a }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille26a %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille26a }}">
+        <img src="{{ page.familleimg26a }}" alt="{{ page.FAMILLE-Espece26a }}" title="{{ page.FAMILLE-Espece26a }}" ></a>
+		
+        </td>{% endif %}
+        
+        {% if page.Famille27a %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille27a }} ">
+		<img  src="{{ page.familleimg27a }}" alt="{{ page.FAMILLE-Espece27a }}" title="{{ page.FAMILLE-Espece27a }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille28a %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille28a }}">
+		<img  src="{{ page.familleimg28a }}" alt="{{ page.FAMILLE-Espece28a }}" title="{{ page.FAMILLE-Espece28a }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille25a %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille25a }}" style="text-decoration:none"> 
+		 {{ page.famixx-25a }} </a></td>{% endif %}
+
+        {% if page.Famille26a %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille26a }}" style="text-decoration:none">
+              {{ page.famixx-26a }} </a></td>{% endif %}
+        
+        {% if page.Famille27a %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille27a }}" style="text-decoration:none">
+             {{ page.famixx-27a }} </a></td>{% endif %}
+        
+        {% if page.Famille28a %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille28a }}" style="text-decoration:none">
+            {{ page.famixx-28a }} </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
 
 
 {% if page.Famille29  %} 
