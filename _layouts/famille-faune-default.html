@@ -10,7 +10,7 @@ title: "  "
 	</tr>
 </table>
 
-
+{% if page.fami-faune  %}
 <table align="center" class="style17" style="width: 800px">
 	
     
@@ -103,7 +103,7 @@ title: "  "
 		<td class="style12"><div> {{ page.fami-REF }} </div></td>
 	</tr>{% endif %}
 
-</table>
+</table>{% endif %}
 
 <p class="style8"></p>
 <p class="style8"></p>
@@ -171,18 +171,19 @@ title: "  "
 
 <p class="style8"></p>
 
+{% if page.fami-tribe1  %}
 <table align="center"  style="width: 960px">
 	
       <tr>
-    {% if page.fami-tribe1  %}
+    
 		<td class="style11"> {{ page.fami-tribe1 }} </td>
-       {% endif %}
+       
     </tr>
 
-</table>
+</table>{% endif %}
 
 
- 
+  {% if page.HREF-espece1 and page.FAUNEspecies1 and page.FAUNEspecies1 and page.fauneimg1 %} 
 <table align="center"  style="width: 960px">     
     <tr>
         
@@ -236,7 +237,7 @@ title: "  "
             <em> {{ page.fauneespece4 }} </em></a></td>{% endif %}
 	</tr>
    
- </table>
+ </table>{% endif %}
 
 
 
@@ -477,6 +478,9 @@ title: "  "
     </table>
 
 <table align="center"  style="width: 960px"> 
+
+    <tr>
+
         {% if page.HREF-espece5A and page.FAUNEspecies5A and page.FAUNEspecies5A and page.fauneimg5A %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.HREF-espece5A }} ">
@@ -1554,7 +1558,7 @@ title: "  "
     
 
 
-
+ {% if page.HREF-espece41 and page.FAUNEspecies41 and page.FAUNEspecies41 and page.fauneimg41 %}
 <table align="center" style="width: 960px">
 
         <tr>
@@ -1607,7 +1611,7 @@ title: "  "
             <em> {{ page.fauneespece44 }} </em></a></td>{% endif %}
 	</tr>
 
-</table>
+</table>{% endif %}
  
  
 
@@ -1631,7 +1635,7 @@ title: "  "
     
 
 
-
+{% if page.HREF-espece45 and page.FAUNEspecies45 and page.FAUNEspecies45 and page.fauneimg45 %}
 <table align="center" style="width: 960px">
 
         <tr>
@@ -1684,7 +1688,7 @@ title: "  "
             <em> {{ page.fauneespece48 }} </em></a></td>{% endif %}
 	</tr>
 
-</table>
+</table>{% endif %}
  
  
 
@@ -1705,7 +1709,7 @@ title: "  "
     
 
 
-
+{% if page.HREF-espece49 and page.FAUNEspecies49 and page.FAUNEspecies49 and page.fauneimg49 %}
 <table align="center" style="width: 960px">
 
         <tr>
@@ -1758,7 +1762,7 @@ title: "  "
             <em> {{ page.fauneespece52 }} </em></a></td>{% endif %}
 	</tr>
 
-</table>
+</table>{% endif %}
  
  
 
@@ -1781,7 +1785,7 @@ title: "  "
     
 
 
-
+{% if page.HREF-espece53 and page.FAUNEspecies53 and page.FAUNEspecies53 and page.fauneimg53 %}
 <table align="center" style="width: 960px">
 
         <tr>
@@ -1834,7 +1838,7 @@ title: "  "
             <em> {{ page.fauneespece56 }} </em></a></td>{% endif %}
 	</tr>
 
-</table>
+</table>{% endif %}
  
  
 
