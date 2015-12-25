@@ -34,6 +34,7 @@ layout: default
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 
+ {% if page.fami-Crete %}
 <table align="center" class="style17" style="width: 800px">
 	
    
@@ -119,9 +120,6 @@ layout: default
 		<td class="style12"><div> {{ page.fami-note5 }} </div></td>
 	</tr>{% endif %}
 
-      <tr>
-		<td class="style12"></td>
-    </tr>
     <tr>
 		<td class="style12"></td>
     </tr>
@@ -149,7 +147,7 @@ layout: default
 		<td class="style12"></td>
     </tr>
 
-</table>
+</table>{% endif %}
 
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
@@ -164,7 +162,7 @@ layout: default
 <table align="center"  style="width: 960px">     
     <tr>
         
-        {% if page.Famille1 and page.FAMILLE-Espece1 and page.FAMILLE-Espece1 and page.familleimg1 %} 
+        {% if page.familleimg1 %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.Famille1 }} ">
 		<img src="{{ page.familleimg1 }}" alt="{{ page.FAMILLE-Espece1 }}" title="{{ page.FAMILLE-Espece1 }}" ></a> 

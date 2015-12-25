@@ -1,0 +1,283 @@
+---
+layout: default
+
+---
+
+<p class="style8"></p>
+
+<table align="center" style="width: 600px">
+	<tr>
+		<td class="style14"> {{ page.varia }} </td>
+	</tr>
+</table>
+
+
+
+<table align="center" style="width: 880px">
+	<tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg0 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date0 }}</span></td>
+	</tr>
+</table>
+
+
+
+<table align="center" style="width: 900px">
+	
+    {% if page.fauneimg1 %}  
+    <tr>
+        <td class="style9" >
+		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> 
+        </td>
+    </tr>{% endif %}
+
+
+   {% if page.lieu-date1 %}
+    <tr>
+        
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
+             {{ page.lieu-date1 }}</span>
+        </td>
+	</tr>{% endif %}
+
+   {% if page.fauneimgA %}
+        <tr>
+        
+        <td class="style9">
+       
+         <table>
+
+       
+            <tr> 
+          <td>
+           <img class="center" src="{{ page.fauneimgA }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}"  
+                title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" />
+         </td>
+         <td><img class="center" src="{{ page.fauneimgB }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}}" 
+             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" /></td>
+        </tr>
+
+       
+        <tr>
+        <td>
+         
+            <em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> {{ page.lieu-dateA }}</span></td>
+           <td><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+               {{ page.lieu-dateB }}</span></td> 
+        </tr>
+
+
+        </table>
+    </td>
+    </tr>{% endif %}
+
+
+    {% if page.fauneimg2 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9" >
+		<img class="center" src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date2 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date2 }}</span></td>
+	</tr>{% endif %}
+    
+    {% if page.fauneimg3 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}    
+    <tr>
+        <td class="style9">
+		<img class="center" src="{{ page.fauneimg3 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date3 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
+             {{ page.lieu-date3 }}</span></td>
+	</tr>{% endif %}
+
+<!-- FIN  images 1 - A-B - 2 - 3
+    
+     FIN -->
+
+
+
+<!-- DÉBUT  images C-D - 4 - 5 - 6 - 7 
+    
+     DÉBUT -->
+
+    {% if page.fauneimgC %}
+       <tr>
+        
+        <td class="style9">
+       
+         <table>
+
+       
+            <tr> 
+          <td>
+           <img class="center" src="{{ page.fauneimgC }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+              title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" />
+         </td>
+         <td><img class="center" src="{{ page.fauneimgD }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" /></td>
+        </tr>
+
+       
+        <tr>
+        <td>
+         
+            <em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> {{ page.lieu-dateC }}</span></td>
+
+           <td><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+               {{ page.lieu-dateD }}</span></td> 
+        </tr>
+
+
+        </table>
+    </td>
+    </tr>{% endif %}
+
+
+
+    {% if page.fauneimg4 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img class="center" src="{{ page.fauneimg4 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date4 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date4 }}</span></td>
+	</tr>{% endif %}
+   
+    
+    {% if page.fauneimg5 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg5 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date5 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
+        {{ page.lieu-date5 }}</span></td>
+	</tr>{% endif %}
+
+    {% if page.fauneimg6 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg6 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date6 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
+             {{ page.lieu-date6 }}</span></td>
+	</tr>{% endif %}
+
+<!-- FIN  images C-D - 4 - 5 - 6 
+    
+     FIN -->
+
+
+<!-- DÉBUT  images E-F - 7 - 8 - 9 
+    
+     DÉBUT -->
+  
+    {% if page.fauneimgE  %}
+       <tr>
+        
+        <td class="style9">
+       
+         <table>
+
+       
+            <tr> 
+          <td>
+           <img class="center" src="{{ page.fauneimgE }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}"
+                 title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" />
+         </td>
+         <td><img class="center" src="{{ page.fauneimgF }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}"
+               title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" /></td>
+        </tr>
+
+       {% if page.FAUNEespece and page.lieu-dateE and page.FAUNEespece and page.lieu-dateF %}
+        <tr>
+        <td>
+         
+            <em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> {{ page.lieu-dateE }}</span></td>
+           <td><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> {{ page.lieu-dateF }}</span></td> 
+        </tr>{% endif %}
+
+
+        </table>
+    </td>
+    </tr>{% endif %}
+
+
+     {% if page.fauneimg7 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg7 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date7 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date7 }}</span></td>
+	</tr>{% endif %}
+
+     {% if page.fauneimg8 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg8 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+    
+    {% if page.FAUNEespece and page.lieu-date8 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date8 }}</span></td>
+	</tr>{% endif %}
+
+
+    {% if page.fauneimg9 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    <tr>
+        <td class="style9">
+		<img src="{{ page.fauneimg9 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+
+    
+    {% if page.FAUNEespece and page.lieu-date9 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date9 }}</span></td>
+	</tr>{% endif %}
+
+</table>
+
+
+<table align="center" style="width: 800px">
+	<tr>
+		<td class="style5">{{ page.datemaj }}</td>
+	</tr>
+</table>
+
+<!-- FIN date mise à jour 
+    
+     FIN -->
