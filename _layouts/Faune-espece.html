@@ -523,22 +523,22 @@ layout: default
 
 <table align="center" style="width: 900px">
 	
-    {% if page.fauneimg1 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}  
+
+    {% if page.fauneimg1  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
-            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> 
-        </td>
+		<img class="center" src="{{ page.fauneimg1 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
-
-
-   {% if page.FAUNEespece and page.lieu-date1 %}
+    
+    {% if page.FAUNEespece  %}
     <tr>
-        
-        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
-             {{ page.lieu-date1 }}</span>
-        </td>
+        <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
+            {{ page.lieu-date1 }}</span></td>
 	</tr>{% endif %}
+    
+
+
 
    {% if page.fauneimgA %}
         <tr>
@@ -572,14 +572,14 @@ layout: default
     </tr>{% endif %}
 
 
-    {% if page.fauneimg2 and page.FAUNEespece and page.Auteurespece and page.FAUNEespece and page.Auteurespece %}
+    {% if page.fauneimg2  %}
     <tr>
         <td class="style9" >
 		<img class="center" src="{{ page.fauneimg2 }}" alt="{{ page.FAUNEespece }} {{ page.Auteurespece }}" 
             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
     
-    {% if page.FAUNEespece and page.lieu-date2 %}
+    {% if page.FAUNEespece  %}
     <tr>
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
             {{ page.lieu-date2 }}</span></td>
