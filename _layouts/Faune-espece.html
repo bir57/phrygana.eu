@@ -3,33 +3,6 @@ layout: default
 
 ---
 
-<!-- titre Espèce -- lignes 33 - 37 -->
-<!-- Taxonomie et numéro Phrygana -- lignes 49 - 66 -->
-<!-- Image img0 -- lignes 77 - 87 -->
-<!-- Synonyme(s) et nom(s) commun(s) -- lignes 102 - 116 -->
-
-<!-- Description et cycle de vie  -- lignes 133 - 181 -->
-<!-- Indigénat Crète et Belgique -- lignes 197 - 205 -->
-<!-- Altitudes et Biotopes -- lignes 219 - 232 -->
-<!-- Origine et Distribution -- lignes 249 - 257 -->
-
-<!-- Notes et Observations -- lignes 275 - 314 -->
-<!-- Liste rouge, Utilité et Nuisance -- lignes 328 - 352 -->
-
-<!-- Table Régime alimentaire phytophage -- lignes 365 - 426 -->
-<!-- Table Mines -- lignes 437 - 537 -->
-<!-- Table Galles -- lignes 547 - 651 -->
-
-<!-- images 1 - A-B - 2 - 3 -- lignes 666 - 741 -->
-<!-- images C-D - 4 - 5 - 6 - 7 -- lignes 753 - 825 -->
-<!-- images E-F - 7 - 8 - 9 -- lignes 836 - 906 -->
-<!-- date mise à jour  -- lignes 918 - 921 -->
-<p class="style8"></p>
-
-
-<!-- DÉBUT titre Espèce
-    
-     DÉBUT -->
 
 <table align="center" style="width: 600px">
 	<tr>
@@ -43,9 +16,7 @@ layout: default
 
 <p class="style8"></p>
 
-<!-- DÉBUT Taxonomie et numéro Phrygana
-    
-     DÉBUT -->
+
 
 {% if page.phrygananbr %}
 <table align="center" class="style17" style="width: 800px">
@@ -67,9 +38,6 @@ layout: default
 	</tr>
 </table>{% endif %}
 
-<!-- FIN Taxonomie et numéro Phrygana
-    
-     FIN -->
 
 
 <!-- DÉBUT Image img0
@@ -128,9 +96,7 @@ layout: default
 		<td class="style12"></td>
 	</tr>
     
-    <!-- DÉBUT Description et cycle de vie
     
-     DÉBUT -->
      
     {% if page.description-adulte %}
 	<tr>
@@ -225,9 +191,7 @@ layout: default
 		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.IndigenatBelgium }} </td>
 	</tr>{% endif %}
 
-    <!-- FIN Indigénat Crète et Belgique
     
-     FIN -->
 
     <tr>
 		<td class="style12"></td>
@@ -531,7 +495,7 @@ layout: default
             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
     
-    {% if page.FAUNEespece  %}
+    {% if page.lieu-date1  %}
     <tr>
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
             {{ page.lieu-date1 }}</span></td>
@@ -579,7 +543,7 @@ layout: default
             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
     
-    {% if page.FAUNEespece  %}
+    {% if page.lieu-date2  %}
     <tr>
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9"> 
             {{ page.lieu-date2 }}</span></td>
@@ -592,7 +556,7 @@ layout: default
             title="{{ page.FAUNEespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.FAUNEespece and page.lieu-date3 %}
+    {% if page.lieu-date3 %}
     <tr>
         <td class="style9"><em><span class="style9">{{ page.FAUNEespece }}</span></em><span class="style9">
              {{ page.lieu-date3 }}</span></td>
