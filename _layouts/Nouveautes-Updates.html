@@ -1472,30 +1472,64 @@ title: " "
 
     </tr>
 
+{% if page.fiche-espece9 %}
+<table align="center"  style="width: 960px">
+
     <tr>
 
-        {% if page.HREF-espece4B and page.espece4B %}
-		<td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece4B }}" style="text-decoration:none"> 
-		{{ page.espece4B }} </a></td>{% endif %}
+        {% if page.fiche-espece12 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece12 }}">
+		<img  src="{{ page.species-img12 }}" alt="{{ page.species12 }}" title="{{ page.species12 }}" ></a>
+        </td>{% endif %}
+		
+        {% if page.fiche-espece11 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ .page.fiche-espece11 }}">
+		<img  src="{{ page.species-img11 }}" alt="{{ page.species11 }}" title="{{ page.species11 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.fiche-espece10 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece10 }}">
+		<img  src="{{ page.species-img10 }}" alt="{{ page.species10 }}" title="{{ page.species10 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.fiche-espece9 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece9 }}">
+		<img  src="{{ page.species-img9 }}" alt="{{ page.species9 }}" title="{{ page.species9 }}" ></a>
+        </td>{% endif %}
 
-        {% if page.HREF-espece3B and page.espece3B %}
+    </tr>
+
+    <tr>
+
+        {% if page.fiche-espece12 %}
+		<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.fiche-espece12 }}" style="text-decoration:none"> 
+		(N-{{ page.phrygananbr12 }}) {{ page.espece12 }} </a></td>{% endif %}
+
+        {% if page.fiche-espece11 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece3B }}" style="text-decoration:none">
-        {{ page.espece3B }} </a></td>{% endif %}
+		<a class="style7" href="{{ page.fiche-espece11 }}" style="text-decoration:none">
+        (N-{{ page.phrygananbr11 }}) {{ page.espece11 }} </a></td>{% endif %}
         
-        {% if page.HREF-espece2B and page.espece2B %}
+        {% if page.fiche-espece10 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece2B }}" style="text-decoration:none">
-        {{ page.espece2B }} </a></td>{% endif %}
+		<a class="style7" href="{{ page.fiche-espece10 }}" style="text-decoration:none">
+        (N-{{ page.phrygananbr10 }}) {{ page.espece10 }} </a></td>{% endif %}
         
-        {% if page.HREF-espece1B and page.espece1B %}
+        {% if page.fiche-espece9 %}
         <td class="style7" style="width: 240px">
-		<a class="style7" href="{{ page.HREF-espece1B }}" style="text-decoration:none">
-        {{ page.espece1B }}</a></td>{% endif %}
+		<a class="style7" href="{{ page.fiche-espece9 }}" style="text-decoration:none">
+       (N-{{ page.phrygananbr9}}) {{ page.espece9 }} </a></td>{% endif %}
 	   
     </tr>
- </table>{% endif %}
+
+
+  </table>{% endif %}
+
 
 
 {% if page.fiche-espece5 %}
