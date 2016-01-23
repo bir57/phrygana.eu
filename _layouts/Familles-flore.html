@@ -169,13 +169,34 @@ layout: default
             avec ==> 
      <a href='http://www.eu-nomen.eu/portal' <strong> {{ page.fami-note7 }} (2016)</strong></a> (Pan-European Species directories Infrastructure) et avec <a href='http://www.theplantlist.org' <strong>The Plant List (2016)</strong></a> (The Plant List is a working list of all known plant species). </div></td>
 	</tr>{% endif %}
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+		<td class="style12"><div>________________ </div> </td>
+	</tr>
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+    {% if page.GENRExx-1 %}
+
+	<tr>
+		<td class="style12"><div>{{ page.GENRExx-1 }} </div> </td> 
+	</tr>{% endif %}
     
+    {% if page.GENRExx-2 %}
+	<tr>
+		<td class="style12"><div>{{ page.GENRExx-2 }} </div> </td> 
+	</tr>{% endif %}
+
     <tr>
 		<td class="style12"></td>
     </tr>
-    <tr>
-		<td class="style12"></td>
-    </tr>
+
     <tr>
     {% if page.florefamille %}
 		<td class="style12">===> {{ page.florefamille }}: <a href='{{ page.florefamille }}-cle.html' <strong>clé des genres</strong></a> illustrés.  </td>
@@ -3163,9 +3184,9 @@ layout: default
 
 
 
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
-<!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+	
+<p class="style8"></p>
+
 
 <table align="center" style="width: 960px">
 	<tr>
