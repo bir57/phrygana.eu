@@ -16,6 +16,66 @@ title: " "
 
 <p class="style8"></p>
 
+{% if page.fiche-espece25 %}
+
+<table align="center"  style="width: 960px">
+
+    <tr>
+
+        {% if page.fiche-espece32 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece32 }}">
+		<img  src="{{ page.species-img32 }}" alt="{{ page.species32 }}" title="{{ page.species32 }}" ></a>
+        </td>{% endif %}
+		
+        {% if page.fiche-espece31 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ .page.fiche-espece31 }}">
+		<img  src="{{ page.species-img31 }}" alt="{{ page.species31 }}" title="{{ page.species31 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.fiche-espece30 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece30 }}">
+		<img  src="{{ page.species-img30 }}" alt="{{ page.species30 }}" title="{{ page.species30 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.fiche-espece29 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.fiche-espece29 }}">
+		<img  src="{{ page.species-img29 }}" alt="{{ page.species29}}" title="{{ page.species29 }}" ></a>
+        </td>{% endif %}
+
+    </tr>
+
+    <tr>
+
+        {% if page.fiche-espece32 %}
+		<td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.fiche-espece32 }}" style="text-decoration:none"> 
+		(N-{{ page.phrygananbr32 }}) {{ page.espece32 }} </a></td>{% endif %}
+
+        {% if page.fiche-espece31 %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.fiche-espece31 }}" style="text-decoration:none">
+        (N-{{ page.phrygananbr31 }}) {{ page.espece31 }} </a></td>{% endif %}
+        
+        {% if page.fiche-espece30 %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.fiche-espece30 }}" style="text-decoration:none">
+        (N-{{ page.phrygananbr30 }}) {{ page.espece30 }} </a></td>{% endif %}
+        
+        {% if page.fiche-espece29 %}
+        <td class="style7" style="width: 240px">
+		<a class="style7" href="{{ page.fiche-espece29 }}" style="text-decoration:none">
+       (N-{{ page.phrygananbr29}}) {{ page.espece29 }} </a></td>{% endif %}
+	   
+    </tr>
+
+</table>{% endif %}
+  
+
+
 
 {% if page.fiche-espece25 %}
 
