@@ -769,6 +769,18 @@ layout: default
             class="style9"> {{ page.lieu-date9 }}</span></td>
 	</tr>{% endif %}
 
+  {% if page.floreimg10  %}
+    <tr>
+        <td class="style9" >
+		<img  class="center" src="{{ page.floreimg10 }}" alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FLOREespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+
+ {% if page.FLOREespece and page.lieu-date10 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FLOREespece }}</span></em><span 
+            class="style9"> {{ page.lieu-date10 }}</span></td>
+	</tr>{% endif %}
 
 
 </table>{% endif %}
