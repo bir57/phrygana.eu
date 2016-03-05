@@ -394,6 +394,63 @@ layout: default
  </table>{% endif %}
 
 
+{% if page.Famille1d %}
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille1d %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille1d }} ">
+		<img src="{{ page.familleimg1d }}" alt="{{ page.FAMILLE-Espece1d }}" title="{{ page.FAMILLE-Espece1d }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille2d %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille2d }}">
+		<img src="{{ page.familleimg2d }}" alt="{{ page.FAMILLE-Espece2d }}" title="{{ page.FAMILLE-Espece2d }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille3c %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille3d }} ">
+		<img  src="{{ page.familleimg3d }}" alt="{{ page.FAMILLE-Espece3d }}" title="{{ page.FAMILLE-Espece3d }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille4d %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille4d }}">
+		<img  src="{{ page.familleimg4d }}" alt="{{ page.FAMILLE-Espece4d }}" title="{{ page.FAMILLE-Espece4d }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille1d %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille1d }}" style="text-decoration:none"> 
+		 <em>{{ page.famixx-1d }}</em> </a></td>{% endif %}
+
+        {% if page.Famille2d %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille2d }}" style="text-decoration:none">
+            <em>{{ page.famixx-2d }}</em>  </a></td>{% endif %}
+        
+        {% if page.Famille3d %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille3d }}" style="text-decoration:none">
+            <em>{{ page.famixx-3d }}</em>  </a></td>{% endif %}
+        
+        {% if page.Famille4d %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille4d }}" style="text-decoration:none">
+             <em>{{ page.famixx-4d }}</em> </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
+
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
 
