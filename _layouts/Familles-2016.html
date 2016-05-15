@@ -224,7 +224,7 @@ layout: default
 
 
     <tr>
-		<td class="style12"><div>--- La classification suivie pour les {{ page.Ordre-famille }} est (dans la mesure du possible) en accordance avec --- <a href='http://www.eu-nomen.eu/portal' <strong>PESI (2016)</strong></a>, (Pan-European Species directories Infrastructure). </div></td>
+		<td class="style12"><div>--- La classification suivie pour les {{ page.Ordre-famille }} est, dans la mesure du possible, en accordance avec --- <a href='http://www.eu-nomen.eu/portal' <strong>PESI (2016)</strong></a>, (Pan-European Species directories Infrastructure). </div></td>
 	</tr>
  
     <tr>
@@ -432,6 +432,76 @@ layout: default
    
  </table>{% endif %}
 
+
+<table align="center"  style="width: 800px">
+	
+      <tr>
+    {% if page.fami-tribe1m  %}
+		<td class="style11"> {{ page.fami-tribe1m }} </td>
+       {% endif %}
+    </tr>
+    
+      <tr>
+		<td class="style12"></td>
+    </tr>
+      
+
+</table>
+
+<table align="center"  style="width: 960px">     
+    <tr>
+        
+        {% if page.familleimg1m %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille1m }} ">
+		<img src="{{ page.familleimg1m }}" alt="{{ page.FAMILLE-Espece1m }}" title="{{ page.FAMILLE-Espece1m }}"    ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille2m  %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille2m }}">
+		<img src="{{ page.familleimg2m }}" alt="{{ page.FAMILLE-Espece2m }}" title="{{ page.FAMILLE-Espece2m }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille3m %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille3m }}">
+		<img  src="{{ page.familleimg3m }}" alt="{{ page.FAMILLE-Espece3m }}" title="{{ page.FAMILLE-Espece3m }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.Famille4m %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille4m }}">
+		<img  src="{{ page.familleimg4m }}" alt="{{ page.FAMILLE-Espece4m }}" title="{{ page.FAMILLE-Espece4m }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+
+
+	<tr>
+		
+        {% if page.Famille1m %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille1m }}" style="text-decoration:none"> 
+		 {{ page.famixx-1m }} </a></td>{% endif %}
+
+        {% if page.Famille2m %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille2m }}" style="text-decoration:none">
+              {{ page.famixx-2m }} </a></td>{% endif %}
+        
+        {% if page.Famille3m %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille3m }}" style="text-decoration:none">
+             {{ page.famixx-3m }} </a></td>{% endif %}
+        
+        {% if page.Famille4m %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille4m }}" style="text-decoration:none">
+             {{ page.famixx-4m }} </a></td>{% endif %}
+	</tr>
+   
+ </table>
 
 <p class="style8"></p>
 
@@ -1335,30 +1405,31 @@ layout: default
 <table align="center"  style="width: 960px">     
     <tr>
         
-        {% if page.Famille41 and page.FAMILLE-Espece41 and page.FAMILLE-Espece41 and page.familleimg41 %}
+        {% if page.Famille41 %}
          
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.Famille41 }} ">
 		<img src="{{ page.familleimg41 }}" alt="{{ page.FAMILLE-Espece41 }}" title="{{ page.FAMILLE-Espece41 }}" ></a> 
         </td>{% endif %}
 		
-        {% if page.Famille42 and page.FAMILLE-Espece42 and page.FAMILLE-Espece42 and page.familleimg42 %}
+        {% if page.Famille42 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.Famille42 }}">
         <img src="{{ page.familleimg42 }}" alt="{{ page.FAMILLE-Espece42 }}" title="{{ page.FAMILLE-Espece42 }}" ></a>
 		
         </td>{% endif %}
         
-        {% if page.Famille43 and page.FAMILLE-Espece43 and page.FAMILLE-Espece43 and page.familleimg43 %}
+        {% if page.Famille43 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.Famille43 }} ">
 		<img  src="{{ page.familleimg43 }}" alt="{{ page.FAMILLE-Espece43 }}" title="{{ page.FAMILLE-Espece43 }}" ></a> 
         </td>{% endif %}
-        
-        {% if page.Famille44 and page.FAMILLE-Espece44 and page.FAMILLE-Espece44 and page.familleimg44 %}
-        <td class="style7" style="width: 240px">
+   
+        {% if page.Famille44 %}
+		<td class="style7" style="width: 240px">
 		<a href="{{ page.Famille44 }}">
-		<img  src="{{ page.familleimg44 }}" alt="{{ page.FAMILLE-Espece44 }}" title="{{ page.FAMILLE-Espece44 }}" ></a>
+        <img src="{{ page.familleimg44 }}" alt="{{ page.FAMILLE-Espece444 }}" title="{{ page.FAMILLE-Espece44 }}" ></a>
+		
         </td>{% endif %}
 
        </tr>
