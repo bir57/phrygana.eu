@@ -477,6 +477,82 @@ layout: default
      FIN -->
 
 
+    
+{% if page.Predateur %}
+	<table align="center" class="style17" style="width: 800px">
+    
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    
+    {% if page.Predateur %}
+    <tr>
+		<td class="style12" ><div><strong>Prédation:</strong> {{ page.Predateur }}  </div> </td> 
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12" > </td>
+	</tr> 
+
+
+
+        {% if page.predateur1 %}
+        <tr>
+        
+        <td class="style9">
+      
+         <table>
+                              
+        <tr> 
+
+
+          <td>
+          <a href=" {{ page.predateur1 }} ">
+          <img class="center" src="{{ page.imgpredateur1 }}" alt="{{ page.PREDATEUR-espece1 }}" 
+           title="{{ page.PREDATEUR-espece1 }}" />
+          </td>
+        
+          <td>
+          <a href=" {{ page.predateur2 }} ">
+          <img class="center" src="{{ page.imgpredateur2 }}" alt="{{ page.PREDATEUR-espece2 }}" 
+          title="{{ page.PREDATEUR-espece2 }}" />
+          </td>
+
+          <td>
+          <a href=" {{ page.predateur3 }} ">
+          <img class="center" src="{{ page.imgpredateur3 }}" alt="{{ pagePREDATEUR-espece3 }}" 
+          title="{{ page.PREDATEUR-espece3 }}" />
+          </td>
+
+        </tr>
+
+        <tr>
+         <td>
+         <a  href=" {{ page.predateur1 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PREDATEURnom1 }} </em></span></em>
+         </td>
+
+         <td>
+         <a  href=" {{ page.predateur2 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PREDATEURnom2 }} </em> </span></em>
+         </td> 
+        
+
+         <td>
+         <a  href=" {{ page.predateur3 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PREDATEURnom3 }} </em> </span></em>
+         </td> 
+
+        </tr>
+
+
+        </table>
+    </td>
+    </tr>{% endif %}
+   
+	</table>{% endif %}
+
+
 
 
 {{ content }}
