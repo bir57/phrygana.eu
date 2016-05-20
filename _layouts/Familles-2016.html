@@ -230,14 +230,46 @@ layout: default
     <tr>
 		<td class="style12"></td>
     </tr>
-     <tr>
-		<td class="style12"></td>
-	</tr>
-     <tr>
-		<td class="style12"></td>
-	</tr>
 
+    {% if page.Cle-famille-genres %}
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+		<td class="style12"><div>________________ </div> </td>
+	</tr>
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+    {% if page.GENRExx-1 %}
+
+	<tr>
+		<td class="style12"><div>{{ page.GENRExx-1 }} </div> </td> 
+	</tr>{% endif %}
+    
+    {% if page.GENRExx-2 %}
+	<tr>
+		<td class="style12"><div>{{ page.GENRExx-2 }} </div> </td> 
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+    </tr>
+
+    <tr>
+    {% if page.Cle-famille-genres %}
+		<td class="style12">===> {{ page.Cle-famille-genres }}: <a href='{{ page.Cle-famille-genres }}-cle.html' <strong>clé des genres</strong></a> illustrés.  </td>
+       {% endif %}
+    </tr>
+
+    <tr>
+		<td class="style12"></td>
+    </tr> {% endif %}
 </table>
+
+<p class="style8"></p>
+
 
 <p class="style8"></p>
 
