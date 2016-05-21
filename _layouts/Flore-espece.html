@@ -228,8 +228,13 @@ layout: default
     {% if page.Note3 %}
     <tr>
 		<td class="style12"><div>--- {{ page.Note3 }} </div></td>
+
 	</tr>{% endif %}
-  
+
+  {% if page.Note4 %}
+    <tr>
+		<td class="style12"><div>--- {{ page.Note4 }} </div></td>
+	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
 	</tr>
@@ -258,7 +263,15 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>
+    
+    {% if page.OBS3 %}
+    <tr>
+		<td class="style12" ><div>{{ page.OBS3 }}  </div> </td>    
+    </tr>{% endif %}
 
+    <tr>
+		<td class="style12"></td>
+	</tr>
   
     <!-- FIN Notes et Observations
     
