@@ -386,20 +386,20 @@ layout: default
     </tr>
     <tr>
         
-        {% if page.ravageur1 and page.RAVAGEUR-espece1 and page.RAVAGEUR-espece1 and page.imgravageur1 %} 
+        {% if page.ravageur1  %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.ravageur1 }} ">
 		<img src="{{ page.imgravageur1 }}" alt="{{ page.RAVAGEUR-espece1 }}" title="{{ page.RAVAGEUR-espece1 }}" ></a> 
         </td>{% endif %}
         
        
-       {% if page.ravageur2 and page.RAVAGEUR-espece2 and page.RAVAGEUR-espece2 and page.imgravageur2 %}
+       {% if page.ravageur2  %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.ravageur2 }}">
 		<img src="{{ page.imgravageur2 }}" alt="{{ page.RAVAGEUR-espece2 }}" title="{{ page.RAVAGEUR-espece2 }}" ></a>
         </td>{% endif %}
         
-        {% if page.ravageur3 and page.RAVAGEUR-espece3 and page.RAVAGEUR-espece3 and page.imgravageur3 %}
+        {% if page.ravageur3 %}
         <td class="style7" style="width: 240px">
 		<a href=" {{ page.ravageur3 }} ">
 		<img  src="{{ page.imgravageur3 }}" alt="{{ page.RAVAGEUR-espece3 }}" title="{{ page.RAVAGEUR-espece3 }}" ></a> 
@@ -409,19 +409,19 @@ layout: default
         </tr>
 
         <tr>
-         {% if page.ravageur1 and page.RAVAGEURnom1 %}
+         {% if page.ravageur1 %}
          <td class="style7" style="width: 240px">
          <a  href=" {{ page.ravageur1 }} " style="text-decoration:none">
          <em><span class="style7"><em> {{ page.RAVAGEURnom1 }} </em></span></em>
          </td>{% endif %}
 
-         {% if page.ravageur2 and page.RAVAGEURnom2 %}
+         {% if page.ravageur2 %}
          <td class="style7" style="width: 240px">
          <a  href=" {{ page.ravageur2 }} " style="text-decoration:none">
          <em><span class="style7"><em> {{ page.RAVAGEURnom2 }} </em> </span></em>
          </td>{% endif %} 
         
-         {% if page.ravageur3 and page.RAVAGEURnom3 %}
+         {% if page.ravageur3 %}
          <td class="style7" style="width: 240px">
          <a  href=" {{ page.ravageur3 }} " style="text-decoration:none">
          <em><span class="style7"><em> {{ page.RAVAGEURnom3 }} </em> </span></em>
@@ -477,7 +477,7 @@ layout: default
          <em><span class="style7"><em> {{ page.RAVAGEURnom5 }} </em> </span></em>
          </td>{% endif %} 
         
-         {% if page.ravageur6 and page.RAVAGEURnom6 %}
+         {% if page.ravageur6 %}
          <td class="style7" style="width: 240px">
          <a  href=" {{ page.ravageur6 }} " style="text-decoration:none">
          <em><span class="style7"><em> {{ page.RAVAGEURnom6 }} </em> </span></em>

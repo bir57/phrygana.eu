@@ -374,6 +374,14 @@ layout: default
 		<td class="style12" > </td>
 	</tr> 
 
+        {% if page.planteorganes %}
+        <tr>
+		<td class="style12" ><div><strong>Parties attaquées:</strong> {{ page.planteorganes }}  </div> </td> 
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12" > </td>
+	</tr> 
 
 
         {% if page.plante1 %}
