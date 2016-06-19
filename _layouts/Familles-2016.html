@@ -415,19 +415,19 @@ layout: default
 		<img src="{{ page.familleimg1 }}" alt="{{ page.FAMILLE-Espece1 }}" title="{{ page.FAMILLE-Espece1 }}"    ></a> 
         </td>{% endif %}
 		
-        {% if page.Famille2 and page.FAMILLE-Espece2 and page.FAMILLE-Espece2 and page.familleimg2 %}
+        {% if page.Famille2 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.Famille2 }}">
 		<img src="{{ page.familleimg2 }}" alt="{{ page.FAMILLE-Espece2 }}" title="{{ page.FAMILLE-Espece2 }}" ></a>
         </td>{% endif %}
         
-        {% if page.Famille3 and page.FAMILLE-Espece3 and page.FAMILLE-Espece3 and page.familleimg3 %}
+        {% if page.Famille3 %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille3 }}">
 		<img  src="{{ page.familleimg3 }}" alt="{{ page.FAMILLE-Espece3 }}" title="{{ page.FAMILLE-Espece3 }}" ></a>
         </td>{% endif %}
         
-        {% if page.Famille4 and page.FAMILLE-Espece4 and page.FAMILLE-Espece4 and page.familleimg4 %}
+        {% if page.Famille4  %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille4 }}">
 		<img  src="{{ page.familleimg4 }}" alt="{{ page.FAMILLE-Espece4 }}" title="{{ page.FAMILLE-Espece4 }}" ></a>
@@ -443,17 +443,17 @@ layout: default
 		<a class="Famille" href="{{ page.Famille1 }}" style="text-decoration:none"> 
 		 {{ page.famixx-1 }} </a></td>{% endif %}
 
-        {% if page.Famille2 and page.famixx-2 %}
+        {% if page.Famille2 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille2 }}" style="text-decoration:none">
               {{ page.famixx-2 }} </a></td>{% endif %}
         
-        {% if page.Famille3 and page.famixx-3 %}
+        {% if page.Famille3 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille3 }}" style="text-decoration:none">
              {{ page.famixx-3}} </a></td>{% endif %}
         
-        {% if page.Famille4 and page.famixx-4 %}
+        {% if page.Famille4 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille4 }}" style="text-decoration:none">
              {{ page.famixx-4 }} </a></td>{% endif %}
