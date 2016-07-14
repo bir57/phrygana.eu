@@ -1,2 +1,4 @@
 safe: true
 exclude: [.gitattributes, .gitignore, README.md, server.cmd]
+gems:
+  - jekyll-sitemap
