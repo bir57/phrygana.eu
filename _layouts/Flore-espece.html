@@ -60,7 +60,7 @@ layout: default
     
     {% if page.nom-commun %}
     <tr>
-		<td class="style12" ><strong>Nom commun</strong>: {{ page.nom-commun }} </td>
+		<td class="style12" ><strong>Nom commun</strong>:  {{ page.nom-commun }} </td>
 	</tr>{% endif %}
 
     <tr>
@@ -69,7 +69,7 @@ layout: default
 
     {% if page.descr-plante %}
 	<tr>
-		<td class="style12" > <div>{{ page.descr-plante }} </div></td>
+		<td class="style12" > <div><strong>Aspect général</strong>: {{ page.descr-plante }} </div></td>
 	</tr>{% endif %}
 
     <tr>
@@ -78,7 +78,7 @@ layout: default
 
     {% if page.descr-feuilles %}
     <tr>
-		<td class="style12" ><div><strong>Feuilles:</strong> {{ page.descr-feuilles }} </div> </td>
+		<td class="style12" ><div><strong>Feuilles</strong>: {{ page.descr-feuilles }} </div> </td>
 	</tr>{% endif %}
 
 	<tr>
@@ -142,10 +142,6 @@ layout: default
 		<td class="style12"><div><strong>Floraison (sauf Crète):</strong>  {{ page.descr-floraison1 }} </div> </td>
 	</tr>{% endif %}
 
-    {% if page.descr-pollinisation %}
-    <tr>
-		<td class="style12"><div><strong>Floraison:</strong>  {{ page.descr-pollinisation }} </div> </td>
-	</tr>{% endif %}
 
     <tr>
 		<td class="style12"></td>
@@ -171,17 +167,17 @@ layout: default
 
     {% if page.Altitudes %}
 	<tr>
-		<td class="style12" ><strong>Altitudes: </strong> {{ page.Altitudes }} </td>
+		<td class="style12" ><strong>Altitudes </strong>: {{ page.Altitudes }} </td>
 	</tr>{% endif %}
 
     {% if page.BiotopesCrete %}
 	<tr>
-		<td class="style12" ><div><strong>Biotopes en Crète:</strong> {{ page.BiotopesCrete }} </div></td>
+		<td class="style12" ><div><strong>Biotopes en Crète</strong>: {{ page.BiotopesCrete }} </div></td>
 	</tr>{% endif %}
 
      {% if page.Biotopesgeneral %}
 	<tr>
-		<td class="style12" ><strong>Biotopes:</strong> {{ page.Biotopesgeneral }} </td>
+		<td class="style12" ><strong>Biotopes hors Crète</strong>: {{ page.Biotopesgeneral }} </td>
 	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
@@ -248,13 +244,18 @@ layout: default
 
     {% if page.OBSERVATION %}
     <tr>
-		<td class="style12" ><div>OBS. --- {{ page.OBSERVATION }}  </div> </td>    
+		<td class="style12"><strong>Observation(s):</strong></td>
+	</tr>
+
+    
+    <tr>
+		<td class="style12" ><div>--- {{ page.OBSERVATION }}  </div> </td>    
     </tr>{% endif %}
     
 
     {% if page.OBS1 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS1 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS1 }}  </div> </td>    
     </tr>{% endif %}
 
 
@@ -264,7 +265,7 @@ layout: default
 
     {% if page.OBS2 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS2 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS2 }}  </div> </td>    
     </tr>{% endif %}
 
     <tr>
@@ -273,7 +274,7 @@ layout: default
     
     {% if page.OBS3 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS3 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS3 }}  </div> </td>    
     </tr>{% endif %}
 
     <tr>
@@ -282,7 +283,7 @@ layout: default
     
     {% if page.OBS4 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS4 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS4 }}  </div> </td>    
     </tr>{% endif %}
 
     <tr>
@@ -312,11 +313,11 @@ layout: default
 	</tr>
     {% if page.Utilite %}
     <tr>
-		<td class="style12" ><div><strong>Utilité</strong>: {{ page.Utilite }}  </div> </td>    
+		<td class="style12" ><div><strong> Utilité</strong>: --- {{ page.Utilite }}  </div> </td>    
     </tr>{% endif %}
      {% if page.Utilite1 %}
     <tr>
-		<td class="style12" ><div>   {{ page.Utilite1 }}  </div> </td>    
+		<td class="style12" ><div><strong> Utilité1</strong>--- {{ page.Utilite1 }}  </div> </td>    
     </tr>{% endif %} 
     <tr>
 		<td class="style12"></td>
@@ -324,7 +325,7 @@ layout: default
 
     {% if page.Nuisance %}
     <tr>
-		<td class="style12" ><div><strong>Nuisance</strong>: {{ page.Nuisance }}  </div> </td>    
+		<td class="style12" ><div><strong>Nuisance</strong>: --- {{ page.Nuisance }}  </div> </td>    
     </tr>{% endif %}
      <tr>
 		<td class="style12"></td>
@@ -346,10 +347,17 @@ layout: default
 
    
     <tr>
-		<td class="style12" ><div><strong>Plante hôte</strong> pour: {{ page.Ravageur }}  </div> </td> 
+		<td class="style12" ><div><strong>Plante hôte</strong> pour:  </div> </td> 
 	</tr>
-	
+	 
+    <tr>
+		<td class="style12" ><div>--- {{ page.Ravageur }}    </div> </td>    
+    </tr>  
 
+   {% if page.Ravageur1 %}
+    <tr>
+		<td class="style12" ><div>--- {{ page.Ravageur1 }}  </div> </td>    
+    </tr> {% endif %}
     
     <tr>
 		<td class="style12" > </td>
