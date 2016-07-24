@@ -362,7 +362,7 @@ layout: default
 	 
     <tr>
 		<td class="style12" ><div>--- {{ page.Ravageur }}    </div> </td>    
-    </tr>  
+    </tr> {% endif %} 
 
    {% if page.Ravageur1 %}
     <tr>
@@ -373,11 +373,26 @@ layout: default
 		<td class="style12" > </td>
 	</tr>
  
-        
+
+
+
+        {% if page.planteorganes %}
+	    
     <tr>
-		<td class="style12" ><div><strong>Partie(s) de la plante-hôte attaquée(s)</strong> : {{ page.planteorganes }}  </div> </td> 
+		<td class="style12" ><div><strong>Partie(s) de la plante-hôte attaquée(s)</strong> :   </div> </td> 
 	</tr>
-	
+
+   
+    <tr>
+		<td class="style12" ><div>--- {{ page.planteorganes }}  </div> </td>    
+    </tr> 
+
+
+
+	{% if page.planteorganes1 %}
+    <tr>
+		<td class="style12" ><div>--- {{ page.planteorganes1 }}  </div> </td>    
+    </tr> {% endif %}
 
     
     <tr>
