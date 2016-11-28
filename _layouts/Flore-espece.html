@@ -538,9 +538,58 @@ layout: default
 
         </tr>
 
+ 
+<table align="center"  style="width: 800px">     
+    
     <tr>
 		<td class="style12"></td>
-	</tr>
+    </tr>
+    
+        <tr> 
+          {% if page.ravageur7  %}
+          <td class="style7" style="width: 240px">
+          <a href=" {{ page.ravageur7 }} ">
+          <img class="center" src="{{ page.imgravageur7 }}" alt="{{ page.RAVAGEUR-espece7 }}" 
+           title="{{ page.RAVAGEUR-espece7 }}" />
+          </td>{% endif %}
+         
+          {% if page.ravageur8 %}
+          <td class="style7" style="width: 240px">
+          <a href=" {{ page.ravageur8 }} ">
+          <img class="center" src="{{ page.imgravageur8 }}" alt="{{ page.RAVAGEUR-espece8 }}" 
+          title="{{ page.RAVAGEUR-espece8 }}" />
+          </td>{% endif %}
+
+          {% if page.ravageur9 %}
+          <td class="style7" style="width: 240px">
+          <a href=" {{ page.ravageur9 }} ">
+          <img class="center" src="{{ page.imgravageur9 }}" alt="{{ page.RAVAGEUR-espece9 }}" 
+          title="{{ page.RAVAGEUR-espece9 }}" />
+          </td>{% endif %}
+
+        </tr>
+
+        <tr>
+         {% if page.ravageur7 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.ravageur7}} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.RAVAGEURnom7 }} </em></span></em>
+         </td>{% endif %}
+
+         {% if page.ravageur8  %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.ravageur8 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.RAVAGEURnom8 }} </em> </span></em>
+         </td>{% endif %} 
+        
+         {% if page.ravageur9 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.ravageur9 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.RAVAGEURnom9 }} </em> </span></em>
+         </td>{% endif %} 
+
+        </tr>
+
 
     <tr>
 		<td class="style12" > </td>
