@@ -256,6 +256,12 @@ layout: default
      DÉBUT -->
                 
     {% if page.Note1 %}
+    
+    
+    <tr>
+		<td class="style12"><strong>Note(s):</strong></td>
+	</tr>
+    
     <tr>
 		<td class="style12"><div>--- {{ page.Note1 }} </div></td>
 	</tr>{% endif %}
@@ -276,6 +282,13 @@ layout: default
 	</tr>
 
     {% if page.OBSERVATION %}
+    
+    <tr>
+		<td class="style12"><strong>Observation(s):</strong></td>
+	</tr>
+
+    
+    
     <tr>
 		<td class="style12" ><div>OBS. --- <em>{{ page.FAUNEespece }}</em> {{ page.OBSERVATION }}  </div> </td>    
     </tr>{% endif %}
