@@ -889,14 +889,14 @@ layout: default
             class="style9"> {{ page.lieu-date8 }}</span></td>
 	</tr>{% endif %}
 
-{% if page.floreimg9 %}
+{% if page.floreimg9  %}
     <tr>
         <td class="style9" >
 		<img  class="center" src="{{ page.floreimg9 }}" alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" 
             title="{{ page.FLOREespece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
 
- {% if page.page.lieu-date9 %}
+ {% if page.FLOREespece and page.lieu-date9 %}
     <tr>
         <td class="style9"><em><span class="style9">{{ page.FLOREespece }}</span></em><span 
             class="style9"> {{ page.lieu-date9 }}</span></td>
