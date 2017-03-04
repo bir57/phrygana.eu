@@ -930,6 +930,22 @@ layout: default
 	</tr>{% endif %}
 
 
+
+  {% if page.floreimg12  %}
+    <tr>
+        <td class="style9" >
+		<img  class="center" src="{{ page.floreimg12 }}" alt="{{ page.FLOREespece }} {{ page.Auteurespece }}" 
+            title="{{ page.FLOREespece }} {{ page.Auteurespece }}" > </td>
+    </tr>{% endif %}
+
+ {% if page.FLOREespece and page.lieu-date12 %}
+    <tr>
+        <td class="style9"><em><span class="style9">{{ page.FLOREespece }}</span></em><span 
+            class="style9"> {{ page.lieu-date12 }}</span></td>
+	</tr>{% endif %}
+
+
+
 </table>
 
 
