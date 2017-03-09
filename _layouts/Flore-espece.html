@@ -309,7 +309,13 @@ layout: default
          
     <tr>
 		<td class="style12"></td>
+ </tr>
 
+    {% if page.Menaces %}
+    <tr>
+		<td class="style12" ><div><strong>Menace(s)</strong>: {{ page.Menaces }}  </div> </td>    
+    </tr>{% endif %}
+  
 
     {% if page.Utilite %}
     <tr>
