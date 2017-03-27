@@ -46,7 +46,36 @@ layout: default
 
 
 <table align="center" class="style17" style="width: 800px">
-	
+
+
+{% if page.remarque %}
+    <tr>
+		<td class="style12"></td>
+	</tr>
+	<tr>
+		<td class="style12"> </td>
+	</tr>
+    	
+    
+    <tr>
+		<td class="style12"> REM. - {{ page.remarque }} </td>
+	</tr>
+	<tr>
+		<td class="style12"> - - - - - - - - - -</td>
+	</tr>
+	<tr>
+		<td class="style12"> </td>
+	</tr>
+    <tr>
+		<td class="style12"> </td>
+	</tr>{% endif %}
+    <tr>
+		<td class="style12"></td>
+	</tr>
+	<tr>
+		<td class="style12"> </td>
+	</tr>
+
     {% if page.Synonyme %}
     <tr>
 		<td class="style12"> syn.: {{ page.Synonyme }} </td>
