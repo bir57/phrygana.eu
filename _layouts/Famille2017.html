@@ -25,20 +25,26 @@ layout: default
 	</tr>
   
 
-    {% if page.fami-intro %}
+    {% if page.fami-REMARQUE %}
 
     <tr>
-		<td class="style12"><div>OBS.: {{ page.fami-intro }}</div></td>
+		<td class="style12"><div>REMARQUE: {{ page.fami-REMARQUE }}</div></td>
    
 		<td class="style12"></td>
-    </tr>
+    </tr>{% endif %}
         
+
 	<tr>
 		<td class="style12"></td>
 	</tr>
 
+    {% if page.fami-intro %}
+
     <tr>
+		<td class="style12"><div> {{ page.fami-intro }}</div></td>
+   
 		<td class="style12"></td>
+    </tr>
 	</tr>{% endif %}
 
 

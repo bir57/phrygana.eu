@@ -63,9 +63,6 @@ layout: default
 <table align="center" class="style17" style="width: 800px">
 	
 
-    <!-- DÉBUT Synonyme(s) et nom(s) commun(s)
-    
-     DÉBUT -->
 
     {% if page.Synonyme %}
     <tr>
@@ -83,9 +80,7 @@ layout: default
 		<td class="style12" ><div><strong>Nom(s) commun(s)</strong>: {{ page.nom-commun }} </div></td>
 	</tr>{% endif %}
 
-    <!-- FIN Synonyme(s) et nom(s) commun(s)
-    
-     FIN -->
+   
 
        <tr>
 		<td class="style12"></td>
@@ -148,7 +143,7 @@ layout: default
 
     {% if page.Periodevol %}
     <tr>
-		<td class="style12"><div><strong>Période de vol:</strong>  {{ page.Periodevol }} </div> </td>
+		<td class="style12"><div><strong>Période de vol hors Crète:</strong>  {{ page.Periodevol }} </div> </td>
 	</tr>{% endif %}
 
     {% if page.PeriodeACTIVECrete %}
@@ -161,9 +156,7 @@ layout: default
 		<td class="style12"><div>--- {{ page.PeriodeACTIVE }} </div> </td>
 	</tr>{% endif %}
 
-    <!-- FIN Description et cycle de vie
     
-     FIN -->
 
     
              
@@ -175,9 +168,7 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-     <!-- DÉBUT Indigénat Crète et Belgique
-    
-     DÉBUT -->
+  
 
     {% if page.IndigenatCrete %}
 	<tr>
