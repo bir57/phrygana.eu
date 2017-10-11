@@ -19,12 +19,17 @@ layout: default
 	<tr>
 		<td class="style12" style="width: 40px"> {{ page.phrygananbr }} </td>
 
-		<td class="style12" style="width: 80px">Champignon </td>
-
-		<td class="style12" style="width: 220px">
-		<strong>{{ page.CHAMPIGNONfamille }}</strong></a> {{ page.Auteurfamille }}</td>
+		
+ <td class="style12" style="width: 80px">Fungi</td>
+		
         
+        <td class="style12" style="width: 220px">
+		<a href='{{page.les-champignons}}.html'<strong>{{ page.les-champignons}}</strong></a> {{ page.Auteurfamille }}</td>
        
+        
+        
+        {% if page.fungitribe %}
+        <td class="style12" style="width: 160px">{{ page.fungitribe }}</td>{% endif %}
 
 		<td class="style12" style="width: 300px"><em>{{ page.CHAMPIGNONgenre }}</em> {{ page.AUTEURgenre }}</td>
 	</tr>
@@ -183,7 +188,7 @@ layout: default
 
     {% if page.OBS1 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS1 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS1 }}  </div> </td>    
     </tr>{% endif %}
 
 
@@ -193,7 +198,7 @@ layout: default
 
     {% if page.OBS2 %}
     <tr>
-		<td class="style12" ><div>{{ page.OBS2 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.OBS2 }}  </div> </td>    
     </tr>{% endif %}
 
     <tr>
