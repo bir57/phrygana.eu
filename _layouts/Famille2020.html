@@ -25,10 +25,10 @@ layout: default
 	</tr>
   
 
-    {% if page.fami-REMARQUE %}
+    {% if page.REMARQUE %}
 
     <tr>
-		<td class="style12"><div>REMARQUE: {{ page.fami-REMARQUE }}</div></td>
+		<td class="style12"><div>REMARQUE: {{ page.REMARQUE }}</div></td>
    
 		<td class="style12"></td>
     </tr>{% endif %}
@@ -315,8 +315,16 @@ layout: default
 		<td class="style12"></td>
     </tr>
     
- 
-   
+ {% if page.GENRES %}
+    <tr>
+		<td class="style12"><div>Dans le monde, les {{ page.Ordre-famille }}  comprennent {{ page.GENRES }} genres dont:  </div></td>
+	</tr>
+    
+
+    <tr>
+		<td class="style12"></td>
+    </tr>{% endif %}
+
 
     {% if page.genre1 %}
     
@@ -331,7 +339,7 @@ layout: default
 
     {% if page.genre2 %}
     <tr>
-		<td class="style12"><div>{{ page.genre2 }} </div></td>
+		<td class="style12"><div>--- {{ page.genre2 }} </div></td>
 	</tr>
     
     <tr>
@@ -340,7 +348,7 @@ layout: default
     
     {% if page.genre3 %}
     <tr>
-		<td class="style12"><div>{{ page.genre3 }}</div></td>
+		<td class="style12"><div>--- {{ page.genre3 }}</div></td>
 	</tr>
     
 
@@ -350,7 +358,7 @@ layout: default
 
     {% if page.genre4 %}
     <tr>
-		<td class="style12"><div>{{ page.genre4 }}</div></td>
+		<td class="style12"><div>--- {{ page.genre4 }}</div></td>
 	</tr>
     
     <tr>
@@ -359,7 +367,7 @@ layout: default
 
     {% if page.genre5 %}
     <tr>
-		<td class="style12"><div>{{ page.genre5 }}</div></td>
+		<td class="style12"><div>--- {{ page.genre5 }}</div></td>
 	</tr>
     
     <tr>
@@ -373,7 +381,7 @@ layout: default
 
     {% if page.genre6 %}
     <tr>
-		<td class="style12"><div>{{ page.genre6 }}</div></td>
+		<td class="style12"><div>--- {{ page.genre6 }}</div></td>
 	</tr>
     
     <tr>
@@ -387,7 +395,7 @@ layout: default
 
     {% if page.genre7 %}
     <tr>
-		<td class="style12"><div>{{ page.genre7 }}</div></td>
+		<td class="style12"><div>--- {{ page.genre7 }}</div></td>
 	</tr>
     
     <tr>
@@ -879,41 +887,39 @@ layout: default
 </table>{% endif %}
 
 
-{% if page.Famille17  %} 
 <table align="center"  style="width: 960px">     
     <tr>
         
-        {% if page.Famille17  %}
-        <td class="style7" style="width: 240px">
-		<a href="{{ page.Famille17 }}">
-		<img  src="{{ page.familleimg17 }}" alt="{{ page.FAMILLE-Espece17 }}" title="{{ page.FAMILLE-Espece17 }}" ></a>
+        {% if page.familleimg17 %} 
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille1 }} ">
+		<img src="{{ page.familleimg17 }}" alt="{{ page.FAMILLE-Espece17 }}" title="{{ page.FAMILLE-Espece17 }}"    ></a> 
         </td>{% endif %}
 		
         {% if page.Famille18 %}
 		<td class="style7" style="width: 240px">
 		<a href="{{ page.Famille18 }}">
-        <img src="{{ page.familleimg18 }}" alt="{{ page.FAMILLE-Espece18 }}" title="{{ page.FAMILLE-Espece18 }}" ></a>
-		
+		<img src="{{ page.familleimg18 }}" alt="{{ page.FAMILLE-Espece18 }}" title="{{ page.FAMILLE-Espece18 }}" ></a>
         </td>{% endif %}
         
-
         {% if page.Famille19 %}
-		<td class="style7" style="width: 240px">
+        <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille19 }}">
-        <img src="{{ page.familleimg19 }}" alt="{{ page.FAMILLE-Espece19 }}" title="{{ page.FAMILLE-Espece19 }}" ></a>
-		
+		<img  src="{{ page.familleimg19 }}" alt="{{ page.FAMILLE-Espece19 }}" title="{{ page.FAMILLE-Espece19 }}" ></a>
         </td>{% endif %}
         
         {% if page.Famille20  %}
         <td class="style7" style="width: 240px">
 		<a href="{{ page.Famille20 }}">
-		<img  src="{{ page.familleimg20 }}" alt="{{ page.FAMILLE-Espece20 }}" title="{{page.FAMILLE-Espece20 }}" ></a>
+		<img  src="{{ page.familleimg20 }}" alt="{{ page.FAMILLE-Espece20 }}" title="{{ page.FAMILLE-Espece20 }}" ></a>
         </td>{% endif %}
+
        </tr>
 
 
 	<tr>
-		{% if page.Famille17 %}
+		
+        {% if page.Famille17 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille17 }}" style="text-decoration:none"> 
 		 {{ page.famixx-17 }} </a></td>{% endif %}
@@ -921,21 +927,20 @@ layout: default
         {% if page.Famille18 %}
         <td class="style7" style="width: 240px">
 		<a class="Famille" href="{{ page.Famille18 }}" style="text-decoration:none">
-             {{ page.famixx-18 }} </a></td>{% endif %}
+              {{ page.famixx-18 }} </a></td>{% endif %}
         
-        {% if page.Famille19 %}
+         {% if page.Famille19 %}
         <td class="style7" style="width: 240px">
-		<a class="Famille" href="{{ page.Famille19 }}" style="text-decoration:none">
-             {{ page.famixx-19}} </a></td>{% endif %}
+		<a class="Famille" href="{{ page.Famille19 }}" style="text-decoration:none"> 
+		 {{ page.famixx-19 }} </a></td>{% endif %}
         
         {% if page.Famille20 %}
         <td class="style7" style="width: 240px">
-		<a class="Famille" href="{{ page.Famille20 }}" style="text-decoration:none"> 
-		 {{ page.famixx-20 }} </a></td>{% endif %}
+		<a class="Famille" href="{{ page.Famille20 }}" style="text-decoration:none">
+             {{ page.famixx-20 }} </a></td>{% endif %}
 	</tr>
-
- </table>{% endif %}
-
+   
+ </table>
 
 
 {% if page.Famille21  %} 
