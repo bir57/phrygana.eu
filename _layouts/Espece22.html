@@ -22,7 +22,7 @@ layout: default
 		<td class="style12" style="width: 80px"> Fauna </td>
 
 		<td class="style12" style="width: 220px">
-		{{ page.Order }},  <a href='../{{page.Order}}/{{page.FAMILLE}}.html'<strong>{{ page.FAMILLE }}</strong></a> {{ page.Auteurfamille }}</td>
+		{{ page.Order }}, {{ page.FAMILLE }} {{ page.Auteurfamille }}</td>
         
         {% if page.Tribe %}
         <td class="style12" style="width: 160px">{{ page.Tribe }}</td>{% endif %}
@@ -152,11 +152,15 @@ layout: default
 
     
 
-    {% if page.PeriodeACTIVE %}
+    {% if page.PeriodeACTIVECrete %}
     <tr>
-		<td class="style12"><div><strong>Période d'activité des adultes</strong>: {{ page.PeriodeACTIVE }} </div> </td>
+		<td class="style12"><div><strong>Période d'activité des adultes en Crète</strong>: {{ page.PeriodeACTIVECrete }} </div> </td>
 	</tr>{% endif %}
 
+    {% if page.PeriodeACTIVE %}
+    <tr>
+		<td class="style12"><div><strong>Période d'activité des adultes hors Crète</strong>: {{ page.PeriodeACTIVE }} </div> </td>
+	</tr>{% endif %}
     
     <tr>
 		<td class="style12"></td>
@@ -185,11 +189,14 @@ layout: default
 		<td class="style12" ><strong>Altitudes </strong>: {{ page.Altitudes }} </td>
 	</tr>{% endif %}
 
-    
+    {% if page.BiotopesCrete %}
+	<tr>
+		<td class="style12" ><strong>Biotopes en Crète</strong>: {{ page.BiotopesCrete }} </td>
+	</tr>{% endif %}
 
      {% if page.Biotopes %}
 	<tr>
-		<td class="style12" ><strong>Biotopes</strong>: {{ page.Biotopes }} </td>
+		<td class="style12" ><strong>Biotopes hors Crète</strong>: {{ page.Biotopes }} </td>
 	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
