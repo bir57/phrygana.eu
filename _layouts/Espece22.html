@@ -338,6 +338,88 @@ layout: default
 		<td class="style12" ><div><strong>Menace(s)</strong>: {{ page.Menaces }}  </div> </td>    
     </tr>{% endif %}
   
+    <tr>
+		<td class="style12"></td>
+ </tr>
+
+
+    <tr>
+		<td class="style12"></td>
+ </tr>
+
+  {% if page.predateur  %}   
+<table align="center"  style="width: 860px">     
+    
+     <tr>
+		<td class="style12"></td>
+ </tr>
+     <tr>
+		<td class="style12"></td>
+ </tr>
+
+    {% if page.predateur %}
+    <tr>
+		<td class="style12" ><div><strong>Prédateur(s)</strong>: {{ page.predateur }}  </div> </td>    
+    </tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+ </tr>
+
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+        
+        
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.predateur1 }} ">
+		<img src="{{ page.predateurimg1 }}" alt="{{ page.predateur-espece1 }}" title="{{ page.predateur-espece1 }}" ></a> 
+        </td>
+        
+       
+       {% if page.predateur2  %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.predateur2 }}">
+		<img src="{{ page.predateurimg2 }}" alt="{{ page.predateur-espece2 }}" title="{{ page.predateur-espece2 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.predateur3 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.predateur3 }} ">
+		<img  src="{{ page.predateurimg3 }}" alt="{{ page.predateur-espece3 }}" title="{{ page.predateur-espece3 }}" ></a> 
+        </td>{% endif %}
+        
+
+        </tr>
+
+        <tr>
+         {% if page.predateur1 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.predateur1 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom1 }} </em></span></em>
+         </td>{% endif %}
+
+         {% if page.predateur2 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.predateur2 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom2 }} </em> </span></em>
+         </td>{% endif %} 
+        
+         {% if page.predateur3 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.ravageur3 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom3 }} </em> </span></em>
+         </td>{% endif %} 
+        </tr>
+
+ <tr>
+		<td class="style12" > </td>
+	</tr>
+
+	</table>{% endif %}
+
+
 
     {% if page.Utilite %}
     <tr>
@@ -641,7 +723,7 @@ layout: default
 
 	</table>
 
-<p class="style8"></p>
+
 
 
 {{ content }}
