@@ -724,6 +724,183 @@ layout: default
 	</table>
 
 
+<p class="style8"></p>
+
+{% if page.Galle-Mine %}
+	<table align="center" class="style17" style="width: 800px">
+    
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+   
+
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+    <tr>
+		<td class="style7" > {{ page.Galle-Mine }}   </td> 
+	</tr>
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+    
+    <tr>
+		<td class="style12" ><div>--- {{ page.Descr-Galle-Mine }}  </div>  </td>
+	</tr>
+
+     <tr>
+		<td class="style12" > </td>
+	</tr>
+
+        {% if page.notegalle-mine %}
+<tr>
+		<td class="style12" ><div>Obs. --- {{ page.notegalle-mine }}  </div>  </td>
+	</tr>
+
+        <tr>
+		<td class="style12" > </td>
+	</tr>{% endif %}
+
+ <tr>
+		<td class="style12" > </td>
+	</tr>
+
+    <tr>
+		<td class="style12" ><div>--- Parties de la plante attaquées: {{ page.descr-ORGANES }}  </div> </td> 
+	</tr>
+
+        <tr>
+		<td class="style12" > </td>
+	</tr>
+
+
+
+    <tr>
+		<td class="style12" ><div>--- Plantes-hôtes: {{ page.plante }}  </div> </td> 
+	</tr>
+
+
+        {% if page.plante1 %}
+        <tr>
+        
+        <td class="style9">
+      
+         <table>
+
+      
+        <tr> 
+          <td>
+          <a href=" {{ page.plante1 }} ">
+          <img class="center" src="{{ page.imgplante1 }}" alt="{{ page.PLANTE-espece1 }}" 
+           title="{{ page.PLANTE-espece1 }}" />
+          </td>
+         
+          <td>
+          <a href=" {{ page.plante2 }} ">
+          <img class="center" src="{{ page.imgplante2 }}" alt="{{ page.PLANTE-espece2 }}" 
+          title="{{ page.PLANTE-espece2 }}" />
+          </td>
+
+          <td>
+          <a href=" {{ page.plante3 }} ">
+          <img class="center" src="{{ page.imgplante3 }}" alt="{{ page.PLANTE-espece3 }}" 
+          title="{{ page.PLANTE-espece3 }}" />
+          </td>
+
+        </tr>
+
+        <tr>
+         <td>
+         <a  href=" {{ page.plante1 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom1 }} </em></span></em>
+         </td>
+
+         <td>
+         <a  href=" {{ page.plante2 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom2 }} </em> </span></em>
+         </td> 
+        
+
+         <td>
+         <a  href=" {{ page.plante3 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom3 }} </em> </span></em>
+         </td> 
+
+        </tr>
+
+        <tr> 
+          <td>
+          <a href=" {{ page.plante4 }} ">
+          <img class="center" src="{{ page.imgplante4 }}" alt="{{ page.PLANTE-espece4 }}" 
+           title="{{ page.PLANTE-espece4 }}" />
+          </td>
+         
+          <td>
+          <a href=" {{ page.plante5 }} ">
+          <img class="center" src="{{ page.imgplante5 }}" alt="{{ page.PLANTE-espece5 }}" 
+          title="{{ page.PLANTE-espece5 }}" />
+          </td>
+
+          <td>
+          <a href=" {{ page.plante6 }} ">
+          <img class="center" src="{{ page.imgplante6 }}" alt="{{ page.PLANTE-espece6 }}" 
+          title="{{ page.PLANTE-espece6 }}" />
+          </td>
+
+        </tr>
+
+        <tr>
+         <td>
+         <a  href=" {{ page.plante4 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom4 }} </em></span></em>
+         </td>
+
+         <td>
+         <a  href=" {{ page.plante5 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom5 }} </em> </span></em>
+         </td> 
+        
+
+         <td>
+         <a  href=" {{ page.plante6 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.PLANTEnom6 }} </em> </span></em>
+         </td> 
+
+        </tr>
+
+
+        </table>
+    </td>
+    </tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
+
+
+        {% if page.obs1 %}
+        <tr>
+		<td class="style12" ><div>OBS. --- {{ page.obs1 }}  </div> </td> 
+	    </tr>{% endif %}
+
+         {% if page.obs2 %}
+        <tr>
+		<td class="style12" ><div>OBS. --- {{ page.obs2 }}  </div> </td>
+        </tr>{% endif %}
+
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+	</table>{% endif %}
+
+
+
 
 
 {{ content }}
