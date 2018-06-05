@@ -685,9 +685,26 @@ layout: default
 </table>{% endif %} 
 
 <table align="center"  style="width: 960px">     
+   
+    
+     <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+    </tr> 
     <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+     </tr>
+
+
+    
+     <tr>
         
-        {% if page.familleimg1 %} 
+        {% if page.Famille1 %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.Famille1 }} ">
 		<img src="{{ page.familleimg1 }}" alt="{{ page.FAMILLE-Espece1 }}" title="{{ page.FAMILLE-Espece1 }}"    ></a> 
@@ -920,6 +937,21 @@ layout: default
  {% if page.fami-tribe2  %}
 <table align="center"  style="width: 800px">
 	
+     <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+    </tr> 
+    <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+     </tr>
+
+
+
       <tr>
    
 		<td class="style11"> {{ page.fami-tribe2 }} </td>
@@ -1168,6 +1200,19 @@ layout: default
  {% if page.fami-tribe3  %}
 <table align="center"  style="width: 800px">
 	
+     <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+    </tr> 
+    <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+     </tr>
+
       <tr>
    
 		<td class="style11"> {{ page.fami-tribe3 }} </td>
@@ -1421,19 +1466,45 @@ layout: default
  </table>{% endif %}
 
 
+
  {% if page.fami-tribe4  %}
 <table align="center"  style="width: 800px">
 	
+
+ <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+    </tr> 
+    <tr>
+		<td class="style12"></td>
+    </tr>
+ <tr>
+		<td class="style12"></td>
+     </tr>
       <tr>
    
 		<td class="style11"> {{ page.fami-tribe4 }} </td>
        
     </tr>
     
-      <tr>
+       <tr>
 		<td class="style12"></td>
     </tr>
+ <tr>
+		<td class="style12"></td>
+    </tr>
+
       
+    {% if page.descr-sous-famille %}
+	<tr>
+		<td class="style12" > <div> {{ page.descr-sous-famille }} </div></td>
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
 
 </table>{% endif %}
 
