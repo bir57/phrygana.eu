@@ -5,13 +5,15 @@ layout: default
 
 <p class="style8"></p>
 
-<table align="center" style="width: 600px">
+<table align="center" style="width: 800px">
 	<tr>
-		<td class="style14"> <strong>Flore - {{ page.phrygananbr }}</strong> -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+		<td class="style14"> <strong>Faune - {{ page.phrygananbr }}</strong> -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>
 </table>
 
+
 <p class="style8"></p>
+
 
 {% if page.phrygananbr %}
 <table align="center" class="style17" style="width: 800px">
@@ -36,6 +38,7 @@ layout: default
 	<tr>
 		<td class="style12"> </td>
 	</tr>
+    
 	
 
     <tr>
@@ -52,11 +55,10 @@ layout: default
 
     <tr>
 		<td class="style12"> </td>
+
+
 	</tr>{% endif %}
 
-    	
-
-    
     
 
 
@@ -73,6 +75,11 @@ layout: default
             class="style9"> {{ page.lieu-date0 }}</span></td>
 	</tr>
 </table>
+
+
+
+
+
 
 
 
@@ -102,7 +109,7 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 	
-    
+	
     
     {% if page.descr-espece %}
 	<tr>
@@ -114,44 +121,24 @@ layout: default
 	</tr>{% endif %}
     
 
-    {% if page.descr-feuilles %}
-    <tr>
-		<td class="style12" ><div><strong>Feuilles</strong>: {{ page.descr-feuilles }} </div> </td>
-	</tr>
-
+     
+    {% if page.biologie %}
 	<tr>
-		<td class="style12"> </td>
-	</tr>{% endif %}
+		<td class="style12"><div><strong>Biologie:</strong>  {{ page.biologie }} </div></td>
+	</tr>
     
-    {% if page.descr-fleurs %}
-	<tr>
-		<td class="style12"><div><strong>Fleurs:</strong>  {{ page.descr-fleurs }} </div></td>
-	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-     {% if page.pollinisation %}
-	<tr>
-		<td class="style12"><div><strong>Pollinisation:</strong>  {{ page.pollinisation }} </div></td>
-	</tr>
-    <tr>
-		<td class="style12"></td>
-	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-
-    {% if page.descr-fruit %}
-    <tr>
-		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
+     <tr>
+		<td class="style12" > </td>
 	</tr>{% endif %}
 
-    
 	<tr>
 		<td class="style12"> </td>
 	</tr>
+    {% if page.Regime-alimentaire %}
+	<tr>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
+	</tr>{% endif %}
+   
     
     {% if page.dispersion %}
     <tr>
@@ -170,69 +157,41 @@ layout: default
 		<td class="style12"></td>
 	</tr>{% endif %}
 
-    {% if page.descr-type %}
-	<tr>
-		<td class="style12" ><strong>Type biologique:</strong> {{ page.descr-type }} </td>
-	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-    {% if page.descr-hauteur %}
-	<tr>
-		<td class="style12"><strong>Hauteur:</strong> {{ page.descr-hauteur }} </td>
-	</tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
-    {% if page.descr-floraisonCrete %}
-    <tr>
-		<td class="style12"><div><strong>Floraison en Crète:</strong>  {{ page.descr-floraisonCrete }} </div> </td>
-	</tr>{% endif %}
-
-    {% if page.descr-floraison1 %}
-    <tr>
-		<td class="style12"><div><strong>Floraison (hors Crète):</strong>  {{ page.descr-floraison1 }} </div> </td>
-	</tr>{% endif %}
 
 
     <tr>
 		<td class="style12"></td>
 	</tr>
     
+    
+
+    {% if page.PeriodeACTIVECrete %}
+    <tr>
+		<td class="style12"><div><strong>Période d'activité des adultes en Crète</strong>: {{ page.PeriodeACTIVECrete }} </div> </td>
+	</tr>{% endif %}
+
+    {% if page.PeriodeACTIVE %}
+    <tr>
+		<td class="style12"><div><strong>Période d'activité des adultes hors Crète</strong>: {{ page.PeriodeACTIVE }} </div> </td>
+	</tr>
+    
+    
+         
+    <tr>
+		<td class="style12"></td>
+	</tr>{% endif %}
 
          
     <tr>
 		<td class="style12"></td>
 	</tr>
 
-    {% if page.IndigenatCrete %}
-	<tr>
-		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.IndigenatCrete }} </td>
-	</tr>{% endif %}
-
-    {% if page.IndigenatBelgium %}
-	<tr>
-		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.IndigenatBelgium }} </td>
-	</tr>{% endif %}
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
 
     {% if page.Altitudes %}
 	<tr>
-		<td class="style12" ><strong>Altitudes</strong>: {{ page.Altitudes }} </td>
+		<td class="style12" ><strong>Altitudes </strong>: {{ page.Altitudes }} </td>
 	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
+
     {% if page.BiotopesCrete %}
 	<tr>
 		<td class="style12" ><div><strong>Biotopes en Crète</strong>: {{ page.BiotopesCrete }} </div></td>
@@ -246,24 +205,7 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-    <tr>
-		<td class="style12"></td>
-	</tr>
   
-    {% if page.Origine %}
-    <tr>
-		<td class="style12"><strong>Origine:</strong>  {{ page.Origine }}</td>
-	</tr>{% endif %}
-
-    {% if page.Distribution %}
-	<tr>
-		<td class="style12" ><strong>Aire de distribution:</strong> {{ page.Distribution }}</td>
-	</tr>{% endif %}
-
-
-    <tr>
-		<td class="style12"></td>
-	</tr>
          <tr>
 		<td class="style12"></td>
 	</tr> 
@@ -274,9 +216,7 @@ layout: default
     <tr>
 		<td class="style12"><strong>Note(s):</strong></td>
 	</tr>
-     <tr>
-		<td class="style12"></td>
-	</tr>
+ 
     
     <tr>
 		<td class="style12">--- {{ page.Note1 }}</td>
@@ -363,12 +303,9 @@ layout: default
 		<td class="style12"></td>
 	</tr>
   
-    
-	<tr>
-		<td class="style12"></td>
-	</tr>
-
  
+
+ </tr>
 
     {% if page.Menaces %}
     <tr>
@@ -392,26 +329,50 @@ layout: default
      {% if page.Utilite1 %}
     <tr>
 		<td class="style12" ><div> --- {{ page.Utilite1 }}  </div> </td>    
-    </tr>{% endif %} 
+    </tr>
 
     <tr>
 		<td class="style12"></td>
-	</tr>
+	</tr>{% endif %} 
 
     {% if page.Nuisance %}
     <tr>
 		<td class="style12" ><div><strong>Nuisance</strong>: --- {{ page.Nuisance }}  </div> </td>    
-    </tr>{% endif %}
+    </tr>
      <tr>
 		<td class="style12"></td>
-	</tr>
+	</tr>{% endif %}
 
 
-        
+
+  
+    {% if page.Origine %}
+    <tr>
+		<td class="style12"><strong>Origine:</strong>  {{ page.Origine }}</td>
+	</tr>{% endif %}
+
+    {% if page.Distribution %}
 	<tr>
+		<td class="style12" ><strong>Aire de distribution:</strong> {{ page.Distribution }}</td>
+	</tr>{% endif %}
+
+      <tr>
 		<td class="style12"></td>
 	</tr>
+    
+    {% if page.IndigenatCrete %}
+	<tr>
+		<td class="style12" ><strong>Statut: --- Crète:</strong> {{ page.IndigenatCrete }} </td>
+	</tr>{% endif %}
 
+    {% if page.IndigenatBelgium %}
+	<tr>
+		<td class="style12" ><strong>Statut: --- Belgique:</strong> {{ page.IndigenatBelgium }} </td>
+	</tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+	</tr>
     
 
     {% if page.Listerouge %}
@@ -428,6 +389,7 @@ layout: default
 	</table>
 
 
+
 <p class="style8"></p>
 
 {% if page.SPECIES %}
@@ -436,14 +398,11 @@ layout: default
 	<tr>
 		<td class="style12" > </td>
 	</tr>
-       
-    <tr>
-		<td class="style12" ><div><strong>Plante-hôte</strong>: <em>{{ page.ESPECE }}</em> est plante-hôte pour: </div> </td>    
-    </tr>{% endif %}
+
  
     <tr>
 		<td class="style12" ><div>{{ page.SPECIES }}    </div> </td>    
-    </tr>  
+    </tr> {% endif %} 
 
    {% if page.SPECIES1 %}
     <tr>
@@ -464,7 +423,7 @@ layout: default
         {% if page.espece-organes %}
 	    
     <tr>
-		<td class="style12" ><div><strong>Partie(s) attaquée(s) de la plante-hôte </strong>:   </div> </td> 
+		<td class="style12" ><div><strong>Organe(s) de la plante-hôte consommé(s)-utilisé(s)</strong> :   </div> </td> 
 	</tr>
 
    
@@ -544,7 +503,7 @@ layout: default
 
 
 
-
+ {% if page.species4  %} 
 <table align="center"  style="width: 800px">     
     
     <tr>
@@ -552,11 +511,11 @@ layout: default
     </tr>
     <tr>
         
-        {% if page.species4  %} 
+       
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.species4 }} ">
 		<img src="{{ page.imgspecies4 }}" alt="{{ page.SPECIES-espece4 }}" title="{{ page.SPECIES-espece4 }}" ></a> 
-        </td>{% endif %}
+        </td>
         
        
         {% if page.species5  %} 
@@ -597,7 +556,7 @@ layout: default
 		<td class="style12" > </td>
 	</tr>
 
-	</table>
+	</table>{% endif %}
 
  
 
@@ -711,6 +670,80 @@ layout: default
 
 	</table>
 
+    
+  {% if page.predateur  %}   
+<table align="center"  style="width: 800px">     
+    
+     <tr>
+		<td class="style12"></td>
+ </tr>
+     <tr>
+		<td class="style12"></td>
+ </tr>
+
+    {% if page.predateur %}
+    <tr>
+		<td class="style12" ><div><strong>Prédateur(s)</strong>: {{ page.predateur }}  </div> </td>    
+    </tr>{% endif %}
+
+    <tr>
+		<td class="style12"></td>
+ </tr>
+
+    <tr>
+		<td class="style12"></td>
+    </tr>
+    <tr>
+        
+        
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.predateur1 }} ">
+		<img src="{{ page.predateurimg1 }}" alt="{{ page.predateur-espece1 }}" title="{{ page.predateur-espece1 }}" ></a> 
+        </td>
+        
+       
+       {% if page.predateur2  %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.predateur2 }}">
+		<img src="{{ page.predateurimg2 }}" alt="{{ page.predateur-espece2 }}" title="{{ page.predateur-espece2 }}" ></a>
+        </td>{% endif %}
+        
+        {% if page.predateur3 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.predateur3 }} ">
+		<img  src="{{ page.predateurimg3 }}" alt="{{ page.predateur-espece3 }}" title="{{ page.predateur-espece3 }}" ></a> 
+        </td>{% endif %}
+        
+
+        </tr>
+
+        <tr>
+         {% if page.predateur1 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.predateur1 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom1 }} </em></span></em>
+         </td>{% endif %}
+
+         {% if page.predateur2 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.predateur2 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom2 }} </em> </span></em>
+         </td>{% endif %} 
+        
+         {% if page.predateur3 %}
+         <td class="style7" style="width: 240px">
+         <a  href=" {{ page.ravageur3 }} " style="text-decoration:none">
+         <em><span class="style7"><em> {{ page.predateurnom3 }} </em> </span></em>
+         </td>{% endif %} 
+        </tr>
+
+ <tr>
+		<td class="style12" > </td>
+	</tr>
+
+	</table>{% endif %}
+
+
 
 <p class="style8"></p>
 
@@ -772,7 +805,11 @@ layout: default
             class="style9"> {{ page.lieu-date3 }}</span></td>
 	</tr>{% endif %}
     
- 
+      
+
+
+
+
    {% if page.IMAGE4 %}
     <tr>
         <td class="style9" >
@@ -812,6 +849,7 @@ layout: default
         <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
+
 
 
  {% if page.IMAGE7  %}
