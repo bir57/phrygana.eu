@@ -7,20 +7,24 @@ layout: default
 
 <table align="center" style="width: 800px">
 	<tr>
-		<td class="style14"> <strong>Faune - {{ page.phrygananbr }}</strong> -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+    <td class="style14"> <strong>Faune -- {{ page.phrygananbr }}</strong> -- 
+      <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>
 </table>
 
 
 <p class="style8"></p>
 
-
-{% if page.phrygananbr %}
+{% if page.Class %}
 <table align="center" class="style17" style="width: 800px">
 
 	<tr>
 		
-		<td class="style12" style=""> <strong>Famille:</strong> {{ page.FAMILLE }} {{ page.Auteurfamille }} -- {{ page.Tribe }} -- <strong>Genre:</strong> {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+    <td class="style12" style=""> {{ page.Class }} - 
+      - Order: {{ page.Order }} - 
+      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} -
+      - Sous-famille: {{ page.Tribe }} -
+      - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
 
 </tr>
 
@@ -51,16 +55,15 @@ layout: default
 	</tr>
     <tr>
 		<td class="style12" >---   {{ page.nom-commun }}. </td>
-	</tr>
+	</tr>{% endif %}
 
     <tr>
 		<td class="style12"> </td>
 
 
-	</tr>{% endif %}
+	</tr>
 
     
-
 
 </table>{% endif %}
 
@@ -139,23 +142,7 @@ layout: default
 		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
 	</tr>{% endif %}
    
-    
-    {% if page.dispersion %}
-    <tr>
-		<td class="style12" ><div><strong>Dispersion:</strong> {{ page.dispersion }}  </div> </td>    
-    </tr>
-
-    <tr>
-		<td class="style12"></td>
-	</tr>{% endif %}
-
-    {% if page.longevite %}
-	<tr>
-		<td class="style12" ><strong>Longévité:</strong> {{ page.longevite }} </td>
-	</tr>
-    <tr>
-		<td class="style12"></td>
-	</tr>{% endif %}
+ 
 
 
 
@@ -343,10 +330,19 @@ layout: default
 		<td class="style12"></td>
 	</tr>{% endif %}
 
-
+<tr>
+      <td class="style12"></td>
+    </tr>
+  
+    
+           <tr>
+      <td class="style12"></td>
+    </tr> 
 
   
     {% if page.Origine %}
+    
+    
     <tr>
 		<td class="style12"><strong>Origine:</strong>  {{ page.Origine }}</td>
 	</tr>{% endif %}
@@ -383,7 +379,9 @@ layout: default
     <tr>
 		<td class="style12"></td>
  </tr>
-
+ <tr>
+  <td class="style12"></td>
+</tr>
 
 
 	</table>
@@ -406,7 +404,7 @@ layout: default
 
    {% if page.SPECIES1 %}
     <tr>
-		<td class="style12" ><div>{{ page.SPECIES1 }}  </div> </td>    
+		<td class="style12" ><div>--- {{ page.SPECIES1 }}  </div> </td>    
     </tr> {% endif %}
 
     {% if page.SPECIES2 %}
@@ -464,7 +462,8 @@ layout: default
         {% if page.species2  %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.species2 }} ">
-		<img src="{{ page.imgspecies2 }}" alt="{{ page.SPECIES-espece2 }}" title="{{ page.SPECIES-espece2 }}" ></a> 
+    <img src="{{ page.imgspecies2 }}" alt="{{ page.SPECIES-espece2 }}" 
+    title="{{ page.SPECIES-espece2 }}" ></a> 
         </td>{% endif %}
         
         {% if page.species3  %} 
