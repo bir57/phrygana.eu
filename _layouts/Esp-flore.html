@@ -7,19 +7,22 @@ layout: default
 
 <table align="center" style="width: 600px">
 	<tr>
-		<td class="style14"> <strong>Flore - {{ page.phrygananbr }}</strong> -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+    <td class="style14"> <strong>Flore - {{ page.phrygananbr }}</strong> 
+      -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>
 </table>
 
 <p class="style8"></p>
 
-
-{% if page.FAMILLE %}
+{% if page.Class %}
 <table align="center" class="style17" style="width: 800px">
 
 	<tr>
 		
-		<td class="style12" style=""> <strong>Famille:</strong> {{ page.FAMILLE }} {{ page.Auteurfamille }} -- {{ page.Tribe }} -- <strong>Genre:</strong> {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+    <td class="style12" style=""> {{ page.Class }} - 
+      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} -
+      - Sous-famille: {{ page.Tribe }} -
+      - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
 
 </tr>
 
@@ -37,6 +40,7 @@ layout: default
 	<tr>
 		<td class="style12"> </td>
 	</tr>
+    
 	
 
     <tr>
@@ -49,15 +53,18 @@ layout: default
 	</tr>
     <tr>
 		<td class="style12" >---   {{ page.nom-commun }}. </td>
-	</tr>
+	</tr>{% endif %}
 
     <tr>
 		<td class="style12"> </td>
-	</tr>{% endif %}
 
 
+	</tr>
+
+    
 
 </table>{% endif %}
+
 
 <table align="center" style="width: 800px">
 	<tr>
