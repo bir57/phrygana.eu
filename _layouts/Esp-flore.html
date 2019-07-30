@@ -20,9 +20,11 @@ layout: default
 	<tr>
 		
     <td class="style12" style=""> {{ page.Class }} - 
-      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} -
-      - Sous-famille: {{ page.Tribe }} -
-      - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} 
+      {% if page.Tribe %}
+      -- Sous-famille: {{ page.Tribe }} 
+      {% endif %}
+      - - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
 
 </tr>
 
@@ -378,7 +380,10 @@ layout: default
     <tr>
 		<td class="style12" ><div><strong>Menace(s)</strong>: {{ page.Menaces }}  </div> </td>    
     </tr>{% endif %}
-  
+  	<tr>
+      <td class="style12"></td>
+    </tr>
+
 
     {% if page.Utilite %}
     <tr>
@@ -401,6 +406,25 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>
+
+  
+
+  {% if page.medicinal %}
+  <tr>
+  <td class="style12" ><div><strong>Plante médicinale</strong>: {{ page.medicinal }}  </div> </td>    
+  </tr>{% endif %}
+  <tr>
+    <td class="style12"></td>
+  </tr>
+
+  {% if page.culinaire %}
+  <tr>
+  <td class="style12" ><div><strong>Intérêt(s) culinaire(s)</strong>: {{ page.culinaire }}  </div> </td>    
+  </tr>{% endif %}
+  <tr>
+    <td class="style12"></td>
+  </tr>
+
 
     {% if page.Nuisance %}
     <tr>
