@@ -5,7 +5,8 @@ layout: default
 
 <p class="style8"></p>
 
-<table align="center" style="width: 800px">
+<table class="center0" style="width: 800px">
+
 	<tr>
     <td class="style14"> <strong>Faune -- {{ page.phrygananbr }}</strong> -- 
       <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
@@ -13,10 +14,11 @@ layout: default
 </table>
 
 
+
 <p class="style8"></p>
 
 {% if page.Class %}
-<table align="center" class="style17" style="width: 800px">
+<table class="center" class="style17" style="width: 800px">
 
 	<tr>
 		
@@ -67,8 +69,16 @@ layout: default
 
 </table>{% endif %}
 
-<table align="center" style="width: 800px">
-	<tr>
+<table class="center0"  style="width: 800px">
+  
+  <tr>
+		<td class="style12"> </td>
+
+  
+
+  </tr>
+  
+  <tr>
         <td class="style9">
 		<img src="{{ page.IMAGE0 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
             title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
@@ -76,6 +86,11 @@ layout: default
     <tr>
         <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }} </span></em><span 
             class="style9"> {{ page.lieu-date0 }}</span></td>
+  </tr>
+  <tr>
+		<td class="style12"> </td>
+
+
 	</tr>
 </table>
 
@@ -86,7 +101,7 @@ layout: default
 
 
 
-<table align="center" class="style17" style="width: 800px">
+<table class="center"  class="style17" style="width: 800px">
 
 
 {% if page.remarque %}
@@ -122,9 +137,7 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>{% endif %}
-    
-
-     
+         
     {% if page.biologie %}
 	<tr>
 		<td class="style12"><div><strong>Biologie:</strong>  {{ page.biologie }} </div></td>
@@ -625,9 +638,10 @@ layout: default
         {% if page.species10  %} 
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.species10 }} ">
-		<img src="{{ page.imgspecies1 }}" alt="{{ page.SPECIES-espece10 }}" title="{{ page.SPECIES-espece10 }}" ></a> 
+		<img src="{{ page.imgspecies10 }}" alt="{{ page.SPECIES-espece10 }}" title="{{ page.SPECIES-espece10 }}" ></a> 
         </td>{% endif %}
         
+      
        
         {% if page.species11  %} 
 		<td class="style7" style="width: 240px">
@@ -669,9 +683,106 @@ layout: default
 
 	</table>
 
-    
-  {% if page.predateur  %}   
+       
+{% if page.species13  %}
 <table align="center"  style="width: 800px">     
+    
+  <tr>
+  <td class="style12"></td>
+  </tr>
+  <tr>
+      
+       
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.species13 }} ">
+  <img src="{{ page.imgspecies13 }}" alt="{{ page.SPECIES-espece13 }}" 
+  title="{{ page.SPECIES-espece13 }}" ></a> 
+      </td>
+      
+    
+     
+      {% if page.species14  %} 
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.species14 }} ">
+  <img src="{{ page.imgspecies14 }}" alt="{{ page.SPECIES-espece14 }}" 
+  title="{{ page.SPECIES-espece14 }}" ></a> 
+      </td>{% endif %}
+      
+      {% if page.species15  %} 
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.species15 }} ">
+  <img src="{{ page.imgspecies15 }}" alt="{{ page.SPECIES-espece15 }}" 
+  title="{{ page.SPECIES-espece15 }}" ></a> 
+      </td>{% endif %}
+      
+
+      </tr>
+
+      <tr>
+       {% if page.species13 %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.species13 }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnom13 }} </em></span></em>
+       </td>{% endif %}
+
+        {% if page.species14 %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.species14 }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnom14 }} </em></span></em>
+       </td>{% endif %}
+      
+        {% if page.species15 %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.species15 }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnom15 }} </em></span></em>
+       </td>{% endif %}
+      </tr>
+<tr>
+  <td class="style12" > </td>
+</tr>
+
+</table>{% endif %}
+
+
+
+{% if page.Mine %}
+<table class="center" class="style17" style="width: 800px">
+
+  <tr>
+    <td class="style12" > </td>
+  </tr>
+
+
+     <tr>
+		<td class="style12"> </td>
+	</tr>
+
+	
+    <tr>
+		<td class="style12" ><strong>Mine (description)</strong>: </td>
+  </tr>
+  <tr>
+    <td class="style12" > </td>
+  </tr>
+    <tr>
+		<td class="style12" >---   {{ page.Mine }}. </td>
+	</tr>
+
+    <tr>
+		<td class="style12"> </td>
+	</tr>
+  <tr>
+    <td class="style12" > </td>
+  </tr>
+    
+
+</table>{% endif %}
+
+
+
+
+  {% if page.predateur  %}   
+  <table class="center"  style="width: 800px">     
     
      <tr>
 		<td class="style12"></td>

@@ -5,10 +5,11 @@ layout: default
 
 <p class="style8"></p>
 
-<table align="center" style="width: 600px">
+<table class="center0" style="width: 800px">
+
 	<tr>
-    <td class="style14"> <strong>Flore - {{ page.phrygananbr }}</strong> 
-      -- <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+    <td class="style14"> <strong>Fungi -- {{ page.phrygananbr }}</strong> -- 
+      <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>
 </table>
 
@@ -16,11 +17,12 @@ layout: default
 <p class="style8"></p>
 
 {% if page.Class %}
-<table align="center" class="style17" style="width: 800px">
+<table class="center" class="style17" style="width: 800px">
 
 	<tr>
 		
     <td class="style12" style=""> {{ page.Class }} 
+      -- Ordre: {{page.Order}} 
       -- Famille: {{page.FAMILLE}} {{page.Auteurfamille}} 
       {% if page.Tribe %}
       -- Sous-famille: {{ page.Tribe }} 
@@ -69,7 +71,7 @@ layout: default
 </table>{% endif %}
 
 
-<table align="center" style="width: 800px">
+<table class="center0"  style="width: 800px">
 	<tr>
         <td class="style9">
 		<img src="{{ page.IMAGE0 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
@@ -460,14 +462,15 @@ layout: default
 <p class="style8"></p>
 
 {% if page.SPECIES %}
-	<table align="center"  style="width: 800px">     
+	<table class="center0"  style="width: 800px">     
     
 	<tr>
 		<td class="style12" > </td>
 	</tr>
        
     <tr>
-		<td class="style12" ><div><strong>Plante-hôte</strong>: <em>{{ page.ESPECE }}</em> est plante-hôte pour: </div> </td>    
+    <td class="style12" ><div><strong>Plante-hôte</strong>: les plantes attaquées par 
+      <em>{{ page.ESPECE }}</em>  comprennent des: </div> </td>    
     </tr>{% endif %}
  
     <tr>
