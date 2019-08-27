@@ -346,7 +346,14 @@ layout: default
 <tr>
       <td class="style12"></td>
     </tr>
-  
+
+    {% if page.Predateur %}
+    <tr>
+		<td class="style12" ><div><strong>Prédateur(s)</strong>: --- {{ page.Predateur }}  </div> </td>    
+    </tr>
+     <tr>
+		<td class="style12"></td>
+	</tr>{% endif %} 
     
            <tr>
       <td class="style12"></td>
