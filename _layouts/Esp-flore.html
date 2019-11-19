@@ -456,6 +456,94 @@ layout: default
 
 	</table>
 
+  {% if page.Butinage %}
+	<table align="center"  style="width: 800px">     
+    
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+       
+    <tr>
+    <td class="style12" ><div><strong>Butinage</strong>: <em>{{ page.ESPECE }}</em> est butinée 
+    par de nombreux insectes dont: </div> </td>    
+    </tr>
+ 
+    <tr>
+		<td class="style12" ><div>{{ page.Butinage }}    </div> </td>    
+    </tr>  
+
+   {% if page.Butinage1 %}
+    <tr>
+		<td class="style12" ><div>{{ page.Butinage1 }}  </div> </td>    
+    </tr> {% endif %}
+
+    {% if page.page.Butinage2 %}
+    <tr>
+		<td class="style12" ><div>{{ page.Butinage2 }}  </div> </td>    
+    </tr> {% endif %}
+    <tr>
+		<td class="style12" > </td>
+	</tr>
+
+</table> {% endif %}
+
+
+<table class="center0"  style="width: 800px">     
+    
+  <tr>
+  <td class="style12"></td>
+  </tr>
+  <tr>
+      
+      {% if page.species1  %} 
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.speciesa }} ">
+  <img src="{{ page.imgspeciesa }}" alt="{{ page.SPECIES-especea }}" title="{{ page.SPECIES-especea }}" ></a> 
+      </td>{% endif %}
+      
+     
+      {% if page.species2  %} 
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.speciesb }} ">
+  <img src="{{ page.imgspeciesb }}" alt="{{ page.SPECIES-especeb }}" title="{{ page.SPECIES-especeb }}" ></a> 
+      </td>{% endif %}
+      
+      {% if page.species3  %} 
+  <td class="style7" style="width: 240px">
+  <a href=" {{ page.speciesc }} ">
+  <img src="{{ page.imgspeciesc }}" alt="{{ page.SPECIES-especec }}" title="{{ page.SPECIES-especec }}" ></a> 
+      </td>{% endif %}
+      
+
+      </tr>
+
+      <tr>
+       {% if page.speciesa %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.speciesa }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnoma }} </em></span></em>
+       </td>{% endif %}
+
+        {% if page.speciesb %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.speciesb }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnomb }} </em></span></em>
+       </td>{% endif %}
+      
+        {% if page.speciesc %}
+       <td class="style7" style="width: 240px">
+       <a  href=" {{ page.speciesc }} " style="text-decoration:none">
+       <em><span class="style7"><em> {{ page.SPECIESnomc }} </em></span></em>
+       </td>{% endif %}
+      </tr>
+<tr>
+  <td class="style12" > </td>
+</tr>
+
+</table>
+
+
+
 
 <p class="style8"></p>
 
