@@ -29,6 +29,7 @@ layout: default
 	<tr>
 		
     <td class="style12" style=""> {{ page.Class }} 
+      -- Division: {{page.Division}}
       -- Ordre: {{page.Order}} 
       -- Famille: {{page.FAMILLE}} {{page.Auteurfamille}} 
       {% if page.Tribe %}
@@ -129,6 +130,15 @@ layout: default
 		<td class="style12"></td>
 	</tr>{% endif %}
     
+   
+  {% if page.biologie %}
+	<tr>
+		<td class="style12" > <div><strong>Biologie</strong>: {{ page.biologie }} </div></td>
+	</tr>
+
+    <tr>
+		<td class="style12"></td>
+	</tr>{% endif %}
 
     {% if page.descr-feuilles %}
     <tr>
@@ -202,14 +212,14 @@ layout: default
     <tr>
 		<td class="style12"></td>
 	</tr>
-    {% if page.descr-floraisonCrete %}
+    {% if page.PeriodeACTIVECrete %}
     <tr>
-		<td class="style12"><div><strong>Floraison en Crète:</strong>  {{ page.descr-floraisonCrete }} </div> </td>
+		<td class="style12"><div><strong>Floraison en Crète:</strong>  {{ page.PeriodeACTIVECrete }} </div> </td>
 	</tr>{% endif %}
 
-    {% if page.descr-floraison1 %}
+    {% if page.PeriodeACTIVE %}
     <tr>
-		<td class="style12"><div><strong>Floraison (hors Crète):</strong>  {{ page.descr-floraison1 }} </div> </td>
+		<td class="style12"><div><strong>Floraison (hors Crète):</strong>  {{ page.PeriodeACTIVE }} </div> </td>
 	</tr>{% endif %}
 
 
@@ -296,7 +306,7 @@ layout: default
     
     <tr>
 		<td class="style12">--- {{ page.Note1 }}</td>
-	</tr>{% endif %}
+	</tr>
      <tr>
 		<td class="style12"></td>
 	</tr>
@@ -329,7 +339,7 @@ layout: default
 	</tr>{% endif %}
     <tr>
 		<td class="style12"></td>
-	</tr>
+	</tr>{% endif %}
 
     {% if page.OBSERVATION %}
     <tr>
@@ -339,7 +349,7 @@ layout: default
     
     <tr>
 		<td class="style12" ><div>--- {{ page.OBSERVATION }}  </div> </td>    
-    </tr>{% endif %}
+    </tr>
     
 
     {% if page.OBS1 %}
@@ -377,14 +387,14 @@ layout: default
 
     <tr>
 		<td class="style12"></td>
-	</tr>
+	</tr>{% endif %}
   
     
 	<tr>
 		<td class="style12"></td>
 	</tr>
 
- 
+
 
     {% if page.Menaces %}
     <tr>
@@ -477,7 +487,7 @@ layout: default
        
     <tr>
     <td class="style12" ><div><strong>Plante-hôte</strong>: les plantes attaquées par 
-      <em>{{ page.ESPECE }}</em>  comprennent des: </div> </td>    
+      <em>{{ page.ESPECE }}</em>  comprennent: </div> </td>    
     </tr>{% endif %}
  
     <tr>
