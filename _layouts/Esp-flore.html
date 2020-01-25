@@ -571,6 +571,19 @@ layout: default
     <tr>
 		<td class="style12" ><div>{{ page.SPECIES2 }}  </div> </td>    
     </tr> {% endif %}
+
+    
+    {% if page.SPECIES3 %}
+    <tr>
+		<td class="style12" ><div>{{ page.SPECIES3 }}  </div> </td>    
+    </tr> {% endif %}
+
+
+    {% if page.SPECIES4 %}
+    <tr>
+		<td class="style12" ><div>{{ page.SPECIES4 }}  </div> </td>    
+    </tr> {% endif %}
+
     <tr>
 		<td class="style12" > </td>
 	</tr>
@@ -603,8 +616,36 @@ layout: default
 </table> {% endif %}
 
 
+{% if page.SPECIES10 %}
+	<table align="center"  style="width: 800px">     
+    
+	<tr>
+		<td class="style12" > </td>
+	</tr>
+       
+    <tr>
+    <td class="style12" ><div><strong>Problème de cultures</strong>:  </div> </td>    
+    </tr>
+ 
+    <tr>
+		<td class="style12" ><div>{{ page.SPECIES10 }}    </div> </td>    
+    </tr>  
+
+   {% if page.SPECIES11 %}
+    <tr>
+		<td class="style12" ><div>{{ page.SPECIES11 }}  </div> </td>    
+    </tr> {% endif %}
+
+   
 
 
+    <tr>
+      <td class="style12" > </td>
+    </tr>   
+  </table> {% endif %}
+
+
+{% if page.species1  %}
 <table class="center0"  style="width: 800px">     
     
     <tr>
@@ -612,11 +653,11 @@ layout: default
     </tr>
     <tr>
         
-        {% if page.species1  %} 
+        
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.species1 }} ">
 		<img src="{{ page.imgspecies1 }}" alt="{{ page.SPECIES-espece1 }}" title="{{ page.SPECIES-espece1 }}" ></a> 
-        </td>{% endif %}
+        </td>
         
        
         {% if page.species2  %} 
@@ -657,11 +698,11 @@ layout: default
 		<td class="style12" > </td>
 	</tr>
 
-	</table>
+	</table>{% endif %}
 
 
 
-
+  {% if page.species4  %} 
 <table align="center"  style="width: 800px">     
     
     <tr>
@@ -669,12 +710,12 @@ layout: default
     </tr>
     <tr>
         
-        {% if page.species4  %} 
+       
 		<td class="style7" style="width: 240px">
 		<a href=" {{ page.species4 }} ">
     <img src="{{ page.imgspecies4 }}" alt="{{ page.SPECIES-espece4 }}" 
     title="{{ page.SPECIES-espece4 }}" ></a> 
-        </td>{% endif %}
+        </td>
         
        
         {% if page.species5  %} 
@@ -715,7 +756,7 @@ layout: default
 		<td class="style12" > </td>
 	</tr>
 
-	</table>
+	</table>{% endif %}
 
  
 
