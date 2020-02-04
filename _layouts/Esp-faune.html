@@ -24,9 +24,14 @@ layout: default
 		
     <td class="style12" > {{ page.Class }} - 
       - Order: {{ page.Order }} - 
-      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} -
-      - Sous-famille: {{ page.Tribe }} -
-      - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} 
+
+      {% if page.Tribe %}
+      -
+      - Sous-famille: {{ page.Tribe }}
+      {% endif %}
+
+      - - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
 
 </tr>
 
