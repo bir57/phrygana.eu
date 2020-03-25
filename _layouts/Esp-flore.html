@@ -20,8 +20,10 @@ layout: default
 
 	<tr>
 		
-    <td class="style12" style=""> {{ page.Class }} 
-      -- Famille: {{page.FAMILLE}} {{page.Auteurfamille}} 
+    <td class="style12" style="">{{ page.Class }} - 
+      - Order: {{ page.Order }} - 
+      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} 
+
       {% if page.Tribe %}
       -- Sous-famille: {{ page.Tribe }} 
       {% endif %}
