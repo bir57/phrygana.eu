@@ -31,15 +31,20 @@ layout: default
 		<td class="style12"></td>
 	</tr>
 
-      
+    
+    {% if page.Order %}
 
-	<tr>
+
+<tr>
 		
-        <td class="style12" style="">Class:  - - {{ page.Class }} 
-        - - Order: {{ page.Order }} 
+<td class="style12" style="">Class:  - - {{ page.Class }} 
+- - Order: {{ page.Order }} 
+- - Familia: {{ page.Familia }} 
           
   </td>
-   
+</tr>
+
+
 	<tr>
 		<td class="style12"></td>
     </tr>  
@@ -47,8 +52,11 @@ layout: default
 
   <tr>
     <td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
-<td class="style12"></td></tr>
-    </tr>
+<td class="style12">
+    
+</td>
+
+    </tr>{% endif %}
 
     
 	<tr>
