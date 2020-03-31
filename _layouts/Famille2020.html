@@ -39,8 +39,10 @@ layout: default
 		
 <td class="style12" style="">Class:  - - {{ page.Class }} 
 - - Order: {{ page.Order }} 
+
+{% if page.Familia %}
 - - Familia: {{ page.Familia }} 
-          
+{% endif %}        
   </td>
 </tr>
 
@@ -3408,6 +3410,67 @@ layout: default
  </table>{% endif %}
 
 
+ {% if page.Famille177  %} 
+ <table align="center"  style="width: 960px">     
+         <tr>
+         
+         {% if page.Famille177 %}
+          
+         <td class="style7" style="width: 240px">
+         <a href=" {{ page.Famille177 }} ">
+         <img src="{{ page.familleimg177 }}" alt="{{ page.FAMILLE-Espece177 }}" 
+         title="{{ page.FAMILLE-Espece177 }}" ></a> 
+         </td>{% endif %}
+         
+         {% if page.Famille178 %}
+         <td class="style7" style="width: 240px">
+         <a href="{{ page.Famille178 }}">
+         <img src="{{ page.familleimg178 }}" alt="{{ page.FAMILLE-Espece178 }}" 
+         title="{{ page.FAMILLE-Espece178 }}" ></a>
+         </td>{% endif %}
+         
+         {% if page.Famille179 %}
+         <td class="style7" style="width: 240px">
+         <a href=" {{ page.Famille179 }} ">
+         <img  src="{{ page.familleimg179 }}" alt="{{ page.FAMILLE-Espece179 }}" 
+         title="{{ page.FAMILLE-Espece179 }}" ></a> 
+         </td>{% endif %}
+         
+         {% if page.Famille180 %}
+         <td class="style7" style="width: 240px">
+         <a href="{{ page.Famille180 }}">
+         <img  src="{{ page.familleimg180 }}" alt="{{ page.FAMILLE-Espece180 }}" 
+         title="{{ page.FAMILLE-Espece180 }}" ></a>
+         </td>{% endif %}
+ 
+        </tr>
+     
+         <tr>
+         
+         {% if page.Famille177  %}
+         <td class="style7" style="width: 240px">
+         <a class="Famille" href="{{ page.Famille177 }}" style="text-decoration:none"> 
+          {{ page.famixx-177 }} </a></td>{% endif %}
+ 
+         {% if page.Famille178 %}
+         <td class="style7" style="width: 240px">
+         <a class="Famille" href="{{ page.Famille178 }}" style="text-decoration:none">
+               {{ page.famixx-178 }} </a></td>{% endif %}
+         
+         {% if page.Famille179 %}
+         <td class="style7" style="width: 240px">
+         <a class="Famille" href="{{ page.Famille179 }}" style="text-decoration:none">
+              {{ page.famixx-179}} </a></td>{% endif %}
+         
+         {% if page.Famille180 %}
+         <td class="style7" style="width: 240px">
+         <a class="Famille" href="{{ page.Famille180 }}" style="text-decoration:none">
+             {{ page.famixx-180 }} </a></td>{% endif %}
+     </tr>
+    
+  </table>{% endif %}
+ 
+ 
 
 {% if page.Famille181  %} 
 <table align="center"  style="width: 960px">     
@@ -4263,6 +4326,7 @@ layout: default
 
        </tr>
     
+
 	    <tr>
 		
         {% if page.Famille361  %}
