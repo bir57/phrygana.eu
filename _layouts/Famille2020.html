@@ -32,13 +32,16 @@ layout: default
 	</tr>
 
     
-    {% if page.Order %}
+    
 
 
 <tr>
 		
 <td class="style12" style="">Class:  - - {{ page.Class }} 
+
+    {% if page.Order %}
 - - Order: {{ page.Order }} 
+{% endif %}
 
 {% if page.Familia %}
 - - Familia: {{ page.Familia }} 
@@ -58,7 +61,8 @@ layout: default
     
 </td>
 
-    </tr>{% endif %}
+    </tr>
+    
 
     
 	<tr>
