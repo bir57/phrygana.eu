@@ -29,30 +29,36 @@ layout: default
 
 	<tr>
 		<td class="style12"></td>
-	</tr>
-
-    
-    
-
-
+    </tr>
 <tr>
-		
-<td class="style12" style="">Class:  - - {{ page.Class }} 
 
-    {% if page.Order %}
-- - Order: {{ page.Order }} 
+<td class="style12" >
+
+{% if page.Regnum %}
+Règne: - - {{ page.Regnum }} 
 {% endif %}
 
+{% if page.Phylum %}
+- - Phylum: {{ page.Phylum }} 
+{% endif %}
+
+{% if page.Class %}
+- - Classe: {{ page.Class }} 
+{% endif %}
+
+{% if page.Order %}
+- - Ordre: {{ page.Order }} 
+{% endif %} 
+
 {% if page.Familia %}
-- - Familia: {{ page.Familia }} 
-{% endif %}        
-  </td>
-</tr>
+- - Famille: {{ page.Familia }} 
+{% endif %}   
 
+</td>
 
-	<tr>
-		<td class="style12"></td>
-    </tr>  
+<tr>
+<td class="style12"></td>
+</tr>  
     
 
   <tr>

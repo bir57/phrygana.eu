@@ -15,21 +15,44 @@ layout: default
 
 <p class="style8"></p>
 
-{% if page.Class %}
+
 <table align="center" class="style17" style="width: 800px">
 
-	<tr>
-		
-    <td class="style12" style="">Class: {{ page.Class }} - 
-      - Order: {{ page.Order }} - 
-      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} 
+<tr>
 
-      {% if page.Tribe %}
-      -- Sous-famille: {{ page.Tribe }} 
-      {% endif %}
-      -- Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+
+
+
+<td class="style12" >
+ 
+
+
+Règne: <strong><a href='../../../la-flore.html'>Plantae</a> </strong> 
+
+- Classe: <strong>Equisetopsida</a></strong> s.l. 
+
+
+{% if page.Order %}
+- Ordre: <strong>{{ page.Order }}</strong> 
+{% endif %}
+  
+{% if page.Familia %}
+- Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
+{% endif %}   
+
+{% if page.Tribe %}
+- Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
+{% endif %} 
+
+{% if page.Genre %}
+- Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
+{% endif %}
+
+</td>
 
 </tr>
+
+
 
      <tr>
 		<td class="style12"> </td>
@@ -68,7 +91,7 @@ layout: default
 
     
 
-</table>{% endif %}
+</table>
 
 
 <table align="center" style="width: 800px">

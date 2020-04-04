@@ -14,28 +14,48 @@ layout: default
 </table>
 
 
-
 <p class="style8"></p>
 
+
+<table align="center" class="style17" style="width: 800px"> 
+
+<tr>
+
+<td class="style12" >
+     
+    
+Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong> 
+    
+{% if page.Phylum %}
+- Phylum: <strong>{{ page.Phylum }}</strong> 
+{% endif %}
+    
+  
 {% if page.Class %}
-<table align="center" class="style17" style="width: 800px">
+- Classe: <strong>{{ page.Class }}</strong>  
+{% endif %}
+  
+{% if page.Order %}
+- Ordre: <strong>{{ page.Order }}</strong>  
+{% endif %} 
 
-	<tr>
-		
-    <td class="style12" > Class: {{ page.Class }} - 
-      - Order: {{ page.Order }} - 
-      - Famille: {{ page.FAMILLE }} {{ page.Auteurfamille }} 
-
-      {% if page.Tribe %}
-      -
-      - Sous-famille: {{ page.Tribe }}
-      {% endif %}
-
-      - - Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
-
+{% if page.Familia %}
+- Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
+{% endif %}   
+    
+{% if page.Tribe %}
+- Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
+{% endif %} 
+    
+{% if page.Genre %}
+- Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
+{% endif %}
+    
+</td>
+   
 </tr>
-
-     <tr>
+  
+<tr>
 		<td class="style12"> </td>
 	</tr>
 
@@ -69,9 +89,9 @@ layout: default
 
 	</tr>
 
-    
+  
 
-</table>{% endif %}  
+</table>  
 
 
 
