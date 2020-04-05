@@ -4732,6 +4732,91 @@ Règne: - - {{ page.Regnum }}
  </table>{% endif %}
 
 
+
+
+ {% if page.fami-tribe19  %}
+ <table class="center0"   style="width: 800px">
+	<div>
+      	
+        <tr>
+   
+            <td class="style11"> {{ page.fami-tribe19 }} </td>
+           
+        </tr>
+        
+          <tr>
+            <td class="style12"></td>
+        </tr>
+    </div>
+
+
+</table>{% endif %}
+
+
+
+{% if page.Famille701  %} 
+<table class="center0"   style="width: 960px">     
+    <tr>
+        
+        {% if page.Famille701 %}
+         
+		<td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille701 }} ">
+        <img src="{{ page.familleimg701 }}" alt="{{ page.FAMILLE-Espece701 }}"
+         title="{{ page.FAMILLE-Espece701 }}" ></a> 
+        </td>{% endif %}
+		
+        {% if page.Famille702 %}
+		<td class="style7" style="width: 240px">
+		<a href="{{ page.Famille702 }}">
+        <img src="{{ page.familleimg702 }}" alt="{{ page.FAMILLE-Espece702 }}" 
+        title="{{ page.FAMILLE-Espece702 }}" ></a>
+		</td>{% endif %}
+        
+        {% if page.Famille703 %}
+        <td class="style7" style="width: 240px">
+		<a href=" {{ page.Famille703 }} ">
+        <img  src="{{ page.familleimg703 }}" alt="{{ page.FAMILLE-Espece703 }}" 
+        title="{{ page.FAMILLE-Espece703 }}" ></a> 
+        </td>{% endif %}
+        
+        {% if page.Famille704 %}
+        <td class="style7" style="width: 240px">
+		<a href="{{ page.Famille704 }}">
+        <img  src="{{ page.familleimg704 }}" alt="{{ page.FAMILLE-Espece704 }}" 
+        title="{{ page.FAMILLE-Espece704 }}" ></a>
+        </td>{% endif %}
+
+       </tr>
+    
+	    <tr>
+		
+        {% if page.Famille701  %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille701 }}" style="text-decoration:none"> 
+		 {{ page.famixx-701}} </a></td>{% endif %}
+
+        {% if page.Famille702 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille702 }}" style="text-decoration:none">
+              {{ page.famixx-702 }} </a></td>{% endif %}
+        
+        {% if page.Famille703 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille703 }}" style="text-decoration:none">
+             {{ page.famixx-703}} </a></td>{% endif %}
+        
+        {% if page.Famille704 %}
+        <td class="style7" style="width: 240px">
+		<a class="Famille" href="{{ page.Famille704 }}" style="text-decoration:none">
+            {{ page.famixx-704 }} </a></td>{% endif %}
+	</tr>
+   
+ </table>{% endif %}
+
+
+
+
 <table class0="center" style="width: 960px">
 	<tr>
 		<td class="style5">{{ page.datemaj }}</td>

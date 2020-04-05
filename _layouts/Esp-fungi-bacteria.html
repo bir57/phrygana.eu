@@ -20,24 +20,50 @@ layout: default
 	</tr>{% endif %}
 </table>
 
-
 <p class="style8"></p>
 
-{% if page.Class %}
+
+
+
 <table class="center" class="style17" style="width: 800px">
 
-	<tr>
-		
-    <td class="style12" style=""> {{ page.Class }} 
-      -- Division: {{page.Division}}
-      -- Ordre: {{page.Order}} 
-      -- Famille: {{page.FAMILLE}} {{page.Auteurfamille}} 
-      {% if page.Tribe %}
-      -- Sous-famille: {{ page.Tribe }} 
-      {% endif %}
-      -- Genre: {{ page.Genre }} {{ page.AUTEURgenre }}</td>
+	
+<tr>
 
-</tr>
+<td class="style12" >
+  
+{% if page.Regnum %}
+Règne: <strong>{{ page.Regnum }}</strong> 
+{% endif %}
+      
+{% if page.Phylum %}
+- Phylum: <strong>{{ page.Phylum }}</strong> 
+{% endif %}
+      
+    
+{% if page.Class %}
+- Classe: <strong>{{ page.Class }}</strong>  
+{% endif %}
+    
+{% if page.Order %}
+- Ordre: <strong>{{ page.Order }}</strong>  
+{% endif %} 
+  
+{% if page.Familia %}
+- Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
+{% endif %}   
+      
+{% if page.Tribe %}
+- Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
+{% endif %} 
+      
+{% if page.Genre %}
+- Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
+{% endif %}
+      
+  </td>
+     
+  </tr>
 
      <tr>
 		<td class="style12"> </td>
@@ -76,7 +102,7 @@ layout: default
 
     
 
-</table>{% endif %}
+</table>
 
 
 <table class="center0"  style="width: 800px">
