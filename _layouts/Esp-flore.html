@@ -32,6 +32,7 @@ Règne: <strong><a href='../../../la-flore.html'>Plantae</a> </strong>
 - Classe: <strong>Equisetopsida</a></strong> s.l. 
 
 
+
 {% if page.Order %}
 - Ordre: <strong>{{ page.Order }}</strong> 
 {% endif %}
@@ -42,6 +43,10 @@ Règne: <strong><a href='../../../la-flore.html'>Plantae</a> </strong>
 
 {% if page.Tribe %}
 - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
+{% endif %} 
+
+{% if page.tribu %}
+- Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
 {% endif %} 
 
 {% if page.Genre %}
