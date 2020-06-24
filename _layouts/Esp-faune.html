@@ -50,7 +50,12 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 {% if page.Tribe %}
 - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
 {% endif %} 
-    
+
+
+{% if page.tribu %}
+- Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
+{% endif %} 
+
 {% if page.Genre %}
 - Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
 {% endif %}
