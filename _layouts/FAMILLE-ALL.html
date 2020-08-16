@@ -1,0 +1,263 @@
+---
+
+layout: default
+
+--- 
+
+
+<style>
+  
+	table.center {
+	  border-collapse: collapse;
+	  border: 2px solid #EDDEA5;
+	  margin-left:auto; 
+	  margin-right:auto;
+	  
+	}
+	 
+	th {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	td {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	  table.a {
+	  table-layout: fixed;
+	  width: 100%;  
+	}
+	  
+
+	.style1 {
+		border: 2px solid #EDDEA5;
+		text-align: left;
+		font-size: small;
+		font-family: "Book Antiqua";
+	}
+	
+	  
+	
+	  
+	</style>
+
+<p class="style8"></p>
+
+
+<table class="center0" style="width:600px">
+
+	<tr>
+		<td class="style14">{{ page.Titre }}</td>
+	</tr>
+    
+</table>
+
+<p class="style8"></p>
+<p class="style8"></p>
+<p class="style8"></p>
+
+<table class="center" class=table.center style="width: 800px">
+
+
+<tr>
+	<td class="style12"></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>
+
+<tr>
+
+<td class="style12" >
+
+{% if page.Regnum %}
+Règne: - - {{ page.Regnum }} 
+{% endif %}
+
+{% if page.Phylum %}
+- - Phylum: {{ page.Phylum }} 
+{% endif %}
+
+{% if page.Class %}
+- - Classe: {{ page.Class }} 
+{% endif %}
+
+{% if page.Order %}
+- - Ordre: {{ page.Order }} 
+{% endif %} 
+
+
+{% if page.SubOrder %}
+- - Sous-Ordre: {{ page.SubOrder }} 
+{% endif %} 
+
+
+{% if page.Familia %}
+- - Famille: {{ page.Familia }} 
+{% endif %}   
+
+</td>
+
+</tr>
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>
+	
+
+{% if page.fami-intro %}
+
+<tr>
+	<td class="style12"><div> {{ page.fami-intro }}</div></td>
+
+	<td class="style12"></td>
+
+</tr>{% endif %}
+
+
+{% if page.fami-note %}
+
+<tr>
+	<td class="style12"><div> !!- {{ page.fami-note }}</div></td>
+<td class="style12"></td></tr>
+
+</tr>{% endif %}
+
+{% if page.fami-note1 %}
+
+<tr>
+	<td class="style12"><div><em>{{ page.fami-note1 }}</em></div></td>
+
+	<td class="style12"></td>
+</tr>{% endif %}
+
+{% if page.fami-note2 %}
+<tr>
+	<td class="style12"><div><em>{{ page.fami-note2 }}</em> </div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>{% endif %}
+
+{% if page.fami-note3 %}
+<tr>
+	<td class="style12"><div><em>{{ page.fami-note3 }}</em></div></td>
+</tr>
+
+
+<tr>
+	<td class="style12"></td>
+</tr>{% endif %}
+
+{% if page.fami-note4 %}
+<tr>
+	<td class="style12"><div><em>{{ page.fami-note4 }}</em></div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>{% endif %}
+
+{% if page.fami-note5 %}
+<tr>
+	<td class="style12"><div><em>{{ page.fami-note5 }}</em></div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>{% endif %}
+
+<tr>
+	<td class="style12"></td>
+</tr>
+ 
+
+</tr>
+
+
+<tr>
+
+	<td class="style12"><div>Selon<strong> <a href='http://www.eu-nomen.eu/portal'> PESI</strong></a>, 
+		le nombre d'espèces répertoriées est pour:</div> </td>
+
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>
+
+{% if page.fami-Monde %}<tr>
+	<td class="style12"><div>--- l'Europe: {{ page.fami-Monde }} </div> </td>
+</tr>
+
+<tr>{% endif %}
+
+
+{% if page.fami-Crete %}<tr>
+	<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
+</tr>
+
+<tr>
+	<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
+</tr>{% endif %}
+
+{% if page.fami-Belgique %}
+<tr>
+	<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr> {% endif %}
+
+<tr>
+	<td class="style12"></td>
+
+<tr>
+	<td class="style12"><div>--- La classification suivie est, dans la mesure du possible, 
+		en accordance avec <strong><a href='http://www.eu-nomen.eu/portal' >PESI (2020)</strong></a>, 
+		(Pan-European Species directories Infrastructure). </div>
+	</td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>
+</table>
+
+
+<p class="style8"></p> 
+<p class="style8"></p>
+
+{{ content }}
+
+<table class0="center" style="width: 960px">
+	<tr>
+		<td class="style5">{{ page.datemaj }}</td>
+	</tr>
+</table>
+
+
+
+
+
+---
+
