@@ -189,7 +189,7 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-note7 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note7 }}</em></div></td>
+	<td class="style12"><div>{{ page.fami-note7 }}</div></td>
 </tr>
 
 <tr>
@@ -203,13 +203,13 @@ Règne: - - {{ page.Regnum }}
 
 </tr>
 
-
+{% if page.fami-Crete %}
 <tr>
 
 	<td class="style12"><div>Selon<strong> <a href='http://www.eu-nomen.eu/portal'> PESI</strong></a>, 
 		le nombre d'espèces répertoriées est pour:</div> </td>
 
-</tr>
+</tr>{% endif %}
 
 <tr>
 	<td class="style12"></td>
@@ -222,10 +222,12 @@ Règne: - - {{ page.Regnum }}
 <tr>{% endif %}
 
 
-{% if page.fami-Crete %}<tr>
+{% if page.fami-Europe %}
+<tr>
 	<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
-</tr>
+</tr>{% endif %}
 
+{% if page.fami-Crete %}
 <tr>
 	<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
 </tr>{% endif %}
