@@ -34,7 +34,12 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 {% if page.Class %}
 - Classe: <strong>{{ page.Class }}</strong> {{ page.AuteurClass }} 
 {% endif %}
+
   
+{% if page.SubClass %}
+- SousClasse: <strong>{{ page.SubClass }}</strong> {{ page.AuteurSubClass }} 
+{% endif %}
+
 {% if page.Order %}
 - Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }} 
 {% endif %} 

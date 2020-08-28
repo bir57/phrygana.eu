@@ -87,6 +87,10 @@ Règne: - - {{ page.Regnum }}
 - - Classe: {{ page.Class }} 
 {% endif %}
 
+{% if page.SubClass %}
+- - Sous-Classe: {{ page.SubClass }} 
+{% endif %}
+
 {% if page.Order %}
 - - Ordre: {{ page.Order }} 
 {% endif %} 
