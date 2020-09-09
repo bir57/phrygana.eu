@@ -91,6 +91,10 @@ Règne: - - {{ page.Regnum }}
 - - Sous-Classe: {{ page.SubClass }} 
 {% endif %}
 
+{% if page.SuperOrder %}
+- - Super-Ordre: {{ page.SuperOrder }} 
+{% endif %} 
+
 {% if page.Order %}
 - - Ordre: {{ page.Order }} 
 {% endif %} 
