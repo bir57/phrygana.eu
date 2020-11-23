@@ -203,10 +203,7 @@ Règne: - - {{ page.Regnum }}
 </tr>
  
 
-</tr>
 
-{% if page.fami-Crete %}
-<
 
 <tr>
 	<td class="style12"></td>
@@ -214,32 +211,35 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-Monde %}<tr>
 	<td class="style12"><div>--- le Monde: {{ page.fami-Monde }} </div> </td>
+</tr>{% endif %}
+
+<tr>
+	<td class="style12"></td>
 </tr>
-
-<tr>{% endif %}
-
-tr>
+<tr>{% if page.fami-Crete %}
 
 	<td class="style12"><div>Selon<strong> <a href='http://www.eu-nomen.eu/portal'> PESI</strong></a>, 
 		le nombre d'espèces répertoriées est pour:</div> </td>
 
-</tr>{% endif %}
-
+</tr>
+<tr>
+	<td class="style12"></td>
+</tr>
 
 {% if page.fami-Europe %}
 <tr>
 	<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
 </tr>{% endif %}
 
-{% if page.fami-Crete %}
+
 <tr>
 	<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
-</tr>{% endif %}
+</tr>
 
 {% if page.fami-Belgique %}
 <tr>
 	<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div></td>
-</tr>
+</tr>{% endif %}
 
 <tr>
 	<td class="style12"></td>
@@ -247,7 +247,7 @@ tr>
 
 <tr>
 	<td class="style12"></td>
-
+</tr>
 <tr>
 	<td class="style12"><div>--- La classification suivie est, dans la mesure du possible, 
 		en accordance avec <strong><a href='http://www.eu-nomen.eu/portal' >PESI (2020)</strong></a>, 
