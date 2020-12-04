@@ -25,6 +25,7 @@ layout: default
 
 
 
+
 <table class="center" class="style17" style="width: 800px">
 
 	
@@ -35,28 +36,45 @@ layout: default
 {% if page.Regnum %}
 Règne: <strong>{{ page.Regnum }}</strong> 
 {% endif %}
-      
+     
 {% if page.Phylum %}
-- Phylum: <strong>{{ page.Phylum }}</strong> 
+- Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
 {% endif %}
       
     
 {% if page.Class %}
-- Classe: <strong>{{ page.Class }}</strong>  
+- Classe: <strong>{{ page.Class }}</strong> {{ page.AuteurClass }} 
 {% endif %}
  
+{% if page.SubClass %}
+- SousClasse: <strong>{{ page.SubClass }}</strong> {{ page.AuteurSubClass }} 
+{% endif %}
+
+{% if page.SuperOrder %}
+- Super-Ordre: <strong>{{ page.SuperOrder }}</strong> {{ page.AuteurSuperOrder }} 
+{% endif %}  
+  
 {% if page.Order %}
-- Ordre: <strong>{{ page.Order }}</strong>  
+- Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }} 
 {% endif %} 
   
+{% if page.Sous-Ordre %}
+- Sous-Ordre: <strong>{{ page.Sous-Ordre }}</strong> {{ page.AuteurSous-Ordre }} 
+{% endif %} 
+
 {% if page.Familia %}
 - Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
-{% endif %}   
+{% endif %}    
       
 {% if page.Tribe %}
 - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
 {% endif %} 
-      
+
+
+{% if page.tribu %}
+- Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
+{% endif %} 
+
 {% if page.Genre %}
 - Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
 {% endif %}
@@ -166,39 +184,7 @@ Règne: <strong>{{ page.Regnum }}</strong>
 		<td class="style12"></td>
 	</tr>{% endif %}
 
-    {% if page.descr-feuilles %}
-    <tr>
-		<td class="style12" ><div><strong>Feuilles</strong>: {{ page.descr-feuilles }} </div> </td>
-	</tr>
 
-	<tr>
-		<td class="style12"> </td>
-	</tr>{% endif %}
-    
-    {% if page.descr-fleurs %}
-	<tr>
-		<td class="style12"><div><strong>Fleurs:</strong>  {{ page.descr-fleurs }} </div></td>
-	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-     {% if page.pollinisation %}
-	<tr>
-		<td class="style12"><div><strong>Pollinisation:</strong>  {{ page.pollinisation }} </div></td>
-	</tr>
-    <tr>
-		<td class="style12"></td>
-	</tr>{% endif %}
-    
-	<tr>
-		<td class="style12"> </td>
-	</tr>
-
-    {% if page.descr-fruit %}
-    <tr>
-		<td class="style12"><div><strong>Fruit:</strong>  {{ page.descr-fruit }} </div> </td>
-	</tr>{% endif %}
 
     
 	<tr>
@@ -222,11 +208,14 @@ Règne: <strong>{{ page.Regnum }}</strong>
 		<td class="style12"></td>
 	</tr>{% endif %}
 
-    {% if page.descr-type %}
 	<tr>
-		<td class="style12" ><strong>Type biologique:</strong> {{ page.descr-type }} </td>
+		<td class="style12"> </td>
+	</tr>
+    {% if page.Regime-alimentaire %}
+	<tr>
+		<td class="style12"><div><strong>Régime alimentaire:</strong>  {{ page.Regime-alimentaire }} </div></td>
 	</tr>{% endif %}
-    
+   
 	<tr>
 		<td class="style12"> </td>
 	</tr>
