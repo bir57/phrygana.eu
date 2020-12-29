@@ -70,48 +70,6 @@ layout: default
 	<td class="style12"></td>
 </tr>
 
-<tr>
-
-<td class="style12" >
-
-{% if page.Regnum %}
-Règne: - - {{ page.Regnum }} 
-{% endif %}
-
-{% if page.Phylum %}
-- - Phylum: {{ page.Phylum }} 
-{% endif %}
-
-{% if page.Class %}
-- - Classe: {{ page.Class }} 
-{% endif %}
-
-{% if page.SubClass %}
-- - Sous-Classe: {{ page.SubClass }} 
-{% endif %}
-
-{% if page.SuperOrder %}
-- - Super-Ordre: {{ page.SuperOrder }} 
-{% endif %} 
-
-{% if page.Order %}
-- - Ordre: {{ page.Order }} 
-{% endif %} 
-
-
-{% if page.SubOrder %}
-- - Sous-Ordre: {{ page.SubOrder }} 
-{% endif %} 
-
-
-
-{% if page.Familia %}
-- - Famille: {{ page.Familia }} 
-{% endif %}   
-
-</td>
-
-</tr>
 
 <tr>
 	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
@@ -136,14 +94,14 @@ Règne: - - {{ page.Regnum }}
 {% if page.fami-note1 %}
 
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note1 }}</em></div></td>
+	<td class="style12"><div> {{ page.fami-note1 }}</div></td>
 
 	<td class="style12"></td>
 </tr>{% endif %}
 
 {% if page.fami-note2 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note2 }}</em> </div></td>
+	<td class="style12"><div> {{ page.fami-note2 }} </div></td>
 </tr>
 
 <tr>
@@ -152,7 +110,7 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-note3 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note3 }}</em></div></td>
+	<td class="style12"><div> {{ page.fami-note3 }} </div></td>
 </tr>
 
 
@@ -162,7 +120,7 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-note4 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note4 }}</em></div></td>
+	<td class="style12"><div> {{ page.fami-note4 }} </div></td>
 </tr>
 
 <tr>
@@ -171,7 +129,7 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-note5 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note5 }}</em></div></td>
+	<td class="style12"><div> {{ page.fami-note5 }} </div></td>
 </tr>
 
 <tr>
@@ -180,7 +138,7 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-note6 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note6 }}</em></div></td>
+	<td class="style12"><div> {{ page.fami-note6 }} </div></td>
 </tr>
 
 <tr>
@@ -201,63 +159,6 @@ Règne: - - {{ page.Regnum }}
 	<td class="style12"></td>
 </tr>
  
-
-
-
-<tr>
-	<td class="style12"></td>
-</tr>
-
-{% if page.fami-Monde %}<tr>
-	<td class="style12"><div>--- le Monde: {{ page.fami-Monde }} </div> </td>
-</tr>{% endif %}
-
-<tr>
-	<td class="style12"></td>
-</tr>
-<tr>{% if page.fami-Crete %}
-
-	<td class="style12"><div>Selon<strong> <a href='http://www.eu-nomen.eu/portal'> PESI</strong></a>, 
-		le nombre d'espèces répertoriées est pour:</div> </td>
-
-</tr>
-<tr>
-	<td class="style12"></td>
-</tr>
-
-{% if page.fami-Europe %}
-<tr>
-	<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
-</tr>{% endif %}
-
-
-<tr>
-	<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
-</tr>
-
-{% if page.fami-Belgique %}
-<tr>
-	<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div></td>
-</tr>{% endif %}
-
-<tr>
-	<td class="style12"></td>
-</tr> {% endif %}
-
-<tr>
-	<td class="style12"></td>
-</tr>
-<tr>
-	<td class="style12"><div>--- La classification suivie est, dans la mesure du possible, 
-		en accordance avec <strong><a href='http://www.eu-nomen.eu/portal' >PESI (2020)</strong></a>, 
-		(Pan-European Species directories Infrastructure). </div>
-	</td>
-</tr>
-
-<tr>
-	<td class="style12"></td>
-</tr>
-
 <tr>
 	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
 </tr>
