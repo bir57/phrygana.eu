@@ -202,14 +202,16 @@ Règne: - - {{ page.Regnum }}
 </tr>
  
 
-
+{% if page.fami-Monde %}<tr>
+	<td class="style12"><div>les {{ page.Familia }}:  </div> </td>
+</tr>{% endif %}
 
 <tr>
 	<td class="style12"></td>
 </tr>
 
 {% if page.fami-Monde %}<tr>
-	<td class="style12"><div>--- le Monde: {{ page.fami-Monde }} </div> </td>
+	<td class="style12"><div>--- dans le Monde: {{ page.fami-Monde }} </div> </td>
 </tr>{% endif %}
 
 <tr>
@@ -217,8 +219,7 @@ Règne: - - {{ page.Regnum }}
 </tr>
 <tr>{% if page.fami-Crete %}
 
-	<td class="style12"><div>Selon<strong> <a href='http://www.eu-nomen.eu/portal'> PESI</strong></a>, 
-		le nombre d'espèces répertoriées est pour:</div> </td>
+	
 
 </tr>
 <tr>
@@ -227,17 +228,17 @@ Règne: - - {{ page.Regnum }}
 
 {% if page.fami-Europe %}
 <tr>
-	<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
+	<td class="style12"><div>--- en Europe: {{ page.fami-Europe }} </div> </td>
 </tr>{% endif %}
 
 
 <tr>
-	<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
+	<td class="style12"><div>--- en Crète: {{ page.fami-Crete }} </div> </td>
 </tr>
 
 {% if page.fami-Belgique %}
 <tr>
-	<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div></td>
+	<td class="style12"><div>--- en Belgique: {{ page.fami-Belgique }} </div></td>
 </tr>{% endif %}
 
 <tr>
@@ -265,6 +266,43 @@ Règne: - - {{ page.Regnum }}
 <tr>
 	<td class="style12"></td>
 </tr>
+
+{% if page.Genre1 %}<tr>
+	<td class="style12"><div><strong>Genre(s)</strong>: </div> </td>
+</tr>
+
+<tr>
+	<td class="style12"><div>{{ page.Genre1 }}  </div> </td>
+</tr>
+
+{% if page.Genre2 %}<tr>
+	<td class="style12"><div>{{ page.Genre2 }}  </div> </td>
+</tr>{% endif %}
+
+{% if page.Genre3 %}<tr>
+	<td class="style12"><div>{{ page.Genre3 }}  </div> </td>
+</tr>{% endif %}
+
+{% if page.Genre4 %}<tr>
+	<td class="style12"><div>{{ page.Genre4 }}  </div> </td>
+</tr>{% endif %}
+
+{% if page.Genre5 %}<tr>
+	<td class="style12"><div>{{ page.Genre5 }}  </div> </td>
+</tr>{% endif %}
+
+<tr>
+<td class="style12"></td>
+</tr>
+
+<tr>
+<td class="style12"></td>
+</tr>{% endif %}
+
+<tr>
+<td class="style12"></td>
+</tr>
+	
 </table>
 
 
