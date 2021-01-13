@@ -10,13 +10,13 @@ layout: default
   {% if page.phrygananbr %}
 	<tr>
     <td class="style14"> <strong>Fungi -- {{ page.phrygananbr }}</strong> -- 
-      <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+      <em>{{ page.Espece}}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
   </tr>{% endif %}
   
   {% if page.phrygananbr1 %}
 	<tr>
     <td class="style14"> <strong>Galles -- {{ page.phrygananbr1 }}</strong> -- 
-      <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+      <em>{{ page.Espece}}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>{% endif %}
 </table>
 
@@ -126,11 +126,11 @@ Règne: <strong>{{ page.Regnum }}</strong>
 <table class="center0"  style="width: 800px">
 	<tr>
         <td class="style9">
-		<img src="{{ page.IMAGE0 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img src="{{ page.IMAGE0 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
+            title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }} </span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }} </span></em><span 
             class="style9"> {{ page.lieu-date0 }}</span></td>
 	</tr>
 </table>
@@ -502,7 +502,7 @@ Règne: <strong>{{ page.Regnum }}</strong>
        
     <tr>
     <td class="style12" ><div><strong>Plante-hôte</strong>: les plantes attaquées par 
-      <em>{{ page.ESPECE }}</em>  comprennent: </div> </td>    
+      <em>{{ page.Espece}}</em>  comprennent: </div> </td>    
     </tr>{% endif %}
  
     <tr>
@@ -794,13 +794,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
     {% if page.IMAGE1  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE1 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}{{ page.variete }} {{ page.Auteurvariete }} "
-            title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE1 }}" alt="{{ page.Espece}} {{ page.Auteurespece }}{{ page.variete }} {{ page.Auteurvariete }} "
+            title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date1 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date1 }}</span></td>
 	</tr>{% endif %}
 
@@ -813,13 +813,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
     {% if page.IMAGE2  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE2 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} "
-            title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE2 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} "
+            title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date2 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date2 }}</span></td>
 	</tr>{% endif %}
     
@@ -828,13 +828,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {% if page.IMAGE3 %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE3 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE3 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " 
+            title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>
 
 
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date3 }}</span></td>
 	</tr>{% endif %}
     
@@ -842,13 +842,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
    {% if page.IMAGE4 %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE4 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} "
-            title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE4 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} "
+            title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date4 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date4 }}</span></td>
 	</tr>{% endif %}
      
@@ -858,24 +858,24 @@ Règne: <strong>{{ page.Regnum }}</strong>
     {% if page.IMAGE5 %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE5 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE5 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date5 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date5 }}</span></td>
 	</tr>{% endif %}
 
     {% if page.IMAGE6 %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE6 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE6 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date6 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
 
@@ -883,48 +883,48 @@ Règne: <strong>{{ page.Regnum }}</strong>
  {% if page.IMAGE7  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE7 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE7 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date7 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date7 }}</span></td>
 	</tr>{% endif %}
 
 {% if page.IMAGE8  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE8 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE8 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date8 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date8 }}</span></td>
 	</tr>{% endif %}
 
 {% if page.IMAGE9  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE9 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE9 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date9 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date9 }}</span></td>
 	</tr>{% endif %}
 
   {% if page.IMAGE10  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE10 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE10 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date10 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date10 }}</span></td>
 	</tr>{% endif %}
 
@@ -932,12 +932,12 @@ Règne: <strong>{{ page.Regnum }}</strong>
   {% if page.IMAGE11  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE11 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE11 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date11 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date11 }}</span></td>
 	</tr>{% endif %}
 
@@ -946,12 +946,12 @@ Règne: <strong>{{ page.Regnum }}</strong>
   {% if page.IMAGE12  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE12 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE12 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date12 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date12 }}</span></td>
 	</tr>{% endif %}
 
@@ -959,12 +959,12 @@ Règne: <strong>{{ page.Regnum }}</strong>
   {% if page.IMAGE13  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE13 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE13 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date13 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date13 }}</span></td>
 	</tr>{% endif %}
 
@@ -972,12 +972,12 @@ Règne: <strong>{{ page.Regnum }}</strong>
   {% if page.IMAGE14  %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.IMAGE14 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.ESPECE }} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
+		<img  class="center" src="{{ page.IMAGE14 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
     </tr>{% endif %}
 
  {% if page.lieu-date14 %}
     <tr>
-        <td class="style9"><em><span class="style9">{{ page.ESPECE }} {{ page.variete }}</span></em><span 
+        <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
             class="style9"> {{ page.lieu-date14 }}</span></td>
 	</tr>{% endif %}
 

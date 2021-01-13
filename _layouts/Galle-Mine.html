@@ -7,7 +7,7 @@ title:
 
 <table align="center" style="width: 600px">
 	<tr>
-		<td class="style14"> <em>{{ page.ESPECE }}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
+		<td class="style14"> <em>{{ page.Espece}}</em> {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} </td>
 	</tr>
 </table>
 
@@ -51,8 +51,8 @@ title:
    <table align="center" style="width: 880px">
 	<tr>
         <td class="style9">
-		<img src="{{ page.img0 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img src="{{ page.img0 }}" alt="{{ page.Espece}} {{ page.Auteurespece }}" 
+            title="{{ page.Espece}} {{ page.Auteurespece }}" > </td>
     </tr>
     <tr>
         <td class="style9"><span 
@@ -467,13 +467,13 @@ title:
        {% if page.img1 %}
     <tr>
         <td class="style9" >
-		<img  class="center" src="{{ page.img1 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-             title="{{ page.ESPECE }} {{ page.Auteurespece }}"> 
+		<img  class="center" src="{{ page.img1 }}" alt="{{ page.Espece}} {{ page.Auteurespece }}" 
+             title="{{ page.Espece }} {{ page.Auteurespece }}"> 
         </td>{% endif %}
     </tr>
 
 
-    {% if page.ESPECE and page.lieu-date1 %}
+    {% if page.Espece and page.lieu-date1 %}
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date1 }}</span>
         </td>{% endif %}
@@ -488,14 +488,14 @@ title:
       {% if page.imgA  %}
         <tr> 
           <td>
-           <img class="center" src="{{ page.imgA }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-               title="{{ page.ESPECE }} {{ page.Auteurespece }}" />
+           <img class="center" src="{{ page.imgA }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+               title="{{ page.Espece}} {{ page.Auteurespece }}" />
          </td>
-         <td><img class="center" src="{{ page.imgB }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-             title="{{ page.ESPECE }} {{ page.Auteurespece }}" /></td>
+         <td><img class="center" src="{{ page.imgB }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+             title="{{ page.Espece }} {{ page.Auteurespece }}" /></td>
         </tr>{% endif %}
 
-      {% if page.ESPECE and page.lieu-dateA and page.lieu-dateB  %} 
+      {% if page.Espece and page.lieu-dateA and page.lieu-dateB  %} 
         <tr>
         <td>
          
@@ -511,11 +511,11 @@ title:
     {% if page.img2 %}
     <tr>
         <td class="style9" >
-		<img class="center" src="{{ page.img2 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-             title="{{ page.ESPECE }} {{ page.Auteurespece }}"> </td>
+		<img class="center" src="{{ page.img2 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+             title="{{ page.Espece }} {{ page.Auteurespece }}"> </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date2 %}   
+    {% if page.Espece and page.lieu-date2 %}   
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date2 }}</span></td>
 	</tr>{% endif %}
@@ -523,11 +523,11 @@ title:
     {% if page.img3 %}     
     <tr>
         <td class="style9">
-		<img class="center" src="{{ page.img3 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img class="center" src="{{ page.img3 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date3 %}   
+    {% if page.Espece and page.lieu-date3 %}   
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date3 }}</span></td>
 	</tr>{% endif %}
@@ -541,14 +541,14 @@ title:
        {% if page.imgC  %}
             <tr> 
           <td>
-           <img class="center" src="{{ page.imgC }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-               title="{{ page.ESPECE }} {{ page.Auteurespece }}"/>
+           <img class="center" src="{{ page.imgC }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+               title="{{ page.Espece}} {{ page.Auteurespece }}"/>
          </td>
-         <td><img class="center" src="{{ page.imgD }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-              title="{{ page.ESPECE }} {{ page.Auteurespece }}" /></td>
+         <td><img class="center" src="{{ page.imgD }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+              title="{{ page.Espece}} {{ page.Auteurespece }}" /></td>
         </tr>{% endif %}
 
-       {% if page.ESPECE and page.lieu-dateC and page.lieu-dateD  %} 
+       {% if page.Espece and page.lieu-dateC and page.lieu-dateD  %} 
         <tr>
         <td>
          
@@ -566,11 +566,11 @@ title:
     {% if page.img4 %}  
     <tr>
         <td class="style9">
-		<img class="center" src="{{ page.img4 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img class="center" src="{{ page.img4 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date4 %}   
+    {% if page.Espece and page.lieu-date4 %}   
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date4 }}</span></td>
 	</tr>{% endif %}
@@ -578,11 +578,11 @@ title:
     {% if page.img5 %}
     <tr>
         <td class="style9">
-		<img src="{{ page.img5 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img src="{{ page.img5 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date5 %}
+    {% if page.Espece and page.lieu-date5 %}
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date5 }}</span></td>
 	</tr>{% endif %}
@@ -590,11 +590,11 @@ title:
     {% if page.img6 %}
     <tr>
         <td class="style9">
-		<img src="{{ page.img6 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img src="{{ page.img6 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date6 %}
+    {% if page.Espece and page.lieu-date6 %}
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date6 }}</span></td>
 	</tr>{% endif %}
@@ -602,11 +602,11 @@ title:
       {% if page.img7 %}
     <tr>
         <td class="style9">
-		<img src="{{ page.img7 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img src="{{ page.img7 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date7 %}
+    {% if page.Espece and page.lieu-date7 %}
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date7 }}</span></td>
 	</tr>{% endif %}
@@ -614,11 +614,11 @@ title:
      {% if page.img8 %}
     <tr>
         <td class="style9">
-		<img src="{{ page.img8 }}" alt="{{ page.ESPECE }} {{ page.Auteurespece }}" 
-            title="{{ page.ESPECE }} {{ page.Auteurespece }}" > </td>
+		<img src="{{ page.img8 }}" alt="{{ page.Espece }} {{ page.Auteurespece }}" 
+            title="{{ page.Espece }} {{ page.Auteurespece }}" > </td>
     </tr>{% endif %}
     
-    {% if page.ESPECE and page.lieu-date8 %}
+    {% if page.Espece and page.lieu-date8 %}
     <tr>
         <td class="style9"><em><span class="style9"></span></em><span class="style9"> {{ page.lieu-date8 }}</span></td>
 	</tr>{% endif %}
