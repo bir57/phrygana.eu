@@ -103,7 +103,9 @@ Règne: - - {{ page.Regnum }}
 - - Sous-Ordre: {{ page.SubOrder }} 
 {% endif %} 
 
-
+{% if page.SuperFamilia %}
+- - Super-Famille: {{ page.SuperFamilia }} 
+{% endif %}  
 
 {% if page.Familia %}
 - - Famille: {{ page.Familia }} 
