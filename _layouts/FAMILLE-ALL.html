@@ -228,33 +228,45 @@ Règne: - - {{ page.Regnum }}
 <tr>
 	<td class="style12"></td>
 </tr>
-<tr>{% if page.fami-Crete %}
-
-	
-
-</tr>
 <tr>
 	<td class="style12"></td>
 </tr>
 
+<tr>{% if page.fami-Crete %}
+
+<td class="style12"><div>dont total des espèces mentionnées par 
+<strong><a href='http://www.eu-nomen.eu/portal' >PESI (2021)</strong></a> pour: </div> </td>	
+
+</tr>
+
+
 {% if page.fami-Europe %}
+
 <tr>
-	<td class="style12"><div>--- en Europe: {{ page.fami-Europe }} </div> </td>
+	<td class="style12"></td>
+</tr>
+
+
+<tr>
+<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
+
 </tr>{% endif %}
 
 
 <tr>
-	<td class="style12"><div>--- en Crète: {{ page.fami-Crete }} </div> </td>
-</tr>
+<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
+		
+</tr>{% endif %}
 
 {% if page.fami-Belgique %}
 <tr>
-	<td class="style12"><div>--- en Belgique: {{ page.fami-Belgique }} </div></td>
+<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div> </td>
+				
 </tr>{% endif %}
 
 <tr>
 	<td class="style12"></td>
-</tr> {% endif %}
+</tr> 
 
 <tr>
 	<td class="style12"></td>
