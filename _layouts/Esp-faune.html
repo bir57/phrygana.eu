@@ -29,7 +29,10 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 {% if page.Phylum %}
 - Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
 {% endif %}
-    
+
+{% if page.SuperClass %}
+- Super-Classe: <strong>{{ page.SuperClass }}</strong> {{ page.AuteurSuperClass }} 
+{% endif %}
   
 {% if page.Class %}
 - Classe: <strong>{{ page.Class }}</strong> {{ page.AuteurClass }} 

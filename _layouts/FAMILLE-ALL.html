@@ -83,6 +83,10 @@ Règne: - - {{ page.Regnum }}
 - - Phylum: {{ page.Phylum }} 
 {% endif %}
 
+{% if page.SuperClass %}
+- - Super-Classe: {{ page.SuperClass }} 
+{% endif %}
+
 {% if page.Class %}
 - - Classe: {{ page.Class }} 
 {% endif %}
