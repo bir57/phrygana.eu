@@ -2,6 +2,45 @@
 layout: default
 
 ---
+<style>
+  
+	table.center {
+	  border-collapse: collapse;
+	  border: 2px solid #EDDEA5;
+	  margin-left:auto; 
+	  margin-right:auto;
+	  
+	}
+	 
+	th {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	td {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	  table.a {
+	  table-layout: fixed;
+	  width: 100%;  
+	}
+	  
+
+	.style1 {
+		border: 2px solid #EDDEA5;
+		text-align: left;
+		font-size: small;
+		font-family: "Book Antiqua";
+	}
+	
+	  
+	
+	  
+	</style>
 
 <p class="style8"></p>
 
@@ -17,11 +56,10 @@ layout: default
 <p class="style8"></p>
 
 
-<table align="center" class="style17" style="width: 800px"> 
+<table class="center0" style="width: 800px">
 
 <tr>
 
-  
 <td class="style12" >
      
     
@@ -49,7 +87,8 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 {% endif %} 
 
 {% if page.Order %}
-- Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }} 
+- Ordre: <strong><a href='../../{{ page.Order }}/{{ page.Order }}.html'>{{ page.Order }}</a></strong> 
+{{ page.AuteurOrder }} 
 {% endif %} 
 
 {% if page.Sous-Ordre %}
@@ -63,7 +102,8 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 
 
 {% if page.Familia %}
-- Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
+- Famille: <strong><a href='../../{{ page.Familia }}/{{ page.Familia }}.html'>{{ page.Familia }}</a>
+</strong> {{ page.Auteurfamille }} 
 {% endif %}   
     
 {% if page.Tribe %}
@@ -82,14 +122,15 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 </td>
    
 </tr>
-  
+
+
 <tr>
 		<td class="style12"> </td>
 	</tr>
 
     {% if page.Synonyme %}
     <tr>
-		<td class="style12"> syn.: {{ page.Synonyme }} </td>
+		<td class="style12"> <strong>syn.</strong>: {{ page.Synonyme }} </td>
 	</tr>
 	<tr>
 		<td class="style12"> </td>
@@ -1691,6 +1732,6 @@ Règne: <strong><a href='../../../../la-faune.html'>Animalia</a> </strong>
 
 <table align="center" style="width: 800px">
 	<tr>
-		<td class="style5">{{ page.datemaj }}</td>
+		<td class="style5">mise à jour {{ page.datemaj }}</td>
 	</tr>
 </table>

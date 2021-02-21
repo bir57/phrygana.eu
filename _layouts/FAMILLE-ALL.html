@@ -51,7 +51,8 @@ layout: default
 <table class="center0" style="width:600px">
 
 	<tr>
-		<td class="style14">{{ page.Titre }}</td>
+	<td class="style14">les <strong>{{ page.Familia }}</strong> {{ page.AuteurFamilia }} 
+	({{ page.Order }}) de Crète et parfois aussi d'ailleurs.</td>
 	</tr>
     
 </table>
@@ -60,66 +61,85 @@ layout: default
 <p class="style8"></p>
 <p class="style8"></p>
 
-<table class="center" class=table.center style="width: 800px">
+
+<table class="center0" style="width: 800px">
 
 <tr>
 	<td class="style12"></td>
 </tr>
 
-<tr>
-	<td class="style12"></td>
-</tr>
 
 <tr>
-
 
 <td class="style12" >
 
 {% if page.Regnum %}
-Règne: - - {{ page.Regnum }} 
+Règne: <strong>{{ page.Regnum }} </strong> 
+{{ page.AuteurRegnum }}
+
 {% endif %}
 
+
 {% if page.Phylum %}
-- - Phylum: {{ page.Phylum }} 
+- - Phylum: <strong>{{ page.Phylum }}</strong> 
+{{ page.AuteurPhylum }}
+
 {% endif %}
 
 {% if page.SuperClass %}
-- - Super-Classe: {{ page.SuperClass }} 
+- - Super-Classe: <strong>{{ page.SuperClass }}</strong> 
+{{ page.AuteurSuperClass }}
+
 {% endif %}
 
 {% if page.Class %}
-- - Classe: {{ page.Class }} 
+- - Classe: <strong>{{ page.Class }}</strong> 
+{{ page.AuteurClass }}
+
 {% endif %}
 
 {% if page.SubClass %}
-- - Sous-Classe: {{ page.SubClass }} 
+- - Sous-Classe: <strong>{{ page.SubClass }} </strong>
+{{ page.AuteurSubClass }}
+
 {% endif %}
 
 {% if page.SuperOrder %}
-- - Super-Ordre: {{ page.SuperOrder }} 
-{% endif %} 
+- - Super-Ordre: <strong>{{ page.SuperOrder }} </strong>
+{{ page.AuteurSuperOrder }}
+
+{% endif %}
 
 {% if page.Order %}
-- - Ordre: {{ page.Order }} 
+- Ordre: <strong><a href='../../{{ page.Order }}/{{ page.Order }}.html'>{{ page.Order }}</a></strong> 
+{{ page.AuteurOrder }} 
 {% endif %} 
+
 
 
 {% if page.SubOrder %}
-- - Sous-Ordre: {{ page.SubOrder }} 
-{% endif %} 
+- - Sous-Ordre: <strong>{{ page.SubOrder }}</strong>
+{{ page.AuteurSubOrder }}
+
+{% endif %}
+
 
 {% if page.SuperFamilia %}
-- - Super-Famille: {{ page.SuperFamilia }} 
-{% endif %}  
+- - Super-Famille: <strong>{{ page.SuperFamilia }}</strong> 
+{{ page.AuteurSuperFamilia }}
+
+{% endif %} 
 
 {% if page.Familia %}
-- - Famille: {{ page.Familia }} 
+- - Famille: <strong>{{ page.Familia }}</strong> 
+{{ page.AuteurFamilia }}
+
 {% endif %}   
 
 </td>
 
 </tr>
-
+{% if page.fami-note1 %}
 <tr>
 	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
 </tr>
@@ -140,7 +160,7 @@ Règne: - - {{ page.Regnum }}
 
 
 
-{% if page.fami-note1 %}
+
 
 <tr>
 	<td class="style12"><div><em>{{ page.fami-note1 }}</em></div></td>
@@ -211,14 +231,18 @@ Règne: - - {{ page.Regnum }}
 <tr>
 	<td class="style12"></td>
 </tr>
+{% if page.fami-Familia %}<tr>
+	<td class="style12"><div>les <strong>{{ page.fami-Familia }}</strong>:  </div> </td>
+</tr>{% endif %}
 
 <tr>
 	<td class="style12"></td>
 </tr>
  
 
-{% if page.fami-Monde %}<tr>
-	<td class="style12"><div>les {{ page.fami-Familia }} répertorié(e)s:  </div> </td>
+
+{% if page.Familia %}<tr>
+	<td class="style12"><div>les <strong>{{ page.Familia }}</strong>:  </div> </td>
 </tr>{% endif %}
 
 <tr>
@@ -286,9 +310,6 @@ Règne: - - {{ page.Regnum }}
 	<td class="style12"></td>
 </tr>
 
-<tr>
-	<td class="style12"><div>- - - - - - - - - - - - - - - - - - - -</div></td>
-</tr>
 
 <tr>
 	<td class="style12"></td>
@@ -335,12 +356,14 @@ Règne: - - {{ page.Regnum }}
 <td class="style12"></td>
 </tr>{% endif %}
 
-<tr>
-<td class="style12"></td>
-</tr>
-	
+
 </table>
 
+<table class="center0" style="width:900px">
+
+    <caption> - - - - - - - - - - - - - - - - - - - - - </caption>
+
+</table>
 
 <p class="style8"></p> 
 <p class="style8"></p>
@@ -350,7 +373,7 @@ Règne: - - {{ page.Regnum }}
 
 <table class0="center" style="width: 960px">
 	<tr>
-		<td class="style5">{{ page.datemaj }}</td>
+		<td class="style5">mise à jour le {{ page.datemaj }}</td>
 	</tr>
 </table>
 
