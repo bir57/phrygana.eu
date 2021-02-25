@@ -50,10 +50,10 @@ layout: default
 
 
 
-<table class="center0" style="width:600px">
+<table class="center0" style="width:700px">
 
 	<tr>
-	<td class="style14">les <strong> {{ page.Familia }} {{ page.Order }}</strong> 
+	<td class="style14">{{ page.FaunaFlore }} -- les <strong>{{ page.Familia }}</strong> 
 	de Crète et parfois aussi d'ailleurs.</td>
 	</tr>
     
@@ -102,13 +102,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {% endif %}
 
 {% if page.SubClass %}
-- - Sous-Classe: <strong>{{ page.SubClass }} </strong>
+- - Sous-Classe: <strong>{{ page.SubClass }}</strong> 
 {{ page.AuteurSubClass }}
 
 {% endif %}
 
 {% if page.SuperOrder %}
-- - Super-Ordre: <strong>{{ page.SuperOrder }} </strong>
+- - Super-Ordre: <strong>{{ page.SuperOrder }}</strong> 
 {{ page.AuteurSuperOrder }}
 
 {% endif %}
@@ -260,9 +260,7 @@ Règne: <strong>{{ page.Regnum }}</strong>
 <tr>
 	<td class="style12"></td>
 </tr>
-<tr>
-	<td class="style12"></td>
-</tr>
+
 
 <tr>{% if page.fami-Crete %}
 
@@ -314,10 +312,6 @@ Règne: <strong>{{ page.Regnum }}</strong>
 	<td class="style12"></td>
 </tr>
 
-
-<tr>
-	<td class="style12"></td>
-</tr>
 
 
 {% if page.Genre1 %}<tr>
