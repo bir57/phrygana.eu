@@ -59,18 +59,30 @@ layout: default
     
 </table>{% endif %}
 {% if page.fami-Familia %}
+
 <table class="center0" style="width:700px">
 
-	<tr>
-	<td class="style14">{{ page.FaunaFlore }} -- les <strong>{{ page.fami-Familia }}</strong> 
-	de Crète et parfois aussi d'ailleurs.</td>
-	</tr>
+{% if page.FaunaFlore %}
+<tr>
+<td class="style14">{{ page.FaunaFlore }} -- les <strong>{{ page.fami-Familia }}</strong> 
+de Crète et parfois aussi d'ailleurs.</td>
+</tr>{% endif %}
+
+</table>{% endif %}
+
+{% if page.fami-voyages %}
+<table class="center0" style="width:700px">
+
+<tr>
+<td class="style14"> les <strong>{{ page.fami-voyages }}</strong>: à la rencontre de 
+quelques animaux et de quelques plantes.</td>
+</tr>
     
 </table>{% endif %}
 
 <p class="style8"></p>
 <p class="style8"></p>
-<p class="style8"></p>
+
 
 
 
@@ -327,31 +339,31 @@ Règne: <strong>{{ page.Regnum }}</strong>
 </tr>
 
 <tr>
-	<td class="style12"><div>{{ page.Genre1 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre1 }}  </div> </td>
 </tr>
 
 {% if page.Genre2 %}<tr>
-	<td class="style12"><div>{{ page.Genre2 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre2 }}  </div> </td>
 </tr>{% endif %}
 
 {% if page.Genre3 %}<tr>
-	<td class="style12"><div>{{ page.Genre3 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre3 }}  </div> </td>
 </tr>{% endif %}
 
 {% if page.Genre4 %}<tr>
-	<td class="style12"><div>{{ page.Genre4 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre4 }}  </div> </td>
 </tr>{% endif %}
 
 {% if page.Genre5 %}<tr>
-	<td class="style12"><div>{{ page.Genre5 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre5 }}  </div> </td>
 </tr>{% endif %}
 
 {% if page.Genre6 %}<tr>
-	<td class="style12"><div>{{ page.Genre6 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre6 }}  </div> </td>
 </tr>{% endif %}
 
 {% if page.Genre7 %}<tr>
-	<td class="style12"><div>{{ page.Genre7 }}  </div> </td>
+	<td class="style12"><div>--- {{ page.Genre7 }}  </div> </td>
 </tr>{% endif %}
 
 <tr>
