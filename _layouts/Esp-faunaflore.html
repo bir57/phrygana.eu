@@ -111,6 +111,14 @@ Règne: <strong>{{ page.Regnum }}</strong>
 - Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }}
 {% endif %}
 
+
+{% if page.SubOrder %}
+- - Sous-Ordre: <strong>{{ page.SubOrder }}</strong>
+{{ page.AuteurSubOrder }}
+
+{% endif %}
+
+
 {% if page.SuperFamilia %}
 - - Super-Famille: <strong>{{ page.SuperFamilia }}</strong> {{ page.AuteurSuperFamilia }}
 {% endif %}  
