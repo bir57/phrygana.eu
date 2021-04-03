@@ -124,6 +124,7 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {% endif %}  
 
 
+
 {% if page.Familia %}
 - Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
 {% endif %}   
@@ -507,7 +508,7 @@ class="style9"> {{ page.lieu-date0 }}</span></td>
 <p class="style8"></p>
 
 {% if page.Spec-Flore%}
-	<table class="center0"  style="width: 800px">     
+<table class="center0"  style="width: 800px">     
     
 <tr>
 <td class="style12" ><div><strong>Plante-hôte</strong>: <em>{{ page.Espece}}</em> 
@@ -522,7 +523,7 @@ est plante-hôte pour: </div> </td>
 
 
 {% if page.Spec-Faune%}
-	<table class="center0"  style="width: 800px">     
+<table class="center0"  style="width: 800px">     
     
 <tr>
 <td class="style12" ><div><strong>Plante(s)-hôte(s)</strong>: </div> </td>    
@@ -536,7 +537,7 @@ est plante-hôte pour: </div> </td>
 
 
 {% if page.Spec-FauneFlore%}
-	<table class="center0"  style="width: 800px">     
+<table class="center0"  style="width: 800px">     
     
 <tr>
 <td class="style12" ><div><strong>Espèces parasitées</strong>: </div> </td>    
@@ -545,6 +546,32 @@ est plante-hôte pour: </div> </td>
 <tr>
 <td class="style12" ><div>--- {{ page.Spec-FauneFlore }}</div> </td>    
 </tr>  {% endif %}
+
+
+{% if page.Spec-Predateur %}
+<table class="center0"  style="width: 800px">     
+    
+<tr>
+<td class="style12" ><div><strong>Espèce(s) prédatrice(s)</strong>: </div> </td>    
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.Spec-Predateur }}</div> </td>    
+</tr>  {% endif %}
+
+
+{% if page.Spec-Proies %}
+<table class="center0"  style="width: 800px">     
+    
+<tr>
+<td class="style12" ><div><strong>Espèce(s) attaquéé(s)</strong>: </div> </td>    
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.Spec-Proies }}</div> </td>    
+</tr>  {% endif %}
+
+
 
 
 
