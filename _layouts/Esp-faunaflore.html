@@ -184,7 +184,6 @@ Règne: <strong>{{ page.Regnum }}</strong>
 </tr>{% endif %} 
 </table>
 
-
 <table class="center0" style="width: 900px">
 
 <tr>
@@ -639,16 +638,40 @@ est plante-hôte pour: </div> </td>
 
 </table> {% endif %}
 
+{% if page.Spec-Parasites %}
+<table class="center0"  style="width: 800px">     
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+<tr>
+<td class="style12" ><div><strong>Espèce(s) parasitant les chenilles</strong>: </div> </td>    
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.Spec-Parasites }}</div> </td>    
+</tr>  
+
+	
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+</table> {% endif %}
 
 {{ planteshotes }}
 
+
+{{ Parasites }}
 
 
 {{ content }}
 
 
-
 <table class="center0" style="width: 900px">
+
+
 	
 {% if page.IMAGE1  %}
 <tr>
@@ -673,7 +696,7 @@ title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteu
 <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
 class="style9"> {{ page.lieu-date2 }}</span></td>
 </tr>{% endif %}
-    
+
 {% if page.IMAGE3 %}
 <tr>
 <td class="style9" >
@@ -686,7 +709,7 @@ title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteu
 class="style9"> {{ page.lieu-date3 }}</span></td>
 </tr>{% endif %}
     
- 
+
 {% if page.IMAGE4 %}
 <tr>
 <td class="style9" >
