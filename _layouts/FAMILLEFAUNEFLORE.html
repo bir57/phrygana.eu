@@ -163,6 +163,31 @@ Règne: <strong>{{ page.Regnum }}</strong>
 
 </td>
 
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+
+{% if page.Synonyme %}
+<tr>
+<td class="style12"> <strong>syn.</strong>: {{ page.Synonyme }} </td>
+</tr>
+
+<tr>
+<td class="style12"> </td>
+</tr>{% endif %}
+    
+{% if page.nom-commun %}
+<tr>
+<td class="style12" ><strong>Nom(s) commun(s)</strong>: </td>
+</tr>
+<tr>
+<td class="style12" >---   {{ page.nom-commun }}. </td>
+</tr>{% endif %}
+
+<tr>
+<td class="style12"> </td>
+</tr>
 
 </tr>
 {% if page.fami-note1 %}
@@ -258,13 +283,6 @@ Règne: <strong>{{ page.Regnum }}</strong>
 <tr>
 	<td class="style12"></td>
 </tr>
- 
-
-
-{% if page.fami-Familia %}<tr>
-	<td class="style12"><div>les <strong>{{ page.fami-Familia }}</strong>:  </div> </td>
-</tr>{% endif %}
-
 
 {% if page.Familia %}<tr>
 	<td class="style12"><div>les <strong>{{ page.Familia }}</strong>:  </div> </td>
