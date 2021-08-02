@@ -668,6 +668,31 @@ est plante-hôte pour: </div> </td>
 {{ Parasites }}
 
 
+{% if page.Spec-Butinage %}
+<table class="center0"  style="width: 800px">     
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+<tr>
+<td class="style12" ><div><strong>{{ page.Espece}}</strong> est butiné par de nombreux insectes dont: </div> </td>    
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.Spec-Butinage }}</div> </td>    
+</tr>  
+
+	
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+</table> {% endif %}
+
+{{ Parasites }}
+
+
 {{ content }}
 
 
