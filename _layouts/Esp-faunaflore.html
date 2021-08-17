@@ -86,7 +86,13 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {{ page.AuteurRegnum }}
   
 {% endif %}
-    
+  
+{% if page.SubRegnum %}
+Sous-Règne: <strong>{{ page.SubRegnum }}</strong> 
+{{ page.AuteurSubRegnum }}
+  
+{% endif %}
+     
 {% if page.Phylum %}
 - Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
 {% endif %}
@@ -443,7 +449,7 @@ class="style9"> {{ page.lieu-date0 }}</span></td>
 </tr>
 
 <tr>
-<td class="style12" ><div>--- Parties utilisées: {{ page.medicinal }}  </div> </td>    
+<td class="style12" ><div>--- {{ page.medicinal }}  </div> </td>    
 </tr>{% endif %}
 
 {% if page.culinaire %}
