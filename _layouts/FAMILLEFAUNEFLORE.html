@@ -104,7 +104,12 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {{ page.AuteurRegnum }}
 
 {% endif %}
+  
+{% if page.SubRegnum %}
+- - Sous-Règne: <strong>{{ page.SubRegnum }}</strong> 
+{{ page.AuteurSubRegnum }}
 
+{% endif %}
 
 {% if page.Phylum %}
 - - Phylum: <strong>{{ page.Phylum }}</strong> 
