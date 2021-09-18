@@ -88,34 +88,34 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {% endif %}
   
 {% if page.SubRegnum %}
-Sous-Règne: <strong>{{ page.SubRegnum }}</strong> 
+- - Sous-Règne: <strong>{{ page.SubRegnum }}</strong> 
 {{ page.AuteurSubRegnum }}
   
 {% endif %}
      
 {% if page.Phylum %}
-- Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
+- - Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
 {% endif %}
 
 {% if page.SuperClass %}
-- Super-Classe: <strong>{{ page.SuperClass }}</strong> {{ page.AuteurSuperClass }} 
+- - Super-Classe: <strong>{{ page.SuperClass }}</strong> {{ page.AuteurSuperClass }} 
 {% endif %}
   
 {% if page.Class %}
-- Classe: <strong>{{ page.Class }}</strong> {{ page.AuteurClass }} 
+- - Classe: <strong>{{ page.Class }}</strong> {{ page.AuteurClass }} 
 {% endif %}
   
 {% if page.SubClass %}
-- Sous-Classe: <strong>{{ page.SubClass }}</strong> {{ page.AuteurSubClass }} 
+- - Sous-Classe: <strong>{{ page.SubClass }}</strong> {{ page.AuteurSubClass }} 
 {% endif %}
 
 {% if page.SuperOrder %}
-- Super-Ordre: <strong>{{ page.SuperOrder }}</strong> {{ page.AuteurSuperOrder }} 
+- - Super-Ordre: <strong>{{ page.SuperOrder }}</strong> {{ page.AuteurSuperOrder }} 
 {% endif %} 
 
 
 {% if page.Order %}
-- Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }}
+- - Ordre: <strong>{{ page.Order }}</strong> {{ page.AuteurOrder }}
 {% endif %}
 
 
@@ -132,19 +132,19 @@ Sous-Règne: <strong>{{ page.SubRegnum }}</strong>
 
 
 {% if page.Familia %}
-- Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
+- - Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
 {% endif %}   
 
 {% if page.Tribe %}
-- Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
+- - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
 {% endif %} 
 
 {% if page.tribu %}
-- Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
+- - Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
 {% endif %} 
 
 {% if page.Genre %}
-- Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
+- - Genre: <strong>{{ page.Genre }}</strong> {{ page.AUTEURgenre }}
 {% endif %}
 
 </td>
@@ -674,6 +674,31 @@ est plante-hôte pour: </div> </td>
 {{ Parasites }}
 
 
+
+{% if page.Spec-Predateurs %}
+<table class="center0"  style="width: 800px">     
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+<tr>
+<td class="style12" ><div><strong>Espèce(s) prédatrice(s)</strong> </div> </td>    
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.Spec-Predateurs }}</div> </td>    
+</tr>  
+
+
+<tr>
+	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+</tr>
+
+</table> {% endif %}
+
+{{ Predateurs }}
+
 {% if page.Spec-Butinage %}
 <table class="center0"  style="width: 800px">     
 
@@ -696,7 +721,7 @@ est plante-hôte pour: </div> </td>
 
 </table> {% endif %}
 
-{{ Parasites }}
+{{ Butinage }}
 
 
 {{ content }}
