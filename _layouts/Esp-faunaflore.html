@@ -38,7 +38,13 @@ layout: default
 		font-size: small;
 		font-family: "Book Antiqua";
 	}
-
+	.style22 {
+	text-align: justify;
+    text-justify: inter-word;
+	font-size: small;
+	font-family: "Book Antiqua";
+	color: #255B7B;
+}
 	.style21 {
 	text-align: justify;
 	text-justify: inter-word;
@@ -171,8 +177,9 @@ Règne: <strong>{{ page.Regnum }}</strong>
 <tr>
 <td class="style12" ><strong>Nom(s) commun(s)</strong>: </td>
 </tr>
+
 <tr>
-<td class="style12" >---   {{ page.nom-commun }}. </td>
+<td class="style22" >---   {{ page.nom-commun }}. </td>
 </tr>{% endif %}
 
 <tr>
