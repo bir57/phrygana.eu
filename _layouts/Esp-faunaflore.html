@@ -951,8 +951,10 @@ class="style9"> {{ page.lieu-date15 }}</span></td>
 <tr>
 <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
 class="style9"> {{ page.lieu-date16 }}</span></td>
-</tr>
+</tr>{% endif %}
 
+
+{% if page.IMAGE17  %}
 <tr>
 <td class="style9" >
 <img  class="center" src="{{ page.IMAGE17 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
@@ -984,8 +986,9 @@ class="style9"> {{ page.lieu-date18 }}</span></td>
 <tr>
 <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
 class="style9"> {{ page.lieu-date19 }}</span></td>
-</tr>
-
+</tr>{% endif %}
+  
+{% if page.IMAGE20  %}
 <tr>
 <td class="style9" >
 <img  class="center" src="{{ page.IMAGE20 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
@@ -994,15 +997,15 @@ class="style9"> {{ page.lieu-date19 }}</span></td>
 <tr>
 <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
 class="style9"> {{ page.lieu-date20 }}</span></td>
-</tr>
+</tr>{% endif %}
 
-
+  
+{% if page.IMAGE21  %}
 <tr>
 <td class="style9" >
 <img  class="center" src="{{ page.IMAGE21 }}" alt="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " title="{{ page.Espece}} {{ page.Auteurespece }} {{ page.variete }} {{ page.Auteurvariete }} " > </td>
-</tr>{% endif %}
+</tr>
 
-{% if page.lieu-date21 %}
 <tr>
 <td class="style9"><em><span class="style9">{{ page.Espece}} {{ page.variete }}</span></em><span 
 class="style9"> {{ page.lieu-date21 }}</span></td>
