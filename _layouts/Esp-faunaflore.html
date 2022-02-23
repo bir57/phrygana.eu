@@ -139,6 +139,10 @@ Règne: <strong>{{ page.Regnum }}</strong>
 - - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
 {% endif %} 
 
+{% if page.Supertribu %}
+- - Super-tribu: <strong>{{ page.Supertribu }}</strong> {{ page.AuteurSupertribu }}
+{% endif %} 
+
 {% if page.tribu %}
 - - Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
 {% endif %} 
