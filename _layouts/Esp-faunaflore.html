@@ -96,6 +96,10 @@ Règne: <strong>{{ page.Regnum }}</strong>
 {% if page.Phylum %}
 - - Phylum: <strong>{{ page.Phylum }}</strong> {{ page.AuteurPhylum }}
 {% endif %}
+     
+{% if page.SubPhylum %}
+- - Sous-Phylum: <strong>{{ page.SubPhylum }}</strong> {{ page.AuteurSubPhylum }}
+{% endif %}
 
 {% if page.SuperClass %}
 - - Super-Classe: <strong>{{ page.SuperClass }}</strong> {{ page.AuteurSuperClass }} 
