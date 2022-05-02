@@ -337,6 +337,15 @@ class="style9"> {{ page.lieu-date0 }}</span></td>
 <td class="style12"></td>
 </tr>{% endif %}
 
+{% if page.PeriodeACTIVE1 %}
+<tr>
+<td class="style12"><div><strong>Visibilité de l'espèce</strong>: {{ page.PeriodeACTIVE1 }} </div> </td>
+</tr>
+
+<tr>
+<td class="style12"></td>
+</tr>{% endif %}
+
 
 {% if page.Altitudes %}
 <tr>
@@ -518,6 +527,7 @@ class="style9"> {{ page.lieu-date0 }}</span></td>
 </table>{% endif %}
 
 
+
 {% if page.Galle %}
 <table class="center0" class="style17" style="width: 800px">
 
@@ -532,7 +542,7 @@ class="style9"> {{ page.lieu-date0 }}</span></td>
 
 
 <tr>
-<td class="style21" > --- {{ page.Galle }}. </td>
+<td class="style21" > --- {{ page.Galle }} </td>
 </tr>
 
 <tr>
@@ -583,7 +593,7 @@ est plante-hôte pour: </div> </td>
 <table class="center0"  style="width: 800px">     
     
 <tr>
-<td class="style12" ><div><strong>Espèces parasitées</strong>: </div> </td>    
+<td class="style12" ><div><strong>Espèce(s) attaquée(s)/parasitée(s)</strong>: </div> </td>    
 </tr>
 
 <tr>
@@ -684,6 +694,28 @@ est plante-hôte pour: </div> </td>
 {% if page.espece-organes1 %}
 <tr>
 <td class="style12" ><div>--- {{ page.espece-organes1 }}  </div> </td>    
+</tr> {% endif %}
+  
+
+<tr>
+<td class="style12" > </td>
+</tr>  
+
+</table> {% endif %}
+
+{% if page.espece-galle %}
+	    
+<tr>
+<td class="style12" ><div><strong>Organe(s) attaqué(s) de la plante-hôte </strong>:</div> </td> 
+</tr>
+
+<tr>
+<td class="style12" ><div>--- {{ page.espece-galle }}  </div> </td>    
+</tr> 
+
+{% if page.espece-galle1 %}
+<tr>
+<td class="style12" ><div>--- {{ page.espece-galles1 }}  </div> </td>    
 </tr> {% endif %}
   
 
