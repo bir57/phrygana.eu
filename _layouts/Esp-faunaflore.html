@@ -1084,6 +1084,33 @@ class="style9"> {{ page.lieu-date23 }}</span></td>
 </table>
 
 
+{% if page.inventeur %}
+<table class="center0" class="style17" style="width: 800px">
+
+<tr>
+<td class="style12" > </td>
+</tr>
+
+
+<tr>
+<td class="style12" ><strong>Auteur(s): </strong> </td>
+</tr>
+
+<tr>
+<td class="style12" >--- {{ page.inventeur }} </td>
+</tr>
+
+{% if page.inventeur1 %}
+<tr>
+<td class="style12" >--- {{ page.inventeur1}} </td>
+</tr>{% endif %}
+
+
+
+<tr>
+<td class="style21" > </td>
+</tr>
+
 {% if page.divers %}
 <table class="center0" class="style17" style="width: 800px">
 
