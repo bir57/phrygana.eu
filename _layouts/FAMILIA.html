@@ -67,36 +67,14 @@ layout: default
     
 </table>{% endif %}
 
-{% if page.fami-Familia %}
-
-<table class="center0" style="width:700px">
-
-	
-{% if page.FaunaFlore %}
-<tr>
-<td class="style14">{{ page.FaunaFlore }} -- les <strong>{{ page.fami-Familia }}</strong> 
-de Crète et parfois aussi d'ailleurs.</td>
-</tr>{% endif %}
-
-</table>{% endif %}
-
-{% if page.fami-voyages %}
-<table class="center0" style="width:700px">
-
-<tr>
-<td class="style14"> <strong>{{ page.fami-voyages }}</strong>: à la rencontre de 
-quelques animaux et de quelques plantes.</td>
-</tr>
-
-</table>{% endif %}
-
-<p class="style8"></p>
-<p class="style8"></p>
-
-
 
 
 <table class="center0" style="width: 800px">
+
+<tr>
+	<td class="style21"></td>
+</tr>
+
 
 <tr>
 	<td class="style21"></td>
@@ -218,179 +196,153 @@ Règne: <strong>{{ page.Regnum }}</strong>
 <td class="style21" >-- {{ page.nom-commun2 }}. </td>
 </tr>{% endif %}
 
-<tr>
-<td class="style12"> </td>
-</tr>
 
-</tr>
+
 {% if page.fami-note1 %}
+
 <tr>
-	<td class="style12"><div> - - - - - - - - - - - - - - - - - - - -</div></td>
+	<td> <div><strong><span style="color:#46d65c;">
+	- - - - - - - - - - - - - - - - - - - - </span></strong></div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>
 	
 
 {% if page.fami-intro %}
 
 <tr>
-	<td class="style12"><div> {{ page.fami-intro }}</div></td>
+	<td class="style21"><div> {{ page.fami-intro }}</div></td>
 
-	<td class="style12"></td>
+	<td class="style21"></td>
 
-</tr>{% endif %}
-
-
+</tr>
+{% endif %}
 
 
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note1 }}</em></div></td>
+	<td class="style21"><div><em>{{ page.fami-note1 }}</em></div></td>
 
-	<td class="style12"></td>
-</tr>{% endif %}
+	<td class="style21"></td>
+
+</tr>
+{% endif %}
 
 {% if page.fami-note2 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note2 }}</em> </div></td>
+	<td class="style21"><div><em>{{ page.fami-note2 }}</em> </div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
-</tr>{% endif %}
+	<td class="style21"></td>
+
+</tr>
+{% endif %}
 
 {% if page.fami-note3 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note3 }}</em></div></td>
+	<td class="style21"><div><em>{{ page.fami-note3 }}</em></div></td>
 </tr>
 
 
 <tr>
-	<td class="style12"></td>
-</tr>{% endif %}
+	<td class="style21"></td>
+</tr>
+{% endif %}
 
 {% if page.fami-note4 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note4 }}</em></div></td>
+	<td class="style21"><div><em>{{ page.fami-note4 }}</em></div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
-</tr>{% endif %}
+	<td class="style21"></td>
+</tr>
+{% endif %}
 
 {% if page.fami-note5 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note5 }}</em></div></td>
+	<td class="style21"><div><em>{{ page.fami-note5 }}</em></div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>{% endif %}
 
 {% if page.fami-note6 %}
 <tr>
-	<td class="style12"><div><em>{{ page.fami-note6 }}</em></div></td>
+	<td class="style21"><div><em>{{ page.fami-note6 }}</em></div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>{% endif %}
 
 
 {% if page.fami-note7 %}
 <tr>
-	<td class="style12"><div>{{ page.fami-note7 }}</div></td>
+	<td class="style21"><div>{{ page.fami-note7 }}</div></td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>{% endif %}
 
 
 {% if page.fami-note8 %}
 <tr>
-	<td class="style12"><div>{{ page.fami-note8 }}</div></td>
+	<td class="style21"><div>{{ page.fami-note8 }}</div></td>
 </tr>
+{% endif %}
+
 
 <tr>
-	<td class="style12"></td>
+	<td> <div><strong><span style="color:#46d65c;">
+	- - - - - - - - - - - - - - - - - - - - </span></strong></div></td>
+</tr>
+
+{% if page.taxonomie %}<tr>
+	<td class="style12"><div>les <strong>{{ page.taxonomie }}</strong>:  </div> </td>
+</tr>{% endif %}
+
+{% if page.Familia %}<tr>
+	<td class="style12"><div>les <strong>{{ page.Familia }}</strong>:  </div> </td>
 </tr>{% endif %}
 
 <tr>
-	<td class="style12"><div>- - - - - - - - - - - - - - - - - - - -</div></td>
-</tr>
-
-
-<tr>
-	<td class="style12"></td>
-</tr>
-
-{% if page.fami-Familia %}<tr>
-	<td class="style12"><div>les <strong>{{ page.fami-Familia }}</strong>:  </div> </td>
-</tr>{% endif %}
-
-<tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>
 
 {% if page.fami-Monde %}<tr>
-	<td class="style12"><div>--- dans le Monde: {{ page.fami-Monde }} </div> </td>
+	<td class="style21"><div>--- dans le Monde: {{ page.fami-Monde }} </div> </td>
 </tr>{% endif %}
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>
-
-
-<tr>{% if page.fami-Crete %}
-
-<td class="style12"><div>dont total des espèces mentionnées par 
-<strong><a href='http://www.eu-nomen.eu/portal' >PESI (2023)</strong></a> pour: </div> </td>	
-
-</tr>
-
 
 {% if page.fami-Europe %}
 
 <tr>
-	<td class="style12"></td>
+<td class="style21"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
+
+</tr>{% endif %}
+
+<tr>
+	<td class="style21"></td>
 </tr>
 
 
 <tr>
-<td class="style12"><div>--- l'Europe: {{ page.fami-Europe }} </div> </td>
-
-</tr>{% endif %}
-
-
-<tr>
-<td class="style12"><div>--- la Crète: {{ page.fami-Crete }} </div> </td>
-		
-</tr>{% endif %}
-
-{% if page.fami-Belgique %}
-<tr>
-<td class="style12"><div>--- la Belgique: {{ page.fami-Belgique }} </div> </td>
-				
-</tr>{% endif %}
-
-<tr>
-	<td class="style12"></td>
-</tr> 
-
-<tr>
-	<td class="style12"></td>
-</tr>
-<tr>
-	<td class="style12"><div>--- La classification suivie est, dans la mesure du possible, 
+	<td class="style21"><div>--- La nomenclature suivie est, dans la mesure du possible, 
 		en accordance avec <strong><a href='http://www.eu-nomen.eu/portal' >PESI (2023)</strong></a>, 
 		(Pan-European Species directories Infrastructure). </div>
 	</td>
 </tr>
 
 <tr>
-	<td class="style12"></td>
+	<td class="style21"></td>
 </tr>
 
 </table>
@@ -398,25 +350,6 @@ Règne: <strong>{{ page.Regnum }}</strong>
 
 {{ content }}
 
-<table class="center0" style="width:900px">
-
-    
-<caption> - - - - - - - - - - - - - - - - - - - - - </caption>
-
-<tr>
-	<td class="style12"></td>
-</tr>
-<tr>
-	<td class="style12"></td>
-</tr>
-
-</table>
-
-<p class="style8"></p> 
-<p class="style8"></p>
-
-
-{{ content1 }}
 
 <table class0="center" style="width: 960px">
 	<tr>

@@ -1,0 +1,125 @@
+---
+
+layout: default
+
+--- 
+
+
+<style>
+  
+	table.center {
+	  border-collapse: collapse;
+	  border: 2px solid #EDDEA5;
+	  margin-left:auto; 
+	  margin-right:auto;
+	  
+	}
+	 
+	th {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	td {
+	  padding: 3px;
+	  text-align: center;
+	  font-size: small;
+	  text-decoration: none;
+	}
+	  table.a {
+	  table-layout: fixed;
+	  width: 100%;  
+	}
+	  
+
+	.style1 {
+		border: 2px solid #EDDEA5;
+		text-align: left;
+		font-size: small;
+		font-family: "Book Antiqua";
+	}
+	
+	 
+	.style21 {
+	text-align: justify;
+	text-justify: inter-word;
+	font-size: small;
+	font-family: "Book Antiqua";
+}
+
+ 
+	
+	  
+	</style>
+
+<p class="style8"></p>
+
+
+{% if page.pays %}
+<table class="center0" style="width:700px">
+
+<tr>
+<td class="style14"> <strong>{{ page.pays }}</strong>: quelques animaux et de quelques plantes.</td>
+</tr>
+
+</table>{% endif %}
+
+<table class="center0" style="width:900px">
+		
+<tr>
+	<td class="style21"></td>
+</tr>
+	
+			
+<tr>
+	<td class="style21"></td>
+</tr>
+		
+<tr>
+	<td class="style21"></td>
+</tr>
+
+<tr>
+
+	<td class="style21"><div>régions traversées: {{ page.provinces }} </div></td>
+	
+</tr>
+			
+<tr>
+	<td class="style21"></td>
+</tr>
+
+
+
+<tr>
+
+	<td class="style21"><div>liste actuelle des espèces identifiées et illustrées: 
+		* <strong> {{ page.total }} </strong> * </div></td>
+	
+</tr>
+		
+<tr>
+	<td class="style21"></td>
+</tr>
+
+
+</table>
+
+
+
+{{ content }}
+
+
+<table class0="center" style="width: 960px">
+	<tr>
+		<td class="style5">mise à jour le {{ page.datemaj }}</td>
+	</tr>
+</table>
+
+
+
+
+
+---
+
