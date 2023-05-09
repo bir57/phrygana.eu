@@ -55,6 +55,17 @@ layout: default
 
 <p class="style8"></p>
 
+{% if page.regnum %}
+<table class="center0" style="width:700px">
+
+<tr>
+<td class="style14"> <strong>{{ page.regnum }}</strong>: {{ page.regnum1 }}.</td>
+</tr>
+
+</table>{% endif %}
+
+<table class="center0" style="width:900px">
+	
 
 {% if page.pays %}
 <table class="center0" style="width:700px">
@@ -80,11 +91,12 @@ layout: default
 	<td class="style21"></td>
 </tr>
 
+{% if page.fami-provinces %}
 <tr>
 
 	<td class="style21"><div>régions traversées (partiellement): {{ page.provinces }} </div></td>
 	
-</tr>
+</tr>{% endif %}
 			
 <tr>
 	<td class="style21"></td>
@@ -98,6 +110,15 @@ layout: default
 		* <strong> {{ page.total }} </strong> * </div></td>
 	
 </tr>
+
+{% if page.fami-note %}
+<tr>
+	<td class="style21"><div>{{ page.fami-note }}</div></td>
+
+	<td class="style21"></td>
+
+</tr>{% endif %}
+
 
 {% if page.fami-note1 %}
 <tr>
@@ -141,6 +162,15 @@ layout: default
 {% if page.fami-note5 %}
 <tr>
 	<td class="style12"><div><em>{{ page.fami-note5 }}</em></div></td>
+</tr>
+
+<tr>
+	<td class="style12"></td>
+</tr>{% endif %}
+
+{% if page.fami-note8 %}
+<tr>
+	<td class="style12"><div>{{ page.fami-note8 }}</div></td>
 </tr>
 
 <tr>
