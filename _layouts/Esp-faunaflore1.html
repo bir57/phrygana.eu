@@ -156,16 +156,27 @@ Règne: <strong>{{ page.Regnum }}</strong>
 - - Famille: <strong>{{ page.Familia }}</strong> {{ page.Auteurfamille }} 
 {% endif %}   
 
-{% if page.Tribe %}
-- - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
-{% endif %} 
 
-{% if page.Supertribu %}
-- - Super-tribu: <strong>{{ page.Supertribu }}</strong> {{ page.AuteurSupertribu }}
+
+{% if page.Sous-Famille %}
+- - Sous-Famille: <strong>{{ page.Sous-Famille }}</strong> {{ page.AuteurSous-Famille }} 
+{% endif %}   
+
+
+{% if page.SuperTribu %}
+- - Super-Tribu: <strong>{{ page.SuperTribu }}</strong> {{ page.AuteurSuperTribu }}
 {% endif %} 
 
 {% if page.tribu %}
 - - Tribu: <strong>{{ page.tribu }}</strong> {{ page.Auteurtribu }}
+{% endif %} 
+
+{% if page.soustribu %}
+- - Sous-Tribu: <strong>{{ page.soustribu }}</strong> {{ page.Auteursoustribu }}
+{% endif %} 
+
+{% if page.Tribe %}
+- - Sous-famille: <strong>{{ page.Tribe }}</strong> {{ page.Auteurtribe }}
 {% endif %} 
 
 {% if page.Genre %}
@@ -200,17 +211,17 @@ Règne: <strong>{{ page.Regnum }}</strong>
 </tr>
 
 <tr>
-<td class="style21" >-- {{ page.nom-commun }}. </td>
+<td class="style21" >-- {{ page.nom-commun }}</td>
 </tr>{% endif %}
 
 {% if page.nom-commun1 %}
 <tr>
-<td class="style21" >-- {{ page.nom-commun1 }}. </td>
+<td class="style21" >-- {{ page.nom-commun1 }} </td>
 </tr>{% endif %}
 
 {% if page.nom-commun2 %}
 <tr>
-<td class="style21" >-- {{ page.nom-commun2 }}. </td>
+<td class="style21" >-- {{ page.nom-commun2 }} </td>
 </tr>{% endif %}
 
 <tr>
